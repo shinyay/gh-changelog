@@ -46,7 +46,7 @@ Copilot のアクティビティを 1 つの画面で俯瞰できます。**Over
 Copilot の応答性がこれまで以上に向上しました。リアルタイムステアリングにより、Copilot が作業中でもガイドできます。セッション実行中に入力を与えると、現在のツール呼び出しが完了し次第、Copilot はそれに合わせて適応します。フィードバックも簡単になり、プルリクエストコメントへ飛んで @copilot する必要はありません。チャット入力から誘導するか、**Files changed** ビューに直接コメントを追加するだけです。
 
 
-  
+
 
 
 
@@ -65,7 +65,7 @@ Copilot の応答性がこれまで以上に向上しました。リアルタイ
 [agents パネル](https://github.blog/changelog/2025-08-19-agents-panel-launch-copilot-coding-agent-tasks-anywhere-on-github-com/) や github.com/copilot/agents にある既存の選択肢に加えて、github.com 上で直接 [Copilot coding agent タスクを作成](https://github.blog/changelog/2025-11-20-updated-copilot-input-on-the-home-dashboard/)できるようになりました。github.com/copilot では（チャットで `/task` を入力して）作成でき、GitHub Mobile の agents タスクページからも作成できます。どこからタスクを開始しても、[カスタムエージェント](https://github.blog/changelog/2025-11-27-custom-agents-for-github-copilot/) を選んで Copilot の出力をさらにカスタマイズできます。
 
 
-  
+
 
 
 
@@ -75,7 +75,7 @@ Copilot の応答性がこれまで以上に向上しました。リアルタイ
 Copilot の作業をベースに進めたい場合でも、完全に自分でコントロールしたい場合でも、Codespaces、VS Code Insiders、または GitHub CLI でセッションを開けます。
 
 
-  
+
 
 
 

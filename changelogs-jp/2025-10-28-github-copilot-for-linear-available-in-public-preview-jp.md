@@ -1,0 +1,81 @@
+---
+title: "GitHub Copilot for Linear がパブリックプレビューで利用可能に"
+date: "2025-10-28"
+type: "new releases"
+labels: ["copilot", "universe25"]
+author: "Allison"
+source_url: "https://github.blog/changelog/2025-10-28-github-copilot-for-linear-available-in-public-preview"
+fetched_at: "2026-02-03T14:50:55.558740Z"
+lang: "ja"
+---
+
+# GitHub Copilot for Linear がパブリックプレビューで利用可能に
+
+## Overview
+Linear の issue を Copilot コーディングエージェント（非同期で自律的なバックグラウンドエージェント）に割り当てることができるようになりました。
+
+## Detailed Explanation
+### 概要
+- Linear の issue を Copilot コーディングエージェント（非同期で自律的なバックグラウンドエージェント）に割り当てることができるようになりました。
+- Linear issue を Copilot に割り当てると、以下の動作をします：
+- issue の内容を分析し、ドラフトプルリクエストを開きます。
+- GitHub Actions を活用した独自の一時的な開発環境で独立して作業します。この環境内で、Copilot はコードの探索、変更、自動テストとリンターの実行などができます。
+- Linear のアクティビティタイムラインに進捗更新をストリーミングします。
+- 作業が完了したら、プルリクエストレビューをリクエストします。
+
+### 主な利点
+- バグ修正、リファクタリング、ドキュメント更新などの反復的なタスクを自動化します。
+- Linear と GitHub 間の手動ステップとコンテキスト切り替えを削減します。
+- Copilot が作成するすべてのプルリクエストに対して、既存のレビューと承認ルールに従います。
+
+### 始め方
+- GitHub Marketplace から GitHub Copilot coding agent for Linear アプリをインストールします。GitHub で組織オーナー権限、Linear でワークスペース管理者権限が必要です。
+- 統合と Copilot コーディングエージェントの詳細については、ドキュメントをご覧ください。
+- フィードバックをお待ちしております。コミュニティディスカッションで考えを共有してください。
+
+## Key Changes
+記事では明示されていません。
+
+## Impact / Who's Affected
+記事では明示されていません。
+
+## Caveats / Limitations
+記事では明示されていません。
+
+## Insights (derived from article language)
+- 統合と Copilot コーディングエージェントの詳細については、ドキュメントをご覧ください。
+
+## Article Content (cleaned)
+Linear の issue を Copilot コーディングエージェント（非同期で自律的なバックグラウンドエージェント）に割り当てることができるようになりました。
+
+
+Linear issue を Copilot に割り当てると、以下の動作をします：
+
+
+1. issue の内容を分析し、ドラフトプルリクエストを開きます。
+2. GitHub Actions を活用した独自の一時的な開発環境で独立して作業します。この環境内で、Copilot はコードの探索、変更、自動テストとリンターの実行などができます。
+3. Linear のアクティビティタイムラインに進捗更新をストリーミングします。
+4. 作業が完了したら、プルリクエストレビューをリクエストします。
+
+
+## [主な利点](#key-benefits)
+
+
+* バグ修正、リファクタリング、ドキュメント更新などの反復的なタスクを自動化します。
+* Linear と GitHub 間の手動ステップとコンテキスト切り替えを削減します。
+* Copilot が作成するすべてのプルリクエストに対して、既存のレビューと承認ルールに従います。
+
+
+  
+
+
+
+
+## [始め方](#get-started)
+
+
+* GitHub Marketplace から [GitHub Copilot coding agent for Linear アプリ](https://github.com/apps/github-copilot-for-linear?utm_source=changelog-marketplace-cta-ccaintegration-linear&utm_medium=changelog&utm_campaign=universe25) をインストールします。GitHub で組織オーナー権限、Linear でワークスペース管理者権限が必要です。
+* [統合](https://docs.github.com/copilot/how-tos/use-copilot-agents/coding-agent/integrate-coding-agent-with-linear) と [Copilot コーディングエージェント](https://docs.github.com/copilot/concepts/agents/coding-agent/about-coding-agent) の詳細については、ドキュメントをご覧ください。
+
+
+フィードバックをお待ちしております。[コミュニティディスカッション](https://github.com/orgs/community/discussions/177494?utm_source=changelog-discussion-post-ccaintegration-linear&utm_medium=changelog&utm_campaign=universe25) で考えを共有してください。

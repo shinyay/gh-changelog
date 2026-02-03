@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "startDate",
+      "type": "promptString",
+      "description": "Start date (YYYY-MM-DD)",
+      "default": "2025-10-27"
+    },
+    {
+      "id": "endDate",
+      "type": "promptString",
+      "description": "End date (YYYY-MM-DD)",
+      "default": "2026-01-30"
+    }
+  ],
+  "tasks": [
+    {
+      "label": "Changelog: fetch range (use API)",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/fetch_changelog.py",
+        "--use-api",
+        "--start-date",
+        "${input:startDate}",
+        "--end-date",
+        "${input:endDate}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Changelog: validate AI outputs",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/validate_ai_outputs.py"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Changelog: list missing AI sidecars",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/list_missing_ai_sidecars.py"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

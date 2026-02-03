@@ -1,0 +1,79 @@
+---
+title: "C++ code editing tools for GitHub Copilot in public preview"
+date: "2025-12-16"
+type: "new releases"
+labels: ["copilot"]
+author: "Allison"
+source_url: "https://github.blog/changelog/2025-12-16-c-code-editing-tools-for-github-copilot-in-public-preview"
+fetched_at: "2026-02-03T14:40:05.517759Z"
+---
+
+# C++ code editing tools for GitHub Copilot in public preview
+
+## Overview
+C++ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release. These tools extend Copilot’s ability to understand and modify C++ code at scale by providing deep symbol awareness for reliable multi-file editing support.
+
+## Detailed Explanation
+### Overview
+- C++ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release. These tools extend Copilot’s ability to understand and modify C++ code at scale by providing deep symbol awareness for reliable multi-file editing support.
+- The C++ code editing tools provide rich semantic data for any symbol in your project, enabling Copilot agent mode to
+- View all references across a codebase.
+- Understand symbol type, declaration, scope, and other metadata.
+- Visualize class inheritance hierarchies.
+- Trace function call chains.
+
+### How to get started
+- Open your C++ project in Visual Studio 2026 Insiders.
+- Go to Tools > Options , GitHub > Copilot and enable the C++ code editing tools a.  You may need to close and reopen your solution after enabling
+- Open Copilot Chat and use the Tools icon to enable the specific C++ tools.
+- GitHub Copilot can then call upon these tools to provide more accurate and context-aware code suggestions, making your coding experience smoother and more efficient. For example, these tools can help you make updates across all instances of a function if you are adding new functionality or updating parameters.
+- For best results, use a model optimized for tool calling and provide clear, specific prompts with explicit symbols when possible.
+
+### Tell us your feedback
+- To submit feedback, please report problems or suggest improvements through the Visual Studio feedback icon.
+
+## Impact / Who’s Affected
+- C++ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release.
+
+## Article Content (cleaned)
+C\+\+ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release. These tools extend Copilot’s ability to understand and modify C\+\+ code at scale by providing deep symbol awareness for reliable multi\-file editing support.
+
+
+The C\+\+ code editing tools provide rich semantic data for any symbol in your project, enabling Copilot agent mode to
+
+
+* View all references across a codebase.
+* Understand symbol type, declaration, scope, and other metadata.
+* Visualize class inheritance hierarchies.
+* Trace function call chains.
+
+
+## [How to get started](#how-to-get-started)
+
+
+1. Open your C\+\+ project in Visual Studio 2026 Insiders.
+2. Go to **Tools** \> **Options**, **GitHub** \> **Copilot** and enable the C\+\+ code editing tools  
+
+a. You may need to close and reopen your solution after enabling
+3. Open Copilot Chat and use the **Tools** icon to enable the specific C\+\+ tools.
+
+
+![The C++ code editing tools that GitHub Copilot can call in Visual Studio's agent mode, including get_Symbol_references, get_symbol_info, and other C++ language service operations](https://github.com/user-attachments/assets/19c78848-466f-4bac-be64-08347ef1eb68)
+
+
+GitHub Copilot can then call upon these tools to provide more accurate and context\-aware code suggestions, making your coding experience smoother and more efficient. For example, these tools can help you make updates across all instances of a function if you are adding new functionality or updating parameters.
+
+
+![An example of C++ code editing tools helping out a prompt by getting relevant symbol information and references](https://github.com/user-attachments/assets/3b98c50c-38a6-4d35-88de-15c394cb1c1c)
+
+
+For best results, use a model optimized for tool calling and provide clear, specific prompts with explicit symbols when possible.
+
+
+## [Tell us your feedback](#tell-us-your-feedback)
+
+
+To submit feedback, please report problems or suggest improvements through the Visual Studio feedback icon.
+
+
+![Visual Studio feedback icon with a pull down menu showing options for submitting bug reports and suggestions](https://github.com/user-attachments/assets/b9738f4b-7bfd-47a6-8c0d-9b8e911f847d)

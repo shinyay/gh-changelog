@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/changelog_ai_analysis.schema.json",
+  "title": "Changelog AI Analysis",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "overview",
+    "detailed_explanation",
+    "key_changes",
+    "impact",
+    "caveats",
+    "insights",
+    "confidence"
+  ],
+  "properties": {
+    "overview": { "type": "string", "minLength": 1 },
+    "detailed_explanation": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "bullets"],
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "bullets": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 12,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "key_changes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "impact": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "caveats": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "insights": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

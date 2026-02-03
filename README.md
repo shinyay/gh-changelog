@@ -1,23 +1,42 @@
-# Title
+# gh-changelog
 
-## Description
+Fetch GitHub Changelog entries for a date range and generate a local Markdown archive under `./changelogs/`.
 
-## Demo
+This repo is designed to be driven from **VS Code GitHub Copilot Chat** with high reproducibility:
 
-## Features
+- Fetch entries via the Python fetcher script.
+- Generate an AI deep dive as **strict JSON** (sidecar files) validated against a JSON schema.
+- Keep the Markdown output consistent and scannable.
 
-- feature:1
-- feature:2
+## What gets generated
 
-## Requirement
+- `changelogs/YYYY-MM-DD-<slug>.md`
+- `changelogs/index.md`
+- `changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
 
-## Usage
+## How to use from Copilot Chat
+
+- Repo-level instructions live in `.github/copilot-instructions.md`.
+- Use the prompt `.github/prompts/fetch_changelog_range.prompt.md` and provide a date range (YYYY-MM-DD to YYYY-MM-DD).
+
+After fetching, generate AI sidecar JSON for each entry using `.github/prompts/changelog_deep_dive_json.prompt.md` and save it under `changelogs/_ai/`.
+
+You can check which entries still need AI sidecars by running the task "Changelog: list missing AI sidecars".
+
+## Tasks (optional)
+
+This repo includes VS Code tasks in `.vscode/tasks.json`:
+
+- "Changelog: fetch range (use API)"
+- "Changelog: validate AI outputs"
 
 ## Installation
 
-## References
+Create/activate your venv, then install dependencies from `requirements.txt`.
 
-## Licence
+On Linux, use `python3` (the `python` shim may not be installed by default).
+
+## License
 
 Released under the [MIT license](https://gist.githubusercontent.com/shinyay/56e54ee4c0e22db8211e05e70a63247e/raw/f3ac65a05ed8c8ea70b653875ccac0c6dbc10ba1/LICENSE)
 

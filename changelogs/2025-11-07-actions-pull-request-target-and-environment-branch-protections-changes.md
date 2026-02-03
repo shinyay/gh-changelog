@@ -1,0 +1,128 @@
+---
+title: "Actions pull_request_target and environment branch protections changes"
+date: "2025-11-07"
+type: "improvements"
+labels: ["actions"]
+author: "Allison"
+source_url: "https://github.blog/changelog/2025-11-07-actions-pull_request_target-and-environment-branch-protections-changes"
+fetched_at: "2026-02-03T14:40:06.198112Z"
+---
+
+# Actions pull_request_target and environment branch protections changes
+
+## Overview
+GitHub is updating how GitHub Actions’ pull_request_target and environment branch protection rules are evaluated for pull-request-related events.
+
+## Detailed Explanation
+### Overview
+- GitHub is updating how GitHub Actions’ pull_request_target and environment branch protection rules are evaluated for pull-request-related events.
+- These changes will take effect on 12/8/2025. They aim to reduce security critical edge cases in how these events operate on user-controlled branches that may result in unexpected execution of user-supplied workflow code or execution with environment secrets.
+
+### What is changing?
+- The pull_request_target event now always uses the default branch for workflow source and reference:
+- The workflow file and checkout commit will always be taken from the repository’s default branch, regardless of the pull request’s base branch. This prevents outdated—and potentially vulnerable—workflows on other branches within the repository from being executed in these events.
+- GITHUB_REF for pull_request_target will resolve to the default branch, and GITHUB_SHA will point to the latest commit on that branch. This aligns ref semantics with the security model and closes a known class of vulnerabilities where untrusted names or branches could influence evaluation.
+- Previously, any branch within the parent repository set as the base branch of a pull request could have been used as the source of the executed workflow ( GITHUB_REF / GITHUB_SHA ) and could result in the execution of outdated workflows. Historically, this behavior has led to the exploitation of outdated workflows that contained vulnerabilities in pull_request_target workflows that were presumed to be remediated since they were fixed in the default branch. This change will ensure only the default branch of the repository can be used as the workflow source that is executed for these events, enabling remediation of vulnerabilities in pull_request_target workflows in a way that better aligns with developers’ expectations on vulnerability remediation and without the need to update all outdated branches in the repository.
+- While this change helps enable the remediation of vulnerabilities in pull_request_target workflows in a repository, it is important to note that the use of pull_request_target events in combination with pull requests from forks has an increased risk. pull_request_target events execute based on user-supplied pull requests, which can come from external forks, and are executed with access to action secrets. Given this attack surface, care should be taken to avoid action workflow vulnerabilities and to ensure untrusted code or input is not being used in a way that could influence execution. GitHub’s code scanning with CodeQL can be used to identify vulnerabilities in action workflows and is free for all public repositories.
+- Another change is that environment branch protection rules for pull request events evaluate against the executing reference:
+- To prevent unintended access to environment secrets during pull request workflows, environment branch protection rules will evaluate against the execution reference ( GITHUB_REF ), not the pull request head ( HEAD_REF ).
+- For pull_request , pull_request_review , and pull_request_review_comment , environment rules evaluate against refs/pull/number/merge . This matches the merge commit context those events use during execution.
+- For pull_request_target , environment rules evaluate against the default branch. This is consistent with the updated GITHUB_REF and ensures policy checks occur against a trusted ref.
+
+### Breaking changes and impact
+- Workflows that rely on environment branch protection rules with pull request triggers may stop matching previous branch patterns because evaluation now occurs on refs/pull/number/merge for pull_request family events and on the default branch for pull_request_target . Update environment branch filters accordingly.
+
+### What you should do
+- Assess your usage of pull_request_target and use it only when necessary:
+- Ensure user-controlled input or code cannot influence execution in a way that runs untrusted code.
+- If your workflow does not require elevated permissions or access to secrets, use pull_request instead.
+- Restrict permissions granted to these workflows. Configure the default token permissions to read-only or apply least-privilege settings in the workflow.
+- Enable code scanning to have CodeQL scan your action workflows for common vulnerabilities.
+- If your workflows use environments with branch protection rules and are triggered by pull request events:
+- Update environment branch filters for pull_request , add patterns like refs/pull/number/merge . For pull_request_target , add the repository’s default branch.
+- Consider alternative workflow triggers to continue using your existing branch protection rules or alternative branch protection rules to continue using your existing workflow triggers.
+- As a last resort, disable environment branch protection rules used by pull request jobs, recognizing the trade-off in secret exposure risk.
+
+### How to give feedback
+- If you have any feedback or questions, feel free to drop a comment in our Community discussion .
+
+## Key Changes
+- Workflows that rely on environment branch protection rules with pull request triggers may stop matching previous branch patterns because evaluation now occurs on refs/pull/number/merge for pull_request family events and on the default branch for pull_request_target . Update environment branch filters accordingly.
+
+## Impact / Who’s Affected
+- This change will ensure only the default branch of the repository can be used as the workflow source that is executed for these events, enabling remediation of vulnerabilities in pull_request_target workflows in a way that better aligns with developers’ expectations on vulnerability remediation and without the need to update all outdated branches in the repository.
+- What you should do Assess your usage of pull_request_target and use it only when necessary: Ensure user-controlled input or code cannot influence execution in a way that runs untrusted code.
+- Configure the default token permissions to read-only or apply least-privilege settings in the workflow.
+
+## Caveats / Limitations
+- This change will ensure only the default branch of the repository can be used as the workflow source that is executed for these events, enabling remediation of vulnerabilities in pull_request_target workflows in a way that better aligns with developers’ expectations on vulnerability remediation and without the need to update all outdated branches in the repository.
+- While this change helps enable the remediation of vulnerabilities in pull_request_target workflows in a repository, it is important to note that the use of pull_request_target events in combination with pull requests from forks has an increased risk. pull_request_target events execute based on user-supplied pull requests, which can come from external forks, and are executed with access to action secrets.
+- What you should do Assess your usage of pull_request_target and use it only when necessary: Ensure user-controlled input or code cannot influence execution in a way that runs untrusted code.
+- Configure the default token permissions to read-only or apply least-privilege settings in the workflow.
+
+## Insights (derived from article language)
+- While this change helps enable the remediation of vulnerabilities in pull_request_target workflows in a repository, it is important to note that the use of pull_request_target events in combination with pull requests from forks has an increased risk. pull_request_target events execute based on user-supplied pull requests, which can come from external forks, and are executed with access to action secrets.
+- What you should do Assess your usage of pull_request_target and use it only when necessary: Ensure user-controlled input or code cannot influence execution in a way that runs untrusted code.
+- Consider alternative workflow triggers to continue using your existing branch protection rules or alternative branch protection rules to continue using your existing workflow triggers.
+
+## Article Content (cleaned)
+GitHub is updating how GitHub Actions’ `pull_request_target` and environment branch protection rules are evaluated for pull\-request\-related events.
+
+
+These changes will take effect on 12/8/2025\. They aim to reduce security critical edge cases in how these events operate on user\-controlled branches that may result in unexpected execution of user\-supplied workflow code or execution with environment secrets.
+
+
+### [What is changing?](#what-is-changing)
+
+
+The `pull_request_target` event now always uses the default branch for workflow source and reference:
+
+
+* The workflow file and checkout commit will always be taken from the repository’s default branch, regardless of the pull request’s base branch. This prevents outdated—and potentially vulnerable—workflows on other branches within the repository from being executed in these events.
+* `GITHUB_REF` for `pull_request_target` will resolve to the default branch, and `GITHUB_SHA` will point to the latest commit on that branch. This aligns ref semantics with the security model and closes a known class of vulnerabilities where untrusted names or branches could influence evaluation.
+
+
+Previously, any branch within the parent repository set as the base branch of a pull request could have been used as the source of the executed workflow (`GITHUB_REF`/`GITHUB_SHA`) and could result in the execution of outdated workflows. Historically, this behavior has led to the exploitation of outdated workflows that contained vulnerabilities in `pull_request_target` workflows that were presumed to be remediated since they were fixed in the default branch. This change will ensure only the default branch of the repository can be used as the workflow source that is executed for these events, enabling remediation of vulnerabilities in `pull_request_target` workflows in a way that better aligns with developers’ expectations on vulnerability remediation and without the need to update all outdated branches in the repository.
+
+
+While this change helps enable the remediation of vulnerabilities in `pull_request_target` workflows in a repository, it is important to note that the use of `pull_request_target` events in combination with pull requests from forks has an increased risk. `pull_request_target` events execute based on user\-supplied pull requests, which can come from external forks, and are executed with access to action secrets. Given this attack surface, care should be taken to avoid [action workflow vulnerabilities](https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/) and to ensure untrusted code or input is not being used in a way that could influence execution. GitHub’s code scanning with CodeQL can be used to [identify vulnerabilities in action workflows](https://github.blog/changelog/2025-04-22-github-actions-workflow-security-analysis-with-codeql-is-now-generally-available/) and is free for all public repositories.
+
+
+Another change is that environment branch protection rules for pull request events evaluate against the executing reference:
+
+
+* To prevent unintended access to environment secrets during pull request workflows, environment branch protection rules will evaluate against the execution reference (`GITHUB_REF`), not the pull request head (`HEAD_REF`).
+* For `pull_request`, `pull_request_review`, and `pull_request_review_comment`, environment rules evaluate against `refs/pull/number/merge`. This matches the merge commit context those events use during execution.
+* For `pull_request_target`, environment rules evaluate against the default branch. This is consistent with the updated `GITHUB_REF` and ensures policy checks occur against a trusted ref.
+
+
+### [Breaking changes and impact](#breaking-changes-and-impact)
+
+
+Workflows that rely on environment branch protection rules with pull request triggers may stop matching previous branch patterns because evaluation now occurs on `refs/pull/number/merge` for `pull_request` family events and on the default branch for `pull_request_target`. Update environment branch filters accordingly.
+
+
+### [What you should do](#what-you-should-do)
+
+
+Assess your usage of `pull_request_target` and use it only when necessary:
+
+
+* Ensure user\-controlled input or code cannot influence execution in a way that runs untrusted code.
+* If your workflow does not require elevated permissions or access to secrets, use `pull_request` instead.
+* Restrict permissions granted to these workflows. Configure the default token [permissions](https://docs.github.com/actions/security-guides/automatic-token-authentication#modifying-the-permissions-for-the-github_token.) to read\-only or apply least\-privilege settings in the workflow.
+* Enable code scanning to have [CodeQL](https://docs.github.com/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/about-code-scanning) scan your action workflows for common vulnerabilities.
+
+
+If your workflows use environments with branch protection rules and are triggered by pull request events:
+
+
+* Update environment branch filters for `pull_request`, add patterns like `refs/pull/number/merge`. For `pull_request_target`, add the repository’s default branch.
+* Consider alternative workflow triggers to continue using your existing branch protection rules or alternative branch protection rules to continue using your existing workflow triggers.
+* As a last resort, disable environment branch protection rules used by pull request jobs, recognizing the trade\-off in secret exposure risk.
+
+
+### [How to give feedback](#how-to-give-feedback)
+
+
+If you have any feedback or questions, feel free to drop a comment in our [Community discussion](https://github.com/orgs/community/discussions/179107).

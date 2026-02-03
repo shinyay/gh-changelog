@@ -1,0 +1,66 @@
+---
+title: "Unaffiliated users for GHEC accounts now generally available"
+date: "2025-10-28"
+type: "new releases"
+labels: ["account management", "enterprise management tools", "universe25"]
+author: "Allison"
+source_url: "https://github.blog/changelog/2025-10-28-unaffiliated-users-for-ghec-accounts-now-generally-available"
+fetched_at: "2026-02-03T14:40:06.643738Z"
+---
+
+# Unaffiliated users for GHEC accounts now generally available
+
+## Overview
+All GitHub Enterprise Cloud enterprises now have access to unaffiliated users. An unaffiliated user is an enterprise member who belongs to the enterprise but does not have an association to any organization in the enterprise. These users can be licensed to Copilot Business without that organization association .
+
+## Detailed Explanation
+### Overview
+- All GitHub Enterprise Cloud enterprises now have access to unaffiliated users. An unaffiliated user is an enterprise member who belongs to the enterprise but does not have an association to any organization in the enterprise. These users can be licensed to Copilot Business without that organization association .
+- Note : Enterprises with Enterprise Managed Users (EMU) have no new changes with this release.
+- For enterprises not using EMU, enterprise owners can now invite users directly to their enterprise account. These users will not have access to organizations or licenses by default, but can later be assigned to an enterprise team, an organization, or a Copilot Business license. Unaffiliated users have no access to private or internal repositories, but can continue to have Copilot Business licenses assigned at the enterprise level or belong to enterprise teams.
+- Important change to offboarding : When a user is removed from all organizations, they will now remain in the enterprise as an unaffiliated user. If they are assigned to a Copilot Business license directly through the enterprise account or through an enterprise team, this relationship will persist until the user is removed from the enterprise itself.
+- Enterprise owners can configure this behavior under Policies > Member Privileges > Unaffiliated users in your enterprise settings . You can choose one of the following options:
+- Keep users in the enterprise as unaffiliated users. This is the current default behavior.
+- Automatically remove them from the enterprise. This was the previous default behavior.
+- If you select automatic removal, you’ll also have the option to remove any existing unaffiliated users from your enterprise.
+- Alternatively, to manually offboard users, you’ll need to take the remove from enterprise action in the “People” view or create automation using our remove enterprise member graphql API . This is required even if you have SCIM configured at the organization level.
+- To learn more, read our documentation about unaffiliated users or the changelog for Copilot Business licensing experience in enterprise accounts.
+- Join the discussion within GitHub Community .
+
+## Caveats / Limitations
+- Note : Enterprises with Enterprise Managed Users (EMU) have no new changes with this release.
+- Important change to offboarding : When a user is removed from all organizations, they will now remain in the enterprise as an unaffiliated user.
+
+## Insights (derived from article language)
+- To learn more, read our documentation about unaffiliated users or the changelog for Copilot Business licensing experience in enterprise accounts.
+
+## Article Content (cleaned)
+All GitHub Enterprise Cloud enterprises now have access to unaffiliated users. An unaffiliated user is an enterprise member who belongs to the enterprise but does not have an association to any organization in the enterprise. These users can be [licensed to Copilot Business without that organization association](https://docs.github.com/enterprise-cloud@latest/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-access/grant-access#assigning-licenses?utm_source=changelog-docs-unaffiliated-ghec-accounts&utm_medium=changelog&utm_campaign=universe25).
+
+
+**Note**: Enterprises with Enterprise Managed Users (EMU) have no new changes with this release.
+
+
+For enterprises not using EMU, enterprise owners can now invite users directly to their enterprise account. These users will not have access to organizations or licenses by default, but can later be assigned to an enterprise team, an organization, or a Copilot Business license. Unaffiliated users have no access to private or internal repositories, but can continue to have Copilot Business licenses assigned at the enterprise level or belong to enterprise teams.
+
+
+**Important change to offboarding**: When a user is removed from all organizations, they will now remain in the enterprise as an unaffiliated user. If they are assigned to a Copilot Business license directly through the enterprise account or through an enterprise team, this relationship will persist until the user is removed from the enterprise itself.
+
+
+Enterprise owners can configure this behavior under **Policies** \> **Member Privileges** \> **Unaffiliated users in your enterprise settings**. You can choose one of the following options:
+
+
+* Keep users in the enterprise as unaffiliated users. This is the current default behavior.
+* Automatically remove them from the enterprise. This was the previous default behavior.
+
+
+If you select automatic removal, you’ll also have the option to remove any existing unaffiliated users from your enterprise.
+
+
+Alternatively, to manually offboard users, you’ll need to take the [remove from enterprise action](https://docs.github.com/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/removing-a-member-from-your-enterprise?utm_source=changelog-docs-unaffiliated-ghec-accounts&utm_medium=changelog&utm_campaign=universe25) in the “People” view or create automation using our [remove enterprise member graphql API](https://docs.github.com/enterprise-cloud@latest/graphql/reference/mutations#removeenterprisemember?utm_source=changelog-docs-unaffiliated-ghec-accounts&utm_medium=changelog&utm_campaign=universe25). This is required even if you have SCIM configured at the organization level.
+
+
+To learn more, read [our documentation about unaffiliated users](https://docs.github.com/enterprise-cloud@latest/admin/managing-accounts-and-repositories/managing-users-in-your-enterprise/abilities-of-roles#unaffiliated-users?utm_source=changelog-docs-unaffiliated-ghec-accounts&utm_medium=changelog&utm_campaign=universe25) or the changelog for Copilot Business licensing experience in enterprise accounts.
+
+
+Join the discussion within [GitHub Community](https://github.com/orgs/community/discussions/177230?utm_source=changelog-community-unaffiliated-ghec-accounts&utm_medium=changelog&utm_campaign=universe25).

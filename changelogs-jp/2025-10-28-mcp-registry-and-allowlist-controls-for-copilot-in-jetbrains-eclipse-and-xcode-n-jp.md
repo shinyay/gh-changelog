@@ -164,26 +164,3 @@ MCP レジストリは、Model Context Protocol (MCP) サーバーのディレ�
 3. オプションで、カスタムレジストリを使用するには、**URL を編集**をクリックします。
 
 
-## [Installation](#installation)
-
-
-JetBrains 向け Copilot の最新 nightly リリース、および Eclipse と Xcode 向け Copilot のプレリリースバージョンでこれを試すことができます。次のいずれかの場所からインストールしてください:
-
-
-* [GitHub Copilot for JetBrains IDEs (nightly)](http://aka.ms/copilot-jb-mcpreg-allowlist-preview)
-* [GitHub Copilot for Eclipse (prerelease)](https://aka.ms/copilot-ecl-mcpreg-allowlist-preview)
-* [GitHub Copilot for Xcode (prerelease)](http://aka.ms/copilot-xd-mcpreg-allowlist-preview)
-
-
-また、有効な [Copilot ライセンス](https://github.com/features/copilot?utm_source=changelog-copilot-mcp-registry-allowlist&utm_medium=changelog&utm_campaign=universe25)も必要です。
-
-
-## [Share your feedback](#share-your-feedback)
-
-
-フィードバックをお待ちしています! 以下のチャネルを通じて体験を共有してください:
-
-
-* [GitHub Copilot for JetBrains IDEs](https://github.com/microsoft/copilot-intellij-feedback/issues?utm_source=changelog-jetbrains-mcp-registry-allowlist&utm_medium=changelog&utm_campaign=universe25)
-* [GitHub Copilot for Eclipse](https://github.com/microsoft/copilot-eclipse-feedback/issues?utm_source=changelog-eclipse-mcp-registry-allowlist&utm_medium=changelog&utm_campaign=universe25)
-* [GitHub Copilot for Xcode](https://github.com/github/CopilotForXcode/issues?utm_source=changelog-xcode-mcp-registry-allowlist&utm_medium=changelog&utm_campaign=universe25)

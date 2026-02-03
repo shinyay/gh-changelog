@@ -63,21 +63,3 @@ lang: "ja"
 `/agent` スラッシュコマンドでエージェントを明示的に対話的に呼び出すことができます。カスタムエージェントは Copilot のツールとしても利用可能になり、必要に応じてモデルが関連するカスタムエージェントを使用して新しいエージェントループを開始します。
 
 
-## [GitHub Copilot CLI から Copilot コーディングエージェントにタスクを委任](#delegate-tasks-to-copilot-coding-agent-from-github-copilot-cli)
-
-
-[Copilot コーディングエージェント](https://docs.github.com/copilot/concepts/agents/coding-agent/about-coding-agent?utm_source=changelog-docs-copilot-cli&utm_medium=changelog&utm_campaign=universe25) は、非同期で自律的なバックグラウンドエージェントです。GitHub Copilot CLI から `/delegate TASK-DESCRIPTION` スラッシュコマンドを実行すると、ステージされていない変更が新しいブランチにコミットされます。その後、Copilot コーディングエージェントがドラフトプルリクエストを開き、バックグラウンドで変更を加え、レビューをリクエストします。Copilot は、このプロセスが始まるとターミナルでプルリクエストとコーディングエージェントのセッションへのリンクを提供します。
-
-
-## [ストリーミング、並列ツール呼び出し、パフォーマンス向上](#streaming-parallel-tool-calling-improved-performance)
-
-
-* Copilot の出力がトークンごとにターミナルにストリーミングされ、よりスナップ感のあるフィードバックを提供します。
-* Copilot は複数のツール呼び出しを並列実行でき、より複雑なタスクの完了時間を短縮します。
-* GitHub Copilot CLI の継続的なパフォーマンス改善を行い、アプリケーションのメモリフットプリントの削減と画面のちらつきバグの修正を含みます。
-
-
-## [フィードバックの共有](#share-your-feedback)
-
-
-ターミナルで `npm install -g @github/copilot@latest` を実行して GitHub Copilot CLI を更新してください。`/feedback` コマンドや [パブリックリポジトリ](https://github.com/github/copilot-cli?utm_source=changelog-copilot-cli&utm_medium=changelog&utm_campaign=universe25) への issue のオープンを通じてフィードバックを提出してくださった皆様に感謝します。継続的なフィードバックは、日々改善を続ける上で非常に貴重です。

@@ -1,0 +1,63 @@
+{
+  "overview": "CodeQL is the static analysis engine behind GitHub’s Code Scanning and Code Quality products, which find and remediate issues relating to code quality and security. We’ve recently released CodeQL 2.23.7 and 2.23.8 . These releases bring new security queries for Go and Rust, improved overall analysis accuracy, and framework updates across several languages.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "CodeQL is the static analysis engine behind GitHub’s Code Scanning and Code Quality products, which find and remediate issues relating to code quality and security. We’ve recently released CodeQL 2.23.7 and 2.23.8 . These releases bring new security queries for Go and Rust, improved overall analysis accuracy, and framework updates across several languages."
+      ]
+    },
+    {
+      "title": "Query changes",
+      "bullets": [
+        "Go",
+        "Added a new query, go/cookie-secure-not-set , to detect cookies without the Secure flag set, potentially leading to sensitive information exposure.",
+        "Added a new query, go/weak-crypto-algorithm , to detect the use of broken or weak cryptographic algorithms.",
+        "Added a new query, go/weak-sensitive-data-hashing , to detect the use of broken or weak cryptographic hash algorithms on sensitive data.",
+        "The go/cookie-http-only-not-set query has been promoted from the experimental query pack, to identify cookies that do not use the HttpOnly flag, potentially leading to cross-site scripting vulnerabilities.  This query was originally contributed by GitHub user @edvraa.",
+        "Rust",
+        "Added a new query, rust/xss , to detect cross-site scripting security vulnerabilities.",
+        "Added a new query, rust/disabled-certificate-check , to detect disabled TLS certificate checks.",
+        "Added three example queries ( rust/examples/empty-if , rust/examples/simple-sql-injection , and rust/examples/simple-constant-password ) to help you learn to write CodeQL queries for Rust."
+      ]
+    },
+    {
+      "title": "Language and framework support",
+      "bullets": [
+        "Java/Kotlin",
+        "Java analysis no longer forces --source and --target compiler flags for Maven builds. Maven will now use the project’s own compiler configuration, improving build compatibility.",
+        "Operations that extract only a fixed-length prefix or suffix of a string (like substring in Java or take in Kotlin), when limited to 7 characters or fewer, will now be treated as sanitizers for the java/sensitive-log query, given the contents of the log message will be truncated.",
+        "JavaScript/TypeScript",
+        "Fixed a bug in the Next.js model that caused the analysis to miss server-side taint sources in the app/pages folder.",
+        "Rust",
+        "The rust/access-invalid-pointer query has been improved with new flow sources and barriers.",
+        "C#",
+        "Compilation errors are now included in the debug log when using buildless analysis (which is used by default).",
+        "Added a new extractor option to specify a custom directory for dependency downloads in buildless mode.  Use -O buildless_dependency_dir=<path> to configure the target directory.",
+        "Python",
+        "Fixed a bug in the Python extractor’s import handling where failing to find an import in find_module would cause a KeyError to be raised. This is a contribution from GitHub user @akoeplinger to the open-source CodeQL repository."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Go",
+    "Added a new query, go/cookie-secure-not-set , to detect cookies without the Secure flag set, potentially leading to sensitive information exposure.",
+    "Added a new query, go/weak-crypto-algorithm , to detect the use of broken or weak cryptographic algorithms.",
+    "Added a new query, go/weak-sensitive-data-hashing , to detect the use of broken or weak cryptographic hash algorithms on sensitive data.",
+    "The go/cookie-http-only-not-set query has been promoted from the experimental query pack, to identify cookies that do not use the HttpOnly flag, potentially leading to cross-site scripting vulnerabilities.  This query was originally contributed by GitHub user @edvraa.",
+    "Rust",
+    "Added a new query, rust/xss , to detect cross-site scripting security vulnerabilities.",
+    "Added a new query, rust/disabled-certificate-check , to detect disabled TLS certificate checks.",
+    "Added three example queries ( rust/examples/empty-if , rust/examples/simple-sql-injection , and rust/examples/simple-constant-password ) to help you learn to write CodeQL queries for Rust."
+  ],
+  "impact": [
+    "The go/cookie-http-only-not-set query has been promoted from the experimental query pack, to identify cookies that do not use the HttpOnly flag, potentially leading to cross-site scripting vulnerabilities.",
+    "Operations that extract only a fixed-length prefix or suffix of a string (like substring in Java or take in Kotlin), when limited to 7 characters or fewer, will now be treated as sanitizers for the java/sensitive-log query, given the contents of the log message will be truncated."
+  ],
+  "caveats": [
+    "The go/cookie-http-only-not-set query has been promoted from the experimental query pack, to identify cookies that do not use the HttpOnly flag, potentially leading to cross-site scripting vulnerabilities.",
+    "Operations that extract only a fixed-length prefix or suffix of a string (like substring in Java or take in Kotlin), when limited to 7 characters or fewer, will now be treated as sanitizers for the java/sensitive-log query, given the contents of the log message will be truncated."
+  ],
+  "insights": [],
+  "confidence": 1.0
+}

@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-13-upcoming-deprecation-of-select-github-copilot-models-from-claude-and-openai"
-fetched_at: "2026-02-03T14:40:05.240497Z"
+fetched_at: "2026-02-03T14:50:54.806150Z"
 ---
 
 # Upcoming deprecation of select GitHub Copilot models from Claude, Google, and OpenAI

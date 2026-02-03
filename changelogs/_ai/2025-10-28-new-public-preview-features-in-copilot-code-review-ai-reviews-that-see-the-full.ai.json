@@ -1,0 +1,59 @@
+{
+  "overview": "Copilot code review (CCR) now blends LLM detections and tool calling with deterministic tools like ESLint and CodeQL, delivering smarter reviews and a seamless handoff to the Copilot coding agent for fixes.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot code review (CCR) now blends LLM detections and tool calling with deterministic tools like ESLint and CodeQL, delivering smarter reviews and a seamless handoff to the Copilot coding agent for fixes."
+      ]
+    },
+    {
+      "title": "Rich context with tool calling 🧰",
+      "bullets": [
+        "CCR now leverages agentic tool calling to actively gather full project context, including code, directory structure, and references. This enables CCR to understand how your changes fit within the broader project architecture.",
+        "💡 Why it matters: Feedback is specific, accurate, and with less noise, helping you ship cleaner code faster."
+      ]
+    },
+    {
+      "title": "New deterministic detections with CodeQL and ESLint🕵️‍♀️",
+      "bullets": [
+        "CCR will soon integrate CodeQL and leading linters (starting with ESLint) to combine semantic analysis and classic rule-based checks. This fusion of LLM intelligence and deterministic precision will deliver high-signal, consistent findings for security and quality.",
+        "💡 Why it matters: Developers can trust that critical issues, from security vulnerabilities to maintainability problems, are reliably caught and clearly explained.",
+        "Editor’s note (October 31, 2025): Updated the why it matters description."
+      ]
+    },
+    {
+      "title": "Seamless handoff to Copilot coding agent 🤝",
+      "bullets": [
+        "You can now hand off suggested changes directly to the Copilot coding agent . Mention @copilot in your pull request, and CCR will automatically apply the suggested fixes in a stacked pull request, ready for you to review and merge.",
+        "💡 Why it matters: Less manual cleanup and fewer review cycles. So you stay focused on higher-value engineering work.",
+        "[Demo video: Use of implement suggestion button from CCR comment]"
+      ]
+    },
+    {
+      "title": "Customizable workflows and editor availability 🛠️",
+      "bullets": [
+        "With customizable workflows and multi-editor support already generally available, CCR now fits seamlessly into every step of your development process, from writing code to reviewing and merging.",
+        "Teams can define their own review standards and tone through instructions.md or copilot-instructions.md files, shaping what CCR prioritizes (e.g., test coverage, performance, or readability). CCR is available in VS Code, Visual Studio, JetBrains, Xcode, and on github.com, ensuring consistent feedback wherever you work.",
+        "💡 Why it matters: CCR adapts to your team’s standards and meets you where you work."
+      ]
+    },
+    {
+      "title": "Getting started 🚀",
+      "bullets": [
+        "Tool calling and deterministic detections are in public preview, enabled by default for Copilot Pro and Copilot Pro Plus users. Copilot Business and Copilot Enterprise users can opt in using the Copilot code review policies.",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "So you stay focused on higher-value engineering work. [Demo video: Use of implement suggestion button from CCR comment] Customizable workflows and editor availability 🛠️ With customizable workflows and multi-editor support already generally available, CCR now fits seamlessly into every step of your development process, from writing code to reviewing and merging.",
+    "Getting started 🚀 Tool calling and deterministic detections are in public preview, enabled by default for Copilot Pro and Copilot Pro Plus users."
+  ],
+  "caveats": [
+    "Editor’s note (October 31, 2025): Updated the why it matters description."
+  ],
+  "insights": [],
+  "confidence": 0.9000000000000001
+}

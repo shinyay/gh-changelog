@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-github-enterprise-cloud-data-residency-in-japan-is-generally-available"
-fetched_at: "2026-02-03T14:40:05.326776Z"
+fetched_at: "2026-02-03T14:50:54.862536Z"
 ---
 
 # GitHub Enterprise Cloud data residency in Japan is generally available

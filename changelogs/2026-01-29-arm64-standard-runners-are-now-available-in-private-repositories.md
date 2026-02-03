@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-arm64-standard-runners-are-now-available-in-private-repositories"
-fetched_at: "2026-02-03T14:40:04.791833Z"
+fetched_at: "2026-02-03T14:50:49.323999Z"
 ---
 
 # arm64 standard runners are now available in private repositories

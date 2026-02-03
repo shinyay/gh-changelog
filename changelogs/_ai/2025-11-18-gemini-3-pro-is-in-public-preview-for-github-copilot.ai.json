@@ -1,0 +1,41 @@
+{
+  "overview": "Gemini 3 Pro, Google’s latest frontier model, is now rolling out and will be available in GitHub Copilot Pro, Pro+ Business, and Enterprise subscriptions. Rollout will be gradual. Check back soon if you don’t see it yet.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Gemini 3 Pro, Google’s latest frontier model, is now rolling out and will be available in GitHub Copilot Pro, Pro+ Business, and Enterprise subscriptions. Rollout will be gradual. Check back soon if you don’t see it yet.",
+        "How it works",
+        "You’ll be able to select the model in the Copilot Chat model picker from:",
+        "VS Code in Agent, Plan, Ask, and Edit mode",
+        "github.com",
+        "GitHub Mobile iOS and Android",
+        "GitHub CLI"
+      ]
+    },
+    {
+      "title": "Enabling access",
+      "bullets": [
+        "Enterprise and Business plans : Administrators must enable the Gemini 3 Pro policy in Copilot settings. Once enabled, users in that organization will see Gemini 3 Pro in supported surfaces.",
+        "Pro and Pro+ plans : Enable by selecting the model in the Visual Studio Code picker and confirming the one-time prompt.",
+        "Bring your own key : Select Manage Models from the picker, choose Gemini 3 Pro, and enter your API key when prompted.",
+        "Pro and Pro+ plans : Enable by selecting the model in the Visual Studio Code picker and confirming the one-time prompt.",
+        "Bring your own key : Select Manage Models from the picker, choose Gemini 3 Pro, and enter your API key when prompted."
+      ]
+    },
+    {
+      "title": "Learn more and share feedback",
+      "bullets": [
+        "To explore all models available in GitHub Copilot, see our documentation .",
+        "Join the GitHub Community to share your feedback."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more and share feedback To explore all models available in GitHub Copilot, see our documentation ."
+  ],
+  "confidence": 0.8
+}

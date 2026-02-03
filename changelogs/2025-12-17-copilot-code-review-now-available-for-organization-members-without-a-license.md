@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-17-copilot-code-review-now-available-for-organization-members-without-a-license"
-fetched_at: "2026-02-03T14:40:05.399580Z"
+fetched_at: "2026-02-03T14:50:54.885119Z"
 ---
 
 # Copilot code review now available for organization members without a license

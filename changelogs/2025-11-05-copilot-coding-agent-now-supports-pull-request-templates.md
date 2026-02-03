@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-05-copilot-coding-agent-now-supports-pull-request-templates"
-fetched_at: "2026-02-03T14:40:06.282576Z"
+fetched_at: "2026-02-03T14:50:55.412698Z"
 ---
 
 # Copilot coding agent now supports pull request templates

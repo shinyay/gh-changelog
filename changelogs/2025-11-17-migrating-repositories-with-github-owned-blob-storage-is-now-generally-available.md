@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-17-migrating-repositories-with-github-owned-blob-storage-is-now-generally-available"
-fetched_at: "2026-02-03T14:40:06.066101Z"
+fetched_at: "2026-02-03T14:50:55.266030Z"
 ---
 
 # Migrating repositories with GitHub-owned blob storage is now generally available

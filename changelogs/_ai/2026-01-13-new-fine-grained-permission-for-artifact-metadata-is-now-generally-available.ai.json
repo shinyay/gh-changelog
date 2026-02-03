@@ -1,0 +1,30 @@
+{
+  "overview": "GitHub has introduced a new artifact_metadata permission to give you more precise control over API access to artifact-related metadata. This permission replaces the broader contents:read and contents:write permissions for the artifact metadata APIs .",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub has introduced a new artifact_metadata permission to give you more precise control over API access to artifact-related metadata. This permission replaces the broader contents:read and contents:write permissions for the artifact metadata APIs .",
+        "Transition any workflows currently using the contents permission for artifact metadata APIs to the new artifact_metadata permission before February 3, 2026, when support for the old permission will be deprecated."
+      ]
+    },
+    {
+      "title": "Learn more",
+      "bullets": [
+        "Artifact metadata APIs documentation",
+        "Repository permissions for artifact metadata",
+        "Actions permissions reference",
+        "How artifact metadata improves security alerts"
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Transition any workflows currently using the contents permission for artifact metadata APIs to the new artifact_metadata permission before February 3, 2026, when support for the old permission will be deprecated."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn more Artifact metadata APIs documentation Repository permissions for artifact metadata Actions permissions reference How artifact metadata improves security alerts"
+  ],
+  "confidence": 0.8500000000000001
+}

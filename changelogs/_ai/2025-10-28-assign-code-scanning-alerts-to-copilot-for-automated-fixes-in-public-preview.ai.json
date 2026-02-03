@@ -1,0 +1,36 @@
+{
+  "overview": "You can now assign GitHub code scanning alerts directly to Copilot to assist with automated remediation. This extends Copilot coding agent capabilities to security vulnerabilities, enabling faster resolution of common issues.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now assign GitHub code scanning alerts directly to Copilot to assist with automated remediation. This extends Copilot coding agent capabilities to security vulnerabilities, enabling faster resolution of common issues.",
+        "Copilot coding agent works alongside Copilot Autofix to reduce the time developers spend planning and implementing security fixes. First, generate an autofix suggestion for your code scanning alerts on GitHub through the alert pages or by including your alerts in a security campaign. Alternatively, you can generate autofix suggestions using the REST API. Then assign Copilot to kick off remediation through one of the following assignment methods."
+      ]
+    },
+    {
+      "title": "Bulk assignment",
+      "bullets": [
+        "Go to a security campaign in your repository, select one or more alerts, and click Assign Copilot to fix several alerts in one pull request."
+      ]
+    },
+    {
+      "title": "Individual assignment",
+      "bullets": [
+        "Assign specific alerts from the alert detail page for targeted fixes.",
+        "Once assigned, Copilot analyzes the vulnerability, creates a remediation plan, and opens a draft pull request. When the code changes are complete, the pull request is ready for review. Links in the GitHub UI help you easily track the progress of each pull request.",
+        "This feature is now available for customers using GitHub Code Security or GitHub Advanced Security and Copilot coding agent on GitHub Enterprise Cloud.",
+        "Learn more about GitHub code scanning and security campaigns or get started with Copilot coding agent ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "This feature is now available for customers using GitHub Code Security or GitHub Advanced Security and Copilot coding agent on GitHub Enterprise Cloud."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn more about GitHub code scanning and security campaigns or get started with Copilot coding agent ."
+  ],
+  "confidence": 0.8500000000000001
+}

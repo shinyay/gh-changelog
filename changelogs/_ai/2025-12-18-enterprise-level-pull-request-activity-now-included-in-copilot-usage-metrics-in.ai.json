@@ -1,0 +1,33 @@
+{
+  "overview": "You can now view pull request–level activity metrics for your enterprise—including overall pull request creation and review activity—as well as how GitHub Copilot participates in that workflow. All of this is available today in our Enterprise Copilot usage metrics API report .",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now view pull request–level activity metrics for your enterprise—including overall pull request creation and review activity—as well as how GitHub Copilot participates in that workflow. All of this is available today in our Enterprise Copilot usage metrics API report .",
+        "The new metrics include daily values for the following:",
+        "Total pull requests created",
+        "Total pull requests reviewed",
+        "Total pull requests created by Copilot",
+        "Total pull requests reviewed by Copilot",
+        "These metrics are only available in the API and are scoped to the enterprise level. They provide daily activity signals that help you understand Copilot adoption in the context of real pull request volume.",
+        "To see these metrics, the Copilot usage metrics policy must be enabled. To enable, go to the Enterprises page, select your enterprise, click on the AI Controls tab. In the left sidebar, select Copilot and scroll down to Metrics .",
+        "Enterprise owners, billing managers, and users with an enterprise custom role that has the View Enterprise Copilot Metrics permission can access the API.",
+        "To learn more, see our documentation on Copilot usage metrics .",
+        "These metrics are in preview and will continue to evolve. Organization and individual-level metrics as well as deeper pull request insights are coming next.",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "The new metrics include daily values for the following: Total pull requests created Total pull requests reviewed Total pull requests created by Copilot Total pull requests reviewed by Copilot These metrics are only available in the API and are scoped to the enterprise level."
+  ],
+  "caveats": [
+    "The new metrics include daily values for the following: Total pull requests created Total pull requests reviewed Total pull requests created by Copilot Total pull requests reviewed by Copilot These metrics are only available in the API and are scoped to the enterprise level."
+  ],
+  "insights": [
+    "To learn more, see our documentation on Copilot usage metrics ."
+  ],
+  "confidence": 0.9000000000000001
+}

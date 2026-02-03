@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-06-new-releases-for-github-actions-november-2025"
-fetched_at: "2026-02-03T14:40:06.227240Z"
+fetched_at: "2026-02-03T14:50:55.392073Z"
 ---
 
 # New releases for GitHub Actions – November 2025

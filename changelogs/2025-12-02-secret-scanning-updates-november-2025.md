@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-02-secret-scanning-updates-november-2025"
-fetched_at: "2026-02-03T14:40:05.853001Z"
+fetched_at: "2026-02-03T14:50:55.119892Z"
 ---
 
 # Secret scanning updates — November 2025

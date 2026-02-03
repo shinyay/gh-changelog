@@ -1,0 +1,28 @@
+{
+  "overview": "Reduced costs for GitHub-hosted runners are now in effect. We announced this update on December 16, 2025. GitHub users will see price reductions of up to 39% for GitHub-hosted runners, depending on the machines they use.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Reduced costs for GitHub-hosted runners are now in effect. We announced this update on December 16, 2025. GitHub users will see price reductions of up to 39% for GitHub-hosted runners, depending on the machines they use.",
+        "Standard hosted runner usage in public repositories remains free."
+      ]
+    },
+    {
+      "title": "Recommended resources",
+      "bullets": [
+        "For full details regarding GitHub Actions pricing changes, see the Executive Insights post .",
+        "See runner pricing documentation for adjusted GitHub-hosted runner rates.",
+        "For help estimating your expected Actions usage cost, see the Actions pricing calculator .",
+        "For more details on upcoming GitHub Actions releases, see the GitHub public roadmap ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "For more details on upcoming GitHub Actions releases, see the GitHub public roadmap ."
+  ],
+  "confidence": 0.8
+}

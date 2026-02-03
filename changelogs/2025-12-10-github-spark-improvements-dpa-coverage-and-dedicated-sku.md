@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-10-github-spark-improvements-dpa-coverage-dedicated-sku"
-fetched_at: "2026-02-03T14:40:05.684909Z"
+fetched_at: "2026-02-03T14:50:54.994503Z"
 ---
 
 # GitHub Spark: Improvements, DPA coverage, & dedicated SKU

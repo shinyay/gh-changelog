@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-enterprise-level-pull-request-activity-metrics-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.353272Z"
+fetched_at: "2026-02-03T14:50:54.870252Z"
 ---
 
 # Enterprise-level pull request activity now included in Copilot Usage Metrics in public preview

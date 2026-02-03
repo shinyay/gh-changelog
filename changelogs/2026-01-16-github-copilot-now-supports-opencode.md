@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-16-github-copilot-now-supports-opencode"
-fetched_at: "2026-02-03T14:40:05.153683Z"
+fetched_at: "2026-02-03T14:50:54.753367Z"
 ---
 
 # GitHub Copilot now supports OpenCode

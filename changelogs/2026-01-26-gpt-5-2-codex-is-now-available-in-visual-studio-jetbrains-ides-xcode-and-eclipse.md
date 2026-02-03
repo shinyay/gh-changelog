@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-26-gpt-5-2-codex-is-now-available-in-visual-studio-jetbrains-ides-xcode-and-eclipse"
-fetched_at: "2026-02-03T14:40:05.052177Z"
+fetched_at: "2026-02-03T14:50:54.706887Z"
 ---
 
 # GPT-5.2-Codex is now available in Visual Studio, JetBrains IDEs, Xcode, and Eclipse

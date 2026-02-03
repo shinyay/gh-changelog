@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["ecosystem and accessibility"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-31-deprecated-models-in-github-models"
-fetched_at: "2026-02-03T14:40:06.413229Z"
+fetched_at: "2026-02-03T14:50:55.495101Z"
 ---
 
 # Deprecated models in GitHub Models

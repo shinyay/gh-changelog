@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-22-improved-performance-for-github-actions-workflows-page"
-fetched_at: "2026-02-03T14:40:05.277330Z"
+fetched_at: "2026-02-03T14:50:54.831238Z"
 ---
 
 # Improved performance for GitHub Actions workflows page

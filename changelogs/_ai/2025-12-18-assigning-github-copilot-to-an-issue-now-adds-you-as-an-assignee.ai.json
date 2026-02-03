@@ -1,0 +1,24 @@
+{
+  "overview": "When you assign an issue to Copilot, you’ll now automatically be added as an assignee yourself. This makes it easier to track your work using filters like assignee:@me and understand who is working on an issue.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "When you assign an issue to Copilot, you’ll now automatically be added as an assignee yourself. This makes it easier to track your work using filters like assignee:@me and understand who is working on an issue."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Join the community discussion to share your feedback or learn more in our documentation on assigning issues to Copilot ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Share your feedback Join the community discussion to share your feedback or learn more in our documentation on assigning issues to Copilot ."
+  ],
+  "confidence": 0.8
+}

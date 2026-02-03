@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-12-better-diagnostics-for-vnet-injected-runners-and-required-self-hosted-runner-upgrades"
-fetched_at: "2026-02-03T14:40:05.634954Z"
+fetched_at: "2026-02-03T14:50:54.954892Z"
 ---
 
 # Better diagnostics for VNET injected runners and required self-hosted runner upgrades

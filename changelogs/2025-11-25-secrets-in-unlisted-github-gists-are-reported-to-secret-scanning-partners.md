@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-25-secrets-in-unlisted-github-gists-are-now-reported-to-secret-scanning-partners"
-fetched_at: "2026-02-03T14:40:05.887260Z"
+fetched_at: "2026-02-03T14:50:55.141909Z"
 ---
 
 # Secrets in unlisted GitHub gists are reported to secret scanning partners

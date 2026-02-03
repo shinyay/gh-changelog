@@ -1,0 +1,43 @@
+{
+  "overview": "Organizations now have more granular control over who can request GitHub Apps and OAuth apps. This enhancement helps you implement stricter governance policies while maintaining flexibility for your security posture. This capability is now generally available.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Organizations now have more granular control over who can request GitHub Apps and OAuth apps. This enhancement helps you implement stricter governance policies while maintaining flexibility for your security posture. This capability is now generally available."
+      ]
+    },
+    {
+      "title": "What’s changed",
+      "bullets": [
+        "Previously, organizations could only disable app access requests from outside collaborators. Now, you can choose from three graduated control options:",
+        "Members and outside collaborators : Members and outside collaborators can request apps. This is the existing default behavior.",
+        "Members only : Block outside collaborators from requesting apps while permitting organization members to do so.",
+        "Disable app access requests : Prevent both members and outside collaborators from requesting any apps.",
+        "To configure this change, navigate to your organization’s settings, select Member Privileges , and choose your preferred option under “App access requests”. This graduated control mechanism ensures all third-party apps go through proper approval channels and security reviews before being considered for installation.",
+        "To learn more, see “Limiting app requests” . This will be included in GHES 3.21."
+      ]
+    },
+    {
+      "title": "How to give feedback",
+      "bullets": [
+        "If you have any questions or feedback, drop a comment in our Community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "This capability is now generally available.",
+    "What’s changed Previously, organizations could only disable app access requests from outside collaborators.",
+    "Members only : Block outside collaborators from requesting apps while permitting organization members to do so."
+  ],
+  "caveats": [
+    "What’s changed Previously, organizations could only disable app access requests from outside collaborators.",
+    "Members only : Block outside collaborators from requesting apps while permitting organization members to do so."
+  ],
+  "insights": [
+    "This graduated control mechanism ensures all third-party apps go through proper approval channels and security reviews before being considered for installation.",
+    "To learn more, see “Limiting app requests” ."
+  ],
+  "confidence": 0.9000000000000001
+}

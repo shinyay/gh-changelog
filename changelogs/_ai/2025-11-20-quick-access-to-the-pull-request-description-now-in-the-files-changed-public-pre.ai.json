@@ -1,0 +1,36 @@
+{
+  "overview": "You can now view the pull request description without leaving the new “Files changed” page. No need to scroll to the top of the page, switch tabs, or lose context.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now view the pull request description without leaving the new “Files changed” page. No need to scroll to the top of the page, switch tabs, or lose context.",
+        "To view the description click the Overview button on the toolbar:",
+        "This is the first of many upcoming improvements to help you stay focused and reduce the frequency of switching between tabs.",
+        "This feature is only available in the new “Files changed” page, which is currently in public preview. If you’re still using the classic experience, click Try the new experience at the top of the classic page."
+      ]
+    },
+    {
+      "title": "🔧 Performance and more",
+      "bullets": [
+        "Since the last update, numerous fixes have been made, including to performance. For example, it should be faster to navigate from the new “Files changed” page to other pages. We’re also working on more performance improvements that you’ll start to see in the next few weeks."
+      ]
+    },
+    {
+      "title": "❤ Feedback",
+      "bullets": [
+        "Your feedback is important. You can report problems, ask questions, and view known issues in the Files Changed experience feedback discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "This feature is only available in the new “Files changed” page, which is currently in public preview."
+  ],
+  "caveats": [
+    "This feature is only available in the new “Files changed” page, which is currently in public preview.",
+    "We’re also working on more performance improvements that you’ll start to see in the next few weeks. ❤ Feedback Your feedback is important."
+  ],
+  "insights": [],
+  "confidence": 0.9000000000000001
+}

@@ -1,0 +1,70 @@
+{
+  "overview": "Hierarchy view for GitHub Projects is now available in public preview. You can now view your full issue hierarchy directly in project table views, giving you clear visibility into complex work breakdowns without losing context or switching views.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Hierarchy view for GitHub Projects is now available in public preview. You can now view your full issue hierarchy directly in project table views, giving you clear visibility into complex work breakdowns without losing context or switching views."
+      ]
+    },
+    {
+      "title": "🔗 What is hierarchy view?",
+      "bullets": [
+        "Hierarchy view lets you see the full nesting of sub-issues directly in GitHub Projects.",
+        "With hierarchy view enabled, you can:",
+        "Expand and collapse sub-issues up to eight levels deep.",
+        "Group, slice, sort, and filter while preserving hierarchy.",
+        "View and quickly add existing sub-issues that aren’t in the project yet."
+      ]
+    },
+    {
+      "title": "Getting started",
+      "bullets": [
+        "To enable hierarchy view, open the View menu and turn on Show hierarchy ."
+      ]
+    },
+    {
+      "title": "Coming soon",
+      "bullets": [
+        "We’re continuing to invest in hierarchy view. Next up:",
+        "The ability to create and add sub-issues inline, directly from the project.",
+        "The ability to drag-and-drop reordering and reparenting of sub-issues.",
+        "A synced order between the sub-issue list on issues and the sub-issue list in projects."
+      ]
+    },
+    {
+      "title": "Tell us what you think",
+      "bullets": [
+        "We’d love your feedback. Join the conversation in GitHub Community , or select Give feedback from the projects … menu to share your thoughts."
+      ]
+    },
+    {
+      "title": "Performance enhancements to issues",
+      "bullets": [
+        "We’re continuing to make issues faster. This week, we shipped our first performance improvement focused on making recently viewed issues feel instant. Using load times of under 200ms as our benchmark for “instant,” this update increased the percentage of instantly loading issues from 2% to 12%.",
+        "This is the first of several performance improvements planned over the coming months to make working with issues consistently fast."
+      ]
+    },
+    {
+      "title": "Other improvements",
+      "bullets": [
+        "We’ve added a new View menu in projects to make it easier to find view display options.",
+        "There is a new REST API endpoint to create project views .",
+        "Pull requests in the merge queue now display their merge queue state icon in projects.",
+        "You can now paste a pull request URL from the “Development” section of an issue to quickly link items."
+      ]
+    }
+  ],
+  "key_changes": [
+    "We’ve added a new View menu in projects to make it easier to find view display options.",
+    "There is a new REST API endpoint to create project views .",
+    "Pull requests in the merge queue now display their merge queue state icon in projects.",
+    "You can now paste a pull request URL from the “Development” section of an issue to quickly link items."
+  ],
+  "impact": [
+    "Hierarchy view for GitHub Projects is now available in public preview."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.9500000000000001
+}

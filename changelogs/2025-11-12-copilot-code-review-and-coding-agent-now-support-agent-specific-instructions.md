@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-12-copilot-code-review-and-coding-agent-now-support-agent-specific-instructions"
-fetched_at: "2026-02-03T14:40:06.132265Z"
+fetched_at: "2026-02-03T14:50:55.315997Z"
 ---
 
 # Copilot code review and coding agent now support agent-specific instructions

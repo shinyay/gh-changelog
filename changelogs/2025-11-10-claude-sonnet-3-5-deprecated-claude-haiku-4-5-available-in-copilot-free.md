@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-10-claude-sonnet-3-5-deprecated-claude-haiku-4-5-available-in-copilot-free"
-fetched_at: "2026-02-03T14:40:06.166105Z"
+fetched_at: "2026-02-03T14:50:55.342952Z"
 ---
 
 # Claude Sonnet 3.5 deprecated, Claude Haiku 4.5 available in Copilot Free

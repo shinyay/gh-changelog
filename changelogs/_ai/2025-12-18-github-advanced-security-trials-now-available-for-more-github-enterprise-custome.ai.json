@@ -1,0 +1,19 @@
+{
+  "overview": "More GitHub Enterprise customers can now start a self-serve GitHub Advanced Security trial to evaluate GitHub Code Security and GitHub Secret Protection. Enterprises that have previously completed a GitHub Advanced Security trial and did not purchase Advanced Security are now eligible for another trial after 180 days.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "More GitHub Enterprise customers can now start a self-serve GitHub Advanced Security trial to evaluate GitHub Code Security and GitHub Secret Protection. Enterprises that have previously completed a GitHub Advanced Security trial and did not purchase Advanced Security are now eligible for another trial after 180 days.",
+        "To set up a GitHub Advanced Security trial, visit the Enterprise “Billing and licensing” page. Visit our docs to learn more about self-serve GitHub Advanced Security trials ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Visit our docs to learn more about self-serve GitHub Advanced Security trials ."
+  ],
+  "confidence": 0.8
+}

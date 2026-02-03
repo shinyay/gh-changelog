@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-22-improved-pull-request-files-changed-page-on-by-default"
-fetched_at: "2026-02-03T14:40:05.071558Z"
+fetched_at: "2026-02-03T14:50:54.715531Z"
 ---
 
 # Improved pull request “Files changed” page on by default

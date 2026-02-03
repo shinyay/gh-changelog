@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools", "platform governance"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-03-required-review-by-specific-teams-now-available-in-rulesets"
-fetched_at: "2026-02-03T14:40:06.374569Z"
+fetched_at: "2026-02-03T14:50:55.468584Z"
 ---
 
 # Required review by specific teams now available in rulesets

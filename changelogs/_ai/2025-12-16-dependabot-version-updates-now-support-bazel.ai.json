@@ -1,0 +1,63 @@
+{
+  "overview": "Developers can now use Dependabot to automatically keep their Bazel dependencies up to date. For projects that use Bazel—either Bzlmod or WORKSPACE—Dependabot version updates can now ensure dependencies stay current with the latest releases.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Developers can now use Dependabot to automatically keep their Bazel dependencies up to date. For projects that use Bazel—either Bzlmod or WORKSPACE—Dependabot version updates can now ensure dependencies stay current with the latest releases.",
+        "A huge thanks to the Bazel team for their contributions and collaboration bringing support to Dependabot."
+      ]
+    },
+    {
+      "title": "Background",
+      "bullets": [
+        "The open source community’s top requests for Bazel support for Dependabot included:",
+        "Proper lockfile generation",
+        "*.MODULE.bazel support",
+        "WORKSPACE support (still widely used despite upcoming deprecation)",
+        "Bazel uses two dependency systems, both the modern Bzlmod system ( MODULE.bazel files) and the legacy WORKSPACE system. Community feedback showed many teams still rely on WORKSPACE, so we built support for both. Additionally, Bazel’s MODULE.bazel.lock files capture complex transitive dependency graphs, including module extensions and repository rules. Incorrect lockfile generation breaks reproducible builds, so we worked closely with the Bazel community to get this right."
+      ]
+    },
+    {
+      "title": "Community partnership",
+      "bullets": [
+        "The Bazel community provided critical guidance:",
+        "Fabian Meumertzheim: Lockfile semantics and behavior matching",
+        "Yun Peng: Testing, validation, and implementation data",
+        "Alex Eagle: File naming conventions and *.MODULE.bazel patterns",
+        "Thank you especially to these folks, and to everyone who tested and provided feedback during our preview support for this ecosystem."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "Dependency detection: Dependabot scans your MODULE.bazel , *.MODULE.bazel , or WORKSPACE files and checks the Bazel central registry for updates.",
+        "Lockfile management: Dependabot regenerates lockfiles to maintain reproducible builds.",
+        "Pull requests: Dependabot opens pull requests with updated declarations, regenerated lockfiles, release notes, and compatibility information."
+      ]
+    },
+    {
+      "title": "Getting started",
+      "bullets": [
+        "Requirements include:",
+        "Bazel 7, 8, or 9",
+        "A MODULE.bazel or WORKSPACE file at the repository root",
+        "Engage with the Dependabot open source community on the topic of Bazel support.",
+        "Learn more in our Dependabot version updates documentation .",
+        "Learn more about Bazel .",
+        "A MODULE.bazel or WORKSPACE file at the repository root",
+        "Engage with the Dependabot open source community on the topic of Bazel support."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Pull requests: Dependabot opens pull requests with updated declarations, regenerated lockfiles, release notes, and compatibility information."
+  ],
+  "insights": [
+    "Learn more in our Dependabot version updates documentation .",
+    "Learn more about Bazel ."
+  ],
+  "confidence": 0.8500000000000001
+}

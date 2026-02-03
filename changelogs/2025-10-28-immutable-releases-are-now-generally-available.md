@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["supply chain security", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-immutable-releases-are-now-generally-available"
-fetched_at: "2026-02-03T14:40:06.650256Z"
+fetched_at: "2026-02-03T14:50:55.650701Z"
 ---
 
 # Immutable releases are now generally available

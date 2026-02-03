@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["community engagement"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-11-post-as-admin-now-available-in-github-discussions"
-fetched_at: "2026-02-03T14:40:05.653830Z"
+fetched_at: "2026-02-03T14:50:54.970463Z"
 ---
 
 # Post as Admin now available in GitHub Discussions

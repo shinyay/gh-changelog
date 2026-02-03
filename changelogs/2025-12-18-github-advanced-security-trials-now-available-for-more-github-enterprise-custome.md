@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-github-advanced-security-trials-now-available-for-more-github-enterprise-customers"
-fetched_at: "2026-02-03T14:40:05.312277Z"
+fetched_at: "2026-02-03T14:50:54.854210Z"
 ---
 
 # GitHub Advanced Security trials now available for more GitHub Enterprise customers

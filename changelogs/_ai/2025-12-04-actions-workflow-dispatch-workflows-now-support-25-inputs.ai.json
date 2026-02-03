@@ -1,0 +1,17 @@
+{
+  "overview": "You can now use up to 25 inputs on workflows triggered via the workflow_dispatch trigger.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now use up to 25 inputs on workflows triggered via the workflow_dispatch trigger.",
+        "The previous limit was 10 which was challenging for the community . This new limit gives you more flexibility when triggering workflows manually or via API and removes the need for workarounds such as consolidating multiple inputs into a single JSON string."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-05-track-copilot-code-generation-metrics-in-a-dashboard"
-fetched_at: "2026-02-03T14:40:05.749375Z"
+fetched_at: "2026-02-03T14:50:55.039198Z"
 ---
 
 # Track Copilot code generation metrics in a dashboard

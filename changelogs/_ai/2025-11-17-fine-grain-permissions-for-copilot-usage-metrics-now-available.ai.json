@@ -1,0 +1,39 @@
+{
+  "overview": "Enterprise role: View enterprise Copilot metrics",
+  "detailed_explanation": [
+    {
+      "title": "What’s new?",
+      "bullets": [
+        "Enterprise role: View enterprise Copilot metrics",
+        "You can now access the Copilot Usage Metrics APIs and Dashboard if you are assigned the new enterprise role: View enterprise Copilot metrics",
+        "This important expansion means that all users assigned this role , not just enterprise admins or billing managers, are empowered to view granular Copilot usage metrics for your enterprise."
+      ]
+    },
+    {
+      "title": "Who can now access Copilot usage metrics?",
+      "bullets": [
+        "Any user with the View enterprise Copilot metrics role",
+        "Enterprise admins and billing managers continue to have default access."
+      ]
+    },
+    {
+      "title": "How to get started",
+      "bullets": [
+        "Ensure you have the Copilot usage metrics policy enabled under AI Controls > Copilot .",
+        "Assign your users the new View enterprise Copilot metrics enterprise role under People > Enterprise roles .",
+        "Advise your newly assigned users to visit the Copilot Usage Metrics APIs and Dashboard to begin leveraging insights today.",
+        "Learn more about Copilot usage metrics ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Enterprise role: View enterprise Copilot metrics You can now access the Copilot Usage Metrics APIs and Dashboard if you are assigned the new enterprise role: View enterprise Copilot metrics This important expansion means that all users assigned this role , not just enterprise admins or billing managers, are empowered to view granular Copilot usage metrics for your enterprise."
+  ],
+  "insights": [
+    "Advise your newly assigned users to visit the Copilot Usage Metrics APIs and Dashboard to begin leveraging insights today.",
+    "Learn more about Copilot usage metrics ."
+  ],
+  "confidence": 0.8500000000000001
+}

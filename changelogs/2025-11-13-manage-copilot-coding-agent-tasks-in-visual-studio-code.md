@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-13-manage-copilot-coding-agent-tasks-in-visual-studio-code"
-fetched_at: "2026-02-03T14:40:06.118333Z"
+fetched_at: "2026-02-03T14:50:55.308312Z"
 ---
 
 # Manage Copilot coding agent tasks in Visual Studio Code

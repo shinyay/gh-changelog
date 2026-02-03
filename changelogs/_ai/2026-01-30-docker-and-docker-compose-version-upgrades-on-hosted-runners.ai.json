@@ -1,0 +1,34 @@
+{
+  "overview": "On February 9th, 2026, Docker and Docker Compose will be updated on all Windows and Ubuntu runner images except ubuntu-slim . This update allows you to take advantage of the latest features in these tools.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "On February 9th, 2026, Docker and Docker Compose will be updated on all Windows and Ubuntu runner images except ubuntu-slim . This update allows you to take advantage of the latest features in these tools."
+      ]
+    },
+    {
+      "title": "New Versions",
+      "bullets": [
+        "Docker Engine: v29.1",
+        "Docker Compose: v2.40 (or higher if new v2 minor versions release before our change)",
+        "You may need to update your workflows if you rely on Docker functionality slated for removal in v29 ."
+      ]
+    },
+    {
+      "title": "Keep up to date on upcoming runner image changes",
+      "bullets": [
+        "We regularly update runner images for improved performance, enhanced functionality, and security improvements. You can find a list of other upcoming changes, updates, and deprecations to runner images in the runner-images repository . Check regularly to confirm that your runner images will not be impacted by any scheduled updates."
+      ]
+    }
+  ],
+  "key_changes": [
+    "We regularly update runner images for improved performance, enhanced functionality, and security improvements. You can find a list of other upcoming changes, updates, and deprecations to runner images in the runner-images repository . Check regularly to confirm that your runner images will not be impacted by any scheduled updates."
+  ],
+  "impact": [],
+  "caveats": [
+    "On February 9th, 2026, Docker and Docker Compose will be updated on all Windows and Ubuntu runner images except ubuntu-slim ."
+  ],
+  "insights": [],
+  "confidence": 0.9500000000000001
+}

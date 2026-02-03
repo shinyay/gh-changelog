@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["account management"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-12-deprecation-of-user-to-organization-account-transformation"
-fetched_at: "2026-02-03T14:40:05.258163Z"
+fetched_at: "2026-02-03T14:50:54.823136Z"
 ---
 
 # Deprecation of user to organization account transformation

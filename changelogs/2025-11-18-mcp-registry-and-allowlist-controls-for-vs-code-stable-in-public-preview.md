@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "platform governance"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-internal-mcp-registry-and-allowlist-controls-for-vs-code-stable-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.062884Z"
+fetched_at: "2026-02-03T14:50:55.263280Z"
 ---
 
 # MCP registry and allowlist controls for VS Code Stable in public preview

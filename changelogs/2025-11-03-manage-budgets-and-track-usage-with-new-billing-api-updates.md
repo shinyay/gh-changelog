@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["account management", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-03-manage-budgets-and-track-usage-with-new-billing-api-updates"
-fetched_at: "2026-02-03T14:40:06.389484Z"
+fetched_at: "2026-02-03T14:50:55.481769Z"
 ---
 
 # Manage budgets and track usage with new billing API updates

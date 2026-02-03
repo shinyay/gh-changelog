@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-05-the-legacy-copilot-usage-report-csv-is-no-longer-available"
-fetched_at: "2026-02-03T14:40:06.256490Z"
+fetched_at: "2026-02-03T14:50:55.405375Z"
 ---
 
 # The legacy Copilot usage report CSV is no longer available

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-more-accurate-copilot-autofix-usage-metrics-on-security-overview"
-fetched_at: "2026-02-03T14:40:05.601914Z"
+fetched_at: "2026-02-03T14:50:54.932756Z"
 ---
 
 # More accurate Copilot Autofix usage metrics on security overview

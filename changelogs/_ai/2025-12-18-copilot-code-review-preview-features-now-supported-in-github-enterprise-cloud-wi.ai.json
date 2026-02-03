@@ -1,0 +1,27 @@
+{
+  "overview": "GitHub Enterprise Cloud with data residency now supports Copilot code review preview features , providing you an opportunity to try the latest agentic code review capabilities in your pull requests.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Enterprise Cloud with data residency now supports Copilot code review preview features , providing you an opportunity to try the latest agentic code review capabilities in your pull requests.",
+        "These agentic capabilities launched into public preview at GitHub Universe , and grant users the following:",
+        "Access to rich agentic tool calling to actively gather full project context, including code, directory structure, and references.",
+        "The ability to add and configure deterministic tools like CodeQL, ESLint, and more to run with Copilot code review.",
+        "Easy hand-offs to Copilot coding agent from within reviews left by Copilot to quickly resolve issues found by Copilot code review and seamlessly resolve conflicts between the feedback.",
+        "Visibility into Copilot code review agent’s session via Copilot agent’s mission control.",
+        "Learn more about each of these features and how to enable them in our Copilot documentation .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "These agentic capabilities launched into public preview at GitHub Universe , and grant users the following: Access to rich agentic tool calling to actively gather full project context, including code, directory structure, and references."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn more about each of these features and how to enable them in our Copilot documentation ."
+  ],
+  "confidence": 0.8500000000000001
+}

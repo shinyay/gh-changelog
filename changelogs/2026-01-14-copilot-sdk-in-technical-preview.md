@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-14-copilot-sdk-in-technical-preview"
-fetched_at: "2026-02-03T14:40:05.191069Z"
+fetched_at: "2026-02-03T14:50:54.777093Z"
 ---
 
 # Copilot SDK in technical preview

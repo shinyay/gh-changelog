@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-mcp-registry-and-allowlist-controls-for-copilot-in-jetbrains-eclipse-and-xcode-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.636712Z"
+fetched_at: "2026-02-03T14:50:55.637824Z"
 ---
 
 # MCP registry and allowlist controls for Copilot in JetBrains, Eclipse, and Xcode now in public preview

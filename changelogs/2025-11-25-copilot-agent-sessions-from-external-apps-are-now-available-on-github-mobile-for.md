@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-25-copilot-agent-sessions-from-external-apps-are-now-available-on-github-mobile-for-android"
-fetched_at: "2026-02-03T14:40:05.874930Z"
+fetched_at: "2026-02-03T14:50:55.133167Z"
 ---
 
 # Copilot agent sessions from external apps are now available on GitHub Mobile for Android

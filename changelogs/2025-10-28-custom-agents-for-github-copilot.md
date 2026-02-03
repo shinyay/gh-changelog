@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-custom-agents-for-github-copilot"
-fetched_at: "2026-02-03T14:40:06.671136Z"
+fetched_at: "2026-02-03T14:50:55.662560Z"
 ---
 
 # Custom agents for GitHub Copilot

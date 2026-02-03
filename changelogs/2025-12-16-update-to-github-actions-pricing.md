@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-coming-soon-simpler-pricing-and-a-better-experience-for-github-actions"
-fetched_at: "2026-02-03T14:40:05.579177Z"
+fetched_at: "2026-02-03T14:50:54.926273Z"
 ---
 
 # Update to GitHub Actions pricing

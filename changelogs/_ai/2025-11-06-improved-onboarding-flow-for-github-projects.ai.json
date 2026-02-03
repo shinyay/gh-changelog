@@ -1,0 +1,66 @@
+{
+  "overview": "We’ve improved the GitHub Projects onboarding flow to help you get started faster, with options to connect and import items from a repository, set a default repository for new issues, use new default workflows to set up your project, and more.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve improved the GitHub Projects onboarding flow to help you get started faster, with options to connect and import items from a repository, set a default repository for new issues, use new default workflows to set up your project, and more."
+      ]
+    },
+    {
+      "title": "🚀 Key improvements",
+      "bullets": [
+        "Import items from a repository",
+        "During onboarding, you can now choose to import open issues, open pull requests, or both from a specified repository. The selected items are automatically imported when the project is created, so you can start with your existing content right away.",
+        "Set a default repository",
+        "In project settings, you can now select a default repository. All new issues created in this project will be automatically associated with the selected repository.",
+        "Pull request linked to issue workflow",
+        "A new default workflow, Pull request linked to issue , automatically sets the status of an issue to “In progress” whenever a linked pull request exists."
+      ]
+    },
+    {
+      "title": "🛠 Additional onboarding improvements",
+      "bullets": [
+        "New projects now show linked pull requests and sub-issues as default fields.",
+        "The Team planning template now defaults to Table view instead of Board view.",
+        "Insights and Workflows buttons have been elevated in the UI for easier discovery.",
+        "Polishing and minor fixes to make onboarding smoother and more reliable."
+      ]
+    },
+    {
+      "title": "🤖 API improvements",
+      "bullets": [
+        "We’ve made improvements to the Projects GraphQL API making it easier to automate your project workflows.",
+        "You’ll now see project_v2_item_status_changed , added_to_project_v2 , removed_from_project_v2 , and converted_from_draft events. These events allow you to understand information such as how long an item was “In progress” before moving to “Done”.",
+        "You can filter project items using the query argument with any project filter. Check out the ProjectsV2 GraphQL documentation for more details."
+      ]
+    },
+    {
+      "title": "✍ Tell us what you think!",
+      "bullets": [
+        "Join the conversation in the GitHub Community , or select Give feedback from the project … menu to share your thoughts."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Import items from a repository",
+    "During onboarding, you can now choose to import open issues, open pull requests, or both from a specified repository. The selected items are automatically imported when the project is created, so you can start with your existing content right away.",
+    "Set a default repository",
+    "In project settings, you can now select a default repository. All new issues created in this project will be automatically associated with the selected repository.",
+    "Pull request linked to issue workflow",
+    "A new default workflow, Pull request linked to issue , automatically sets the status of an issue to “In progress” whenever a linked pull request exists.",
+    "New projects now show linked pull requests and sub-issues as default fields.",
+    "The Team planning template now defaults to Table view instead of Board view.",
+    "Insights and Workflows buttons have been elevated in the UI for easier discovery.",
+    "Polishing and minor fixes to make onboarding smoother and more reliable.",
+    "We’ve made improvements to the Projects GraphQL API making it easier to automate your project workflows.",
+    "You’ll now see project_v2_item_status_changed , added_to_project_v2 , removed_from_project_v2 , and converted_from_draft events. These events allow you to understand information such as how long an item was “In progress” before moving to “Done”.",
+    "You can filter project items using the query argument with any project filter. Check out the ProjectsV2 GraphQL documentation for more details."
+  ],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Check out the ProjectsV2 GraphQL documentation for more details. ✍ Tell us what you think!"
+  ],
+  "confidence": 0.9
+}

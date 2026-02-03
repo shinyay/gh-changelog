@@ -1,0 +1,74 @@
+{
+  "overview": "As of October 27th, Spark is covered by the GitHub Data Protection Agreement, which means how data is handled in Spark matches products in general availability, even though it’s still currently in public preview. This enables organizations with stricter data requirements to leverage Spark like any other generally available product. To learn more, read our documentation about how DPA applies to preview features .",
+  "detailed_explanation": [
+    {
+      "title": "Spark is covered by the GitHub Data Protection Agreement",
+      "bullets": [
+        "As of October 27th, Spark is covered by the GitHub Data Protection Agreement, which means how data is handled in Spark matches products in general availability, even though it’s still currently in public preview. This enables organizations with stricter data requirements to leverage Spark like any other generally available product. To learn more, read our documentation about how DPA applies to preview features ."
+      ]
+    },
+    {
+      "title": "Dedicated SKU & budget controls for Spark",
+      "bullets": [
+        "Organization admins will now see a dedicated SKU for Spark in their billing views. This means admins can view spending for Spark separately from all other Copilot usage in billing dashboards and CSV exports. They can also set granular premium request budgets and overage policies specifically for Spark. Admins also have the option to set a bundled premium request budget for all products that leverage premium requests. These can all be managed in the Billing and licensing tab for your organization."
+      ]
+    },
+    {
+      "title": "Improved visual quality of generated apps",
+      "bullets": [
+        "We’ve shipped changes to the Spark agent to improve the visual quality of generated apps. You should now see apps with more unique designs and higher quality UI and UX. Check out some examples of improvements below:"
+      ]
+    },
+    {
+      "title": "Agent improvements",
+      "bullets": [
+        "The Spark agent now better respects previous manual user edits, ensuring it doesn’t overwrite any manual changes made by users.",
+        "We also made improvements to how our agent handles producing highly complex apps that go beyond the context window of available models, helping ensure that even for highly complex use cases, we can produce apps."
+      ]
+    },
+    {
+      "title": "Repository creation org admin setting",
+      "bullets": [
+        "Org admins can now force repository creation for all Sparks into the organization rather than personal user accounts. This setting is off by default, and can be enabled by org admins on the Copilot Settings page."
+      ]
+    },
+    {
+      "title": "Other improvements",
+      "bullets": [
+        "Numerous accessibility improvements to make building and editing sparks even more accessible to all users.",
+        "We now show the live preview of your app as soon as all code generation is completed by the agent so you can start interacting with your app as quickly as possible.",
+        "We removed test paths for a specific custom domain used in development of Spark to help eliminate potential security risks.",
+        "Multiple bug fixes for issues that led to UI, iteration, publishing, and repository creation issues.",
+        "Improvements to ensure no manual commits made to sparks are lost.",
+        "Changes to the Spark UI to prevent users from being able to submit multiple simultaneous requests to the agent which led to errors."
+      ]
+    },
+    {
+      "title": "Try out these improvements today",
+      "bullets": [
+        "Visit github.com/spark to build your next app."
+      ]
+    }
+  ],
+  "key_changes": [
+    "The Spark agent now better respects previous manual user edits, ensuring it doesn’t overwrite any manual changes made by users.",
+    "We also made improvements to how our agent handles producing highly complex apps that go beyond the context window of available models, helping ensure that even for highly complex use cases, we can produce apps.",
+    "Numerous accessibility improvements to make building and editing sparks even more accessible to all users.",
+    "We now show the live preview of your app as soon as all code generation is completed by the agent so you can start interacting with your app as quickly as possible.",
+    "We removed test paths for a specific custom domain used in development of Spark to help eliminate potential security risks.",
+    "Multiple bug fixes for issues that led to UI, iteration, publishing, and repository creation issues.",
+    "Improvements to ensure no manual commits made to sparks are lost.",
+    "Changes to the Spark UI to prevent users from being able to submit multiple simultaneous requests to the agent which led to errors.",
+    "Visit github.com/spark to build your next app."
+  ],
+  "impact": [
+    "Spark is covered by the GitHub Data Protection Agreement As of October 27th, Spark is covered by the GitHub Data Protection Agreement, which means how data is handled in Spark matches products in general availability, even though it’s still currently in public preview.",
+    "This enables organizations with stricter data requirements to leverage Spark like any other generally available product."
+  ],
+  "caveats": [],
+  "insights": [
+    "To learn more, read our documentation about how DPA applies to preview features .",
+    "You should now see apps with more unique designs and higher quality UI and UX."
+  ],
+  "confidence": 0.9500000000000001
+}

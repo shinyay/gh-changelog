@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-29-github-mcp-server-now-comes-with-server-instructions-better-tools-and-more"
-fetched_at: "2026-02-03T14:40:06.432820Z"
+fetched_at: "2026-02-03T14:50:55.508229Z"
 ---
 
 # GitHub MCP Server now comes with server instructions, better tools, and more

@@ -1,0 +1,50 @@
+{
+  "overview": "GPT-5.2, OpenAI’s newest model focused on long context and front-end UI generation, will be available to Copilot Pro, Pro+, Business, and Enterprise.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GPT-5.2, OpenAI’s newest model focused on long context and front-end UI generation, will be available to Copilot Pro, Pro+, Business, and Enterprise."
+      ]
+    },
+    {
+      "title": "Availability in GitHub Copilot",
+      "bullets": [
+        "OpenAI GPT-5.2 will be available to Copilot Pro, Pro+, Business, and Enterprise.",
+        "You’ll be able to select the model in the Copilot model picker from any of the following:",
+        "Visual Studio Code versions 1.104.1 and later, all modes: chat, ask, edit, agent",
+        "Copilot Chat in github.com",
+        "GitHub Mobile (iOS and Android)",
+        "Copilot CLI",
+        "Rollout will be gradual. If you don’t see the new models yet, check back soon."
+      ]
+    },
+    {
+      "title": "Enabling access",
+      "bullets": [
+        "Enterprise and Business plans : Administrators must enable the OpenAI GPT-5.2 in Copilot settings. Once enabled, users in that organization will see the respective model in the Copilot model picker.",
+        "Pro and Pro+ plans : Users can enable the model by selecting it in the model picker and confirming the one-time prompt.",
+        "Bring your own key : Within Visual Studio Code, select Manage Models from the picker, choose OpenAI GPT-5.2 , and enter your API key when prompted."
+      ]
+    },
+    {
+      "title": "Learn more",
+      "bullets": [
+        "To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Join the GitHub Community to share your feedback."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot."
+  ],
+  "confidence": 0.8
+}

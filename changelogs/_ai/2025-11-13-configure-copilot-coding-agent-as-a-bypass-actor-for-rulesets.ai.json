@@ -1,0 +1,28 @@
+{
+  "overview": "Rulesets allow you to control how different actors can interact with a repository. You can use rulesets to enforce rules like:",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Rulesets allow you to control how different actors can interact with a repository. You can use rulesets to enforce rules like:",
+        "Only allow commits from email addresses that match a certain pattern.",
+        "Ensure that commit messages follow a specific structure.",
+        "Require commits to be signed.",
+        "Copilot coding agent is our asynchronous developer agent that works in the background. It can’t always comply with every rule – for example, it can’t sign commits. When a repository includes rules that the agent can’t comply with, the agent is automatically disabled.",
+        "Now, you can unblock usage of the coding agent by configuring Copilot coding agent as a bypass actor for select rulesets. This allows you to exempt Copilot from specific rules without relaxing your requirements for code pushed by humans.",
+        "To learn more about Copilot coding agent, head to “About GitHub Copilot coding agent” in the GitHub Docs."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "You can use rulesets to enforce rules like: Only allow commits from email addresses that match a certain pattern."
+  ],
+  "caveats": [
+    "You can use rulesets to enforce rules like: Only allow commits from email addresses that match a certain pattern."
+  ],
+  "insights": [
+    "To learn more about Copilot coding agent, head to “About GitHub Copilot coding agent” in the GitHub Docs."
+  ],
+  "confidence": 0.9000000000000001
+}

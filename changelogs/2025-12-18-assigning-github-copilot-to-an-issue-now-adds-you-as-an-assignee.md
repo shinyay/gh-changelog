@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "projects and issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-assigning-github-copilot-to-an-issue-now-adds-you-as-an-assignee"
-fetched_at: "2026-02-03T14:40:05.308613Z"
+fetched_at: "2026-02-03T14:50:54.853030Z"
 ---
 
 # Assigning GitHub Copilot to an issue now adds you as an assignee

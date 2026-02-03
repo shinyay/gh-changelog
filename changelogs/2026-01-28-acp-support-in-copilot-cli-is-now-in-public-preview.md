@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-28-acp-support-in-copilot-cli-is-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:04.816974Z"
+fetched_at: "2026-02-03T14:50:49.360303Z"
 ---
 
 # ACP support in Copilot CLI is now in public preview

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-dependabot-version-updates-now-support-opentofu"
-fetched_at: "2026-02-03T14:40:05.547920Z"
+fetched_at: "2026-02-03T14:50:54.913126Z"
 ---
 
 # Dependabot version updates now support OpenTofu

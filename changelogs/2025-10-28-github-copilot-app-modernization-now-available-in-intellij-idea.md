@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-github-copilot-app-modernization-now-available-in-intellij-idea"
-fetched_at: "2026-02-03T14:40:06.681696Z"
+fetched_at: "2026-02-03T14:50:55.668322Z"
 ---
 
 # GitHub Copilot app modernization: Now available in IntelliJ IDEA

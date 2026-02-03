@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-plan-mode-in-github-copilot-now-in-public-preview-in-jetbrains-eclipse-and-xcode"
-fetched_at: "2026-02-03T14:40:06.030964Z"
+fetched_at: "2026-02-03T14:50:55.241522Z"
 ---
 
 # Plan mode in GitHub Copilot now in public preview in JetBrains, Eclipse, and Xcode

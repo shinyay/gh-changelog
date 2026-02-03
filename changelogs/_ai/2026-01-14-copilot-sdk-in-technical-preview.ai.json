@@ -1,0 +1,61 @@
+{
+  "overview": "The Copilot SDK is now available in technical preview, providing language-specific SDKs for programmatic access to the GitHub Copilot CLI.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "The Copilot SDK is now available in technical preview, providing language-specific SDKs for programmatic access to the GitHub Copilot CLI."
+      ]
+    },
+    {
+      "title": "Available SDKs",
+      "bullets": [
+        "The Copilot SDK is available in four languages:",
+        "Node.js / TypeScript : @github/copilot-cli-sdk",
+        "Python : copilot",
+        "Go : github.com/github/copilot-cli-sdk-go",
+        ".NET : GitHub.Copilot.SDK"
+      ]
+    },
+    {
+      "title": "Key features",
+      "bullets": [
+        "All SDKs provide a consistent API with:",
+        "Multi-turn conversations : Maintain session history for context-aware interactions.",
+        "Tool execution : Define custom tools that the model can invoke during conversations.",
+        "Full lifecycle control : Manage client and session lifecycles programmatically."
+      ]
+    },
+    {
+      "title": "Learn More",
+      "bullets": [
+        "SDK Documentation",
+        "Node.js SDK",
+        "Python SDK",
+        "Go SDK",
+        ".NET SDK",
+        "Try out the GitHub Copilot SDK Cookbook"
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Join the GitHub Community to share your feedback."
+      ]
+    }
+  ],
+  "key_changes": [
+    "All SDKs provide a consistent API with:",
+    "Multi-turn conversations : Maintain session history for context-aware interactions.",
+    "Tool execution : Define custom tools that the model can invoke during conversations.",
+    "Full lifecycle control : Manage client and session lifecycles programmatically."
+  ],
+  "impact": [
+    "The Copilot SDK is now available in technical preview, providing language-specific SDKs for programmatic access to the GitHub Copilot CLI."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn More SDK Documentation Node.js SDK Python SDK Go SDK .NET SDK Try out the GitHub Copilot SDK Cookbook Share your feedback Join the GitHub Community to share your feedback."
+  ],
+  "confidence": 0.9500000000000001
+}

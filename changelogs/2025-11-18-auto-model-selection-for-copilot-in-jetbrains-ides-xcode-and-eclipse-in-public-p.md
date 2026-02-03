@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-auto-model-selection-for-copilot-in-jetbrains-ides-xcode-and-eclipse-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.962376Z"
+fetched_at: "2026-02-03T14:50:55.204377Z"
 ---
 
 # Auto model selection for Copilot in JetBrains IDEs, Xcode, and Eclipse in public preview

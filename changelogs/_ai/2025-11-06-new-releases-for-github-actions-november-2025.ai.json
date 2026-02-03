@@ -1,0 +1,26 @@
+{
+  "overview": "You can now use up to 10 nested reusable workflows and call up to 50 workflows in total from a given workflow run. The previous limits were four and 20, respectively. These new limits make it easier to scale your automation and streamline collaboration.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now use up to 10 nested reusable workflows and call up to 50 workflows in total from a given workflow run. The previous limits were four and 20, respectively. These new limits make it easier to scale your automation and streamline collaboration.",
+        "GitHub Actions M2 powered macOS runners are now generally available. Use the macos-latest-xlarge , macos-15-xlarge , macos-14-xlarge , or macos-13-xlarge labels to run your workflows on M2 machines and gain improved performance and GPU acceleration.",
+        "You can now use GitHub Copilot coding agent without turning on GitHub Actions for your organization, giving you greater flexibility in configuring your workflow automation and AI-powered coding assistance.",
+        "Join the discussion in the GitHub Community to share feedback or ask questions about these updates."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "M2 macOS runners GitHub Actions M2 powered macOS runners are now generally available.",
+    "Copilot coding agent no longer requires GitHub Actions to be enabled You can now use GitHub Copilot coding agent without turning on GitHub Actions for your organization, giving you greater flexibility in configuring your workflow automation and AI-powered coding assistance."
+  ],
+  "caveats": [
+    "Copilot coding agent no longer requires GitHub Actions to be enabled You can now use GitHub Copilot coding agent without turning on GitHub Actions for your organization, giving you greater flexibility in configuring your workflow automation and AI-powered coding assistance."
+  ],
+  "insights": [
+    "Copilot coding agent no longer requires GitHub Actions to be enabled You can now use GitHub Copilot coding agent without turning on GitHub Actions for your organization, giving you greater flexibility in configuring your workflow automation and AI-powered coding assistance."
+  ],
+  "confidence": 0.9000000000000001
+}

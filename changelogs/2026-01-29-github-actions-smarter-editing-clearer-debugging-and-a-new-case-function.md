@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-github-actions-smarter-editing-clearer-debugging-and-a-new-case-function"
-fetched_at: "2026-02-03T14:40:04.787227Z"
+fetched_at: "2026-02-03T14:50:49.305415Z"
 ---
 
 # GitHub Actions: Smarter editing, clearer debugging, and a new case function

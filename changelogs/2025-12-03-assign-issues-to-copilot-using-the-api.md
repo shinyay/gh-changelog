@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "projects and issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-03-assign-issues-to-copilot-using-the-api"
-fetched_at: "2026-02-03T14:40:05.800653Z"
+fetched_at: "2026-02-03T14:50:55.080952Z"
 ---
 
 # Assign issues to Copilot using the API

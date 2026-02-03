@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-17-gpt-5-2-is-now-generally-available-in-github-copilot"
-fetched_at: "2026-02-03T14:40:05.360879Z"
+fetched_at: "2026-02-03T14:50:54.872398Z"
 ---
 
 # GPT-5.2 is now generally available in GitHub Copilot

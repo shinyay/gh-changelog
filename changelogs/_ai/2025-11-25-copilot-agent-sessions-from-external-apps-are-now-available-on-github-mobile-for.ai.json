@@ -1,0 +1,22 @@
+{
+  "overview": "We’ve made it easier to jumpstart agent sessions straight from your favorite Android apps. With our new Android sharesheet custom action in GitHub Mobile for Android, you can now share text from external apps and instantly create a Copilot agent session. Anyone using the GitHub Android app can take ideas drafted elsewhere—notes, messages, or plans—and send them right into a new agent session to get Copilot working for you. This update streamlines your workflow and helps you turn inspiration into action faster. Try it out the next time you’re brainstorming a feature or mapping out a project.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve made it easier to jumpstart agent sessions straight from your favorite Android apps. With our new Android sharesheet custom action in GitHub Mobile for Android, you can now share text from external apps and instantly create a Copilot agent session. Anyone using the GitHub Android app can take ideas drafted elsewhere—notes, messages, or plans—and send them right into a new agent session to get Copilot working for you. This update streamlines your workflow and helps you turn inspiration into action faster. Try it out the next time you’re brainstorming a feature or mapping out a project.",
+        "How it works – Use the Android sharesheet to share text from external apps directly into a Copilot agent session in GitHub Mobile for Android.",
+        "Who can use this feature – Anyone with GitHub Mobile for Android installed.",
+        "Key benefits – Quickly transform ideas drafted in other apps into actionable agent tasks. – Streamline your workflow for planning new features, projects, or sharing inspiration.",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Anyone using the GitHub Android app can take ideas drafted elsewhere—notes, messages, or plans—and send them right into a new agent session to get Copilot working for you."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

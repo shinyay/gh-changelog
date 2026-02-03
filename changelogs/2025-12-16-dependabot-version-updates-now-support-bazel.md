@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-dependabot-version-updates-now-support-bazel"
-fetched_at: "2026-02-03T14:40:05.544986Z"
+fetched_at: "2026-02-03T14:50:54.911102Z"
 ---
 
 # Dependabot version updates now support Bazel

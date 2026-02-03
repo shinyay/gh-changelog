@@ -46,6 +46,15 @@
         "scripts/list_missing_ai_sidecars.py"
       ],
       "problemMatcher": []
+    },
+    {
+      "label": "Changelog: generate AI sidecars from Markdown (no LLM)",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/generate_ai_sidecars_from_markdown.py"
+      ],
+      "problemMatcher": []
     }
   ]
 }

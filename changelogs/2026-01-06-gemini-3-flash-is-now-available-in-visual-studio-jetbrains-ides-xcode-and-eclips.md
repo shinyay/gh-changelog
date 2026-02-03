@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-06-gemini-3-flash-is-now-available-in-visual-studio-jetbrains-ides-xcode-and-eclipse"
-fetched_at: "2026-02-03T14:40:05.264127Z"
+fetched_at: "2026-02-03T14:50:54.827110Z"
 ---
 
 # Gemini 3 Flash is now available in Visual Studio, JetBrains IDEs, Xcode, and Eclipse

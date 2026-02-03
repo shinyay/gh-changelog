@@ -1,0 +1,83 @@
+{
+  "overview": "We released three major updates to Copilot Spaces: public spaces, individual sharing, and the ability to add files to a space directly from the github.com code viewer.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We released three major updates to Copilot Spaces: public spaces, individual sharing, and the ability to add files to a space directly from the github.com code viewer."
+      ]
+    },
+    {
+      "title": "Public spaces",
+      "bullets": [
+        "You can now make any space publicly accessible to anyone with the link. This is perfect for:",
+        "Open-source documentation and resources.",
+        "Sharing templates and workflows with the GitHub community.",
+        "Cross-organization collaboration.",
+        "Educational demos.",
+        "Public spaces are only available for individual-owned spaces, not organization-owned spaces. They are view-only by default to protect content integrity. We’ve added individual sharing to add more access controls."
+      ]
+    },
+    {
+      "title": "Individual sharing",
+      "bullets": [
+        "Individual-owned spaces can now be shared. This unlocks lightweight personal workflows and flexible collaboration across individuals."
+      ]
+    },
+    {
+      "title": "Privacy & security",
+      "bullets": [
+        "This release maintains GitHub’s security and trust standards:",
+        "No private or sensitive content is ever exposed. Public spaces and individual sharing only surface content the viewer already has permission to see.",
+        "Role-based access control is always enforced , even on public spaces.",
+        "Access changes take effect immediately , ensuring full control at all times.",
+        "Public links do not require sign-in , but viewers only see what they’re already authorized to access.",
+        "Public spaces are discoverable only via direct link. They are not indexed."
+      ]
+    },
+    {
+      "title": "📎 Add files to a space directly from the code viewer",
+      "bullets": [
+        "You can now add files to a space right from the github.com code viewer. This embedded entry point fits into your natural workflows and reduces context switching."
+      ]
+    },
+    {
+      "title": "Security & permissions",
+      "bullets": [
+        "Users can only add files they have permission to access.",
+        "Space-level role-based access control and repository access controls continue to apply."
+      ]
+    },
+    {
+      "title": "💬 Get started & resources",
+      "bullets": [
+        "Try Copilot Spaces today at github.com/copilot/spaces .",
+        "Learn more about Copilot Spaces capabilities in the general availability announcement",
+        "Provide feedback using the inline Give feedback button in the UI.",
+        "Copilot Spaces documentation .",
+        "Copilot Spaces billing model ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Public spaces are only available for individual-owned spaces, not organization-owned spaces.",
+    "They are view-only by default to protect content integrity.",
+    "Public spaces and individual sharing only surface content the viewer already has permission to see.",
+    "Public links do not require sign-in , but viewers only see what they’re already authorized to access.",
+    "Public spaces are discoverable only via direct link.",
+    "Security & permissions Users can only add files they have permission to access."
+  ],
+  "caveats": [
+    "Public spaces are only available for individual-owned spaces, not organization-owned spaces.",
+    "They are view-only by default to protect content integrity.",
+    "Public spaces and individual sharing only surface content the viewer already has permission to see.",
+    "Public links do not require sign-in , but viewers only see what they’re already authorized to access.",
+    "Public spaces are discoverable only via direct link.",
+    "Security & permissions Users can only add files they have permission to access."
+  ],
+  "insights": [
+    "Learn more about Copilot Spaces capabilities in the general availability announcement Provide feedback using the inline Give feedback button in the UI."
+  ],
+  "confidence": 0.9000000000000001
+}

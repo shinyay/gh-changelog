@@ -1,0 +1,39 @@
+{
+  "overview": "You can now assign issues in Linear to Copilot coding agent, our asynchronous, autonomous background agent.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now assign issues in Linear to Copilot coding agent, our asynchronous, autonomous background agent.",
+        "When you assign a Linear issue to Copilot, it will:",
+        "Analyze the issue contents and open a draft pull request.",
+        "Work independently in its own ephemeral development environment, powered by GitHub Actions. Within this environment, Copilot can explore your code, make changes, run automated tests and linters, and more.",
+        "Stream progress updates back to your Linear activity timeline.",
+        "Request a pull request review from you when work is completed."
+      ]
+    },
+    {
+      "title": "Key benefits",
+      "bullets": [
+        "Automate repetitive tasks like bug fixes, refactors, and documentation updates.",
+        "Reduce manual steps and context switching between Linear and GitHub.",
+        "Follow your existing review and approval rules for every pull request Copilot creates."
+      ]
+    },
+    {
+      "title": "Get started",
+      "bullets": [
+        "Install the GitHub Copilot coding agent for Linear app from the GitHub Marketplace. You’ll need organization owner permissions in GitHub and workspace admin privileges in Linear.",
+        "Review our documentation to learn more about the integration and Copilot coding agent .",
+        "We welcome your feedback. Feel free to share your thoughts in the community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Review our documentation to learn more about the integration and Copilot coding agent ."
+  ],
+  "confidence": 0.8
+}

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-17-dynamic-copilot-prompts-on-github-docs"
-fetched_at: "2026-02-03T14:40:05.414149Z"
+fetched_at: "2026-02-03T14:50:54.887558Z"
 ---
 
 # Dynamic Copilot prompts on GitHub Docs

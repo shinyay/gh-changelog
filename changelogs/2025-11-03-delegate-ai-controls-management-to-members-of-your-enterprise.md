@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-03-delegate-ai-controls-management-to-members-of-your-enterprise"
-fetched_at: "2026-02-03T14:40:06.382353Z"
+fetched_at: "2026-02-03T14:50:55.472602Z"
 ---
 
 # Delegate AI controls management to members of your enterprise

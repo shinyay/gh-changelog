@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-10-raptor-mini-is-rolling-out-in-public-preview-for-github-copilot"
-fetched_at: "2026-02-03T14:40:06.177649Z"
+fetched_at: "2026-02-03T14:50:55.355289Z"
 ---
 
 # Raptor mini is rolling out in public preview for GitHub Copilot

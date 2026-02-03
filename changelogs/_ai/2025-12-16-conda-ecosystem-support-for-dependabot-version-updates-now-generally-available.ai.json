@@ -1,0 +1,38 @@
+{
+  "overview": "Dependabot now supports parsing and updating environment.yml Conda environment specification files. This release includes version updates for Conda-based projects.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Dependabot now supports parsing and updating environment.yml Conda environment specification files. This release includes version updates for Conda-based projects."
+      ]
+    },
+    {
+      "title": "Why it matters",
+      "bullets": [
+        "Many projects rely on Conda for managing dependencies and environments. Extending Dependabot’s support to Conda allows teams who use Conda to benefit from automated dependency management. Organizations can more effectively keep their Conda-based environments up to date, reducing the risk of vulnerabilities and improving their project security."
+      ]
+    },
+    {
+      "title": "Details",
+      "bullets": [
+        "Dependabot will detect Conda environment files and create update pull requests. These updates cover version updates for dependencies listed in the Conda manifest files.",
+        "To help you get started, full documentation, examples, and usage notes are available in the Dependabot documentation ."
+      ]
+    },
+    {
+      "title": "Availability",
+      "bullets": [
+        "This capability is available on github.com today and will be coming to GitHub Enterprise Server (GHES) with version 3.21.",
+        "Join the discussion within the Dependabot Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "To help you get started, full documentation, examples, and usage notes are available in the Dependabot documentation ."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

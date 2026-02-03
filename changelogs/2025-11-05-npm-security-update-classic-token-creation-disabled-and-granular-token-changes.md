@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes"
-fetched_at: "2026-02-03T14:40:06.301579Z"
+fetched_at: "2026-02-03T14:50:55.429675Z"
 ---
 
 # npm security update: Classic token creation disabled and granular token changes

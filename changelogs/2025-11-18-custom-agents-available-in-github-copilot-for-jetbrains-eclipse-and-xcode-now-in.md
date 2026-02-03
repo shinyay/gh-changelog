@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-custom-agents-available-in-github-copilot-for-jetbrains-eclipse-and-xcode-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.972113Z"
+fetched_at: "2026-02-03T14:50:55.212201Z"
 ---
 
 # Custom agents available in GitHub Copilot for JetBrains, Eclipse, and Xcode now in public preview

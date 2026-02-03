@@ -1,0 +1,53 @@
+{
+  "overview": "Editor’s note (November 18, 2025): We’ve updated this post to clarify impact on enterprises.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Editor’s note (November 18, 2025): We’ve updated this post to clarify impact on enterprises.",
+        "Following the previous announcement notice , we retired GraphQL Explorer."
+      ]
+    },
+    {
+      "title": "Who this affects",
+      "bullets": [
+        "Customers who use the audit log will see org_credential_authorization.deauthorize , oauth_authorization.destroy , and oauth_access.destroy events for multiple users in their enterprise. These events are associated with the deletion of GraphQL Explorer’s OAuth App."
+      ]
+    },
+    {
+      "title": "Why this change matters",
+      "bullets": [
+        "We understand that retiring the Explorer will disrupt the workflow of developers who used it for quick testing or prototyping with the GitHub GraphQL API. Although its overall usage was limited, we know this change is disappointing for users who relied on it.",
+        "The decision to retire the Explorer has not been made lightly and is driven by increasing technical debt, costly ongoing maintenance (especially for security and accessibility), and reliance on third-party libraries we can’t keep compliant."
+      ]
+    },
+    {
+      "title": "What you should do",
+      "bullets": [
+        "If you currently use the GraphQL Explorer, we recommend transitioning to a local development tool for working with the GitHub GraphQL API. Our updated documentation includes guidance on getting started with popular GraphQL clients."
+      ]
+    },
+    {
+      "title": "Learn more",
+      "bullets": [
+        "To learn more about working with the GitHub GraphQL API, see our GraphQL API documentation .",
+        "Have feedback or questions? Join the conversation in the GitHub Community .",
+        "This change supports our ongoing commitment to make GitHub’s APIs faster, more scalable, and easier to use for everyone."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Following the previous announcement notice , we retired GraphQL Explorer.",
+    "Although its overall usage was limited, we know this change is disappointing for users who relied on it."
+  ],
+  "caveats": [
+    "Editor’s note (November 18, 2025): We’ve updated this post to clarify impact on enterprises.",
+    "Although its overall usage was limited, we know this change is disappointing for users who relied on it."
+  ],
+  "insights": [
+    "What you should do If you currently use the GraphQL Explorer, we recommend transitioning to a local development tool for working with the GitHub GraphQL API.",
+    "Learn more To learn more about working with the GitHub GraphQL API, see our GraphQL API documentation ."
+  ],
+  "confidence": 0.9000000000000001
+}

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-codeql-2-23-7-and-2-23-8-add-security-queries-for-go-and-rust"
-fetched_at: "2026-02-03T14:40:05.304384Z"
+fetched_at: "2026-02-03T14:50:54.850960Z"
 ---
 
 # CodeQL 2.23.7 and 2.23.8 add security queries for Go and Rust

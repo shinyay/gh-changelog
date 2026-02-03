@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-08-enterprise-teams-product-limits-increased-by-over-10x"
-fetched_at: "2026-02-03T14:40:05.739081Z"
+fetched_at: "2026-02-03T14:50:55.031170Z"
 ---
 
 # Enterprise teams product limits increased by over 10x

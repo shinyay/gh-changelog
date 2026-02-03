@@ -1,0 +1,19 @@
+{
+  "overview": "Continuing the supply chain security theme of continually improving our package ecosystem support, Go projects will now see more complete and accurate transitive dependency trees in their dependency graphs and Software Bill of Materials (SBOMs).",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Continuing the supply chain security theme of continually improving our package ecosystem support, Go projects will now see more complete and accurate transitive dependency trees in their dependency graphs and Software Bill of Materials (SBOMs).",
+        "Since Go resolves dependency versions dynamically, getting an accurate picture of a project’s dependencies cannot rely on static parsing. Now, when a commit updates a project’s go.mod , GitHub runs a new type of Dependabot job that builds a dependency snapshot and uploads it to the Dependency Submission API.",
+        "This approach is similar to dependency autosubmission for other ecosystems, but it will not incur charges for actions minutes. It can also access organization-wide configurations for private registries you’ve set up for Dependabot.",
+        "For more information, see Configuring the dependency graph ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

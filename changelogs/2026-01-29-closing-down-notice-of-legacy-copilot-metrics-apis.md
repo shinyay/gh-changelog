@@ -5,7 +5,7 @@ type: "Retired"
 labels: ["account management", "copilot", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-closing-down-notice-of-legacy-copilot-metrics-apis"
-fetched_at: "2026-02-03T14:40:04.804110Z"
+fetched_at: "2026-02-03T14:50:49.341904Z"
 ---
 
 # Closing down notice of legacy Copilot metrics APIs

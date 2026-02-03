@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-grouping-changes-in-a-pull-request-with-copilot-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.677781Z"
+fetched_at: "2026-02-03T14:50:55.665520Z"
 ---
 
 # Grouping changes in a pull request with Copilot in public preview

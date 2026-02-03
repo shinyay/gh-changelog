@@ -1,0 +1,40 @@
+{
+  "overview": "GitHub Enterprise Cloud with data residency in Japan is now generally available, allowing GitHub Enterprise Cloud customers greater flexibility in choosing where their code and repository data are stored. This ensures enterprise customers have a single, global DevOps platform for their teams, while providing the ability to maintain their code close to home.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Enterprise Cloud with data residency in Japan is now generally available, allowing GitHub Enterprise Cloud customers greater flexibility in choosing where their code and repository data are stored. This ensures enterprise customers have a single, global DevOps platform for their teams, while providing the ability to maintain their code close to home.",
+        "With this release, teams can enhance productivity and collaboration while gaining more control over their code to meet their data residency preferences. This will help customers in Japan or with specific requirements in the region meet their compliance, regulatory, or data residency needs."
+      ]
+    },
+    {
+      "title": "What is GitHub Enterprise Cloud with data residency?",
+      "bullets": [
+        "GitHub Enterprise Cloud is a multi-tenant, enterprise SaaS deployment option of GitHub Enterprise powered by Microsoft Azure. It provides a single, end-to-end DevOps platform with a suite of tools and features that integrate with the GitHub ecosystem, allowing organizations to build, secure, and ship software at scale.",
+        "With the introduction of data residency in Japan, customers now have the flexibility to choose where their code is stored. GitHub Enterprise Cloud with data residency is powered by Microsoft Azure’s globally distributed data center infrastructure, providing high availability, security, and performance wherever your teams are located."
+      ]
+    },
+    {
+      "title": "Who is this available for?",
+      "bullets": [
+        "GitHub Enterprise Cloud with data residency in Japan is available for customers who need their code and repository data to reside in that region. Support for additional regions is currently being planned and will be announced in future changelog updates."
+      ]
+    },
+    {
+      "title": "How can you access GitHub Enterprise Cloud with data residency in Japan?",
+      "bullets": [
+        "Get started today by contacting our sales team , or by signing up for a free 30-day trial of GitHub Enterprise Cloud with data residency . You can also learn more by visiting our Docs and exploring GitHub Enterprise Cloud deployment options."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "GitHub Enterprise Cloud with data residency in Japan is now generally available, allowing GitHub Enterprise Cloud customers greater flexibility in choosing where their code and repository data are stored."
+  ],
+  "caveats": [],
+  "insights": [
+    "You can also learn more by visiting our Docs and exploring GitHub Enterprise Cloud deployment options."
+  ],
+  "confidence": 0.8500000000000001
+}

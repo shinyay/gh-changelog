@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security", "platform governance", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-github-code-quality-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.479464Z"
+fetched_at: "2026-02-03T14:50:55.535491Z"
 ---
 
 # GitHub Code Quality in public preview

@@ -1,0 +1,21 @@
+{
+  "overview": "You can now configure Copilot coding agent’s development environment to run in your own infrastructure using self-hosted GitHub Actions runners managed by Actions Runner Controller (ARC). With this setup, you can give Copilot access to internal resources (e.g. packages) not available on the public internet.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now configure Copilot coding agent’s development environment to run in your own infrastructure using self-hosted GitHub Actions runners managed by Actions Runner Controller (ARC). With this setup, you can give Copilot access to internal resources (e.g. packages) not available on the public internet.",
+        "Copilot coding agent is our asynchronous, autonomous background agent. Delegate a task to Copilot and it opens a draft pull request, makes changes in the background, and then requests a review from you. Copilot works in its own ephemeral development environment, powered by GitHub Actions, where it can run the repository’s build process, automated tests, and more.",
+        "ARC scale sets are supported as a runs-on: target for the copilot-setup-steps.yml configuration file when customizing the coding agent’s development environment. To get started:",
+        "Deploy ARC and configure a scale set.",
+        "Update the runs-on: target in copilot-setup-steps.yml to the scale set.",
+        "For additional guidance, refer to our documentation on customizing the development environment for GitHub Copilot coding agent ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

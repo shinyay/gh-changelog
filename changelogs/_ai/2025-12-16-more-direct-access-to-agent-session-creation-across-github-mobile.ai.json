@@ -1,0 +1,30 @@
+{
+  "overview": "We’ve expanded the availability of the New Agent Session option in GitHub Mobile! Previously, users could only start a new agent session from the “Agents”, “Home”, or repository views.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve expanded the availability of the New Agent Session option in GitHub Mobile! Previously, users could only start a new agent session from the “Agents”, “Home”, or repository views.",
+        "With this update, you can now launch agent sessions from multiple additional touchpoints throughout the app, including:",
+        "Actions report/job view.",
+        "Commit file view.",
+        "Pull request main view.",
+        "File changed view.",
+        "Copilot Chat message overflow menu.",
+        "To streamline your workflow and facilitate quicker task setup, we automatically prepopulate the agent session composer with the relevant shared URL or text message. This enhancement gives you more direct access to agent capabilities, whenever and wherever you need them in the app.",
+        "The new experience is now available on the latest production build of GitHub Mobile on iOS and Android .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Previously, users could only start a new agent session from the “Agents”, “Home”, or repository views.",
+    "The new experience is now available on the latest production build of GitHub Mobile on iOS and Android ."
+  ],
+  "caveats": [
+    "Previously, users could only start a new agent session from the “Agents”, “Home”, or repository views."
+  ],
+  "insights": [],
+  "confidence": 0.9000000000000001
+}

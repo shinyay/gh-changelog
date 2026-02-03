@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-claude-opus-4-5-is-now-generally-available-in-github-copilot"
-fetched_at: "2026-02-03T14:40:05.322390Z"
+fetched_at: "2026-02-03T14:50:54.859972Z"
 ---
 
 # Claude Opus 4.5 is now generally available in GitHub Copilot

@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-09-npm-classic-tokens-revoked-session-based-auth-and-cli-token-management-now-available"
-fetched_at: "2026-02-03T14:40:05.732750Z"
+fetched_at: "2026-02-03T14:50:55.026991Z"
 ---
 
 # npm classic tokens revoked, session-based auth and CLI token management now available

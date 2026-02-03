@@ -1,0 +1,27 @@
+{
+  "overview": "We’ve added a new enterprise: qualifier to GitHub code search, making it easier to search across all organizations in your enterprise.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve added a new enterprise: qualifier to GitHub code search, making it easier to search across all organizations in your enterprise.",
+        "Previously, searching across multiple organizations required manually combining many org: qualifiers with boolean operators —a cumbersome process for enterprises with hundreds or thousands of organizations."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "Add the enterprise: qualifier to any code search query to search across all organizations in your enterprise. Check out our docs for an example .",
+        "The enterprise: qualifier works seamlessly with other existing search qualifiers and is subject to the same limitations as all other qualifiers in GitHub Code Search .",
+        "This feature is now generally available for all GitHub Enterprise Cloud customers."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "This feature is now generally available for all GitHub Enterprise Cloud customers."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["ecosystem and accessibility"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-12-selectively-showing-act-on-your-behalf-warning-for-github-apps-is-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.248288Z"
+fetched_at: "2026-02-03T14:50:54.816293Z"
 ---
 
 # Selectively showing "act on your behalf" warning for GitHub Apps is in public preview

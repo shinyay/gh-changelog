@@ -1,0 +1,32 @@
+{
+  "overview": "Raptor mini, a new experimental model, is now rolling out in GitHub Copilot to Pro, Pro+, and Free plans in Visual Studio Code.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Raptor mini, a new experimental model, is now rolling out in GitHub Copilot to Pro, Pro+, and Free plans in Visual Studio Code.",
+        "You’ll be able to select the model in the Copilot Chat model picker from Visual Studio Code in chat, ask, edit, and agent modes.",
+        "Rollout will be gradual. Check back soon if you don’t see it yet."
+      ]
+    },
+    {
+      "title": "Learn more",
+      "bullets": [
+        "To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Have feedback or questions? Join the community discussion to share your experiences and tips."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot."
+  ],
+  "confidence": 0.8
+}

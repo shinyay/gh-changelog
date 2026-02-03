@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-21-github-copilot-cli-plan-before-you-build-steer-as-you-go"
-fetched_at: "2026-02-03T14:40:05.115816Z"
+fetched_at: "2026-02-03T14:50:54.733310Z"
 ---
 
 # GitHub Copilot CLI: Plan before you build, steer as you go

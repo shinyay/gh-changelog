@@ -1,0 +1,51 @@
+{
+  "overview": "CodeQL is the static analysis engine behind GitHub code scanning , which finds and remediates security issues in your code. We’ve recently released CodeQL 2.23.6 , which adds support for Swift 6.2.1, promotes two C# cookie security queries, and includes various accuracy improvements across languages.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "CodeQL is the static analysis engine behind GitHub code scanning , which finds and remediates security issues in your code. We’ve recently released CodeQL 2.23.6 , which adds support for Swift 6.2.1, promotes two C# cookie security queries, and includes various accuracy improvements across languages."
+      ]
+    },
+    {
+      "title": "Language and framework support",
+      "bullets": [
+        "Swift : CodeQL now supports analysis of apps built with Swift 6.2.1.",
+        "Rust : We’ve added models for cookie methods in the poem crate."
+      ]
+    },
+    {
+      "title": "Query changes",
+      "bullets": [
+        "C# : The cs/web/cookie-secure-not-set and cs/web/cookie-httponly-not-set queries have been promoted from experimental to the main query pack. These queries detect cookies created without proper security attributes. We’ve improved the Guards library for recognizing disjunctions, resulting in improved precision for cs/constant-condition , cs/inefficient-containskey , and cs/dereferenced-value-may-be-null queries.",
+        "Rust : We’ve added taint flow barriers to the rust/regex-injection , rust/sql-injection , and rust/log-injection queries, reducing the frequency of false positive results.",
+        "Java/Kotlin : We’ve reduced the security-severity score of java/overly-large-range and java/insecure-cookie from 5.0 to 4.0 to better reflect their impact.",
+        "JavaScript/TypeScript : We’ve increased the security-severity score of js/xss-through-dom from 6.1 to 7.8 to align with other XSS queries, and reduced the score of js/overly-large-range from 5.0 to 4.0.",
+        "Python : We’ve reduced the security-severity score of py/overly-large-range from 5.0 to 4.0 to better reflect its impact.",
+        "Ruby : We’ve reduced the security-severity score of rb/overly-large-range from 5.0 to 4.0 to better reflect its impact.",
+        "The cs/web/cookie-secure-not-set and cs/web/cookie-httponly-not-set queries have been promoted from experimental to the main query pack. These queries detect cookies created without proper security attributes.",
+        "We’ve improved the Guards library for recognizing disjunctions, resulting in improved precision for cs/constant-condition , cs/inefficient-containskey , and cs/dereferenced-value-may-be-null queries.",
+        "For a full list of changes, please refer to the complete changelog for version 2.23.6 . Every new version of CodeQL is automatically deployed to users of GitHub code scanning on github.com. The new functionality in CodeQL 2.23.6 will also be included in GitHub Enterprise Server (GHES) 3.20 release. If you use an older version of GHES, you can manually upgrade your CodeQL version ."
+      ]
+    }
+  ],
+  "key_changes": [
+    "C# : The cs/web/cookie-secure-not-set and cs/web/cookie-httponly-not-set queries have been promoted from experimental to the main query pack. These queries detect cookies created without proper security attributes. We’ve improved the Guards library for recognizing disjunctions, resulting in improved precision for cs/constant-condition , cs/inefficient-containskey , and cs/dereferenced-value-may-be-null queries.",
+    "Rust : We’ve added taint flow barriers to the rust/regex-injection , rust/sql-injection , and rust/log-injection queries, reducing the frequency of false positive results.",
+    "Java/Kotlin : We’ve reduced the security-severity score of java/overly-large-range and java/insecure-cookie from 5.0 to 4.0 to better reflect their impact.",
+    "JavaScript/TypeScript : We’ve increased the security-severity score of js/xss-through-dom from 6.1 to 7.8 to align with other XSS queries, and reduced the score of js/overly-large-range from 5.0 to 4.0.",
+    "Python : We’ve reduced the security-severity score of py/overly-large-range from 5.0 to 4.0 to better reflect its impact.",
+    "Ruby : We’ve reduced the security-severity score of rb/overly-large-range from 5.0 to 4.0 to better reflect its impact.",
+    "The cs/web/cookie-secure-not-set and cs/web/cookie-httponly-not-set queries have been promoted from experimental to the main query pack. These queries detect cookies created without proper security attributes.",
+    "We’ve improved the Guards library for recognizing disjunctions, resulting in improved precision for cs/constant-condition , cs/inefficient-containskey , and cs/dereferenced-value-may-be-null queries.",
+    "For a full list of changes, please refer to the complete changelog for version 2.23.6 . Every new version of CodeQL is automatically deployed to users of GitHub code scanning on github.com. The new functionality in CodeQL 2.23.6 will also be included in GitHub Enterprise Server (GHES) 3.20 release. If you use an older version of GHES, you can manually upgrade your CodeQL version ."
+  ],
+  "impact": [
+    "Query changes C# : The cs/web/cookie-secure-not-set and cs/web/cookie-httponly-not-set queries have been promoted from experimental to the main query pack."
+  ],
+  "caveats": [
+    "Query changes C# : The cs/web/cookie-secure-not-set and cs/web/cookie-httponly-not-set queries have been promoted from experimental to the main query pack."
+  ],
+  "insights": [],
+  "confidence": 1.0
+}

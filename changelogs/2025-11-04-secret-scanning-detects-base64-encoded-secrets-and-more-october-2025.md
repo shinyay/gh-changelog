@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-04-secret-scanning-now-detects-base64-encoded-secrets"
-fetched_at: "2026-02-03T14:40:06.354734Z"
+fetched_at: "2026-02-03T14:50:55.459294Z"
 ---
 
 # Secret scanning detects Base64-encoded secrets and more — October 2025

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["collaboration tools", "copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-home-dashboard-update-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.613195Z"
+fetched_at: "2026-02-03T14:50:55.625226Z"
 ---
 
 # Home dashboard update in public preview

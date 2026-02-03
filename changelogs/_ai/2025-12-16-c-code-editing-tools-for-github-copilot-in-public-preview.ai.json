@@ -1,0 +1,39 @@
+{
+  "overview": "C++ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release. These tools extend Copilot’s ability to understand and modify C++ code at scale by providing deep symbol awareness for reliable multi-file editing support.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "C++ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release. These tools extend Copilot’s ability to understand and modify C++ code at scale by providing deep symbol awareness for reliable multi-file editing support.",
+        "The C++ code editing tools provide rich semantic data for any symbol in your project, enabling Copilot agent mode to",
+        "View all references across a codebase.",
+        "Understand symbol type, declaration, scope, and other metadata.",
+        "Visualize class inheritance hierarchies.",
+        "Trace function call chains."
+      ]
+    },
+    {
+      "title": "How to get started",
+      "bullets": [
+        "Open your C++ project in Visual Studio 2026 Insiders.",
+        "Go to Tools > Options , GitHub > Copilot and enable the C++ code editing tools a.  You may need to close and reopen your solution after enabling",
+        "Open Copilot Chat and use the Tools icon to enable the specific C++ tools.",
+        "GitHub Copilot can then call upon these tools to provide more accurate and context-aware code suggestions, making your coding experience smoother and more efficient. For example, these tools can help you make updates across all instances of a function if you are adding new functionality or updating parameters.",
+        "For best results, use a model optimized for tool calling and provide clear, specific prompts with explicit symbols when possible."
+      ]
+    },
+    {
+      "title": "Tell us your feedback",
+      "bullets": [
+        "To submit feedback, please report problems or suggest improvements through the Visual Studio feedback icon."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "C++ code editing tools for GitHub Copilot are now in public preview in the latest Visual Studio 2026 Insiders release."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

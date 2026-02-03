@@ -1,0 +1,32 @@
+{
+  "overview": "You can now manage GitHub Teams from a dedicated page in Settings, instead of the left-hand navigation menu. This change streamlines the navigation and makes other important features easier to find.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now manage GitHub Teams from a dedicated page in Settings, instead of the left-hand navigation menu. This change streamlines the navigation and makes other important features easier to find."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "“Teams” is no longer in the left-hand navigation menu.",
+        "All team management has moved to a new “Settings → Teams” page.",
+        "You’ll see a dismissible banner letting you know where to find Teams the next time you look for it."
+      ]
+    },
+    {
+      "title": "How to provide feedback",
+      "bullets": [
+        "We want to know what you think. Join the community discussion to share your thoughts or ask questions!"
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "This change streamlines the navigation and makes other important features easier to find."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

@@ -1,0 +1,64 @@
+{
+  "overview": "We’re expanding our billing APIs with new capabilities to help you programmatically manage budgets, track usage, and access cost center data.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’re expanding our billing APIs with new capabilities to help you programmatically manage budgets, track usage, and access cost center data."
+      ]
+    },
+    {
+      "title": "Manage budgets via APIs",
+      "bullets": [
+        "You can now manage the full lifecycle of budgets via API. Previously, budgets could only be managed through the UI. Now, you can programmatically create, update, and delete budgets, as well as adjust the budget amount and alert notifications. There is currently a temporary limit of 50 budgets per account. This API is now available in public preview.",
+        "For more details, refer to our documentation on REST API endpoints for budgets ."
+      ]
+    },
+    {
+      "title": "Track usage with the new Usage summary API",
+      "bullets": [
+        "The new Usage summary API allows you to retrieve usage information for your entire account or filter by specific organizations, repositories, cost centers, products, or SKUs. Usage can be queried by year, month, or day. This API is now available in public preview.",
+        "For more details, refer to our documentation on the Usage summary REST API endpoint ."
+      ]
+    },
+    {
+      "title": "Additional improvements",
+      "bullets": [
+        "Cost center API improvement : The Get all cost centers for an enterprise API now includes an optional state parameter, which allows you to only get active cost centers by adding ?state=active when calling the endpoint.",
+        "Usage report API changes : We’ve removed the hour parameter from the existing usage report API and reduced the granularity of the response when using the day parameter to provide daily totals instead of hourly breakdowns. For more details, refer to our documentation on the Get billing usage report for an enterprise REST API endpoint ."
+      ]
+    },
+    {
+      "title": "Who can use these features",
+      "bullets": [
+        "Enterprise owners and billing managers on GitHub Enterprise plans.",
+        "Organization owners on GitHub Team plans.",
+        "Individuals on personal plans.",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Cost center API improvement : The Get all cost centers for an enterprise API now includes an optional state parameter, which allows you to only get active cost centers by adding ?state=active when calling the endpoint.",
+    "Usage report API changes : We’ve removed the hour parameter from the existing usage report API and reduced the granularity of the response when using the day parameter to provide daily totals instead of hourly breakdowns. For more details, refer to our documentation on the Get billing usage report for an enterprise REST API endpoint .",
+    "Enterprise owners and billing managers on GitHub Enterprise plans.",
+    "Organization owners on GitHub Team plans.",
+    "Individuals on personal plans.",
+    "Join the discussion within GitHub Community ."
+  ],
+  "impact": [
+    "Previously, budgets could only be managed through the UI.",
+    "This API is now available in public preview.",
+    "Additional improvements Cost center API improvement : The Get all cost centers for an enterprise API now includes an optional state parameter, which allows you to only get active cost centers by adding ?state=active when calling the endpoint."
+  ],
+  "caveats": [
+    "Previously, budgets could only be managed through the UI.",
+    "Additional improvements Cost center API improvement : The Get all cost centers for an enterprise API now includes an optional state parameter, which allows you to only get active cost centers by adding ?state=active when calling the endpoint."
+  ],
+  "insights": [
+    "For more details, refer to our documentation on REST API endpoints for budgets .",
+    "For more details, refer to our documentation on the Usage summary REST API endpoint .",
+    "For more details, refer to our documentation on the Get billing usage report for an enterprise REST API endpoint ."
+  ],
+  "confidence": 1.0
+}

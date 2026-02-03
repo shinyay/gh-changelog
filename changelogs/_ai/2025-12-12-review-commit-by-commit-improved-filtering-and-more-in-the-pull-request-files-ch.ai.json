@@ -1,0 +1,76 @@
+{
+  "overview": "A major feature gap with the classic “Files changed” page ( review commit-by-commit ) is now closed and commit filtering has been improved in this update to the pull request “Files changed” experience!",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "A major feature gap with the classic “Files changed” page ( review commit-by-commit ) is now closed and commit filtering has been improved in this update to the pull request “Files changed” experience!"
+      ]
+    },
+    {
+      "title": "🔍 Review commit-by-commit",
+      "bullets": [
+        "You can now review all commits, a subset of commits, or a single commit directly from the new “Files changed” page. Previously, filtering to a single commit redirected you to the classic view in the Commits tab. With this update, you remain on the “Files changed” page whether you are viewing all commits, selected commits, or an individual commit.",
+        "We’ve also simplified all “Files changed” URL routes under a new path ( /changes ). All existing /files (and /commits/:sha ) URLs will continue to work, but they will redirect to the equivalent /changes route when you have the new feature enabled.",
+        "We’ve also improved the commit filter, and it requires fewer clicks to choose a range or a single commit! You can open it from the toolbar or by pressing C if you’ve enabled single-key shortcuts."
+      ]
+    },
+    {
+      "title": "📁 File filter improvements",
+      "bullets": [
+        "We’ve also improved the file filter to show a blue dot indicator to help you understand when filters are applied. A new Clear filters option also now appears on the filter menu to make it easy to reset all filters back to their default state."
+      ]
+    },
+    {
+      "title": "🚀 Performance",
+      "bullets": [
+        "Improving performance is one of our top priorities and you will continue to see both small and large improvements over the coming weeks. Recent improvements:",
+        "Improved responsiveness of resizing the file tree",
+        "Improved performance when toggling Minimize comments or Split / Unified settings"
+      ]
+    },
+    {
+      "title": "🔧 More fixes and improvements",
+      "bullets": [
+        "Improved : Clicking the Refresh button when new changes are pushed to the pull request no longer does a full (and often slow) page refresh.",
+        "Fixed : The Comments side panel should no longer report an error when resolving a comment that is already resolved.",
+        "Fixed : Nonstandard characters in the file path (like a comma) no longer cause diffs to not load correctly.",
+        "Fixed : The linguist-generated attribute in .gitattributes is now appropriately respected.",
+        "Fixed : The T keyboard shortcut once again focuses on the file filter field and shows the file tree if necessary.",
+        "Fixed : The C keyboard shortcut once again opens the commit filter."
+      ]
+    },
+    {
+      "title": "🧪 Try it out",
+      "bullets": [
+        "The new commit-by-commit review and commit selector are available in the new “Files changed” experience. If you are still using the classic experience, click Try the new experience at the top of the classic “Files changed” page."
+      ]
+    },
+    {
+      "title": "❤ Feedback",
+      "bullets": [
+        "Your feedback is important. You can report problems, ask questions, and view known issues in the “Files changed” preview feedback discussion ."
+      ]
+    }
+  ],
+  "key_changes": [
+    "We’ve also improved the file filter to show a blue dot indicator to help you understand when filters are applied. A new Clear filters option also now appears on the filter menu to make it easy to reset all filters back to their default state.",
+    "Improved : Clicking the Refresh button when new changes are pushed to the pull request no longer does a full (and often slow) page refresh.",
+    "Fixed : The Comments side panel should no longer report an error when resolving a comment that is already resolved.",
+    "Fixed : Nonstandard characters in the file path (like a comma) no longer cause diffs to not load correctly.",
+    "Fixed : The linguist-generated attribute in .gitattributes is now appropriately respected.",
+    "Fixed : The T keyboard shortcut once again focuses on the file filter field and shows the file tree if necessary.",
+    "Fixed : The C keyboard shortcut once again opens the commit filter."
+  ],
+  "impact": [
+    "We’ve also improved the commit filter, and it requires fewer clicks to choose a range or a single commit!"
+  ],
+  "caveats": [
+    "We’ve also improved the commit filter, and it requires fewer clicks to choose a range or a single commit!",
+    "If you are still using the classic experience, click Try the new experience at the top of the classic “Files changed” page. ❤ Feedback Your feedback is important."
+  ],
+  "insights": [
+    "We’ve also improved the commit filter, and it requires fewer clicks to choose a range or a single commit!"
+  ],
+  "confidence": 1.0
+}

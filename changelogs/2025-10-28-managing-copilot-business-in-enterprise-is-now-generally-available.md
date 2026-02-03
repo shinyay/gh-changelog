@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["account management", "copilot", "enterprise management tools", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-managing-copilot-business-in-enterprise-is-now-generally-available"
-fetched_at: "2026-02-03T14:40:06.604691Z"
+fetched_at: "2026-02-03T14:50:55.621640Z"
 ---
 
 # Managing Copilot Business in enterprise is now generally available

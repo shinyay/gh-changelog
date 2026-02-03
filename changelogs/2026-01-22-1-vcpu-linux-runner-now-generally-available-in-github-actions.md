@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-22-1-vcpu-linux-runner-now-generally-available-in-github-actions"
-fetched_at: "2026-02-03T14:40:05.084085Z"
+fetched_at: "2026-02-03T14:50:54.721404Z"
 ---
 
 # 1 vCPU Linux runner now generally available in GitHub Actions

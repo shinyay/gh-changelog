@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-delegate-tasks-to-copilot-coding-agent-from-jetbrains-ides"
-fetched_at: "2026-02-03T14:40:06.661525Z"
+fetched_at: "2026-02-03T14:50:55.658176Z"
 ---
 
 # Delegate tasks to Copilot coding agent from JetBrains IDEs

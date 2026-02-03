@@ -1,0 +1,32 @@
+{
+  "overview": "Repository administrators can now post and comment in GitHub Discussions using an “Admin” badge to distinguish official responses from personal contributions.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Repository administrators can now post and comment in GitHub Discussions using an “Admin” badge to distinguish official responses from personal contributions.",
+        "The option to post as Admin appears when creating discussions or adding comments. This allows administrators to choose when their response represents official repository guidance. This helps community members easily identify authoritative answers while maintainers retain the flexibility to personally participate in conversations. The feature eliminates the need for separate admin accounts — a common workaround that introduces security risks and complicates access management."
+      ]
+    },
+    {
+      "title": "How to post as Admin",
+      "bullets": [
+        "To post using the administrator alias:",
+        "Have administrator permissions on the repository.",
+        "Enable GitHub Discussions for the repository.",
+        "Select Admin when creating or replying to discussions.",
+        "Learn more about managing discussions for your community .",
+        "This feature is now available on github.com for all repositories with discussions enabled."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "This feature is now available on github.com for all repositories with discussions enabled."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn more about managing discussions for your community ."
+  ],
+  "confidence": 0.8500000000000001
+}

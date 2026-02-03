@@ -1,0 +1,31 @@
+{
+  "overview": "The following items released to VS Code Insiders and were announced at GitHub Universe 2025.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "The following items released to VS Code Insiders and were announced at GitHub Universe 2025."
+      ]
+    },
+    {
+      "title": "Highlights",
+      "bullets": [
+        "OpenAI Codex integration : Access OpenAI Codex in VS Code Insiders with a Copilot Pro+ subscription .",
+        "Agent Sessions view : Manage local and cloud agent sessions from a unified interface.",
+        "Context-isolated sub-agents : Subagents let you delegate focused tasks (e.g., running TDD workflows, conducting research) that can be solved independently from your main chat for context-optimized token usage.",
+        "Plan Mode : Create, refine, and execute step-by-step implementation plans. Plan Mode analyzes your codebase, generates detailed execution plans, and validates that requirements are covered before starting to code.",
+        "Explore all the new features in the full release notes . Happy coding!",
+        "Note: The Insiders build installs side-by-side with the monthly Stable build, and you can freely work with either, on the same machine. The Insiders build is the same one the VS Code development team uses daily, and we really appreciate people trying out new features and providing feedback.",
+        "Refresh your Insiders build by opening VS Code Insiders and selecting Help → Check for Updates and then restarting when prompted."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Explore all the new features in the full release notes .",
+    "Note: The Insiders build installs side-by-side with the monthly Stable build, and you can freely work with either, on the same machine."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

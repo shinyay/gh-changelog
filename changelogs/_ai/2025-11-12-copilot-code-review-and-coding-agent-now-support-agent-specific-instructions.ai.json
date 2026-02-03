@@ -1,0 +1,51 @@
+{
+  "overview": "You can now craft targeted custom instructions for Copilot code review and Copilot coding agent. The new excludeAgent property for .instructions.md custom instructions gives you exact control over when specific instructions apply.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now craft targeted custom instructions for Copilot code review and Copilot coding agent. The new excludeAgent property for .instructions.md custom instructions gives you exact control over when specific instructions apply."
+      ]
+    },
+    {
+      "title": "🎯 Recap: Customizing Copilot using instructions.md files",
+      "bullets": [
+        "You can already use custom instruction files located in your .github/instructions directory to guide Copilot’s behavior for specific areas of your repository.",
+        "The applyTo property lets you specify paths or directories with path globs, so your instructions apply where you want them to, and nowhere else. For example, you could create a models.instructions.md file which only applies to your models by specifying applyTo: \"app/models/**/*.rb\" ."
+      ]
+    },
+    {
+      "title": "🛡️ Introducing agent-specific repository instructions with excludeAgent",
+      "bullets": [
+        "The new excludeAgent property allows you to control which Copilot agents use a given instructions file:",
+        "Set excludeAgent: \"code-review\" to hide your instructions file from Copilot code review.",
+        "Set excludeAgent: \"coding-agent\" to hide your instructions file from Copilot coding agent.",
+        "If you don’t have an excludeAgent property in your frontmatter, your instructions file will be used by all agents.",
+        "This feature ensures you can tailor your guidance for each agent, reducing overlap and allowing you to provide focused, specific instructions."
+      ]
+    },
+    {
+      "title": "🛠️ Other custom instructions improvements",
+      "bullets": [
+        "Copilot code review recently fixed a bug that prevented it from reading certain *.instructions.md files.",
+        "For tips on how to write effective instructions files, check out this blog post !",
+        "For details on creating instructions files, visit the Copilot instructions documentation .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Copilot code review recently fixed a bug that prevented it from reading certain *.instructions.md files.",
+    "For tips on how to write effective instructions files, check out this blog post !",
+    "For details on creating instructions files, visit the Copilot instructions documentation .",
+    "Join the discussion within GitHub Community ."
+  ],
+  "impact": [
+    "For example, you could create a models.instructions.md file which only applies to your models by specifying applyTo: \"app/models/**/*.rb\" . 🛡️ Introducing agent-specific repository instructions with excludeAgent The new excludeAgent property allows you to control which Copilot agents use a given instructions file: Set excludeAgent: \"code-review\" to hide your instructions file from Copilot code review."
+  ],
+  "caveats": [
+    "For example, you could create a models.instructions.md file which only applies to your models by specifying applyTo: \"app/models/**/*.rb\" . 🛡️ Introducing agent-specific repository instructions with excludeAgent The new excludeAgent property allows you to control which Copilot agents use a given instructions file: Set excludeAgent: \"code-review\" to hide your instructions file from Copilot code review."
+  ],
+  "insights": [],
+  "confidence": 1.0
+}

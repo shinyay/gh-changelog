@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-20-codeql-2-23-9-has-been-released"
-fetched_at: "2026-02-03T14:40:05.124157Z"
+fetched_at: "2026-02-03T14:50:54.737833Z"
 ---
 
 # CodeQL 2.23.9 has been released

@@ -1,0 +1,78 @@
+{
+  "overview": "We’re introducing a new enterprise-level experience focused on administrative functions for AI systems, available today to all GitHub Enterprise Cloud customers using Copilot. This is your agent control plane, a suite of enterprise governance features designed to give organizations deeper control over how agents operate across their environments.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’re introducing a new enterprise-level experience focused on administrative functions for AI systems, available today to all GitHub Enterprise Cloud customers using Copilot. This is your agent control plane, a suite of enterprise governance features designed to give organizations deeper control over how agents operate across their environments.",
+        "Enterprise administrators are often charged with enabling AI capabilities for their teams while keeping their businesses safe. To do this job well, we’re improving awareness of agentic activity, increasing auditability, and launching complimentary capabilities that make custom agents enterprise-ready. Answering questions about what agents are doing in your enterprise has never been easier."
+      ]
+    },
+    {
+      "title": "AI controls are in the agent control plane",
+      "bullets": [
+        "Let’s start with some basic features of the agent control plane:",
+        "One consolidated view and top-level navigation for all administrative tasks related to AI systems in GitHub.",
+        "Administrators can manage their agentic fleet. The few agents now, and the thousands in the future, are operationalized here for your enterprise.",
+        "The permanent home for enterprise-level policies and configuration of Copilot and AI-related systems."
+      ]
+    },
+    {
+      "title": "Enterprise-ready custom agents",
+      "bullets": [
+        "With the launch of custom agents, enterprises will want to determine a path toward standardized adoption:",
+        "Configure one organization to host the enterprise standard for custom agents.",
+        "Use a 1-click push rule to protect the static file path for custom agents (i.e., .github/agents/*.md ) across your enterprise from edits.",
+        "Adjust push rules to fit your organizational design and experimentation tolerances.",
+        "Select Enterprise-defined custom agents when assigning Copilot coding agent to any issue."
+      ]
+    },
+    {
+      "title": "Agent session activity",
+      "bullets": [
+        "Develop awareness of agent activity in the enterprise:",
+        "See enterprise-wide agent sessions for the last 24 hours.",
+        "Filter on agent type and the task state (e.g., completed, cancelled, in progress).",
+        "Navigate directly to the target repository, if you have authorization to do so."
+      ]
+    },
+    {
+      "title": "Agentic audit logs",
+      "bullets": [
+        "What are your agents really doing? The audit logs have the answer:",
+        "New fields for agent activity (e.g., pull_request.create executed by Copilot): Identify an actor_is_agent . Show user and user_id to identify who the agent is acting on behalf of.",
+        "A new event for agent_session.task shows which sessions have started, finished, or failed to complete.",
+        "You can quickly navigate to agent-related audit logs from the AI controls tab.",
+        "Identify an actor_is_agent .",
+        "Show user and user_id to identify who the agent is acting on behalf of."
+      ]
+    },
+    {
+      "title": "AI administration fine-grained permissions (FGPs) are coming soon!",
+      "bullets": [
+        "AI and Copilot administration is a job done by a team of people at most companies. And that team is not always responsible for running all of GitHub Enterprise. Later this week you can:",
+        "Utilize a new FGP that grants access to the AI controls view.",
+        "Build an enterprise custom role to decentralize administration of AI systems without granting broad enterprise ownership.",
+        "Assign the enterprise custom role to an enterprise team to manage at scale."
+      ]
+    },
+    {
+      "title": "MCP enterprise allowlist",
+      "bullets": [
+        "Set enterprise-wide MCP allowlist via MCP registry URL to govern MCP connections in VS Code Insiders.",
+        "Configure MCP policies from the AI controls experience.",
+        "Omit local servers from registry to prevent the use of untrusted tools.",
+        "Support for VS Code and other IDEs in general availability will be coming soon!",
+        "To learn more, see our documentation on AI controls and the agent control plane .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "To learn more, see our documentation on AI controls and the agent control plane ."
+  ],
+  "confidence": 0.8
+}

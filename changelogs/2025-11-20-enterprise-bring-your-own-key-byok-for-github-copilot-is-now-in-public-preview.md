@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-20-enterprise-bring-your-own-key-byok-for-github-copilot-is-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.920420Z"
+fetched_at: "2026-02-03T14:50:55.168998Z"
 ---
 
 # Enterprise bring your own key (BYOK) for GitHub Copilot is now in public preview

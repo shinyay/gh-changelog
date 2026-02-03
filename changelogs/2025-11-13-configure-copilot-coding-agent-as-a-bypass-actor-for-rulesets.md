@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "platform governance"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-13-configure-copilot-coding-agent-as-a-bypass-actor-for-rulesets"
-fetched_at: "2026-02-03T14:40:06.090901Z"
+fetched_at: "2026-02-03T14:50:55.289918Z"
 ---
 
 # Configure Copilot coding agent as a bypass actor for rulesets

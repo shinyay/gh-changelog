@@ -1,0 +1,36 @@
+{
+  "overview": "Copilot memory is now available in public preview for GitHub Copilot Pro and Pro+ users, with support in Copilot coding agent and Copilot code review.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot memory is now available in public preview for GitHub Copilot Pro and Pro+ users, with support in Copilot coding agent and Copilot code review."
+      ]
+    },
+    {
+      "title": "Copilot memory",
+      "bullets": [
+        "Copilot memory enables agents to learn from your codebase. Over time, Copilot builds a repository-specific memory by capturing key insights about your codebase and using them to improve how agents assist you. This shared context helps Copilot perform better across coding and code review workflows."
+      ]
+    },
+    {
+      "title": "Get started today",
+      "bullets": [
+        "Copilot Pro and Pro+ users can enable Copilot memory by navigating to Settings > Copilot and turning on Copilot memory ."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "We’re continuing to evolve Copilot memory and plan to bring it to more plans in the future. To share feedback or join the discussion, visit the GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Copilot memory is now available in public preview for GitHub Copilot Pro and Pro+ users, with support in Copilot coding agent and Copilot code review."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

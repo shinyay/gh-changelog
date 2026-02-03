@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-new-public-preview-features-in-copilot-code-review-ai-reviews-that-see-the-full-picture"
-fetched_at: "2026-02-03T14:40:06.494578Z"
+fetched_at: "2026-02-03T14:50:55.542154Z"
 ---
 
 # New public preview features in Copilot code review: AI reviews that see the full picture

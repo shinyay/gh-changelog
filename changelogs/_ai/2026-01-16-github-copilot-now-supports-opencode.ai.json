@@ -1,0 +1,43 @@
+{
+  "overview": "GitHub is officially supporting using your Copilot Pro, Pro+, Business, or Enterprise subscription with OpenCode.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub is officially supporting using your Copilot Pro, Pro+, Business, or Enterprise subscription with OpenCode.",
+        "GitHub Copilot now fully supports authentication with OpenCode through a formal partnership, allowing you to use your existing Copilot subscription across more of your development workflow."
+      ]
+    },
+    {
+      "title": "What is OpenCode?",
+      "bullets": [
+        "OpenCode is an open source agent that helps you write code in your terminal, IDE, or desktop. You can learn more at OpenCode’s site ."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "Getting started with OpenCode and GitHub Copilot is simple:",
+        "In OpenCode, run /connect and select GitHub Copilot .",
+        "Complete the GitHub device login flow.",
+        "Start using OpenCode powered by Copilot."
+      ]
+    },
+    {
+      "title": "Who can use this feature",
+      "bullets": [
+        "All developers with paid GitHub Copilot subscriptions (Pro, Pro+, Business, or Enterprise) can now authenticate into OpenCode using their Copilot credentials—no additional AI license needed.",
+        "Learn more about OpenCode’s Copilot provider setup .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "You can learn more at OpenCode’s site .",
+    "Learn more about OpenCode’s Copilot provider setup ."
+  ],
+  "confidence": 0.8
+}

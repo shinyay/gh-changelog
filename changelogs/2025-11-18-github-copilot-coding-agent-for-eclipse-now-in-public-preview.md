@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-github-copilot-coding-agent-for-eclipse-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.049247Z"
+fetched_at: "2026-02-03T14:50:55.254978Z"
 ---
 
 # GitHub Copilot coding agent for Eclipse now in public preview

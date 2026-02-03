@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-12-gemini-3-pro-is-now-available-in-visual-studio-jetbrains-ides-xcode-and-eclipse"
-fetched_at: "2026-02-03T14:40:05.624324Z"
+fetched_at: "2026-02-03T14:50:54.944666Z"
 ---
 
 # Gemini 3 Pro is now available in Visual Studio, JetBrains IDEs, Xcode, and Eclipse

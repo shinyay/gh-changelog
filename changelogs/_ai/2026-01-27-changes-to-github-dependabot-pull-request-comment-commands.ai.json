@@ -1,0 +1,38 @@
+{
+  "overview": "As we announced in October of 2025 , we deprecated several Dependabot-specific pull request comment commands today in favor of GitHub’s native pull request features and functionality.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "As we announced in October of 2025 , we deprecated several Dependabot-specific pull request comment commands today in favor of GitHub’s native pull request features and functionality.",
+        "This change is intended to reduce confusion, improve reliability, and encourage use of the GitHub platform’s built-in tools for working with pull requests."
+      ]
+    },
+    {
+      "title": "Dependabot comment command deprecations",
+      "bullets": [
+        "These comment commands are no longer supported:",
+        "@dependabot merge",
+        "@dependabot cancel merge",
+        "@dependabot squash and merge",
+        "@dependabot close",
+        "@dependabot reopen"
+      ]
+    },
+    {
+      "title": "Migration guidance",
+      "bullets": [
+        "Please update your workflows to rely on GitHub’s native features. For merging, closing, or reopening pull requests, we recommend using GitHub’s built-in UI, the GitHub CLI , and the REST API endpoints for pull requests ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "As we announced in October of 2025 , we deprecated several Dependabot-specific pull request comment commands today in favor of GitHub’s native pull request features and functionality."
+  ],
+  "caveats": [],
+  "insights": [
+    "For merging, closing, or reopening pull requests, we recommend using GitHub’s built-in UI, the GitHub CLI , and the REST API endpoints for pull requests ."
+  ],
+  "confidence": 0.8500000000000001
+}

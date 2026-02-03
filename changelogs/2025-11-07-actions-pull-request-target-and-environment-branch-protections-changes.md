@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-07-actions-pull_request_target-and-environment-branch-protections-changes"
-fetched_at: "2026-02-03T14:40:06.198112Z"
+fetched_at: "2026-02-03T14:50:55.373097Z"
 ---
 
 # Actions pull_request_target and environment branch protections changes

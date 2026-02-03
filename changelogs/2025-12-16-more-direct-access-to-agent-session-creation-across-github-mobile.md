@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-more-direct-access-to-agent-session-creation-across-github-mobile"
-fetched_at: "2026-02-03T14:40:05.606271Z"
+fetched_at: "2026-02-03T14:50:54.935131Z"
 ---
 
 # More direct access to agent session creation across GitHub Mobile

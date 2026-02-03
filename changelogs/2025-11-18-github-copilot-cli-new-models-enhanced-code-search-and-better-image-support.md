@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-github-copilot-cli-new-models-enhanced-code-search-and-better-image-support"
-fetched_at: "2026-02-03T14:40:05.941799Z"
+fetched_at: "2026-02-03T14:50:55.189982Z"
 ---
 
 # GitHub Copilot CLI: New models, enhanced code search, and better image support

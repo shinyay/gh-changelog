@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-enhanced-mcp-oauth-support-for-github-copilot-in-jetbrains-eclipse-and-xcode"
-fetched_at: "2026-02-03T14:40:05.953104Z"
+fetched_at: "2026-02-03T14:50:55.198967Z"
 ---
 
 # Enhanced MCP OAuth support for GitHub Copilot in JetBrains, Eclipse, and Xcode

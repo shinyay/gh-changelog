@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-13-github-actions-oidc-token-claims-now-include-check_run_id"
-fetched_at: "2026-02-03T14:40:06.113074Z"
+fetched_at: "2026-02-03T14:50:55.302823Z"
 ---
 
 # New GitHub Actions OIDC token claims

@@ -1,0 +1,42 @@
+{
+  "overview": "GitHub Copilot next edit suggestions (NES) is now available in public preview for Xcode and Eclipse. This new feature helps developers move faster by suggesting the next logical edit based on current context—reducing repetitive steps and improving productivity.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Copilot next edit suggestions (NES) is now available in public preview for Xcode and Eclipse. This new feature helps developers move faster by suggesting the next logical edit based on current context—reducing repetitive steps and improving productivity."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "The next edit suggestions (NES) feature in GitHub Copilot uses your recent edits to anticipate what you might want to change next—and where. With this new capability, Copilot can suggest revisions to your code, comments, tests, and more. Plus, you can preview and apply changes instantly. It’s easy to move through edits quickly and keep your coding flow uninterrupted: Navigate suggestions with Tab and press Tab again to accept."
+      ]
+    },
+    {
+      "title": "Try it out",
+      "bullets": [
+        "NES is in preview and available today to all Xcode and Eclipse users. To get access, update to the latest plugin or app version and make sure you have a valid Copilot license .",
+        "Enable NES in your IDE settings: In Xcode : Open the GitHub Copilot for Xcode app, go to Advanced > Suggestion Settings , and check Enable next edit suggestions (NES) . In Eclipse : Click the GitHub Copilot icon, select Edit Preferences , find the Completion section, and check Enable next edit suggestions (NES) .",
+        "Start coding and watch Copilot anticipate your next move! NES suggestions will appear automatically. Navigate to a suggestion using your caret or keyboard shortcuts. Accept with the Tab key (default) or apply via an arrow with the gutter menu.",
+        "In Xcode : Open the GitHub Copilot for Xcode app, go to Advanced > Suggestion Settings , and check Enable next edit suggestions (NES) .",
+        "In Eclipse : Click the GitHub Copilot icon, select Edit Preferences , find the Completion section, and check Enable next edit suggestions (NES) ."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "We value your feedback! Share your experience through the following channels:",
+        "GitHub Copilot for Eclipse",
+        "GitHub Copilot for Xcode"
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "GitHub Copilot next edit suggestions (NES) is now available in public preview for Xcode and Eclipse."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

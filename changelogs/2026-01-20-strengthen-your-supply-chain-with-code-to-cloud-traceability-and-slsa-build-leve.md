@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions", "application security", "supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-20-strengthen-your-supply-chain-with-code-to-cloud-traceability-and-slsa-build-level-3-security"
-fetched_at: "2026-02-03T14:40:05.145184Z"
+fetched_at: "2026-02-03T14:50:54.748106Z"
 ---
 
 # Strengthen your supply chain with code-to-cloud traceability and SLSA Build Level 3 security

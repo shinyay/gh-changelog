@@ -1,0 +1,36 @@
+{
+  "overview": "You can now require approvals from specific teams to merge changes into protected branches based on files and folders, giving you more control over who approves changes into specific branches.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now require approvals from specific teams to merge changes into protected branches based on files and folders, giving you more control over who approves changes into specific branches."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "With this new addition to rulesets , you can:",
+        "Protect sensitive branches by enforcing stricter review policies for your release or production branches.",
+        "Scale your policies across any repository, organization, or your entire enterprise for consistent enforcement.",
+        "Target specific files and folders and require a specific number of reviews from specified teams."
+      ]
+    },
+    {
+      "title": "How this differs from CODEOWNERS",
+      "bullets": [
+        "While CODEOWNERS is great for defining ownership, this new ruleset focuses on policy enforcement. It makes it simple to require specific approvals on sensitive branches and critical code paths, all while scaling seamlessly across your enterprise.",
+        "This new rule is designed to augment CODEOWNER files but not replace them. The CODEOWNERS files will continue to be the way to manage ownership, support individuals as reviewers, and request reviews even if not required.",
+        "Learn more in our documentation about rulesets .",
+        "Join the discussion and share your feedback within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more in our documentation about rulesets ."
+  ],
+  "confidence": 0.8
+}

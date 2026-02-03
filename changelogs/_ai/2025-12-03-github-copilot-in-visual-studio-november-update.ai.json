@@ -1,0 +1,45 @@
+{
+  "overview": "November 2025 brought the general availability of Visual Studio 2026, new Copilot actions, and more.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "November 2025 brought the general availability of Visual Studio 2026, new Copilot actions, and more."
+      ]
+    },
+    {
+      "title": "Highlights",
+      "bullets": [
+        "Here’s what’s new with GitHub Copilot in Visual Studio 2026:",
+        "Visual Studio 2026 general availability : Download Visual Studio 2026 to get started with the newest version of Visual Studio for better performance, UX, and AI-assisted workflows.",
+        "GitHub cloud agent in public preview : Delegate repetitive tasks directly from Visual Studio with the new cloud agent. Check Enable Copilot Coding Agent (Preview) from the settings to offload UI cleanups, refactors, doc updates, and multi-file edits while you focus on core development.",
+        "Copilot actions in context menu : Access new Copilot actions right in your context menu! Generate code comments, explanations, or optimizations with a single click.",
+        "Intent detection for all-in-one search : Never lose track of files again with the new “Did you mean” feature. Copilot analyzes your search terms and suggests better matches when it detects typos or fuzzy searches, helping you find what you need faster.",
+        "GitHub cloud agent in public preview : Delegate repetitive tasks directly from Visual Studio with the new cloud agent. Check Enable Copilot Coding Agent (Preview) from the settings to offload UI cleanups, refactors, doc updates, and multi-file edits while you focus on core development.",
+        "Copilot actions in context menu : Access new Copilot actions right in your context menu! Generate code comments, explanations, or optimizations with a single click.",
+        "Intent detection for all-in-one search : Never lose track of files again with the new “Did you mean” feature. Copilot analyzes your search terms and suggests better matches when it detects typos or fuzzy searches, helping you find what you need faster.",
+        "Download Visual Studio 2026 to experience all the new Copilot features today. To learn more about what’s new, check out the Visual Studio blog and release notes ."
+      ]
+    },
+    {
+      "title": "What’s next for Copilot in Visual Studio",
+      "bullets": [
+        "Happy holidays! We’ll see you back in January with our next update.",
+        "In the meantime, catch up on the latest Copilot features by following the Visual Studio blog , where you’ll find roadmap updates and opportunities to share feedback.",
+        "For the latest news, release notes, videos, and community conversations, visit the Visual Studio Hub , your central resource for all things Visual Studio."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "GitHub cloud agent in public preview : Delegate repetitive tasks directly from Visual Studio with the new cloud agent."
+  ],
+  "caveats": [
+    "To learn more about what’s new, check out the Visual Studio blog and release notes .",
+    "For the latest news, release notes, videos, and community conversations, visit the Visual Studio Hub , your central resource for all things Visual Studio."
+  ],
+  "insights": [
+    "To learn more about what’s new, check out the Visual Studio blog and release notes ."
+  ],
+  "confidence": 0.9000000000000001
+}

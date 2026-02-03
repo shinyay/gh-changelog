@@ -1,0 +1,39 @@
+{
+  "overview": "You can now assign issues to Copilot using both GraphQL and the REST API. You can also configure the target repository, base branch, custom instructions, and custom agents.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now assign issues to Copilot using both GraphQL and the REST API. You can also configure the target repository, base branch, custom instructions, and custom agents."
+      ]
+    },
+    {
+      "title": "GraphQL support",
+      "bullets": [
+        "You can assign issues to Copilot using the following mutations:",
+        "updateIssue",
+        "createIssue",
+        "addAssigneesToAssignable",
+        "replaceActorsForAssignable",
+        "All requests must include this header:"
+      ]
+    },
+    {
+      "title": "REST API support",
+      "bullets": [
+        "You can also assign issues to Copilot via the following REST API endpoints:",
+        "Add assignees to an issue",
+        "Create an issue",
+        "Update an issue",
+        "Join the community discussion to share your feedback or learn more in our documentation on assigning issues to Copilot ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "GraphQL support You can assign issues to Copilot using the following mutations: updateIssue createIssue addAssigneesToAssignable replaceActorsForAssignable All requests must include this header: GraphQL-Features: issues_copilot_assignment_api_support REST API support You can also assign issues to Copilot via the following REST API endpoints: Add assignees to an issue Create an issue Update an issue Join the community discussion to share your feedback or learn more in our documentation on assigning issues to Copilot ."
+  ],
+  "confidence": 0.8
+}

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-09-dependabot-dgs-for-go"
-fetched_at: "2026-02-03T14:40:05.735608Z"
+fetched_at: "2026-02-03T14:50:55.028774Z"
 ---
 
 # Dependabot-based dependency graphs for Go

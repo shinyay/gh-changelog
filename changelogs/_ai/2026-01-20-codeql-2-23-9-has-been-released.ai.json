@@ -1,0 +1,25 @@
+{
+  "overview": "CodeQL is the static analysis engine behind GitHub code scanning , which finds and remediates security issues in your code. We’ve recently released CodeQL 2.23.9 . There are no user-facing changes to the CodeQL CLI nor any query changes, but we are posting this changelog to acknowledge that 2.23.9 has been released.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "CodeQL is the static analysis engine behind GitHub code scanning , which finds and remediates security issues in your code. We’ve recently released CodeQL 2.23.9 . There are no user-facing changes to the CodeQL CLI nor any query changes, but we are posting this changelog to acknowledge that 2.23.9 has been released."
+      ]
+    },
+    {
+      "title": "Deprecation notice",
+      "bullets": [
+        "Support for Kotlin versions 1.6 and 1.7 has been deprecated and will be removed in CodeQL 2.24.1, planned for release in February 2026. Starting with that version, you’ll need to use Kotlin 1.8 or later to extract Kotlin databases.",
+        "Every new version of CodeQL is automatically deployed to users of GitHub code scanning on github.com. The new functionality in CodeQL 2.23.9 will also be included in a future GitHub Enterprise Server (GHES) release. If you use an older version of GHES, you can manually upgrade your CodeQL version ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Deprecation notice Support for Kotlin versions 1.6 and 1.7 has been deprecated and will be removed in CodeQL 2.24.1, planned for release in February 2026."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

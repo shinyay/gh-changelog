@@ -1,0 +1,47 @@
+{
+  "overview": "Since our initial public preview release, we’ve shipped daily improvements to GitHub Copilot CLI. In addition to listening to feedback from developers like you in our public repository, we’ve been working on some larger features that make Copilot CLI more extensible and more connected to the broader GitHub Copilot ecosystem.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Since our initial public preview release, we’ve shipped daily improvements to GitHub Copilot CLI. In addition to listening to feedback from developers like you in our public repository, we’ve been working on some larger features that make Copilot CLI more extensible and more connected to the broader GitHub Copilot ecosystem."
+      ]
+    },
+    {
+      "title": "Custom agents are available in GitHub Copilot CLI",
+      "bullets": [
+        "Custom agents are now available in GitHub Copilot , allowing you to define agent personas that capture your team’s workflows, conventions, and unique needs. You can further tailor these agents with prompts, tool selections, and Model Context Protocol (MCP) servers to optimize for specific use cases.",
+        "In addition to defining agents under .github/agents in a repository or in the {org}/.github repository, GitHub Copilot CLI will recognize custom agent configurations in ~/.copilot/agents .",
+        "You can explicitly invoke an agent interactively with the /agent slash command. Your custom agents are also made available as tools to Copilot, and the model will start a new agentic loop using a relevant custom agent when necessary."
+      ]
+    },
+    {
+      "title": "Delegate tasks to Copilot coding agent from GitHub Copilot CLI",
+      "bullets": [
+        "Copilot coding agent is our asynchronous, autonomous background agent. Running the /delegate TASK-DESCRIPTION slash command from GitHub Copilot CLI will commit any unstaged changes to a new branch. After that, Copilot coding agent will open a draft pull request, make changes in the background, and then request a review from you. Copilot will provide a link to the pull request and its coding agent’s session in your terminal once this process begins."
+      ]
+    },
+    {
+      "title": "Streaming, parallel tool calling, improved performance",
+      "bullets": [
+        "Copilot’s output now streams to your terminal token-by-token, providing snappier feedback.",
+        "Copilot can execute multiple tool calls in parallel, speeding up completion time on more complex tasks.",
+        "We’ve made continued performance improvements to GitHub Copilot CLI, including decreasing the application’s memory footprint and fixing screen flickering bugs."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Update GitHub Copilot CLI by running npm install -g @github/copilot@latest in your terminal. Thank you to everyone who has submitted feedback via the /feedback command and by opening issues in our public repository . Your continued feedback is invaluable as we continue to ship improvements daily."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Since our initial public preview release, we’ve shipped daily improvements to GitHub Copilot CLI.",
+    "Custom agents are available in GitHub Copilot CLI Custom agents are now available in GitHub Copilot , allowing you to define agent personas that capture your team’s workflows, conventions, and unique needs."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

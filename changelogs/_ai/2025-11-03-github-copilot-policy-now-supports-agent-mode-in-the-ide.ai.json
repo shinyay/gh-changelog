@@ -1,0 +1,31 @@
+{
+  "overview": "GitHub admins can now manage access to Copilot agent mode for IDE via the Copilot policies page on github.com.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub admins can now manage access to Copilot agent mode for IDE via the Copilot policies page on github.com."
+      ]
+    },
+    {
+      "title": "What’s changed",
+      "bullets": [
+        "To provide better governance, Copilot policies now allow for enabling and disabling access to Copilot agent mode in the IDE for enterprises and organizations.",
+        "Prior to this update, Copilot agent mode in the IDE was enabled for all users. To prevent disruption, the new policy has shipped with a default setting of Enabled . To modify this setting, please visit the AI Controls tab for your enterprise or Copilot policies tab for your organization."
+      ]
+    },
+    {
+      "title": "Learn more and provide feedback",
+      "bullets": [
+        "For more information on Copilot policies please visit our documentation page for Copilot policies ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more and provide feedback For more information on Copilot policies please visit our documentation page for Copilot policies ."
+  ],
+  "confidence": 0.8
+}

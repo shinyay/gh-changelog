@@ -1,0 +1,31 @@
+{
+  "overview": "You can now track and manage Copilot coding agent without leaving Visual Studio Code. Everything you need now lives in one streamlined, centralized mission control view.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now track and manage Copilot coding agent without leaving Visual Studio Code. Everything you need now lives in one streamlined, centralized mission control view.",
+        "View session logs directly in VS Code by clicking the Agent sessions panel. See the rationale behind Copilot’s commits as they happen, right in context."
+      ]
+    },
+    {
+      "title": "Centralizing your task management",
+      "bullets": [
+        "Switch between tasks effortlessly with the new task view. See task status at a glance and jump in when Copilot needs your input."
+      ]
+    },
+    {
+      "title": "Continue where you prefer working",
+      "bullets": [
+        "Whether you’d like to build on Copilot’s work or take full control, open your session in VS Code, Codespaces, or the GitHub CLI. In the view sessions page on github.com, click Open in VS Code to open your session directly on your VS Code workspace.",
+        "This feature is available to all users who have access to Copilot coding agent. Collaborating with Copilot on your task will require write access to the repository. To access your session in VS Code, ensure that you have the latest version of VS Code installed alongside the GitHub Copilot Chat and GitHub Pull Requests extension.",
+        "Join the discussion within GitHub Community to share your feedback."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

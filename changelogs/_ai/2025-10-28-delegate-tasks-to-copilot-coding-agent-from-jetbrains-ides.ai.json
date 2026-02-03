@@ -1,0 +1,30 @@
+{
+  "overview": "Copilot coding agent is our asynchronous, autonomous background agent. Delegate a task to Copilot and it opens a draft pull request, makes changes in the background, and then requests a review from you.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot coding agent is our asynchronous, autonomous background agent. Delegate a task to Copilot and it opens a draft pull request, makes changes in the background, and then requests a review from you.",
+        "With our new public preview, you can now delegate tasks to Copilot and track progress from JetBrains IDEs. Copilot works independently in GitHub’s cloud environment to complete your task, while you stay focused on other work."
+      ]
+    },
+    {
+      "title": "🛠 Try it out",
+      "bullets": [
+        "Check your access : You will need to have a Copilot Pro, Pro+, Business or Enterprise subscription. If you’re a Copilot Business or Copilot Enterprise subscriber, an administrator will have to enable the “Copilot coding agent” and “Editor preview features” policies .",
+        "Open Copilot Chat : Open Copilot Chat by clicking GitHub Copilot Chat in the sidebar, then make sure you’re in ask or agent mode.",
+        "Delegate a task : Describe your task in the chat box, then click the new Delegate to Coding Agent button next to the Send button.",
+        "Track Copilot’s progress : Once the task starts, a card appears in Copilot Chat. To see your running and past tasks, click the GitHub Coding Agent Jobs button in the sidebar. You’ll receive notifications inside your IDE with Copilot’s progress.",
+        "Track Copilot’s progress : Once the task starts, a card appears in Copilot Chat. To see your running and past tasks, click the GitHub Coding Agent Jobs button in the sidebar. You’ll receive notifications inside your IDE with Copilot’s progress.",
+        "We’d love to hear about your experiences with Copilot coding agent. You can share your feedback using the feedback buttons in your JetBrains IDE or Copilot’s pull requests, or in the GitHub Copilot for JetBrains feedback repository ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "With our new public preview, you can now delegate tasks to Copilot and track progress from JetBrains IDEs."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

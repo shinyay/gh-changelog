@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-05-copilot-coding-agent-supports-organization-custom-instructions"
-fetched_at: "2026-02-03T14:40:06.280114Z"
+fetched_at: "2026-02-03T14:50:55.410702Z"
 ---
 
 # Copilot coding agent supports organization custom instructions

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["account management", "enterprise management tools", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-unaffiliated-users-for-ghec-accounts-now-generally-available"
-fetched_at: "2026-02-03T14:40:06.643738Z"
+fetched_at: "2026-02-03T14:50:55.642280Z"
 ---
 
 # Unaffiliated users for GHEC accounts now generally available

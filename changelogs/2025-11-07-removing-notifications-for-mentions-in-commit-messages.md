@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["community engagement"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-07-removing-notifications-for-mentions-in-commit-messages"
-fetched_at: "2026-02-03T14:40:06.181540Z"
+fetched_at: "2026-02-03T14:50:55.357989Z"
 ---
 
 # Removing notifications for @mentions in commit messages

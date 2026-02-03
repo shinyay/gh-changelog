@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["account management"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-17-billing-date-standardized-to-the-first-of-the-month-for-self-serve-credit-card-metered-enterprise-customers-now-generally-available"
-fetched_at: "2026-02-03T14:40:06.075758Z"
+fetched_at: "2026-02-03T14:50:55.272295Z"
 ---
 
 # Billing date standardized to the first of the month for self-serve credit card metered Enterprise customers now generally available

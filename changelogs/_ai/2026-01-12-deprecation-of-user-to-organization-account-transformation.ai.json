@@ -1,0 +1,27 @@
+{
+  "overview": "As of January 12, 2026, we’re deprecating the ability to convert a personal user account directly into an organization. You can now use the Move work flow to selectively migrate repositories to organizations while maintaining your personal account.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "As of January 12, 2026, we’re deprecating the ability to convert a personal user account directly into an organization. You can now use the Move work flow to selectively migrate repositories to organizations while maintaining your personal account.",
+        "Instead of transforming your user account, use the new Move work flow to migrate your repositories:",
+        "Go to your user profile settings and click SSO and organizations .",
+        "In the “Move to an organization” section, click Move work to an organization .",
+        "Select the repositories you want to transfer.",
+        "Choose an existing organization or create a new one.",
+        "If you want your organization to use your current username, you’ll need to rename your personal account first:",
+        "Change your username to something new.",
+        "Create or move work to an organization with your original username.",
+        "The Move work feature is not available on GHES. To migrate repositories, please follow our repository transfer documentation ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "What you should do Instead of transforming your user account, use the new Move work flow to migrate your repositories: Go to your user profile settings and click SSO and organizations ."
+  ],
+  "confidence": 0.8
+}

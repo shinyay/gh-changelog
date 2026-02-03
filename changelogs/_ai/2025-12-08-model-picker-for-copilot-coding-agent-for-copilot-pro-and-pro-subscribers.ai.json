@@ -1,0 +1,28 @@
+{
+  "overview": "Copilot Pro and Pro+ subscribers can now pick a model when using Copilot coding agent , our asynchronous, autonomous background agent.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot Pro and Pro+ subscribers can now pick a model when using Copilot coding agent , our asynchronous, autonomous background agent.",
+        "When starting a task from the agents tab, agents panel, issue assignment on github.com, or the Raycast extension, you can use the dropdown to pick from the following models:",
+        "Auto",
+        "Anthropic Claude Opus 4.5",
+        "Anthropic Claude Sonnet 4.5",
+        "OpenAI GPT-5.1-Codex-Max",
+        "If you leave the setting on Auto , Copilot optimizes speed and performance by automatically choosing a model based on availability.",
+        "The model picker is now available to Copilot Pro and Pro+ subscribers, and coming soon to Copilot Business and Enterprise subscribers, along with more Copilot coding agent integrations like Visual Studio Code and GitHub Mobile .",
+        "To learn more, head to our documentation about model selection in Copilot coding agent ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "The model picker is now available to Copilot Pro and Pro+ subscribers, and coming soon to Copilot Business and Enterprise subscribers, along with more Copilot coding agent integrations like Visual Studio Code and GitHub Mobile ."
+  ],
+  "caveats": [],
+  "insights": [
+    "To learn more, head to our documentation about model selection in Copilot coding agent ."
+  ],
+  "confidence": 0.8500000000000001
+}

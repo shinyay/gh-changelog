@@ -1,0 +1,24 @@
+{
+  "overview": "You can now access your organization’s Copilot usage metrics via the Copilot usage APIs .",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now access your organization’s Copilot usage metrics via the Copilot usage APIs .",
+        "The APIs contain reports with aggregated and user-specific metrics, including usage statistics for various Copilot features, user engagement data, and feature adoption metrics.",
+        "To see these metrics, the Copilot usage metrics policy must be enabled.",
+        "To enable this setting for an enterprise account, go to the Enterprises page , select your enterprise, and click on the AI Controls tab. In the left sidebar, select Copilot , and scroll down to Metrics . Select Enabled everywhere .",
+        "To enable this setting for a standalone organization account, go to the Organization page , select your organization, and click on the Settings tab. In the left sidebar, select Copilot > Policies . Scroll down to Features > Copilot usage metrics . Select Enabled .",
+        "Organization owners and users with an organization custom role that has the View Organization Copilot Metrics permission can access the API.",
+        "To learn more, see our documentation ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "To learn more, see our documentation ."
+  ],
+  "confidence": 0.8
+}

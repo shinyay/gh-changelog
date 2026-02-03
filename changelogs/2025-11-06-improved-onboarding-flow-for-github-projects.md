@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["projects and issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-06-improved-onboarding-flow-for-github-projects"
-fetched_at: "2026-02-03T14:40:06.250497Z"
+fetched_at: "2026-02-03T14:50:55.400701Z"
 ---
 
 # Improved onboarding flow for GitHub Projects

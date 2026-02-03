@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-10-the-github-mcp-server-adds-support-for-tool-specific-configuration-and-more"
-fetched_at: "2026-02-03T14:40:05.716502Z"
+fetched_at: "2026-02-03T14:50:55.015981Z"
 ---
 
 # The GitHub MCP Server adds support for tool-specific configuration, and more

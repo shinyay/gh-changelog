@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-teams-management-now-moved-to-settings"
-fetched_at: "2026-02-03T14:40:05.337566Z"
+fetched_at: "2026-02-03T14:50:54.864754Z"
 ---
 
 # Teams management now moved to Settings

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-19-you-can-now-require-reviews-before-closing-dependabot-alerts-with-delegated-alert-dismissal"
-fetched_at: "2026-02-03T14:40:05.286804Z"
+fetched_at: "2026-02-03T14:50:54.837326Z"
 ---
 
 # You can now require reviews before closing Dependabot alerts with delegated alert dismissal

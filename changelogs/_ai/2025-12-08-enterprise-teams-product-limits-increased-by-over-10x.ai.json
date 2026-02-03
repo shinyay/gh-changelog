@@ -1,0 +1,28 @@
+{
+  "overview": "The enterprise teams public preview now supports the creation and management of larger teams.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "The enterprise teams public preview now supports the creation and management of larger teams.",
+        "The new limits are:",
+        "Up to 2,500 enterprise teams can now be created per enterprise (increased from 100).",
+        "Each enterprise team can now include up to 5,000 users (increased from 500).",
+        "Enterprise teams remain assignable across up to 1,000 organizations per enterprise.",
+        "These increased limits empower enterprises to manage user access, governance, and Copilot licensing at scale.",
+        "Enterprise teams is currently available in public preview for Enterprise Cloud customers and is expected to be a preview feature to Enterprise Server customers in release 3.20.",
+        "To learn more, see our documentation about Enterprise Teams . If you have feedback about enterprise teams, join us on this discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "The enterprise teams public preview now supports the creation and management of larger teams.",
+    "Enterprise teams is currently available in public preview for Enterprise Cloud customers and is expected to be a preview feature to Enterprise Server customers in release 3.20."
+  ],
+  "caveats": [],
+  "insights": [
+    "To learn more, see our documentation about Enterprise Teams ."
+  ],
+  "confidence": 0.8500000000000001
+}

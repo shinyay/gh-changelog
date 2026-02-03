@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-introducing-extended-metadata-checks-for-secret-scanning"
-fetched_at: "2026-02-03T14:40:06.594602Z"
+fetched_at: "2026-02-03T14:50:55.618318Z"
 ---
 
 # Introducing extended metadata checks for secret scanning

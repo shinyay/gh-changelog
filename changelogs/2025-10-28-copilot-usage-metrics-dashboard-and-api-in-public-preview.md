@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-copilot-usage-metrics-dashboard-and-api-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.541713Z"
+fetched_at: "2026-02-03T14:50:55.578051Z"
 ---
 
 # Copilot usage metrics dashboard and API in public preview

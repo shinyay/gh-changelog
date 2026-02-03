@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-assign-code-scanning-alerts-to-copilot-for-automated-fixes-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.731597Z"
+fetched_at: "2026-02-03T14:50:55.693811Z"
 ---
 
 # Assign code scanning alerts to Copilot for automated fixes in public preview

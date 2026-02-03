@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions", "copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-copilot-coding-agent-now-supports-self-hosted-runners"
-fetched_at: "2026-02-03T14:40:06.554332Z"
+fetched_at: "2026-02-03T14:50:55.592276Z"
 ---
 
 # Copilot coding agent now supports self-hosted runners

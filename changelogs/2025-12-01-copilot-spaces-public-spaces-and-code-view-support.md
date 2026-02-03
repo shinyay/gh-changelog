@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-01-copilot-spaces-public-spaces-and-code-view-support"
-fetched_at: "2026-02-03T14:40:05.866122Z"
+fetched_at: "2026-02-03T14:50:55.127457Z"
 ---
 
 # Copilot Spaces: Public spaces and code view support

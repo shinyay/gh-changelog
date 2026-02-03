@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-15-github-copilot-bring-your-own-key-byok-enhancements"
-fetched_at: "2026-02-03T14:40:05.183887Z"
+fetched_at: "2026-02-03T14:50:54.772309Z"
 ---
 
 # GitHub Copilot bring your own key (BYOK) enhancements

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["account management", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-17-improved-enterprise-license-consumption-reporting-for-outside-collaborators-now-generally-available"
-fetched_at: "2026-02-03T14:40:06.069268Z"
+fetched_at: "2026-02-03T14:50:55.268814Z"
 ---
 
 # Improved enterprise license consumption reporting for outside collaborators now generally available

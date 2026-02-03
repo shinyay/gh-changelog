@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools", "platform governance"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-13-organization-custom-properties-now-generally-available"
-fetched_at: "2026-02-03T14:40:05.231075Z"
+fetched_at: "2026-02-03T14:50:54.801696Z"
 ---
 
 # Organization custom properties now generally available

@@ -1,0 +1,36 @@
+{
+  "overview": "We’ve added two new capabilities to GitHub custom repository properties that make it easier to organize and manage repositories at scale.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve added two new capabilities to GitHub custom repository properties that make it easier to organize and manage repositories at scale."
+      ]
+    },
+    {
+      "title": "Manage custom properties via GraphQL",
+      "bullets": [
+        "You can now manage custom repository properties using the GraphQL API. This gives you programmatic access to create, update, and delete custom properties with your existing workflows and automation tools.",
+        "To learn more, see the GraphQL API documentation for custom properties . Note: there is a delay in publishing GraphQL documentation and may take 24 hours to go live."
+      ]
+    },
+    {
+      "title": "New URL property type",
+      "bullets": [
+        "Custom repository properties now support a URL type with built-in validation. This makes it easier for admins to attach relevant resources to repositories like runbooks, monitoring dashboards, or external documentation without worrying about invalid URLs.",
+        "When you create a URL property, GitHub automatically validates that values are properly formatted URLs, ensuring consistency across your organization.",
+        "For more information, see our documentation about managing custom repository properties .",
+        "Share your feedback in our community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Note: there is a delay in publishing GraphQL documentation and may take 24 hours to go live."
+  ],
+  "insights": [
+    "To learn more, see the GraphQL API documentation for custom properties ."
+  ],
+  "confidence": 0.8500000000000001
+}

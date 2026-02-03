@@ -5,7 +5,7 @@ type: "Release"
 labels: ["projects &amp; issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-improved-search-for-github-issues-in-public-preview"
-fetched_at: "2026-02-03T14:40:04.811747Z"
+fetched_at: "2026-02-03T14:50:49.349952Z"
 ---
 
 # Improved search for GitHub Issues in public preview

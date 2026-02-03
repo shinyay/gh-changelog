@@ -1,0 +1,52 @@
+{
+  "overview": "GPT-5.1-Codex-Max is now rolling out in public preview in GitHub Copilot.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GPT-5.1-Codex-Max is now rolling out in public preview in GitHub Copilot."
+      ]
+    },
+    {
+      "title": "Availability in GitHub Copilot",
+      "bullets": [
+        "OpenAI’s GPT-5.1-Codex-Max will be available to Copilot Pro, Pro+, Business, and Enterprise.",
+        "You’ll be able to select the model in the Copilot Chat model picker from:",
+        "Visual Studio Code in all modes: chat, ask, edit, agent",
+        "Copilot Chat in github.com",
+        "Copilot Chat in GitHub Mobile (iOS and Android)",
+        "Copilot CLI",
+        "Rollout will be gradual. If you don’t see the new models yet, check back soon."
+      ]
+    },
+    {
+      "title": "Enabling access",
+      "bullets": [
+        "Enterprise and Business plans : Administrators must enable the GPT-5.1-Codex-Max policy in Copilot settings. Once enabled, users in that organization will see the respective model in the Copilot Chat model picker.",
+        "Pro and Pro+ plans : Users can enable the model by selecting it in the model picker and confirming the one-time prompt.",
+        "Bring your own key : Select Manage Models from the picker, choose GPT-5.1-Codex-Max, and enter your API key when prompted."
+      ]
+    },
+    {
+      "title": "Learn more",
+      "bullets": [
+        "To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Join the GitHub Community to share your feedback."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "GPT-5.1-Codex-Max is now rolling out in public preview in GitHub Copilot."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn more To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot."
+  ],
+  "confidence": 0.8500000000000001
+}

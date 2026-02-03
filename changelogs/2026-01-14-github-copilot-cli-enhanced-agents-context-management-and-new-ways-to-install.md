@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-14-github-copilot-cli-enhanced-agents-context-management-and-new-ways-to-install"
-fetched_at: "2026-02-03T14:40:05.216902Z"
+fetched_at: "2026-02-03T14:50:54.791888Z"
 ---
 
 # GitHub Copilot CLI: Enhanced agents, context management, and new ways to install

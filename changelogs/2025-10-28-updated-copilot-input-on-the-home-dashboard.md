@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["collaboration tools", "copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-updated-copilot-input-on-the-home-dashboard"
-fetched_at: "2026-02-03T14:40:06.654867Z"
+fetched_at: "2026-02-03T14:50:55.653851Z"
 ---
 
 # Updated Copilot input on the home dashboard

@@ -1,0 +1,46 @@
+{
+  "overview": "The October 2025 update to Visual Studio brings new model choices, a more project-aware Copilot, and planning in Copilot Chat.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "The October 2025 update to Visual Studio brings new model choices, a more project-aware Copilot, and planning in Copilot Chat."
+      ]
+    },
+    {
+      "title": "Highlights",
+      "bullets": [
+        "Here’s what’s new with GitHub Copilot in Visual Studio 2022 (v17.14):",
+        "New models : Claude Sonnet 4.5 and Claude Haiku 4.5 are now available, bringing cutting-edge capabilities for your agentic workflows right in Visual Studio.",
+        "Memories : Capture coding standards and best practices for your project with Copilot memories. Preferences detected in chat can be saved to .editorconfig , CONTRIBUTING.md , and README.md files, making Copilot more project-aware and consistent across sessions.",
+        "Planning : Handle complex, multi-step tasks with built-in planning capabilities. Copilot Chat creates Markdown plan files with task lists, files to edit, and context for its approach enabling greater transparency and reliability.",
+        "Instruction files : Add .instructions.md files in .github/instructions to define project standards and guidelines. Use glob patterns to target specific files or folders, helping Copilot apply rules consistently across your codebase.",
+        "Chat management : Stay organized with new /clear and /clearall commands. Use /clear to reset your current chat or /clearall to remove all previous threads.",
+        "Memories : Capture coding standards and best practices for your project with Copilot memories. Preferences detected in chat can be saved to .editorconfig , CONTRIBUTING.md , and README.md files, making Copilot more project-aware and consistent across sessions.",
+        "Planning : Handle complex, multi-step tasks with built-in planning capabilities. Copilot Chat creates Markdown plan files with task lists, files to edit, and context for its approach enabling greater transparency and reliability.",
+        "Instruction files : Add .instructions.md files in .github/instructions to define project standards and guidelines. Use glob patterns to target specific files or folders, helping Copilot apply rules consistently across your codebase.",
+        "Chat management : Stay organized with new /clear and /clearall commands. Use /clear to reset your current chat or /clearall to remove all previous threads.",
+        "Download Visual Studio to experience all the new Copilot features today. To learn more about what’s new, check out the Visual Studio blog and release notes ."
+      ]
+    },
+    {
+      "title": "What’s next for Copilot in Visual Studio",
+      "bullets": [
+        "Stay up to date on the latest Copilot features by following the Visual Studio blog , where you’ll find roadmap updates and opportunities to share feedback.",
+        "For the latest news, release notes, videos, and community conversations, visit the Visual Studio Hub , your central resource for all things Visual Studio."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Highlights Here’s what’s new with GitHub Copilot in Visual Studio 2022 (v17.14): New models : Claude Sonnet 4.5 and Claude Haiku 4.5 are now available, bringing cutting-edge capabilities for your agentic workflows right in Visual Studio."
+  ],
+  "caveats": [
+    "To learn more about what’s new, check out the Visual Studio blog and release notes .",
+    "For the latest news, release notes, videos, and community conversations, visit the Visual Studio Hub , your central resource for all things Visual Studio."
+  ],
+  "insights": [
+    "To learn more about what’s new, check out the Visual Studio blog and release notes ."
+  ],
+  "confidence": 0.9000000000000001
+}

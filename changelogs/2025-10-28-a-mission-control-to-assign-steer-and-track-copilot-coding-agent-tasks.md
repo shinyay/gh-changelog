@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-a-mission-control-to-assign-steer-and-track-copilot-coding-agent-tasks"
-fetched_at: "2026-02-03T14:40:06.461548Z"
+fetched_at: "2026-02-03T14:50:55.529023Z"
 ---
 
 # A mission control to assign, steer, and track Copilot coding agent tasks

@@ -1,0 +1,22 @@
+{
+  "overview": "Dependabot now supports security alerts and updates for uv. When vulnerabilities are detected in your uv dependencies, Dependabot can automatically open security alerts and pull requests to update to secure versions.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Dependabot now supports security alerts and updates for uv. When vulnerabilities are detected in your uv dependencies, Dependabot can automatically open security alerts and pull requests to update to secure versions.",
+        "Engage with the Dependabot open source community on the topic of uv support.",
+        "Learn more in our Dependabot security updates documentation .",
+        "Learn more about uv ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more in our Dependabot security updates documentation .",
+    "Learn more about uv ."
+  ],
+  "confidence": 0.8
+}

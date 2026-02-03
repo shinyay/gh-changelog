@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-github-copilot-cli-use-custom-agents-and-delegate-to-copilot-coding-agent"
-fetched_at: "2026-02-03T14:40:06.693120Z"
+fetched_at: "2026-02-03T14:50:55.673183Z"
 ---
 
 # GitHub Copilot CLI: Use custom agents and delegate to Copilot coding agent

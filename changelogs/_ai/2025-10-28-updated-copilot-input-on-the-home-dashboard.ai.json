@@ -1,0 +1,24 @@
+{
+  "overview": "We updated the Copilot input at the top of the home dashboard to introduce commands and improve the overall user experience.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We updated the Copilot input at the top of the home dashboard to introduce commands and improve the overall user experience."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "Commands: Users can start Copilot commands by using the / trigger. For example, users can start agent tasks by starting their prompt with /task .",
+        "Prompt suggestions: Directly beneath the input, users will find suggested commands. Clicking the suggestion will populate the input with a command.",
+        "Attachments and references: Users can attach files or references (e.g., repositories) from a dropdown in the input."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

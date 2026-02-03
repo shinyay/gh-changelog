@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-05-enterprise-qualifier-is-now-generally-available-in-github-code-search"
-fetched_at: "2026-02-03T14:40:06.263903Z"
+fetched_at: "2026-02-03T14:50:55.408390Z"
 ---
 
 # enterprise: qualifier is now generally available in GitHub code search

@@ -1,0 +1,91 @@
+{
+  "overview": "As we wrapped up 2025 and rang in 2026, we’ve continued to deliver new ways of working with agents in GitHub Copilot CLI while improving the terminal-native experience for all developers. Here’s what’s new since our last update.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "As we wrapped up 2025 and rang in 2026, we’ve continued to deliver new ways of working with agents in GitHub Copilot CLI while improving the terminal-native experience for all developers. Here’s what’s new since our last update."
+      ]
+    },
+    {
+      "title": "New models and easier model management",
+      "bullets": [
+        "GPT-5 mini and GPT-4.1 , models that are included with your Copilot subscription and do not consume premium requests on paid plans, are now available. Run /model to see all model options.",
+        "If you select a model that’s disabled in your policy settings, the CLI now prompts you to enable it directly—no need to leave the terminal. This works in the model picker, /model command, and --model flag for Copilot Pro/Pro+ users."
+      ]
+    },
+    {
+      "title": "Built-in custom agents",
+      "bullets": [
+        "Copilot CLI now includes specialized custom agents for common tasks:",
+        "Explore : Fast codebase analysis. Ask questions about your code without cluttering your main context.",
+        "Task : Runs commands like tests and builds. Receive brief summaries on success, full output on failure.",
+        "Plan : Creates implementation plans by analyzing dependencies and structure.",
+        "Code-review : Reviews changes with high signal-to-noise ratio, focused on only surfacing genuine issues.",
+        "Copilot delegates to these agents automatically when appropriate and can run multiple agents in parallel.",
+        "When combined with Agent Skills , you can more easily integrate agentic workflows into yoiur Copilot CLI experience."
+      ]
+    },
+    {
+      "title": "New ways to install",
+      "bullets": [
+        "Windows (WinGet):",
+        "macOS and Linux (Homebrew):",
+        "macOS and Linux (install script):",
+        "Package manager and install script installations automatically update .",
+        "Codespaces and dev containers: Copilot CLI is included in the default GitHub Codespaces image and available as a Dev Container Feature .",
+        "Standalone executables are also available in GitHub release artifacts for all platforms."
+      ]
+    },
+    {
+      "title": "Automation and scripting",
+      "bullets": [
+        "New flags make Copilot CLI easier to use in scripts and pipelines via copilot -p :",
+        "Refer to copilot --help for a list of all optional flags.",
+        "CI/CD authentication: Set GITHUB_ASKPASS to point to an executable that returns your token—useful for credential managers and pipelines.",
+        "Copilot Spaces: The GitHub MCP server now includes Copilot Spaces tools for project-specific context."
+      ]
+    },
+    {
+      "title": "Context management",
+      "bullets": [
+        "Auto-compaction : When approaching 95% of the token limit, Copilot automatically compresses your history.",
+        "/compact : Manually compress context anytime.",
+        "/context : Visualize token usage with a detailed breakdown.",
+        "--resume : Press TAB to cycle through local sessions and remote Copilot coding agent sessions."
+      ]
+    },
+    {
+      "title": "Terminal experience",
+      "bullets": [
+        "Better diffs : Intra-line syntax highlighting shows exactly what changed. It now integrates with Git’s configured pager.",
+        "Tab completion : Autocomplete paths in /cwd and /add-dir .",
+        "Ctrl+T : Toggle model reasoning visibility in supported models.",
+        "Cleaner history : Agent-run commands excluded from Bash/PowerShell history."
+      ]
+    },
+    {
+      "title": "Web access controls",
+      "bullets": [
+        "The new web_fetch tool retrieves content from URLs as markdown. URL access is controlled through ~/.copilot/config with allowed_urls and denied_urls patterns. These rules also apply to shell commands like curl and wget ."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "Update with your package manager, or run npm install -g @github/copilot@latest .",
+        "Join the discussion in Copilot CLI’s public repository ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "New models and easier model management GPT-5 mini and GPT-4.1 , models that are included with your Copilot subscription and do not consume premium requests on paid plans, are now available.",
+    "Code-review : Reviews changes with high signal-to-noise ratio, focused on only surfacing genuine issues."
+  ],
+  "caveats": [
+    "Code-review : Reviews changes with high signal-to-noise ratio, focused on only surfacing genuine issues."
+  ],
+  "insights": [],
+  "confidence": 0.9000000000000001
+}

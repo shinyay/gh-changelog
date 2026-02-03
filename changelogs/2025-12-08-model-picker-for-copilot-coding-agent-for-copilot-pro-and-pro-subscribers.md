@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-08-model-picker-for-copilot-coding-agent-for-copilot-pro-and-pro-subscribers"
-fetched_at: "2026-02-03T14:40:05.744316Z"
+fetched_at: "2026-02-03T14:50:55.035055Z"
 ---
 
 # Model picker for Copilot coding agent for Copilot Pro and Pro+ subscribers

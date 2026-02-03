@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["projects and issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-22-faster-loading-for-github-issues"
-fetched_at: "2026-02-03T14:40:05.076224Z"
+fetched_at: "2026-02-03T14:50:54.718366Z"
 ---
 
 # Faster loading for GitHub Issues

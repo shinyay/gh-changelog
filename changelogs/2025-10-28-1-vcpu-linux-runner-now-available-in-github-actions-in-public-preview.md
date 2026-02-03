@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["actions", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-1-vcpu-linux-runner-now-available-in-github-actions-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.722149Z"
+fetched_at: "2026-02-03T14:50:55.690458Z"
 ---
 
 # 1 vCPU Linux runner now available in GitHub Actions in public preview

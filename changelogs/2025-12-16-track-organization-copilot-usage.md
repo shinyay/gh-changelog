@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-track-organization-copilot-usage"
-fetched_at: "2026-02-03T14:40:05.589491Z"
+fetched_at: "2026-02-03T14:50:54.930576Z"
 ---
 
 # Track organization Copilot usage

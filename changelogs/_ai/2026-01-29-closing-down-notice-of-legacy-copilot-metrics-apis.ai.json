@@ -1,0 +1,58 @@
+{
+  "overview": "We are closing down three legacy Copilot metrics APIs as part of our transition to newer, more comprehensive usage metrics endpoints. Support for these APIs will be limited, and no new features will be developed.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We are closing down three legacy Copilot metrics APIs as part of our transition to newer, more comprehensive usage metrics endpoints. Support for these APIs will be limited, and no new features will be developed.",
+        "The User-level Feature Engagement Metrics API and Direct Data Access API will sunset on March 2nd, 2026.",
+        "The Copilot Metrics API will sunset on April 2nd, 2026.",
+        "We strongly recommend transitioning any existing workflows to the latest Copilot usage metrics endpoints to avoid disruption."
+      ]
+    },
+    {
+      "title": "What do these APIs do?",
+      "bullets": [
+        "These APIs provide visibility into adoption and usage of GitHub Copilot features:",
+        "User-level Feature Engagement Metrics API offers a simplified view of user adoption of specific Copilot features through binary indicators.",
+        "Direct Data Access API provides user-level event data for Copilot code completion activity within supported IDEs.",
+        "Copilot Metrics API provides aggregated usage metrics, primarily focused on IDE usage."
+      ]
+    },
+    {
+      "title": "Why?",
+      "bullets": [
+        "We have released a new set of Copilot usage metrics APIs that provide significantly more depth and flexibility. By consolidating to our latest APIs, we are able to:",
+        "Provide a single, unified source of truth for Copilot metrics.",
+        "Deliver more granular and valuable insights, including IDE agents, models, languages, lines of code, and fine-grained permissions.",
+        "Reduce support overhead and streamline the product experience."
+      ]
+    },
+    {
+      "title": "What’s recommended moving forward?",
+      "bullets": [
+        "We recommend transitioning to the latest Copilot usage metrics APIs , which provide comprehensive usage data at the enterprise, organization, and user levels.",
+        "These endpoints return aggregated metrics with expanded IDE telemetry, including:",
+        "Edit modes and agent usage.",
+        "Suggested versus accepted lines of code.",
+        "Language and model breakdowns.",
+        "Additional usage dimensions not available in the legacy APIs.",
+        "The new APIs are currently in public preview and will be generally available in the near future."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Support for these APIs will be limited, and no new features will be developed.",
+    "The User-level Feature Engagement Metrics API and Direct Data Access API will sunset on March 2nd, 2026.",
+    "The Copilot Metrics API will sunset on April 2nd, 2026.",
+    "The new APIs are currently in public preview and will be generally available in the near future."
+  ],
+  "caveats": [
+    "Support for these APIs will be limited, and no new features will be developed."
+  ],
+  "insights": [
+    "We recommend transitioning to the latest Copilot usage metrics APIs , which provide comprehensive usage data at the enterprise, organization, and user levels."
+  ],
+  "confidence": 0.9000000000000001
+}

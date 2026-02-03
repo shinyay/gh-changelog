@@ -1,0 +1,34 @@
+{
+  "overview": "GitHub Issues are now significantly faster with 35% of issue views occurring in under 200ms, up from 2% at the start of the year.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Issues are now significantly faster with 35% of issue views occurring in under 200ms, up from 2% at the start of the year.",
+        "This is the first in a series of performance improvements we’re shipping to make GitHub Issues, and GitHub more broadly, feel instant."
+      ]
+    },
+    {
+      "title": "Availability",
+      "bullets": [
+        "These performance improvements are live today on github.com. In order to benefit from them, you must be signed in . No configuration or opt-in is required.",
+        "You can experience these improvements through:",
+        "The repository index",
+        "Your “Issues” dashboard",
+        "A GitHub Project",
+        "We’re working on bringing these improvements to additional pathways."
+      ]
+    },
+    {
+      "title": "Let us know what you think",
+      "bullets": [
+        "Join the GitHub Community to share your feedback."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

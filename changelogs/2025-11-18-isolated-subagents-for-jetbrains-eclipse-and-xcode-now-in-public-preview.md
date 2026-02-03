@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-isolated-subagents-for-jetbrains-eclipse-and-xcode-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.006453Z"
+fetched_at: "2026-02-03T14:50:55.228768Z"
 ---
 
 # Isolated Subagents for JetBrains, Eclipse, and Xcode now in public preview

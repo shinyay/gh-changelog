@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-code-scanning-alert-assignees-are-now-generally-available"
-fetched_at: "2026-02-03T14:40:05.618678Z"
+fetched_at: "2026-02-03T14:50:54.940330Z"
 ---
 
 # Code scanning alert assignees are now generally available

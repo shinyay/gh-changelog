@@ -1,0 +1,32 @@
+{
+  "overview": "GitHub Copilot app modernization is now available in IntelliJ IDEA, bringing AI-powered modernization workflows to one of the most popular IDEs for Java developers.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Copilot app modernization is now available in IntelliJ IDEA, bringing AI-powered modernization workflows to one of the most popular IDEs for Java developers.",
+        "With this release, you can now assess applications, apply automated code transformations, patch builds and dependencies, and containerize services. And you can do all this without leaving IntelliJ IDEA.",
+        "Copilot app modernization enables you to:",
+        "Generate detailed application assessment reports.",
+        "Perform automated code transformations.",
+        "Ensure successful builds, verify all unit tests, and resolve any identified CVEs.",
+        "Streamline containerization for cloud deployment.",
+        "These capabilities accelerate upgrades and migrations, helping teams modernize their existing Java projects with speed and confidence."
+      ]
+    },
+    {
+      "title": "Getting started",
+      "bullets": [
+        "For setup instructions, see the GitHub Copilot app modernization plugin page .",
+        "You can also watch the end-to-end introduction videos ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "GitHub Copilot app modernization is now available in IntelliJ IDEA, bringing AI-powered modernization workflows to one of the most popular IDEs for Java developers."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

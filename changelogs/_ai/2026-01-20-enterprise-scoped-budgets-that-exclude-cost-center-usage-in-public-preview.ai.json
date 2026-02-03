@@ -1,0 +1,32 @@
+{
+  "overview": "GitHub Enterprise customers can now configure enterprise-scoped budgets that exclude cost center usage, allowing specific portions of an enterprise to incur additional usage while limiting the rest.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Enterprise customers can now configure enterprise-scoped budgets that exclude cost center usage, allowing specific portions of an enterprise to incur additional usage while limiting the rest.",
+        "Previously, this required creating distinct budgets for every part of an enterprise to enforce a default limit. With this improvement, enterprises can now apply an enterprise-scoped budget that excludes cost center usage and selectively grant access to additional usage using cost centers."
+      ]
+    },
+    {
+      "title": "Key details",
+      "bullets": [
+        "This option is only available for enterprise-scoped budgets and can be applied to new or existing budgets.",
+        "Existing enterprise-scoped budgets continue to include cost center usage by default.",
+        "This option is available through the REST API, and changes to this setting are recorded in the audit log.",
+        "To learn more, see “ Setting up budgets to control spending on metered products .”"
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Key details This option is only available for enterprise-scoped budgets and can be applied to new or existing budgets."
+  ],
+  "caveats": [
+    "Key details This option is only available for enterprise-scoped budgets and can be applied to new or existing budgets."
+  ],
+  "insights": [
+    "To learn more, see “ Setting up budgets to control spending on metered products .”"
+  ],
+  "confidence": 0.9000000000000001
+}

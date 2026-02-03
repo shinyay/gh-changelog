@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-04-openais-gpt-5-1-codex-max-is-now-in-public-preview-for-github-copilot"
-fetched_at: "2026-02-03T14:40:05.772002Z"
+fetched_at: "2026-02-03T14:50:55.059179Z"
 ---
 
 # OpenAI’s GPT-5.1-Codex-Max is now in public preview for GitHub Copilot

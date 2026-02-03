@@ -1,0 +1,46 @@
+{
+  "overview": "We’re excited to announce that plan mode in GitHub Copilot is now available in public preview for JetBrains IDEs, Eclipse, and Xcode. Here’s what you need to know about this new Copilot feature that provides you with a blueprint strategy before you code.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’re excited to announce that plan mode in GitHub Copilot is now available in public preview for JetBrains IDEs, Eclipse, and Xcode. Here’s what you need to know about this new Copilot feature that provides you with a blueprint strategy before you code."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "Plan mode helps developers create, refine, and execute step-by-step implementation plans directly in their IDE. It analyzes your codebase, generates detailed execution plans, and validates that requirements are covered before you start coding.",
+        "Plan mode does not make any code changes until the plan is reviewed and approved by you. Once you receive the summary and steps breakdown, you can review it or hand it off to an agent for implementation. As a result, plan mode supports seamless multi-step tasks, enabling accuracy and efficiency through every stage.",
+        "This feature builds on the agent foundation we’re adding to JetBrains, Eclipse, and Xcode."
+      ]
+    },
+    {
+      "title": "How to use plan mode",
+      "bullets": [
+        "In JetBrains IDEs: 1. Sign in and open Copilot Chat, then select Plan mode from the agents dropdown. 2. Describe a high-level task, like adding a feature, refactoring code, or fixing a bug, then click Submit. (Example: “Create a simple to-do app with HTML, CSS, and JS files.”) 3. Review the generated plan, then choose “Start Implementation” or “Open in Editor” based on your needs.",
+        "In Eclipse: 1. Sign into the Copilot Chat panel, and select Plan mode from the agents dropdown. 2. Describe a high-level task, like adding a feature, refactoring code, or fixing a bug, then click Submit. (Example: “Create a to-do app with a GUI and functionalities to add, delete, and update to-do items.”) 3. Review the generated plan, then choose “Start Implementation” or “Open in Editor” based on your needs.",
+        "In Xcode: 1. Open GitHub Copilot for Xcode, sign in, and select Plan mode from the agents dropdown. 2. Describe a high-level task, like adding a feature, refactoring code, or fixing a bug, then click Submit. (Example: “Build a minesweeper game with GUI.”) 3. Review the generated plan, then choose “Start Implementation” or “Open in Editor” based on your needs."
+      ]
+    },
+    {
+      "title": "Try it out",
+      "bullets": [
+        "Plan mode is in preview and available today to all JetBrains IDEs , Eclipse , and Xcode users. You need to update the plugin or app to the latest version to get access. To access Copilot agent mode for these IDEs, you will also need to have a valid Copilot license ."
+      ]
+    },
+    {
+      "title": "Share your feedback",
+      "bullets": [
+        "We value your feedback. Share your experience through the following channels: – GitHub Copilot for JetBrains IDEs – GitHub Copilot for Eclipse – GitHub Copilot for Xcode"
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "We’re excited to announce that plan mode in GitHub Copilot is now available in public preview for JetBrains IDEs, Eclipse, and Xcode."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-11-auto-model-selection-for-copilot-in-visual-studio-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.159247Z"
+fetched_at: "2026-02-03T14:50:55.338162Z"
 ---
 
 # Auto model selection for Copilot in Visual Studio in public preview

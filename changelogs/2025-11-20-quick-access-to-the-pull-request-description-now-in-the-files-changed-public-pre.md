@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-20-pull-request-files-changed-public-preview-november-20-updates"
-fetched_at: "2026-02-03T14:40:05.903997Z"
+fetched_at: "2026-02-03T14:50:55.157306Z"
 ---
 
 # Quick access to the pull request description now in the “Files changed” public preview

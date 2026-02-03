@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["projects and issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-15-hierarchy-view-now-available-in-github-projects"
-fetched_at: "2026-02-03T14:40:05.177038Z"
+fetched_at: "2026-02-03T14:50:54.767492Z"
 ---
 
 # Hierarchy view now available in GitHub Projects

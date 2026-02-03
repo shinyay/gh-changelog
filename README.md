@@ -29,6 +29,19 @@ This repo includes VS Code tasks in `.vscode/tasks.json`:
 
 - "Changelog: fetch range (use API)"
 - "Changelog: validate AI outputs"
+- "Changelog: list missing AI sidecars"
+- "Changelog: generate AI sidecars from Markdown (no LLM)"
+
+### Optional helper: generate AI sidecars from Markdown (no LLM)
+
+If you already have Markdown entries under `./changelogs/`, you can optionally run `scripts/generate_ai_sidecars_from_markdown.py` (or the VS Code task "Changelog: generate AI sidecars from Markdown (no LLM)") to create/update AI sidecar files under `changelogs/_ai/`.
+
+This helper:
+
+- Extracts structured sections from the Markdown (for example: Overview, Key Changes, Caveats).
+- Writes **schema-conformant** sidecar JSON (it does **not** call an LLM).
+
+You should still run validation afterwards ("Changelog: validate AI outputs").
 
 ## Installation
 

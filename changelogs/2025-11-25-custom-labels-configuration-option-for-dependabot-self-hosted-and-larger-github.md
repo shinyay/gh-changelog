@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-25-custom-labels-configuration-option-for-dependabot-self-hosted-and-larger-github-hosted-actions-runners-now-generally-available-at-the-organization-level"
-fetched_at: "2026-02-03T14:40:05.893547Z"
+fetched_at: "2026-02-03T14:50:55.148651Z"
 ---
 
 # Custom labels configuration option for Dependabot self-hosted and larger GitHub-hosted Actions runners now generally available at the organization level

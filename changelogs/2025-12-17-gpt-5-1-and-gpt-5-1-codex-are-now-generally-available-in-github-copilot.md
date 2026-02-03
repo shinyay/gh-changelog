@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-17-gpt-5-1-and-gpt-5-1-codex-are-now-generally-available-in-github-copilot"
-fetched_at: "2026-02-03T14:40:05.377475Z"
+fetched_at: "2026-02-03T14:50:54.878078Z"
 ---
 
 # GPT-5.1 and GPT-5.1-Codex are now generally available in GitHub Copilot

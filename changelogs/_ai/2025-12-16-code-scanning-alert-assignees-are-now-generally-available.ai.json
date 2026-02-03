@@ -1,0 +1,42 @@
+{
+  "overview": "Code scanning alert assignees are now generally available, helping your team track and remediate security vulnerabilities more effectively by assigning clear ownership of alerts.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Code scanning alert assignees are now generally available, helping your team track and remediate security vulnerabilities more effectively by assigning clear ownership of alerts."
+      ]
+    },
+    {
+      "title": "What’s new in general availability?",
+      "bullets": [
+        "Since public preview , we’ve added:",
+        "Assignment to Copilot: You can delegate fixes to Copilot coding agent to reduce the time developers spend remediating potential vulnerabilities.",
+        "Notifications: Alert assignees now receive email notifications when assigned, based on their repository watching settings.",
+        "Webhooks: Webhook events for assignee changes let you integrate alert assignment into your existing workflows and automation.",
+        "REST API support: Programmatically view, assign, and unassign users to code scanning alerts using the REST API, enabling bulk operations and custom integrations."
+      ]
+    },
+    {
+      "title": "Getting started with code scanning alert assignees",
+      "bullets": [
+        "From the alert detail page, any code scanning alert can now be assigned to users who have write access to the repository in which the alert was identified. Assigning users to code scanning alerts brings security work into the same workflow developers already use for issues and pull requests. With assignees, teams can:",
+        "Take clear ownership of specific vulnerabilities.",
+        "Track remediation work directly within GitHub.",
+        "Accelerate fixes by making responsibility visible and actionable.",
+        "Code scanning alert assignees are available to customers with GitHub Code Security or GitHub Advanced Security on github.com and will be available for GitHub Enterprise Server customers from version 3.20.",
+        "Learn more about managing code scanning alerts and assigning alerts ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Code scanning alert assignees are now generally available, helping your team track and remediate security vulnerabilities more effectively by assigning clear ownership of alerts.",
+    "Since public preview , we’ve added: Assignment to Copilot: You can delegate fixes to Copilot coding agent to reduce the time developers spend remediating potential vulnerabilities."
+  ],
+  "caveats": [],
+  "insights": [
+    "Learn more about managing code scanning alerts and assigning alerts ."
+  ],
+  "confidence": 0.8500000000000001
+}

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-17-gemini-3-flash-is-now-in-public-preview-for-github-copilot"
-fetched_at: "2026-02-03T14:40:05.432335Z"
+fetched_at: "2026-02-03T14:50:54.891430Z"
 ---
 
 # Gemini 3 Flash is now in public preview for GitHub Copilot

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-11-review-commit-by-commit-improved-filtering-and-more-in-the-pull-request-files-changed-public-preview"
-fetched_at: "2026-02-03T14:40:05.649354Z"
+fetched_at: "2026-02-03T14:50:54.967279Z"
 ---
 
 # Review commit-by-commit, improved filtering, and more in the pull request “Files changed” public preview

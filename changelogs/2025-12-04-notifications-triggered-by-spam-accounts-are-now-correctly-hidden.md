@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-04-notifications-triggered-by-spam-accounts-are-now-correctly-hidden"
-fetched_at: "2026-02-03T14:40:05.766066Z"
+fetched_at: "2026-02-03T14:50:55.054636Z"
 ---
 
 # Notifications triggered by spam accounts are now correctly hidden

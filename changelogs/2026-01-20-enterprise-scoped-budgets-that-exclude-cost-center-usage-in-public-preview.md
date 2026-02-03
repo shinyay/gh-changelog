@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-19-enterprise-scoped-budgets-that-exclude-cost-center-usage-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.148483Z"
+fetched_at: "2026-02-03T14:50:54.750207Z"
 ---
 
 # Enterprise-scoped budgets that exclude cost center usage in public preview

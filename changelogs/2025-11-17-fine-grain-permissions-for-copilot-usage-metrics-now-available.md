@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-17-fine-grain-permissions-for-copilot-usage-metrics-now-available"
-fetched_at: "2026-02-03T14:40:06.087628Z"
+fetched_at: "2026-02-03T14:50:55.286160Z"
 ---
 
 # Fine-grain permissions for Copilot usage metrics now available

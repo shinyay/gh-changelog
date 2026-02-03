@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security", "supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-unified-code-to-cloud-artifact-risk-visibility-with-microsoft-defender-for-cloud-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.985975Z"
+fetched_at: "2026-02-03T14:50:55.220489Z"
 ---
 
 # Unified code-to-cloud artifact risk visibility with Microsoft Defender for Cloud now in public preview

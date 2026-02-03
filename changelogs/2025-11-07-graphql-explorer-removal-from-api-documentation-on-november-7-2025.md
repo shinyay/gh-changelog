@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["ecosystem and accessibility"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-07-graphql-explorer-removal-from-api-documentation-on-november-7-2025"
-fetched_at: "2026-02-03T14:40:06.204745Z"
+fetched_at: "2026-02-03T14:50:55.378499Z"
 ---
 
 # GraphQL Explorer removal from API documentation on November 7, 2025

@@ -5,7 +5,7 @@ type: "Release"
 labels: ["copilot", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-copilot-metrics-in-github-enterprise-cloud-with-data-residency-in-public-preview"
-fetched_at: "2026-02-03T14:40:04.772138Z"
+fetched_at: "2026-02-03T14:50:49.270734Z"
 ---
 
 # Copilot metrics in GitHub Enterprise Cloud with data residency in public preview

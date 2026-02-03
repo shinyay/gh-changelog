@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot", "enterprise management tools", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-enterprise-ai-controls-the-agent-control-plane-are-in-public-preview"
-fetched_at: "2026-02-03T14:40:06.524664Z"
+fetched_at: "2026-02-03T14:50:55.568122Z"
 ---
 
 # Enterprise AI controls & the agent control plane are in public preview

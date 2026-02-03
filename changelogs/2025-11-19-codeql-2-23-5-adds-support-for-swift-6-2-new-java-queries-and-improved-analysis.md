@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-19-codeql-2-23-5-adds-support-for-swift-6-2-new-java-queries-and-improved-analysis-accuracy"
-fetched_at: "2026-02-03T14:40:05.932234Z"
+fetched_at: "2026-02-03T14:50:55.179992Z"
 ---
 
 # CodeQL 2.23.5 adds support for Swift 6.2, new Java queries, and improved analysis accuracy

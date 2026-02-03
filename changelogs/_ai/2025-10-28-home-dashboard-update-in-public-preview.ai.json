@@ -1,0 +1,30 @@
+{
+  "overview": "We made improvements to the content and layout of the home dashboard, designed to enable users to see, understand, and take action on their most important work in a single view.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We made improvements to the content and layout of the home dashboard, designed to enable users to see, understand, and take action on their most important work in a single view.",
+        "The default view of the home dashboard now displays short, customizable lists of recent agent tasks, pull requests, and issues. The feed view has moved to its own page at github.com/feed when the preview is enabled. You can access the dashboard update by enabling New Dashboard Experience in Feature preview ."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "A new agent module shows the status of all your agent tasks and provides links to the the task session.",
+        "Pull request and issue modules list your most recent pull requests and issues for quick navigation to your in-progress work. Each module has filtering options to customize the lists.",
+        "The new Feed tab is the new home for the feed. It can also be found at github.com/feed . The feed’s content and filters have not changed. When using the site on a mobile device, you can find a link to the feed in the hamburger navigation.",
+        "We’ve applied fresh visual and UI updates to the dashboard.",
+        "Action menus enable you to kick-off your work from any of the new modules. You can assign issues to Copilot coding agent or open pull requests and issues in Copilot Chat as references.",
+        "When you assign an issue to Copilot, you’ll see a dialogue letting you choose which repository, branch, and custom agent to use."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "We made improvements to the content and layout of the home dashboard, designed to enable users to see, understand, and take action on their most important work in a single view."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

@@ -1,0 +1,51 @@
+{
+  "overview": "It’s now easier than ever to find exactly the issue you’re looking for with our improved search for GitHub Issues. Built on our new semantic index, you can now find results based on the meaning of your query, not just the keywords you use.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "It’s now easier than ever to find exactly the issue you’re looking for with our improved search for GitHub Issues. Built on our new semantic index, you can now find results based on the meaning of your query, not just the keywords you use."
+      ]
+    },
+    {
+      "title": "What’s new",
+      "bullets": [
+        "Search for issues using natural language like “authentication failing on mobile” or “funny timeline behavior”, and GitHub returns conceptually similar results, even if the issue titles or descriptions use completely different wording. The more descriptive your query, the better your results.",
+        "Our prerelease testing has found that this is a significant improvement for users. Overall, results are 39% better with semantic search compared to traditional search."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "Semantic search activates when you describe what you’re looking for in natural language. To make best use of this, results are now automatically ordered by “Best match” to surface the most relevant issues first.",
+        "For searches that need exact matching (e.g. queries with quotation marks) GitHub uses the traditional, lexical search engine to give you the precision you need.",
+        "During public preview, you can opt out using the feature preview dialog ."
+      ]
+    },
+    {
+      "title": "How to try it",
+      "bullets": [
+        "Head to any repository’s Issues tab and search using natural language. We’d love to hear what you think. Share your experience in our community discussion post."
+      ]
+    },
+    {
+      "title": "Additional improvements to issues and projects",
+      "bullets": [
+        "We’ve fixed a bug causing slow performance when searching for labels on Edge and Safari.",
+        "A Safari based scrolling bug impacting GitHub Issues is now fixed for smoother scroll behaviour.",
+        "Milestone ordering works consistently for both open and closed issues."
+      ]
+    }
+  ],
+  "key_changes": [
+    "We’ve fixed a bug causing slow performance when searching for labels on Edge and Safari.",
+    "A Safari based scrolling bug impacting GitHub Issues is now fixed for smoother scroll behaviour.",
+    "Milestone ordering works consistently for both open and closed issues."
+  ],
+  "impact": [
+    "During public preview, you can opt out using the feature preview dialog ."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.9500000000000001
+}

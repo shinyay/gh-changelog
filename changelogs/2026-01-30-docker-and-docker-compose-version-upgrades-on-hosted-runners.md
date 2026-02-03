@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-30-docker-and-docker-compose-version-upgrades-on-hosted-runners"
-fetched_at: "2026-02-03T14:40:04.749054Z"
+fetched_at: "2026-02-03T14:50:49.211063Z"
 ---
 
 # Docker and Docker Compose version upgrades on hosted runners

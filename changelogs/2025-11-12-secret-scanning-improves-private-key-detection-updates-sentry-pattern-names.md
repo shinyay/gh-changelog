@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-12-secret-scanning-improves-private-key-detection"
-fetched_at: "2026-02-03T14:40:06.152949Z"
+fetched_at: "2026-02-03T14:50:55.330837Z"
 ---
 
 # Secret scanning improves private key detection, updates Sentry pattern names

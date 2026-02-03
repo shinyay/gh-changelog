@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-18-github-copilot-now-supports-agent-skills"
-fetched_at: "2026-02-03T14:40:05.318632Z"
+fetched_at: "2026-02-03T14:50:54.857781Z"
 ---
 
 # GitHub Copilot now supports Agent Skills

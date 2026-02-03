@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["account management", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-10-github-enterprise-cloud-with-data-residency-now-supports-visual-studio-subscriptions"
-fetched_at: "2026-02-03T14:40:06.169470Z"
+fetched_at: "2026-02-03T14:50:55.350520Z"
 ---
 
 # GitHub Enterprise Cloud with data residency now supports Visual Studio subscriptions

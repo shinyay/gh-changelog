@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-04-codeql-2-23-6-adds-swift-6-2-1-and-new-c-security-queries"
-fetched_at: "2026-02-03T14:40:05.782225Z"
+fetched_at: "2026-02-03T14:50:55.066341Z"
 ---
 
 # CodeQL 2.23.6 adds Swift 6.2.1 and new C# security queries

@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["account management", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-03-control-ai-spending-with-budget-tracking-for-github-ai-tools"
-fetched_at: "2026-02-03T14:40:06.409398Z"
+fetched_at: "2026-02-03T14:50:55.492307Z"
 ---
 
 # Control AI spending with budget tracking for GitHub AI tools

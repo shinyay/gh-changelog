@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-02-github-enterprise-server-3-19-release-candidate-is-now-available"
-fetched_at: "2026-02-03T14:40:05.809406Z"
+fetched_at: "2026-02-03T14:50:55.085729Z"
 ---
 
 # GitHub Enterprise Server 3.19 release candidate is now available

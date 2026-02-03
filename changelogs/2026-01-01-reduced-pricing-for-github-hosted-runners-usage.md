@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-01-reduced-pricing-for-github-hosted-runners-usage"
-fetched_at: "2026-02-03T14:40:05.275015Z"
+fetched_at: "2026-02-03T14:50:54.829859Z"
 ---
 
 # Reduced pricing for GitHub-hosted runners usage

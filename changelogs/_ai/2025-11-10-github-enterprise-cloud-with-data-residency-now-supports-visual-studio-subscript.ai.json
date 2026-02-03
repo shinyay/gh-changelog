@@ -1,0 +1,17 @@
+{
+  "overview": "Visual Studio subscriptions for both subscription and usage-based GitHub Enterprise now support data residency. This allows you to access GitHub Enterprise features through your Visual Studio subscription while maintaining compliance with regional data requirements.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Visual Studio subscriptions for both subscription and usage-based GitHub Enterprise now support data residency. This allows you to access GitHub Enterprise features through your Visual Studio subscription while maintaining compliance with regional data requirements.",
+        "For more information, learn about Visual Studio subscriptions with GitHub Enterprise or visit our data residency documentation ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

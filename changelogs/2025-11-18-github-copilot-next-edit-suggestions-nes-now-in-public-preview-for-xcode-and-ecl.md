@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-github-copilot-next-edit-suggestions-nes-now-in-public-preview-for-xcode-and-eclipse"
-fetched_at: "2026-02-03T14:40:06.022561Z"
+fetched_at: "2026-02-03T14:50:55.235741Z"
 ---
 
 # GitHub Copilot next edit suggestions (NES) now in public preview for Xcode and Eclipse

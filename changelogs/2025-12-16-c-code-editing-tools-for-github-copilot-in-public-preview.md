@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-16-c-code-editing-tools-for-github-copilot-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.517759Z"
+fetched_at: "2026-02-03T14:50:54.900039Z"
 ---
 
 # C++ code editing tools for GitHub Copilot in public preview

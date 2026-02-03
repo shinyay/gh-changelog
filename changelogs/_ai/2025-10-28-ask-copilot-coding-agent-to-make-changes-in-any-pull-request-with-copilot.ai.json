@@ -1,0 +1,24 @@
+{
+  "overview": "As well as open new pull requests from scratch, Copilot can now help you make changes to an existing pull request created by a human—just mention @copilot in a comment.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "As well as open new pull requests from scratch, Copilot can now help you make changes to an existing pull request created by a human—just mention @copilot in a comment.",
+        "Copilot coding agent is our asynchronous, autonomous background agent. Delegate a task to Copilot, and it works in the background, then requests a review from you.",
+        "When you mention @copilot in a comment, Copilot will open a new pull request on top of your existing pull request, using the existing pull request’s branch as its base branch. Once it has finished work on the changes you requested, it requests your review on the new pull request.",
+        "You maintain control of your original pull request. Until you accept Copilot’s proposed changes by merging the new pull request into your branch, your pull request will remain untouched.",
+        "Pull requests that merge into another pull request’s branch are now clearly marked to make them easier to spot.",
+        "Copilot coding agent is available to Copilot Pro, Copilot Pro+, Copilot Business, and Copilot Enterprise subscribers. If you’re a Copilot Business or Copilot Enterprise subscriber, an administrator will have to enable Copilot coding agent from the “Policies” page before you can use it.",
+        "To learn more about Copilot coding agent, head to our documentation on coding agent ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "To learn more about Copilot coding agent, head to our documentation on coding agent ."
+  ],
+  "confidence": 0.8
+}

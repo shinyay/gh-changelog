@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security", "copilot", "universe25"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-copilot-coding-agent-now-automatically-validates-code-security-and-quality"
-fetched_at: "2026-02-03T14:40:06.700440Z"
+fetched_at: "2026-02-03T14:50:55.678652Z"
 ---
 
 # Copilot coding agent now automatically validates code security and quality

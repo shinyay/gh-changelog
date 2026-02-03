@@ -1,0 +1,101 @@
+{
+  "overview": "Not stated in the article.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "The GitHub MCP Server has arrived with improved capabilities to manage GitHub Projects with more efficient usage of the context window, automatic tool filtering based on your token’s permissions, and features including Insiders and HTTP server mode!",
+        "Visit the GitHub MCP Server repository to learn more."
+      ]
+    },
+    {
+      "title": "Consolidated GitHub Projects toolset",
+      "bullets": [
+        "Previously, the Projects toolset, as with other now-consolidated toolsets, used a significant portion of the context window for the tools list. As a result, we’ve reduced token usage by around 23,000 tokens (50%). Managing GitHub Projects is now simpler with a new consolidated set of tools that replace the previous approach. The new projects toolset provides unified access to project management capabilities:",
+        "projects_list : List projects for a user, organization, or repository.",
+        "projects_get : Retrieve detailed information about a specific project, including fields and items.",
+        "projects_write : Create, update, and manage project items with full field support.",
+        "The consolidated tools handle owner type detection automatically—you no longer need to specify whether the owner is a user or organization."
+      ]
+    },
+    {
+      "title": "OAuth scope filtering",
+      "bullets": [
+        "The GitHub MCP Server now manages tool availability based on your authentication method.",
+        "When using a classic Personal Access Token ( ghp_ prefix), the server automatically detects your token’s OAuth scopes and hides tools you don’t have permission to use. This reduces clutter and prevents errors from attempting operations your token can’t perform. To learn more about creating a personal access token (PAT) for yourself, check out our docs on managing your personal access tokens ."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "At startup, the server detects if your token is a classic PAT.",
+        "It discovers your token’s scopes via a lightweight API call.",
+        "Tools requiring scopes your token doesn’t have are automatically hidden."
+      ]
+    },
+    {
+      "title": "Insiders mode for experimental features",
+      "bullets": [
+        "We’re introducing Insiders mode , an opt-in mechanism that lets you access experimental and preview functionality in the GitHub MCP Server. This will be available for both local and remote server deployments."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "Users explicitly opt in by setting a configuration header or using the new /insiders URL.",
+        "When enabled, the MCP Server grants access to experimental features, behavior changes under evaluation, and functionality not yet generally available.",
+        "Removing the header or reverting to the standard URL instantly restores standard generally available behavior."
+      ]
+    },
+    {
+      "title": "HTTP server mode with OAuth support",
+      "bullets": [
+        "Enterprise users are now able to run the GitHub MCP Server in HTTP mode with OAuth token support."
+      ]
+    },
+    {
+      "title": "What’s coming",
+      "bullets": [
+        "HTTP server mode : Run the local MCP server as an HTTP server on a configurable port.",
+        "Per-request OAuth tokens : Support tokens via Authorization header.",
+        "Fallback support : Falls back to GITHUB_PERSONAL_ACCESS_TOKEN if no header is provided.",
+        "Enterprise Server compatibility : Full support for GitHub Enterprise Server deployments.",
+        "This allows enterprise teams to deploy a shared MCP server with OAuth token forwarding, eliminating the need for every user to manage their own personal access tokens."
+      ]
+    },
+    {
+      "title": "Copilot coding agent tools",
+      "bullets": [
+        "The GitHub MCP Server adds new tools and improvements for working with the Copilot coding agent.",
+        "The new get_copilot_job_status tool lets you check on Copilot’s progress. You can query by job ID or pull request number.",
+        "Both assign_copilot_to_issue and create_pull_request_with_copilot now support a base_ref parameter:",
+        "Feature branches : Start Copilot’s work from any branch, not just the default.",
+        "Stacked PRs : Build on existing work by specifying a feature branch as the base.",
+        "Sequential tasks : Chain multiple Copilot assignments together.",
+        "Task assignments now return a job ID or pull request link immediately, so you can track status right away.",
+        "The assign_copilot_to_issue tool now supports custom instructions."
+      ]
+    },
+    {
+      "title": "Getting started",
+      "bullets": [
+        "To get started, enable the copilot toolset.",
+        "Visit the GitHub MCP Server repository to learn more.",
+        "Try out these features today! If you have feedback, please open an issue in our open-source GitHub MCP Server repository ."
+      ]
+    }
+  ],
+  "key_changes": [
+    "We’re introducing Insiders mode , an opt-in mechanism that lets you access experimental and preview functionality in the GitHub MCP Server. This will be available for both local and remote server deployments."
+  ],
+  "impact": [
+    "When enabled, the MCP Server grants access to experimental features, behavior changes under evaluation, and functionality not yet generally available.",
+    "Removing the header or reverting to the standard URL instantly restores standard generally available behavior."
+  ],
+  "caveats": [],
+  "insights": [
+    "Visit the GitHub MCP Server repository to learn more.",
+    "To learn more about creating a personal access token (PAT) for yourself, check out our docs on managing your personal access tokens ."
+  ],
+  "confidence": 0.7500000000000001
+}

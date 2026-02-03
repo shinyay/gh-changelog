@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["actions", "application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-10-28-upcoming-deprecation-of-codeql-action-v3"
-fetched_at: "2026-02-03T14:40:06.444814Z"
+fetched_at: "2026-02-03T14:50:55.519073Z"
 ---
 
 # Upcoming deprecation of CodeQL Action v3

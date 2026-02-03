@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-01-block-repository-admins-from-installing-github-apps-now-generally-available"
-fetched_at: "2026-02-03T14:40:05.871975Z"
+fetched_at: "2026-02-03T14:50:55.130667Z"
 ---
 
 # Block repository administrators from installing GitHub Apps on their own now generally available

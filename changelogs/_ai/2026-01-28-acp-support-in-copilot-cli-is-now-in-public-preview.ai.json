@@ -1,0 +1,42 @@
+{
+  "overview": "GitHub Copilot CLI now implements the Agent Client Protocol (ACP) , an industry-standard protocol for communication between AI agents and clients. This enables third-party tools, IDEs, and automation systems to integrate directly with Copilot’s agentic capabilities through an extensible interface.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "GitHub Copilot CLI now implements the Agent Client Protocol (ACP) , an industry-standard protocol for communication between AI agents and clients. This enables third-party tools, IDEs, and automation systems to integrate directly with Copilot’s agentic capabilities through an extensible interface."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "You can start Copilot in ACP mode via stdio: copilot --acp",
+        "Or connect via TCP on a specific port: copilot --acp --port 8080",
+        "ACP clients can then:",
+        "Initialize a connection and discover agent capabilities.",
+        "Create isolated sessions with custom working directories.",
+        "Send prompts with text, images, and context resources.",
+        "Receive streaming updates as the agent works.",
+        "Respond to permission requests for tool execution.",
+        "Cancel operations and manage session lifecycle."
+      ]
+    },
+    {
+      "title": "Use cases",
+      "bullets": [
+        "IDE integrations: Build Copilot support into any editor or development environment.",
+        "CI/CD pipelines: Orchestrate agentic coding tasks in automated workflows.",
+        "Custom frontends: Create specialized interfaces for specific developer workflows.",
+        "Multi-agent systems: Coordinate Copilot with other AI agents using a standard protocol.",
+        "Learn more in our ACP documentation and join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more in our ACP documentation and join the discussion within GitHub Community ."
+  ],
+  "confidence": 0.8
+}

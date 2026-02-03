@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-16-rate-limiting-for-actions-cache-entries"
-fetched_at: "2026-02-03T14:40:05.155292Z"
+fetched_at: "2026-02-03T14:50:54.754465Z"
 ---
 
 # Rate limiting for actions cache entries

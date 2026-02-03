@@ -5,7 +5,7 @@ type: "deprecations"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-27-changes-to-github-dependabot-pull-request-comment-commands"
-fetched_at: "2026-02-03T14:40:05.037062Z"
+fetched_at: "2026-02-03T14:50:54.700278Z"
 ---
 
 # Changes to GitHub Dependabot pull request comment commands

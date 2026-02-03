@@ -1,0 +1,42 @@
+{
+  "overview": "Copilot memory is now available in public preview for all paid GitHub Copilot plans.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot memory is now available in public preview for all paid GitHub Copilot plans.",
+        "Copilot memory enables Copilot to learn and retain useful details about your repositories. As you work with Copilot coding agent, Copilot code review, or Copilot CLI, it builds a repository-specific understanding that improves the quality of its assistance over time."
+      ]
+    },
+    {
+      "title": "How it works",
+      "bullets": [
+        "Copilot automatically captures tightly scoped insights called “memories” as it works in your repositories. These memories are:",
+        "Repository-specific and validated against the current codebase before use.",
+        "Shared across Copilot features, so what coding agent learns can help code review.",
+        "Automatically expired after 28 days to prevent stale information.",
+        "For more details on how exactly Copilot memory works, check out our engineering blog post on Copilot memory ."
+      ]
+    },
+    {
+      "title": "Get started",
+      "bullets": [
+        "Individual users (Copilot Pro or Pro+): Enable Copilot memory in your personal Copilot settings .",
+        "Organizations and enterprises : Enable through policy settings in your organization or enterprise settings.",
+        "Repository owners can review and delete stored memories in Repository Settings > Copilot > Memory .",
+        "To learn more about how to use this feature, check out our Copilot memory documentation .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Copilot memory is now available in public preview for all paid GitHub Copilot plans."
+  ],
+  "caveats": [],
+  "insights": [
+    "For more details on how exactly Copilot memory works, check out our engineering blog post on Copilot memory .",
+    "To learn more about how to use this feature, check out our Copilot memory documentation ."
+  ],
+  "confidence": 0.8500000000000001
+}

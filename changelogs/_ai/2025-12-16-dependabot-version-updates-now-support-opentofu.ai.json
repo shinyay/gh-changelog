@@ -1,0 +1,22 @@
+{
+  "overview": "Developers can now use Dependabot to automatically keep their OpenTofu dependencies up to date. For projects that use OpenTofu, Dependabot version updates can now ensure dependencies stay current with the latest releases.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Developers can now use Dependabot to automatically keep their OpenTofu dependencies up to date. For projects that use OpenTofu, Dependabot version updates can now ensure dependencies stay current with the latest releases.",
+        "Engage with the Dependabot open source community on the topic of OpenTofu support.",
+        "Learn more in our Dependabot version updates documentation .",
+        "Learn more about OpenTofu ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "Learn more in our Dependabot version updates documentation .",
+    "Learn more about OpenTofu ."
+  ],
+  "confidence": 0.8
+}

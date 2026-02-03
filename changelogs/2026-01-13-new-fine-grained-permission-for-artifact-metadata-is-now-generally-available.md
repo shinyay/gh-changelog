@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["actions", "application security", "supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-13-new-fine-grained-permission-for-artifact-metadata-is-now-generally-available"
-fetched_at: "2026-02-03T14:40:05.244551Z"
+fetched_at: "2026-02-03T14:50:54.813228Z"
 ---
 
 # New fine-grained permission for artifact metadata is now generally available

@@ -1,0 +1,31 @@
+{
+  "overview": "To reduce unwanted noise and help you focus on what matters most, we’re removing notifications generated from mentions in commit messages. Previously, mentioning a user or team in a commit message (e.g., fixes bug for @username) triggered a notification, just like in issues or pull requests.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "To reduce unwanted noise and help you focus on what matters most, we’re removing notifications generated from mentions in commit messages. Previously, mentioning a user or team in a commit message (e.g., fixes bug for @username) triggered a notification, just like in issues or pull requests.",
+        "Editor’s note (November 7, 2025): Updated terminology for the type of notifications."
+      ]
+    },
+    {
+      "title": "What’s changing",
+      "bullets": [
+        "On December 8th, Users and teams will no longer receive notifications when mentioned in a commit message. Mentions in issues, pull requests, and discussions will continue to trigger notifications."
+      ]
+    },
+    {
+      "title": "How to give feedback",
+      "bullets": [
+        "If you have any feedback or questions, feel free to drop a comment in our Community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Editor’s note (November 7, 2025): Updated terminology for the type of notifications."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

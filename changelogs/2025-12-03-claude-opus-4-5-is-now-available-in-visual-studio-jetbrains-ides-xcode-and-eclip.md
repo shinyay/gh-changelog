@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-03-claude-opus-4-5-is-now-available-in-visual-studio-jetbrains-ides-xcode-and-eclipse"
-fetched_at: "2026-02-03T14:40:05.791521Z"
+fetched_at: "2026-02-03T14:50:55.073849Z"
 ---
 
 # Claude Opus 4.5 is now available in Visual Studio, JetBrains IDEs, Xcode, and Eclipse

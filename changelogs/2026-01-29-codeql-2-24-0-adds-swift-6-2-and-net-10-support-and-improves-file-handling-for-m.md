@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-codeql-2-24-0-adds-swift-6-2-support-net-10-compatibility-and-file-handling-for-minified-javascript"
-fetched_at: "2026-02-03T14:40:04.767297Z"
+fetched_at: "2026-02-03T14:50:49.253622Z"
 ---
 
 # CodeQL 2.24.0 adds Swift 6.2 and .NET 10 support, and improves file handling for minified JavaScript

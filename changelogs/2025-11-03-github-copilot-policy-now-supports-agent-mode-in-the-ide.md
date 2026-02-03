@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-03-github-copilot-policy-now-supports-agent-mode-in-the-ide"
-fetched_at: "2026-02-03T14:40:06.398670Z"
+fetched_at: "2026-02-03T14:50:55.484951Z"
 ---
 
 # GitHub Copilot policy now supports agent mode in the IDE

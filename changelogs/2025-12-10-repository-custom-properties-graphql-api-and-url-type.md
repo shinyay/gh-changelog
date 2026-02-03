@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools", "platform governance"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-09-repository-custom-properties-graphql-api-and-url-type"
-fetched_at: "2026-02-03T14:40:05.721257Z"
+fetched_at: "2026-02-03T14:50:55.019867Z"
 ---
 
 # Repository custom properties: GraphQL API and URL type

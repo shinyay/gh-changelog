@@ -5,7 +5,7 @@ type: "Release"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-29-codespaces-is-now-in-public-preview-for-github-enterprise-with-data-residency"
-fetched_at: "2026-02-03T14:40:04.753173Z"
+fetched_at: "2026-02-03T14:50:49.215950Z"
 ---
 
 # Codespaces is now in public preview for GitHub Enterprise with data residency

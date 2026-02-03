@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot", "universe25"]
 author: "Dylan Birtolo"
 source_url: "https://github.blog/changelog/2025-10-28-github-copilot-in-visual-studio-code-gets-upgraded"
-fetched_at: "2026-02-03T14:40:06.449617Z"
+fetched_at: "2026-02-03T14:50:55.523196Z"
 ---
 
 # GitHub Copilot in Visual Studio Code gets upgraded

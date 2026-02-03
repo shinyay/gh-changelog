@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-15-secret-scanning-extended-metadata-to-be-automatically-enabled-for-certain-repositories"
-fetched_at: "2026-02-03T14:40:05.159541Z"
+fetched_at: "2026-02-03T14:50:54.758028Z"
 ---
 
 # Secret scanning extended metadata to be automatically enabled for certain repositories

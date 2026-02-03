@@ -1,0 +1,20 @@
+{
+  "overview": "Copilot coding agent is our asynchronous, autonomous background agent. When Copilot coding agent finishes its work, it updates the body of its pull request with a summary of changes. Now, Copilot can follow the repository’s pull request template when writing the body.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot coding agent is our asynchronous, autonomous background agent. When Copilot coding agent finishes its work, it updates the body of its pull request with a summary of changes. Now, Copilot can follow the repository’s pull request template when writing the body.",
+        "Create a pull request template by adding a file called pull_request_template.md to your repository. If your repository includes multiple pull request templates, Copilot will pick the one best suited to the task.",
+        "To learn more about best practices while using coding agent, visit our coding agent documentation ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [
+    "To learn more about best practices while using coding agent, visit our coding agent documentation ."
+  ],
+  "confidence": 0.8
+}

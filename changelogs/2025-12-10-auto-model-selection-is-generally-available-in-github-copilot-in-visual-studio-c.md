@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-10-auto-model-selection-is-generally-available-in-github-copilot-in-visual-studio-code"
-fetched_at: "2026-02-03T14:40:05.676670Z"
+fetched_at: "2026-02-03T14:50:54.988574Z"
 ---
 
 # Auto model selection is generally available in GitHub Copilot in Visual Studio Code

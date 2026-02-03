@@ -1,0 +1,20 @@
+{
+  "overview": "We’ve made a key improvement to the enterprise licensing CSV export to help enterprises better track license consumption of outside collaborators across organizations.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve made a key improvement to the enterprise licensing CSV export to help enterprises better track license consumption of outside collaborators across organizations.",
+        "What’s new? – Outside collaborators are now explicitly associated with the organization(s) they contribute to in the license CSV export. – In the CSV’s member roles column, outside collaborator entries will now include a new value in the format: [org]/[repo] .",
+        "Why this change?",
+        "This improvement makes it easier to determine which outside collaborators are consuming licenses, especially as enterprise owners and billing managers manage budgets across multiple organizations.",
+        "To read more, check out our documentation or join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

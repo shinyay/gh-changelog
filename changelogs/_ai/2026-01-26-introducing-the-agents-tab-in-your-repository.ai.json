@@ -1,0 +1,43 @@
+{
+  "overview": "We’ve redesigned where you manage Copilot coding agent tasks. We’re bringing a new look and feel to your mission control style view directly into your repository with a new Agents tab.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve redesigned where you manage Copilot coding agent tasks. We’re bringing a new look and feel to your mission control style view directly into your repository with a new Agents tab.",
+        "Instead of navigating to a separate page, your agent sessions now live alongside your code, pull requests, and issues. View all sessions for the repository in one place, create new ones, and switch between tasks without leaving your codebase. One-click links make it easy to jump straight to the associated pull request. You can also archive sessions to keep things organized and page through your session history."
+      ]
+    },
+    {
+      "title": "Redesigned session logs",
+      "bullets": [
+        "Session logs are now easier to read and follow. Similar tool calls are grouped together, reducing noise and making the flow more clear. Tool outputs render inline previews, and file changes appear with the familiar diff views that you can expand with one click. Every tool call has a distinctive icon, and bash commands are now visible for full transparency."
+      ]
+    },
+    {
+      "title": "Resume with the Copilot CLI",
+      "bullets": [
+        "If you prefer working in your terminal, you can now continue your Copilot session directly in the Copilot CLI. Click Continue in Copilot CLI , copy the command, and pick up right where you left off."
+      ]
+    },
+    {
+      "title": "To get started",
+      "bullets": [
+        "Navigate to a repository.",
+        "Click on the new Agents tab.",
+        "Create a task.",
+        "To open your session in the CLI, click Continue in Copilot CLI .",
+        "Copy the command and paste into your terminal to get started with the Copilot CLI .",
+        "Note: To view the Agents tab, ensure that you have Copilot coding agent enabled for your repository .",
+        "Join the community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [
+    "Note: To view the Agents tab, ensure that you have Copilot coding agent enabled for your repository ."
+  ],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

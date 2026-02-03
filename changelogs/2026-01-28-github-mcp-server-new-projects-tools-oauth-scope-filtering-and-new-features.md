@@ -5,7 +5,7 @@ type: "Release"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-28-github-mcp-server-new-projects-tools-oauth-scope-filtering-and-new-features"
-fetched_at: "2026-02-03T14:40:04.834057Z"
+fetched_at: "2026-02-03T14:50:49.392520Z"
 ---
 
 # GitHub MCP Server: New Projects tools, OAuth scope filtering, and new features

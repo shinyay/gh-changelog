@@ -1,0 +1,41 @@
+{
+  "overview": "The GitHub app for Slack now works with GitHub Copilot coding agent , letting you generate pull requests directly from your Slack conversations.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "The GitHub app for Slack now works with GitHub Copilot coding agent , letting you generate pull requests directly from your Slack conversations.",
+        "Editor’s note (October 28, 2025): Removed the reference to a gradual roll out now that the feature is widely available.",
+        "Mention @GitHub in any Slack thread with a prompt, and Copilot coding agent will get to work in the background, then reply when the pull request is ready for review.",
+        "Copilot coding agent is our asynchronous and autonomous developer agent that’s great for offloading tasks like bug fixes, incremental new features, test coverage, and refactors. It frees you up to focus on more complex problems."
+      ]
+    },
+    {
+      "title": "Try it out",
+      "bullets": [
+        "Make sure Copilot coding agent is enabled for your GitHub account. Copilot coding agent is available with all paid Copilot plans. If you’re a Copilot Business or Enterprise subscriber, an admin must enable the policy .",
+        "Install or upgrade the GitHub app in your Slack workspace.",
+        "Mention @GitHub in a Slack thread with a prompt like “Fix missing tooltips on navigation icons” to start Copilot coding agent and follow its progress directly in the thread.",
+        "Link your GitHub account.",
+        "The new Copilot coding agent functionality is optional, and requires new permissions. If you prefer not to upgrade, you can continue using the GitHub app as before for notifications, issue triage, and pull request management.",
+        "The GitHub app for Slack joins the GitHub app for Microsoft Teams , which is now generally available.",
+        "Learn more about integrating Copilot coding agent with Slack or Teams , and join the discussion in the GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "The new Copilot coding agent functionality is optional, and requires new permissions.",
+    "The GitHub app for Slack joins the GitHub app for Microsoft Teams , which is now generally available."
+  ],
+  "caveats": [
+    "Editor’s note (October 28, 2025): Removed the reference to a gradual roll out now that the feature is widely available.",
+    "The new Copilot coding agent functionality is optional, and requires new permissions."
+  ],
+  "insights": [
+    "Mention @GitHub in a Slack thread with a prompt like “Fix missing tooltips on navigation icons” to start Copilot coding agent and follow its progress directly in the thread.",
+    "The new Copilot coding agent functionality is optional, and requires new permissions.",
+    "Learn more about integrating Copilot coding agent with Slack or Teams , and join the discussion in the GitHub Community ."
+  ],
+  "confidence": 0.9000000000000001
+}

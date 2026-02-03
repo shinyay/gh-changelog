@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-20-github-actions-cache-size-can-now-exceed-10-gb-per-repository"
-fetched_at: "2026-02-03T14:40:05.908431Z"
+fetched_at: "2026-02-03T14:50:55.159681Z"
 ---
 
 # GitHub Actions cache size can now exceed 10 GB per repository

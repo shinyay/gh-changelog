@@ -1,0 +1,30 @@
+{
+  "overview": "Copilot now analyzes and organizes the changes in a pull request! This feature is currently in public preview and available to Copilot Enterprise and Copilot Pro+ users.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Copilot now analyzes and organizes the changes in a pull request! This feature is currently in public preview and available to Copilot Enterprise and Copilot Pro+ users.",
+        "Copilot change groups helps reviewers understand and navigate complex pull requests by automatically grouping related changes such as refactors, configuration updates, or test improvements. This makes it easier to understand the purpose and impact of each set of changes.",
+        "With Copilot change groups, you can:",
+        "Quickly understand the intent behind each set of changes.",
+        "Review complex pull requests faster and with more confidence.",
+        "Focus on critical changes instead of smaller, less significant updates.",
+        "To use Copilot change groups, opt in to the new “Files changed” preview page by selecting Try the new experience in the top-right corner of the Files changed tab."
+      ]
+    },
+    {
+      "title": "Feedback",
+      "bullets": [
+        "We want to hear from you! Visit the GitHub community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "This feature is currently in public preview and available to Copilot Enterprise and Copilot Pro+ users."
+  ],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8500000000000001
+}

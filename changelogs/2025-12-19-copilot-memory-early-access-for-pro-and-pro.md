@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-12-19-copilot-memory-early-access-for-pro-and-pro"
-fetched_at: "2026-02-03T14:40:05.290914Z"
+fetched_at: "2026-02-03T14:50:54.839817Z"
 ---
 
 # Copilot memory early access for Pro and Pro+

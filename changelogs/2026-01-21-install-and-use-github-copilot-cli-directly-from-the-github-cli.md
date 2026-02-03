@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["client apps", "copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-21-install-and-use-github-copilot-cli-directly-from-the-github-cli"
-fetched_at: "2026-02-03T14:40:05.120249Z"
+fetched_at: "2026-02-03T14:50:54.736027Z"
 ---
 
 # Install and Use GitHub Copilot CLI directly from the GitHub CLI

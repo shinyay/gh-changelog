@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-25-secret-scanning-alert-assignees-security-campaigns-are-generally-available"
-fetched_at: "2026-02-03T14:40:05.882314Z"
+fetched_at: "2026-02-03T14:50:55.138466Z"
 ---
 
 # Secret scanning alert assignees, security campaigns are generally available

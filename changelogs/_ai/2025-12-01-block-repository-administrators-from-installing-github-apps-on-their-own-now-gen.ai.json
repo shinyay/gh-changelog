@@ -1,0 +1,33 @@
+{
+  "overview": "Organization owners can now better control which users are allowed to install GitHub Apps across their repositories with a new setting.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Organization owners can now better control which users are allowed to install GitHub Apps across their repositories with a new setting.",
+        "Previously, any user with admin permissions on a repository—including outside collaborators—could install GitHub Apps that requested only repository-level permissions. This could cause unexpected app installations and governance challenges, particularly for organizations with strict security or compliance requirements.",
+        "With this new setting, organization owners can prevent repository admins from installing GitHub Apps on the repositories they manage. When the setting is enabled, only organization owners will be able to install GitHub Apps on organization repositories. Repository admins must instead request an app installation from an organization owner.",
+        "How this benefits you",
+        "Strengthen governance for your organization by ensuring only trusted users can install GitHub Apps across repositories.",
+        "Reduce the risk of unauthorized or unexpected app installations.",
+        "Help meet compliance requirements.",
+        "To get started, organization owners can navigate to their organization’s Settings , click the Member privileges tab, and find the new option under GitHub Apps .",
+        "How to give feedback",
+        "If you have any questions or feedback, feel free to leave a comment in our Community discussion ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "Previously, any user with admin permissions on a repository—including outside collaborators—could install GitHub Apps that requested only repository-level permissions.",
+    "When the setting is enabled, only organization owners will be able to install GitHub Apps on organization repositories.",
+    "How this benefits you Strengthen governance for your organization by ensuring only trusted users can install GitHub Apps across repositories."
+  ],
+  "caveats": [
+    "Previously, any user with admin permissions on a repository—including outside collaborators—could install GitHub Apps that requested only repository-level permissions.",
+    "When the setting is enabled, only organization owners will be able to install GitHub Apps on organization repositories.",
+    "How this benefits you Strengthen governance for your organization by ensuring only trusted users can install GitHub Apps across repositories."
+  ],
+  "insights": [],
+  "confidence": 0.9000000000000001
+}

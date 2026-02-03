@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["enterprise management tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-12-controlling-who-can-request-apps-for-your-organization-is-now-generally-available"
-fetched_at: "2026-02-03T14:40:05.253030Z"
+fetched_at: "2026-02-03T14:50:54.819673Z"
 ---
 
 # Controlling who can request apps for your organization is now generally available

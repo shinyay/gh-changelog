@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-20-linter-integration-with-copilot-code-review-now-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.914550Z"
+fetched_at: "2026-02-03T14:50:55.164057Z"
 ---
 
 # Linter integration with Copilot code review now in public preview

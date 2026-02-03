@@ -1,0 +1,43 @@
+{
+  "overview": "We’ve retired the legacy Copilot usage report CSV that was previously available to organization administrators under Copilot access settings.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "We’ve retired the legacy Copilot usage report CSV that was previously available to organization administrators under Copilot access settings.",
+        "Three months ago, the legacy usage report was deprecated in favor of the new, more granular activity report. In-product notices informed admins of the upcoming retirement."
+      ]
+    },
+    {
+      "title": "What’s changed?",
+      "bullets": [
+        "Usage report (legacy) removed: The old CSV download is no longer available for admins from Copilot access settings."
+      ]
+    },
+    {
+      "title": "What stays the same?",
+      "bullets": [
+        "Activity report (new) remains: The new activity report provides all the metrics and details of the usage report, plus additional granularity and improvements to export workflow.",
+        "No data changes: All usage data remains available via the activity report."
+      ]
+    },
+    {
+      "title": "What do I need to do?",
+      "bullets": [
+        "Admins should begin using the Copilot activity report to obtain organization-wide or enterprise-wide Copilot usage data.",
+        "If you have any workflows or automation relying on the legacy report, please update them to reference the activity report endpoints and format.",
+        "For more details on accessing and using the Copilot activity report, see our activity report docs ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "We’ve retired the legacy Copilot usage report CSV that was previously available to organization administrators under Copilot access settings.",
+    "Three months ago, the legacy usage report was deprecated in favor of the new, more granular activity report."
+  ],
+  "caveats": [],
+  "insights": [
+    "For more details on accessing and using the Copilot activity report, see our activity report docs ."
+  ],
+  "confidence": 0.8500000000000001
+}

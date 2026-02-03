@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-18-gemini-3-pro-is-in-public-preview-for-github-copilot"
-fetched_at: "2026-02-03T14:40:05.948457Z"
+fetched_at: "2026-02-03T14:50:55.194912Z"
 ---
 
 # Gemini 3 Pro is in public preview for GitHub Copilot

@@ -5,7 +5,7 @@ type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-01-15-agentic-memory-for-github-copilot-is-in-public-preview"
-fetched_at: "2026-02-03T14:40:05.168281Z"
+fetched_at: "2026-02-03T14:50:54.761564Z"
 ---
 
 # Agentic memory for GitHub Copilot is in public preview

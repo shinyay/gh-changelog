@@ -1,0 +1,30 @@
+{
+  "overview": "Enterprise owners can now delegate AI and Copilot policy as well as setup administration to their enterprise members and teams. You can now do this without granting broad enterprise ownership. These new fine-grained permissions (FGPs) can grant read or write access to the agent control plane in the enterprise account.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "Enterprise owners can now delegate AI and Copilot policy as well as setup administration to their enterprise members and teams. You can now do this without granting broad enterprise ownership. These new fine-grained permissions (FGPs) can grant read or write access to the agent control plane in the enterprise account.",
+        "At Universe 2025, we announced the public preview of the agent control plane . This is a suite of governance features designed to give enterprises deeper control over and greater ability to audit the use of Copilot features, custom agents, and MCP configurations across their business.",
+        "Enterprise owners can now delegate management of the features in the agent control plane by creating a new enterprise custom role with one of the below FGPs:",
+        "View enterprise AI controls : Allows the role to view all settings in the AI Controls tab for your enterprise.",
+        "Manage enterprise AI controls : Allows the role to manage all settings in the AI Controls tab for your enterprise.",
+        "Note : The above FGPs do not grant access to the deep links in the AI Controls tab like access management, audit logs, or rulesets, unless the corresponding FGPs that control those enterprise views are also added to the custom role. For example, Enterprise owners need to explicitly add the Read enterprise audit logs FGP to allow the custom role to view audit log events for your enterprise. This helps AI managers monitor agentic activity.",
+        "An enterprise role with the above FGPs can then be assigned to individual members or to an enterprise team to enable AI management at scale.",
+        "To learn more, see our documentation on establishing AI managers in your enterprise .",
+        "Join the discussion within GitHub Community ."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [
+    "At Universe 2025, we announced the public preview of the agent control plane ."
+  ],
+  "caveats": [
+    "Note : The above FGPs do not grant access to the deep links in the AI Controls tab like access management, audit logs, or rulesets, unless the corresponding FGPs that control those enterprise views are also added to the custom role."
+  ],
+  "insights": [
+    "To learn more, see our documentation on establishing AI managers in your enterprise ."
+  ],
+  "confidence": 0.9000000000000001
+}

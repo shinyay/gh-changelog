@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["actions", "application security", "platform governance"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2025-11-25-code-scanning-default-setup-bypasses-github-actions-policy-blocks"
-fetched_at: "2026-02-03T14:40:05.889659Z"
+fetched_at: "2026-02-03T14:50:55.143693Z"
 ---
 
 # Code scanning default setup bypasses GitHub Actions policy blocks

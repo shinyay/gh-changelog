@@ -1,0 +1,18 @@
+{
+  "overview": "You can now migrate repositories to GitHub Enterprise Cloud (GHEC) with GitHub Enterprise Importer (GEI) using GitHub-owned blob storage. You no longer need to provide GEI with shared access keys to a storage account you own to perform repository migrations. Instead, migrations can now be performed by uploading repository archives directly to github.com or ghe.com.",
+  "detailed_explanation": [
+    {
+      "title": "Overview",
+      "bullets": [
+        "You can now migrate repositories to GitHub Enterprise Cloud (GHEC) with GitHub Enterprise Importer (GEI) using GitHub-owned blob storage. You no longer need to provide GEI with shared access keys to a storage account you own to perform repository migrations. Instead, migrations can now be performed by uploading repository archives directly to github.com or ghe.com.",
+        "You can start a repository migration using GitHub-owned storage using the gh gei and gh bbs2gh command line extensions by passing in the --use-github-storage flag.",
+        "To migrate repositories with GitHub-owned blob storage, you can follow our documentation for migrating repositories from GitHub Enterprise Server to GitHub Enterprise Cloud or migrating repositories from Bitbucket Server to GitHub Enterprise Cloud . Interested in migrating your GitLab repositories using GitHub-owned blob storage? Please reach out to our Expert Services team."
+      ]
+    }
+  ],
+  "key_changes": [],
+  "impact": [],
+  "caveats": [],
+  "insights": [],
+  "confidence": 0.8
+}

@@ -36,7 +36,7 @@ GitHub Actions の 1 vCPU Linux ランナーが一般提供されるようにな
 - これらの軽量ランナーの価格情報については、GitHub Actions の課金ページを参照してください。
 - 追加のドキュメントについては、シングル CPU ランナーの GitHub Docs リファレンスを参照してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub Actions の 1 vCPU Linux ランナーが一般提供されるようになりました。
 - このランナータイプを使用するジョブは、実行時間が 15 分に制限されています。
 

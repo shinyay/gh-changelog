@@ -34,7 +34,7 @@ Gemini 3 Flashが、Copilot Enterprise、Copilot Business、Copilot Pro、Copilo
 ### Share your feedback
 - GitHub Communityに参加して、フィードバックを共有してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Gemini 3 Flashが、Copilot Enterprise、Copilot Business、Copilot Pro、Copilot Pro+向けにパブリックプレビューで利用可能になりました。
 
 ## Caveats / Limitations

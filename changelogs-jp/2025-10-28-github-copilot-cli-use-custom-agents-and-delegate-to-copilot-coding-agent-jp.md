@@ -34,24 +34,24 @@ lang: "ja"
 ### フィードバックの共有
 - ターミナルで npm install -g @github/copilot@latest を実行して GitHub Copilot CLI を更新してください。/feedback コマンドやパブリックリポジトリへの issue のオープンを通じてフィードバックを提出してくださった皆様に感謝します。継続的なフィードバックは、日々改善を続ける上で非常に貴重です。
 
-## Key Changes
-記事では明示されていません。
-
-## Impact / Who's Affected
-- 初期パブリックプレビューリリース以降、GitHub Copilot CLI に日々改善を加えてきました。
-- カスタムエージェントが GitHub Copilot CLI で利用可能に カスタムエージェントが GitHub Copilot で利用可能になり、チームのワークフロー、規約、独自のニーズを捉えたエージェントペルソナを定義できます。
-
-## Caveats / Limitations
-記事では明示されていません。
-
-## Insights (derived from article language)
+## Impact / Who’s Affected
 記事では明示されていません。
 
 ## Article Content (cleaned)
+- 初期パブリックプレビューリリース以降、GitHub Copilot CLI に日々改善を加えてきました。
+- カスタムエージェントが GitHub Copilot CLI で利用可能に カスタムエージェントが GitHub Copilot で利用可能になり、チームのワークフロー、規約、独自のニーズを捉えたエージェントペルソナを定義できます。
+
+## [Custom agents are available in GitHub Copilot CLI](#custom-agents-are-available-in-github-copilot-cli)
+記事では明示されていません。
+
+## [Delegate tasks to Copilot coding agent from GitHub Copilot CLI](#delegate-tasks-to-copilot-coding-agent-from-github-copilot-cli)
+記事では明示されていません。
+
+## [Streaming, parallel tool calling, improved performance](#streaming-parallel-tool-calling-improved-performance)
 初期パブリックプレビューリリース以降、GitHub Copilot CLI に [日々改善](https://github.com/github/copilot-cli/releases?utm_source=changelog-copilot-cli&utm_medium=changelog&utm_campaign=universe25) を加えてきました。パブリックリポジトリでの皆様からのフィードバックに耳を傾けることに加えて、Copilot CLI をより拡張可能にし、より広範な GitHub Copilot エコシステムに接続するいくつかの大きな機能に取り組んできました。
 
 
-## [カスタムエージェントが GitHub Copilot CLI で利用可能に](#custom-agents-are-available-in-github-copilot-cli)
+## [Share your feedback](#share-your-feedback)
 
 
 [カスタムエージェントが GitHub Copilot で利用可能になり](https://github.blog/changelog/2025-11-27-custom-agents-for-github-copilot/)、チームのワークフロー、規約、独自のニーズを捉えたエージェントペルソナを定義できます。これらのエージェントは、プロンプト、ツールの選択、Model Context Protocol (MCP) サーバーを使ってさらにカスタマイズでき、特定のユースケースに最適化できます。

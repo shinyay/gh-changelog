@@ -34,14 +34,14 @@ GitHub Copilotのプランモードが、JetBrains IDE、Eclipse、Xcode向け�
 ### Share your feedback
 - 皆様のフィードバックを大切にしています。以下のチャンネルを通じて、ご意見をお聞かせください：– GitHub Copilot for JetBrains IDEs – GitHub Copilot for Eclipse – GitHub Copilot for Xcode
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub Copilotのプランモードが、JetBrains IDE、Eclipse、Xcode向けにパブリックプレビューとして提供開始されたことをお知らせします。
 
 ## Article Content (cleaned)
 GitHub Copilotのプランモードが、JetBrains IDE、Eclipse、Xcode向けにパブリックプレビューとして提供開始されたことをお知らせします。コーディング前に設計図戦略を提供するこの新しいCopilot機能について、知っておくべきことをご紹介します。
 
 
-## [What's new](#whats-new)
+## [What’s new](#whats-new)
 
 
 プランモードは、開発者がIDE内で直接ステップバイステップの実装計画を作成、改良、実行できるようにします。コードベースを分析し、詳細な実行計画を生成し、コーディングを開始する前に要件がカバーされていることを検証します。

@@ -37,7 +37,7 @@ lang: "ja"
 ### Share your feedback
 - フィードバックを共有するには、GitHub Communityに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - スピードが重要なタスクに最適なGemini 3 Flashが、GitHub Copilotでパブリックプレビューとしてロールアウトされています。
 
 ## Insights (derived from article language)

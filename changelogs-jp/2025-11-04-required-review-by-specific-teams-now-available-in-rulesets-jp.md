@@ -37,7 +37,7 @@ lang: "ja"
 ファイルとフォルダーに基づいて、保護されたブランチへの変更マージに特定チームからの承認を要求できるようになり、特定ブランチへの変更承認者をより細かく制御できます。
 
 
-## [新機能](#whats-new)
+## [What’s new](#whats-new)
 
 
 ![Screenshot of the required reviewer rule dialog with the Bakers team selected as reviewer, two required approvals, and file patterns set to match GitHub workflow and YAML files](https://github.com/user-attachments/assets/039259c4-3aca-4850-9579-b57550f3c8b3)
@@ -51,7 +51,7 @@ lang: "ja"
 * **特定のファイルとフォルダーをターゲット**：指定されたチームから特定数のレビューを要求します。
 
 
-## [CODEOWNERS との違い](#how-this-differs-from-codeowners)
+## [How this differs from CODEOWNERS](#how-this-differs-from-codeowners)
 
 
 CODEOWNERS は所有権の定義に優れていますが、この新しいルールセットはポリシーの適用に焦点を当てています。機密性の高いブランチと重要なコードパスで特定の承認を簡単に要求でき、エンタープライズ全体でシームレスに拡張できます。

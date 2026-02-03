@@ -38,7 +38,7 @@ lang: "ja"
 - リポジトリのカスタムプロパティでフィルタリングするには、プロパティの前に組織名を付けて、プロパティと値を手動で入力します。将来のアップデートでプロパティと値の自動提案を追加する予定です。サンプルクエリ：`org:Byte-Sized-Demo props.production:true`
 - リポジトリダッシュボードにアクセスして、GitHubコミュニティのディスカッションに参加してフィードバックを共有してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 制限事項 関連性フィルターと`My contributions`ビューには、過去1年間のアクティビティのみが含まれます。
 
 ## Caveats / Limitations
@@ -51,7 +51,7 @@ lang: "ja"
 新しいリポジトリダッシュボードプレビューにより、アクセスできるリポジトリを簡単に見つけて、保存されたビューを作成できます。すべてが一箇所に集約されています。
 
 
-## [仕組み](#how-it-works)
+## [How it works](#how-it-works)
 
 
 [プルリクエスト](https://github.com/pulls)と[issues](https://github.com/issues/assigned)ダッシュボードと同様に、[repos](https://github.com/repos)ダッシュボードはリポジトリ発見のコマンドセンターとして機能します。検索機能、フィルタリング、保存されたクエリ、および貢献とアクセスに基づいてリポジトリを優先順位付けする関連性\-ベースのソートアルゴリズムを組み合わせています。
@@ -65,7 +65,7 @@ reposダッシュボードには3つの方法でアクセスできます：
 * 左側のナビゲーションメニューから**Repositories**を選択
 
 
-## [利点](#benefits)
+## [Benefits](#benefits)
 
 
 ![組み込みビューと保存されたビューのリストを表示するリポジトリダッシュボード](https://github.com/user-attachments/assets/cbe3552e-f8ee-4cf6-ae69-84fb52274c34)
@@ -80,7 +80,7 @@ reposダッシュボードには3つの方法でアクセスできます：
 ![保存されたビューを表示するリポジトリダッシュボード](https://github.com/user-attachments/assets/3c757d27-2973-4c5b-9417-c29ee86b27f6)
 
 
-## [制限事項](#limitations)
+## [Limitations](#limitations)
 
 
 関連性フィルターと`My contributions`ビューには、過去1年間のアクティビティのみが含まれます。1年以上前に貢献したリポジトリはこれらのビューに表示されませんが、これらのリポジトリは検索や他のフィルターを使用して見つけることができます。

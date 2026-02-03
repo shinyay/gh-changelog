@@ -22,7 +22,7 @@ CodeQL は GitHub コードスキャンの背後にある静的解析エンジ�
 - Kotlin バージョン 1.6 および 1.7 のサポートは非推奨となり、2026年2月にリリース予定の CodeQL 2.24.1 で削除されます。そのバージョンから、Kotlin データベースを抽出するには Kotlin 1.8 以降を使用する必要があります。
 - CodeQL の新しいバージョンはすべて、github.com の GitHub コードスキャンのユーザーに自動的にデプロイされます。CodeQL 2.23.9 の新機能は、将来の GitHub Enterprise Server (GHES) リリースにも含まれます。古いバージョンの GHES を使用している場合は、CodeQL バージョンを手動でアップグレードできます。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Deprecation notice Kotlin バージョン 1.6 および 1.7 のサポートは非推奨となり、2026年2月にリリース予定の CodeQL 2.24.1 で削除されます。
 
 ## Article Content (cleaned)

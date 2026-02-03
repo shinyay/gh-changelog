@@ -29,7 +29,7 @@ lang: "ja"
 ### How to give feedback
 - ご質問やフィードバックがある場合は、GitHub Communityにアクセスしてください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - この機能は現在パブリックプレビューで利用可能です。
 - What's changed 以前は、組織は外部コラボレーターからのアプリアクセスリクエストを無効にすることしかできませんでした。
 - Members only：組織メンバーにはアプリのリクエストを許可しながら、外部コラボレーターをブロックします。

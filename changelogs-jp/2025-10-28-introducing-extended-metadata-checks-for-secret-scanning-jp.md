@@ -43,21 +43,21 @@ lang: "ja"
 ### Learn more and share feedback
 - シークレットスキャンでリポジトリを保護する方法の詳細を確認するか、シークレットスキャンと拡張メタデータチェックに関するフィードバックを共有してください。
 
-## Key Changes
+## Impact / Who’s Affected
 - サポートされているシークレットタイプに対して追加メタデータが表示されるようになりました
 - シークレットの所有者、作成日、有効期限、組織コンテキストなどの情報を提供
 - OpenAI、GitLab、Slack、Stripe など 27 種類以上のプロバイダーをサポート
 
-## Impact / Who's Affected
+## Caveats / Limitations
 - GitHub Secret Protection および GitHub Advanced Security のお客様がパブリックプレビューで利用可能
 - データレジデンシーを備えた GitHub Enterprise Cloud でも利用可能
 - 管理者またはセキュリティマネージャーがリポジトリごとに有効化する必要があります
 
-## Caveats / Limitations
+## Insights (derived from article language)
 - メタデータの利用可能性は、シークレットプロバイダー、トークンタイプ、さらには特定のシークレットによって異なる時点で異なる可能性があります
 - GitHub はシークレットのメタデータを表示するために最善を尽くしますが、すべてのメタデータキーが利用できるとは限りません
 
-## Insights (derived from article language)
+## Article Content (cleaned)
 - 開発チームとセキュリティチームがより迅速に露出を評価し、修復の優先順位を付けられるようにします
 - 妥当性チェックを有効にする必要があります
 

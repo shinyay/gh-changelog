@@ -27,10 +27,10 @@ Copilot がプルリクエストの変更を分析して整理するようにな
 ### フィードバック
 - 皆様からのご意見をお聞かせください！GitHub コミュニティディスカッションにご参加ください。
 
-## Key Changes
+## Impact / Who’s Affected
 記事では明示されていません。
 
-## Impact / Who's Affected
+## Article Content (cleaned)
 - この機能は現在パブリックプレビューで、Copilot Enterprise および Copilot Pro+ ユーザーが利用できます。
 
 ## Caveats / Limitations

@@ -38,7 +38,7 @@ lang: "ja"
 - Copilot使用状況メトリクスの詳細をご覧ください。
 
 ## Article Content (cleaned)
-## [What's new?](#whats-new)
+## [What’s new?](#whats-new)
 
 
 **エンタープライズロール：`Enterprise Copilotメトリクスの表示`**

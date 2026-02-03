@@ -48,7 +48,7 @@ lang: "ja"
 ### What happens in December 2026?
 - 2026年12月に、CodeQL Action v3 が正式に廃止されます（GHES 3.19 の廃止と同時）。その時点で、CodeQL Action v3 に対する新しい更新は行われなくなり、新しい CodeQL 解析機能は CodeQL Action v4 のユーザーのみが利用できるようになります。GitHub 全体での移行の進捗状況を注視します。多くのワークフローファイルが依然として CodeQL Action v3 を参照している場合、認知度を高めるために、年内に1回以上のブラウンアウト期間をスケジュールすることを検討する可能性があります。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - CodeQL Action v3 は、GHES 3.19 と同時に廃止される予定で、現在2026年12月に予定されています。
 - 2026年12月に、CodeQL Action v3 が正式に廃止されます（GHES 3.19 の廃止と同時）。
 - その時点で、CodeQL Action v3 に対する新しい更新は行われなくなり、新しい CodeQL 解析機能は CodeQL Action v4 のユーザーのみが利用できるようになります。

@@ -33,7 +33,7 @@ Copilot メモリが、すべての有料 GitHub Copilot プランでパブリ�
 - この機能の使用方法の詳細については、Copilot メモリのドキュメントをご覧ください。
 - GitHub Community 内でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Copilot メモリが、すべての有料 GitHub Copilot プランでパブリックプレビューとして利用可能になりました。
 
 ## Insights (derived from article language)

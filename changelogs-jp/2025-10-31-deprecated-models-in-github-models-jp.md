@@ -22,7 +22,7 @@ lang: "ja"
 - また、Jais-30b-chat は GitHub Models で利用できなくなりました。
 - GitHub Models の詳細については、ドキュメントをご覧ください。また、コミュニティディスカッションにも参加できます。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 次のモデルは GitHub Models で廃止予定となりました。
 
 ## Insights (derived from article language)

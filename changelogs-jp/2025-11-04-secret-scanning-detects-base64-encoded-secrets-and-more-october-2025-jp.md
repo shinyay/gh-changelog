@@ -36,7 +36,7 @@ GitHub シークレットスキャンは、新しいシークレットタイプ�
 - プロバイダー シークレットタイプ Grafana grafana_cloud_api_token Notion notion_api_token シークレットスキャンの詳細と、サポートされているシークレットの完全なリストについては、製品ドキュメントをご覧ください。
 
 ## Article Content (cleaned)
-## [シークレットスキャン — 2025年10月](#secret-scanning-october-2025)
+## [Secret scanning — October 2025](#secret-scanning-october-2025)
 
 
 GitHub シークレットスキャンは、新しいシークレットタイプのサポートを継続的に追加しています。10月に以下の更新が行われました。
@@ -83,7 +83,7 @@ GitHub シークレットスキャンが、サードパーティプロバイダ�
 Base64 エンコードされたシークレットはデフォルトでプッシュ保護されます。GitHub は、追加のタイプのサポートを順次追加していきます。
 
 
-## [拡張メタデータチェック](#extended-metadata-checks)
+## [Extended metadata checks](#extended-metadata-checks)
 
 
 [GitHub Universe 2025 で発表された](https://github.blog/changelog/2025-10-28-introducing-extended-metadata-checks-for-secret-scanning/)ように、以下のシークレットタイプが拡張メタデータチェックをサポートするようになりました。
@@ -124,7 +124,7 @@ Base64 エンコードされたシークレットはデフォルトでプッシ�
 | Terraform Cloud | `terraform_api_token` |
 
 
-## [有効性チェック](#validity-checks)
+## [Validity checks](#validity-checks)
 
 
 以下のシークレットタイプに、検出されたシークレットがアクティブかどうかを確認する有効性チェックが含まれるようになりました。

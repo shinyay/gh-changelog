@@ -33,7 +33,7 @@ lang: "ja"
 エンタープライズポリシーが `Unconfigured` に設定されている場合に、組織の Copilot ポリシーが誤ったオプションを表示することがあった問題を修正しました。
 
 
-## [変更内容](#whats-changed)
+## [What’s changed](#whats-changed)
 
 
 Copilot ポリシーの更新により、エンタープライズと組織間のポリシー委譲の本来の流れが復元されます。現在、エンタープライズポリシーが `Unconfigured` に設定されている場合、対応する組織ポリシーは組織が `Enabled` に設定できるのではなく、デフォルトで `Disabled` になります。
@@ -45,7 +45,7 @@ Copilot ポリシーの更新により、エンタープライズと組織間の
 望まないサービス中断を防ぐため、以前影響を受けていた組織ポリシーで現在 `Enabled` に設定されているものは、この更新によって変更されません。ただし、管理者がポリシーを `Disabled` に設定すると、エンタープライズポリシーが許可するよう更新されない限り、組織レベルで再度変更することはできません。今後のリリースの組織ポリシーは、エンタープライズポリシーが `Unconfigured` の場合、自動的に正しい `Disabled` 設定を継承します。
 
 
-## [詳細](#learn-more)
+## [Learn more](#learn-more)
 
 
 詳細については、[Copilot ポリシーの管理に関するドキュメント](https://docs.github.com/copilot/how-tos/administer-copilot/manage-for-enterprise/manage-enterprise-policies)をご覧ください。

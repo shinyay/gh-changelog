@@ -25,7 +25,7 @@ lang: "ja"
 - Copilot で利用可能なモデルについて詳しくは、モデルに関するドキュメントを参照し、今すぐ Copilot を使い始めてください。
 - GitHub Community に参加してフィードバックを共有してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 2025年11月10日より、すべての GitHub Copilot エクスペリエンス（Copilot Chat、インライン編集、ask および agent モード、コード補完を含む）で Claude Sonnet 3.5 を廃止しました。
 - 廃止されたモデルを削除するためのアクションは必要ありません。
 

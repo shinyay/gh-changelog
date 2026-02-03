@@ -32,7 +32,7 @@ GitHub Copilotの自動モデル選択がVisual Studio Codeのすべての Copil
 - 近日中に、自動モードはさらにインテリジェントになり、Copilotがタスクに最も適したモデルを選択し、リクエストの複雑さレベルにモデルを合わせる拡張機能を獲得します。
 - 質問やフィードバックがありますか? [コミュニティディスカッション](https://github.com/orgs/community/discussions/categories/copilot-conversations)に参加して、ご意見をお聞かせください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub Copilotの自動モデル選択がVisual Studio Codeのすべての Copilotプランで一般提供開始となりました。
 - **プレミアムリクエストの使用**: 自動モードのプレミアムリクエスト使用は、選択されたモデルに基づいて請求されます。これは現在、上記の0倍から1倍の乗数を持つモデルに制限されています。
 
@@ -54,13 +54,13 @@ GitHub Copilotの自動モデル選択がVisual Studio Codeのすべての Copil
 * **ポリシーを尊重**: 自動モードはすべてのユーザーおよび管理者のモデル設定を尊重します。
 
 
-## [プレミアムリクエストの使用](#premium-request-use)
+## [Premium request use](#premium-request-use)
 
 
 自動モードのプレミアムリクエスト使用は、選択されたモデルに基づいて請求されます。これは現在、上記の[0倍から1倍の乗数を持つモデル](https://docs.github.com/copilot/concepts/billing/copilot-requests#model-multipliers)に制限されています。すべての有料サブスクライバーは、自動モードを使用する際にモデル乗数の10%割引を受けられます(例: 自動モードが1倍の乗数を持つモデルを使用する場合、1ではなく0\.9プレミアムリクエストを消費します)。
 
 
-## [今後の展開](#where-were-headed)
+## [Where we’re headed](#where-were-headed)
 
 
 今日、自動モードはお客様に代わって容易に利用可能な高品質モデルにルーティングします。

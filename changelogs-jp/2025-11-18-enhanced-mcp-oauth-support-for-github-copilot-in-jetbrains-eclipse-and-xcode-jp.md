@@ -36,7 +36,7 @@ JetBrains、Eclipse、Xcode用のGitHub Copilotプラグインに、Dynamic Clie
 JetBrains、Eclipse、Xcode用のGitHub Copilotプラグインに、Dynamic Client Registration（DCR）とフォールバックメカニズムを使用した、より多くのサードパーティOAuthプロバイダーをサポートする、安全で柔軟なアプローチによる強化された認証機能を導入しました。
 
 
-## [What's new](#whats-new)
+## [What’s new](#whats-new)
 
 
 JetBrains、Eclipse、Xcode用のGitHub CopilotプラグインがOAuth 2.0およびOAuth 2.1標準を使用して、GitHub MCPサーバーを超えた、より多くのアイデンティティプロバイダー（IdP）の認証をサポートするようになりました。

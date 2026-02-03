@@ -27,7 +27,7 @@ lang: "ja"
 - コミュニティのディスカッション管理について詳しく学びましょう。
 - この機能は、ディスカッションが有効になっているすべてのリポジトリでgithub.comで利用可能になりました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - この機能は、ディスカッションが有効になっているすべてのリポジトリでgithub.comで利用可能になりました。
 
 ## Insights (derived from article language)

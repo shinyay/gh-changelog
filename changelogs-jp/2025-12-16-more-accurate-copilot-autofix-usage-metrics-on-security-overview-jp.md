@@ -22,7 +22,7 @@ Copilot autofixesで修正されたCodeQLアラートのセキュリティ概要
 - このアップデートは、GitHub Enterprise Cloudで一般提供されるようになりました。
 - セキュリティ概要ドキュメントとコードスキャニングドキュメントを確認して詳しく学びましょう。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - このアップデートは、GitHub Enterprise Cloudで一般提供されるようになりました。
 
 ## Insights (derived from article language)

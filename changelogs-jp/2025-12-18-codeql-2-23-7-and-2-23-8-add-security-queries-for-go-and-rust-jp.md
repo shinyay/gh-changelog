@@ -55,7 +55,7 @@ CodeQLは、GitHubのCode ScanningおよびCode Quality製品の背後にある�
 - 無効化されたTLS証明書チェックを検出する新しいクエリ`rust/disabled-certificate-check`を追加しました。
 - Rust用のCodeQLクエリの作成方法を学ぶのに役立つ3つのサンプルクエリ（`rust/examples/empty-if`、`rust/examples/simple-sql-injection`、`rust/examples/simple-constant-password`）を追加しました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - `go/cookie-http-only-not-set`クエリが実験クエリパックから昇格し、`HttpOnly`フラグを使用しないクッキーを特定し、クロスサイトスクリプティングの脆弱性につながる可能性があります。
 - 文字列の固定長のプレフィックスまたはサフィックスのみを抽出する操作（Javaの`substring`やKotlinの`take`など）は、7文字以下に制限されている場合、`java/sensitive-log`クエリのサニタイザーとして扱われます。これは、ログメッセージの内容が切り捨てられるためです。
 

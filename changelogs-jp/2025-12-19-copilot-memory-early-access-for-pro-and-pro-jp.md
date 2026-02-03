@@ -27,7 +27,7 @@ Copilot memoryがGitHub Copilot ProおよびPro+ユーザー向けにパブリ�
 ### Share your feedback
 - Copilot memoryの進化を続けており、今後さらに多くのプランに提供する予定です。フィードバックを共有したり、ディスカッションに参加したりするには、GitHub Communityにアクセスしてください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Copilot memoryがGitHub Copilot ProおよびPro+ユーザー向けにパブリックプレビューとして利用可能になり、Copilotコーディングエージェントとコードレビューでサポートされています。
 
 ## Article Content (cleaned)

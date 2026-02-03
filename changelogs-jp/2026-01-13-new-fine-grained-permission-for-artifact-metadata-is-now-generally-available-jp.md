@@ -25,7 +25,7 @@ GitHubは、アーティファクト関連のメタデータへのAPIアクセ�
 - Actions permissions reference
 - How artifact metadata improves security alerts
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 2026年2月3日に古い権限のサポートが廃止される前に、現在アーティファクトメタデータAPIに`contents`権限を使用しているワークフローを新しい`artifact_metadata`権限に移行してください。
 
 ## Insights (derived from article language)

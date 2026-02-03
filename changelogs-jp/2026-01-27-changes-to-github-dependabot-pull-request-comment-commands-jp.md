@@ -30,7 +30,7 @@ lang: "ja"
 ### 移行ガイダンス
 - GitHubのネイティブ機能に依存するようにワークフローを更新してください。プルリクエストのマージ、クローズ、または再オープンには、GitHubの組み込みUI、GitHub CLI、およびプルリクエストのREST APIエンドポイントの使用をお勧めします。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 2025年10月に発表したとおり、GitHubのネイティブプルリクエスト機能を優先して、本日いくつかのDependabot固有のプルリクエストコメントコマンドを非推奨にしました。
 
 ## Insights (derived from article language)

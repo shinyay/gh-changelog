@@ -64,7 +64,7 @@ lang: "ja"
 - パッケージマネージャーで更新するか、`npm install -g @github/copilot@latest` を実行してください。
 - Copilot CLI の公開リポジトリでディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - New models and easier model management GPT-5 mini と GPT-4.1 は、Copilot サブスクリプションに含まれ、有料プランでプレミアムリクエストを消費しないモデルとして利用可能になりました。
 - Code-review : 高いシグナル対ノイズ比で変更をレビューし、本当の問題のみを表面化することに焦点を当てます。
 
@@ -87,7 +87,7 @@ lang: "ja"
 ポリシー設定で無効になっているモデルを選択すると、CLI がターミナルを離れることなく直接有効化を促すようになりました。これは、Copilot Pro/Pro+ ユーザー向けのモデルピッカー、`/model` コマンド、`--model` フラグで機能します。
 
 
-## [Built-in custom agents](#built-in-custom-agents)
+## [Built\-in custom agents](#built-in-custom-agents)
 
 
 ![This image shows the built-in explore agent searching the codebase for authentication patterns across the codebase](https://github.com/user-attachments/assets/f83db7a4-ed8b-4d45-aa7b-e10b08f8d72a)

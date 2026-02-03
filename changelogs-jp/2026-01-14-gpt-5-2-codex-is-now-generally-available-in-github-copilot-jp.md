@@ -38,7 +38,7 @@ GPT-5.2-Codex が Copilot Enterprise、Copilot Business、Copilot Pro、Copilot 
 ### Share your feedback
 - GitHub Community に参加してフィードバックを共有してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GPT-5.2-Codex が Copilot Enterprise、Copilot Business、Copilot Pro、Copilot Pro+ で一般提供されています。
 - Availability in GitHub Copilot 次のいずれかから Copilot モデルピッカーでモデルを選択できます: Visual Studio Code のすべてのモード: chat、ask、edit、agent github.com の Copilot Chat GitHub Mobile (iOS および Android) Copilot コーディングエージェント (Copilot Pro および Pro+ サブスクライバーのみ) Copilot CLI ロールアウトは段階的です。
 

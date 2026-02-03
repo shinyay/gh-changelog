@@ -40,7 +40,7 @@ GitHub Issuesの改善された検索により、探しているissueを見つ�
 - GitHub Issuesに影響するSafariベースのスクロールバグを修正し、よりスムーズなスクロール動作を実現しました。
 - マイルストーンの順序が、オープンissueとクローズissueの両方で一貫して機能するようになりました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - パブリックプレビュー中は、機能プレビューダイアログを使用してオプトアウトできます。
 
 ## Article Content (cleaned)

@@ -62,7 +62,7 @@ lang: "ja"
 Bazelチームによる貢献とコラボレーションにより、Dependabotへのサポートがもたらされたことに大きな感謝を申し上げます。
 
 
-## [背景](#background)
+## [Background](#background)
 
 
 DependabotのBazelサポートに対する[オープンソースコミュニティの主な要求](https://github.com/bazelbuild/bazel/discussions/27142)には以下が含まれます：
@@ -76,7 +76,7 @@ DependabotのBazelサポートに対する[オープンソースコミュニテ�
 Bazelは2つの依存関係システムを使用しており、最新のBzlmodシステム（`MODULE.bazel`ファイル）とレガシーWORKSPACEシステムの両方があります。コミュニティのフィードバックは、多くのチームがまだWORKSPACEに依存していることを示したため、両方のサポートを構築しました。さらに、Bazelの`MODULE.bazel.lock`ファイルは、モジュール拡張とリポジトリルールを含む複雑な推移的依存関係グラフをキャプチャします。不正なロックファイル生成は再現可能なビルドを壊すため、Bazelコミュニティと緊密に協力してこれを正しく行いました。
 
 
-## [コミュニティパートナーシップ](#community-partnership)
+## [Community partnership](#community-partnership)
 
 
 Bazelコミュニティは重要なガイダンスを提供しました：
@@ -90,7 +90,7 @@ Bazelコミュニティは重要なガイダンスを提供しました：
 これらの方々、そしてこのエコシステムのプレビューサポート中にテストしてフィードバックを提供してくれたすべての方々に特に感謝します。
 
 
-## [仕組み](#how-it-works)
+## [How it works](#how-it-works)
 
 
 1. **依存関係の検出：** Dependabotは`MODULE.bazel`、`*.MODULE.bazel`、またはWORKSPACEファイルをスキャンし、Bazel中央レジストリで更新をチェックします。
@@ -98,7 +98,7 @@ Bazelコミュニティは重要なガイダンスを提供しました：
 3. **プルリクエスト：** Dependabotは、更新された宣言、再生成されたロックファイル、リリースノート、互換性情報を含むプルリクエストを開きます。
 
 
-## [開始方法](#getting-started)
+## [Getting started](#getting-started)
 
 
 要件には以下が含まれます：

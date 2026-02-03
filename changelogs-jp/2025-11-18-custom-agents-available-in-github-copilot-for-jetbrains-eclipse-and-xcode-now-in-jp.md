@@ -35,14 +35,14 @@ JetBrains IDE、Eclipse、Xcode用のカスタムエージェントがパブリ�
 - Eclipse GitHub Copilot in Eclipseフィードバックリポジトリ
 - Xcode GitHub Copilot in Xcodeフィードバックリポジトリ
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - JetBrains IDE、Eclipse、Xcode用のカスタムエージェントがパブリックプレビューになり、プロジェクトや組織に合わせた再利用可能な専門知識、ガードレール、ツールアクセスをAIエージェントにパッケージ化できるようになりました。
 
 ## Article Content (cleaned)
 JetBrains IDE、Eclipse、Xcode用の[カスタムエージェント](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-custom-agents)がパブリックプレビューになり、プロジェクトや組織に合わせた再利用可能な専門知識、ガードレール、ツールアクセスをAIエージェントにパッケージ化できるようになりました。
 
 
-## [What's new](#whats-new)
+## [What’s new](#whats-new)
 
 
 カスタムエージェントは、名前、説明、ツール、モデルを指定できるようにすることで、チャットモードにカスタマイズをもたらします。JetBrains、Eclipse、Xcodeでワークフローとコーディング標準に合わせた特化AIエージェントを作成できます。プロンプトを指定するMarkdownファイルを使用してエージェントを定義するため、IDEですばやく起動して実行できます。

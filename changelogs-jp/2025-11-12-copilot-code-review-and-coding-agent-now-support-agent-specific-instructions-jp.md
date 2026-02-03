@@ -41,7 +41,7 @@ Copilot コードレビューと Copilot コーディングエージェント向
 - 指示ファイルの作成の詳細については、Copilot 指示ドキュメントを参照してください。
 - GitHub Community 内でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - たとえば、 applyTo: "app/models/**/*.rb" を指定することで、モデルにのみ適用される models.instructions.md ファイルを作成できます。🛡️ excludeAgent を使用したエージェント固有のリポジトリ指示の導入 新しい excludeAgent プロパティにより、特定の指示ファイルを使用する Copilot エージェントを制御できます: excludeAgent: "code-review" を設定すると、Copilot コードレビューから指示ファイルを非表示にします。
 
 ## Caveats / Limitations

@@ -29,7 +29,7 @@ lang: "ja"
 ### How can you access GitHub Enterprise Cloud with data residency in Japan?
 - 今すぐ営業チームに連絡するか、データレジデンシーを備えたGitHub Enterprise Cloudの30日間無料トライアルにサインアップして開始できます。また、Docsにアクセスし、GitHub Enterprise Cloudの展開オプションを探索して詳細を学ぶこともできます。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 日本におけるデータレジデンシーを備えたGitHub Enterprise Cloudが一般提供開始となり、GitHub Enterprise Cloudのお客様がコードとリポジトリデータを保存する場所をより柔軟に選択できるようになりました。
 
 ## Insights (derived from article language)

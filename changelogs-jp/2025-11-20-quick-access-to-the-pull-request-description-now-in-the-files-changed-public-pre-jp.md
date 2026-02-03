@@ -27,7 +27,7 @@ lang: "ja"
 ### ❤ Feedback
 - 皆様のフィードバックは重要です。Files Changed experienceフィードバックディスカッションで問題を報告したり、質問したり、既知の問題を表示したりできます。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - この機能は、現在パブリックプレビュー中の新しい「Files changed」ページでのみ利用可能です。
 
 ## Caveats / Limitations

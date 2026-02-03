@@ -34,7 +34,7 @@ lang: "ja"
 ### Help us shape the future
 - 私たちは始まったばかりであり、皆様のフィードバックが次に何をするかを導くのに役立ちます。GitHub Communityのディスカッションに参加して、フィードバックを共有し、他の開発者とつながりましょう。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - BYOKにはOpenAI Completions APIが必要です。
 - 今すぐBYOKの使用を開始 BYOKは現在、GitHub EnterpriseおよびBusinessの顧客向けにパブリックプレビューで利用可能です。
 

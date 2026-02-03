@@ -45,7 +45,7 @@ lang: "ja"
 ### 次のステップ
 - npmのセキュリティを強化する過程でのご忍耐に感謝します。これらの変更は、お客様が依存するワークフローを維持しながら、JavaScript エコシステム全体を保護します。セキュリティロードマップと継続的な改善の詳細については、[コミュニティディスカッション](https://github.com/orgs/community/discussions/179562)をご覧ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - これにより、以前はclassicトークンでのみ利用可能だったのと同じ便利なコマンドライン体験が提供されます。
 - これらのトークンを設定する際、非対話型の自動化ワークフロー用にBypass 2FAを有効にし、適切な有効期限を設定できます(書き込みトークンは最大90日に制限されています)。
 
@@ -63,7 +63,7 @@ lang: "ja"
 [以前発表した](https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/)とおり、本日、npm classicトークンの非推奨化を完了します。これは、npmの認証システムを強化する[セキュリティ強化イニシアチブ](https://github.com/orgs/community/discussions/178140)の重要なマイルストーンです。
 
 
-## [本日(2025年12月9日)の変更内容](#whats-changing-today-december-9-2025)
+## [What’s changing today (December 9, 2025\)](#whats-changing-today-december-9-2025)
 
 
 ### [npm classicトークンが永久に失効](#npm-classic-tokens-permanently-revoked)
@@ -108,7 +108,7 @@ npmは、粒度の細かいアクセストークンを管理するために特�
 **注意:** このエンドポイントは主にYarn v1およびv2のユーザーに影響します。これらのバージョンを使用している場合は、現在のnpmセキュリティ標準をサポートする最新のパッケージマネージャーまたは認証方法へのアップデートをお勧めします。
 
 
-## [必要な対応](#what-you-need-to-do)
+## [What you need to do](#what-you-need-to-do)
 
 
 ### [npm classicトークンをまだ使用していた場合](#if-you-were-still-using-npm-classic-tokens)
@@ -123,7 +123,7 @@ npm classicトークンは本日使用できなくなりました。アクセス
 CI/CDワークフローの場合、新しいCLIコマンド(`npm token create`)または[npmjs.com/settings/\~/tokens](https://www.npmjs.com/settings/~/tokens)で粒度の細かいアクセストークンを作成します。これらのトークンを設定する際、非対話型の自動化ワークフロー用に**Bypass 2FA**を有効にし、適切な有効期限を設定できます(書き込みトークンは最大90日に制限されています)。最も安全なデプロイメントには、パッケージ公開用のトークンの生成と管理が不要になる[OIDC trusted publishing](https://docs.npmjs.com/trusted-publishers)の採用を検討してください。
 
 
-## [次のステップ](#whats-next)
+## [What’s next?](#whats-next)
 
 
 npmのセキュリティを強化する過程でのご忍耐に感謝します。これらの変更は、お客様が依存するワークフローを維持しながら、JavaScript エコシステム全体を保護します。セキュリティロードマップと継続的な改善の詳細については、[コミュニティディスカッション](https://github.com/orgs/community/discussions/179562)をご覧ください。

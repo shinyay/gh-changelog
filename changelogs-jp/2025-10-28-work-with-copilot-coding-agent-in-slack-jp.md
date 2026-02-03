@@ -30,7 +30,7 @@ Slack 用 GitHub アプリが GitHub Copilot コーディングエージェン�
 - Slack 用 GitHub アプリは、現在一般提供されている Microsoft Teams 用 GitHub アプリに加わります。
 - Slack または Teams との Copilot コーディングエージェントの統合について詳しく学び、GitHub Community でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 新しい Copilot コーディングエージェント機能はオプションであり、新しい権限が必要です。
 - Slack 用 GitHub アプリは、現在一般提供されている Microsoft Teams 用 GitHub アプリに加わります。
 

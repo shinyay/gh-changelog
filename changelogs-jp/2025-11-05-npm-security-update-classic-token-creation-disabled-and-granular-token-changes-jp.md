@@ -66,7 +66,7 @@ lang: "ja"
 - GitHub Actions シークレット — 影響はありませんが、シークレットとして保存されている npm トークンは更新する必要があります
 - アクションの GITHUB_TOKEN
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 重要：これらの変更は、npm レジストリに使用される npm トークンにのみ影響します。
 
 ## Caveats / Limitations
@@ -87,7 +87,7 @@ lang: "ja"
 **重要：**これらの変更は、npm レジストリに使用される npm トークンにのみ影響します。GitHub トークン（例：個人アクセストークン、詳細トークンなど）は、これらの変更による影響を受けません。
 
 
-## [本日（2025年11月5日）の変更内容](#whats-changing-today-november-5-2025)
+## [What’s changing today (November 5, 2025\)](#whats-changing-today-november-5-2025)
 
 
 ### [npm クラシックトークン](#npm-classic-tokens)
@@ -107,7 +107,7 @@ lang: "ja"
 	+ 2026年2月3日以降に期限切れになるように設定されている既存トークンは、その日に期限切れになるよう調整されました。
 
 
-## [実行すべきこと](#what-you-need-to-do)
+## [What you need to do](#what-you-need-to-do)
 
 
 ### [npm クラシックトークンを使用している場合](#if-you-use-npm-classic-tokens)
@@ -137,7 +137,7 @@ lang: "ja"
 * CI/CD 用に作成された新しいトークンで、非対話型のパブリッシングが必要な場合、**Bypass 2FA** の有効化が必要になる場合があります。
 
 
-## [これらの変更による影響を受けないもの](#not-affected-by-these-changes)
+## [Not affected by these changes](#not-affected-by-these-changes)
 
 
 * **GitHub 個人アクセストークン（クラシック）**
@@ -146,13 +146,13 @@ lang: "ja"
 * **GITHUB\_TOKEN in actions**
 
 
-## [今後の予定：2025年11月19日](#looking-ahead-november-19-2025)
+## [Looking ahead: November 19, 2025](#looking-ahead-november-19-2025)
 
 
 11月19日に、**すべての npm クラシックトークンを永久に取り消し**、長期間有効なローカルパブリッシングトークンを2時間のセッショントークンに置き換えます。
 
 
-## [サポートが必要ですか？](#need-help)
+## [Need help?](#need-help)
 
 
 * 📚 [npm トークン移行ガイド](https://docs.npmjs.com/creating-and-viewing-access-tokens)

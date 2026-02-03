@@ -77,7 +77,7 @@ GitHub Copilot CLI は、ターミナル内でのエージェント AI アシス
 - 履歴フィルタリング: シェルモード履歴ナビゲーション (`!` プレフィックス) がプレフィックスでフィルタリングするようになりました。`!git` と入力して上矢印を押すと、以前の git コマンドのみを循環し、特定のコマンドをより迅速に見つけて再実行できます。
 - よりクリーンな環境: Copilot は、Bash および PowerShell 履歴ファイルからシェルコマンドを除外し、シェル履歴をクリーンに保ちます。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Advanced reasoning models GPT-5.2-Codex: コード生成と理解に最適化された最新の Codex モデルが利用可能になりました。
 - `!git` と入力して上矢印を押すと、以前の git コマンドのみを循環し、特定のコマンドをより迅速に見つけて再実行できます。
 
@@ -182,7 +182,7 @@ Copilot は、セッション間でコードベースに関する重要な事実
 * **よりクリーンな環境:** Copilot は、Bash および PowerShell 履歴ファイルからシェルコマンドを除外し、シェル履歴をクリーンに保ちます。
 
 
-## [Developer quality-of-life](#developer-quality-of-life)
+## [Developer quality\-of\-life](#developer-quality-of-life)
 
 
 * **`/resume` コマンド:** ローカルおよびリモートの GitHub Copilot コーディングエージェントセッション間を簡単に切り替えます。

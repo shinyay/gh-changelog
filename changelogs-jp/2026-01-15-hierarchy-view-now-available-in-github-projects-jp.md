@@ -53,7 +53,7 @@ GitHub Projects の階層ビューがパブリックプレビューで利用可�
 - マージキュー内のプルリクエストがプロジェクトでマージキューの状態アイコンを表示するようになりました。
 - issue の「Development」セクションからプルリクエスト URL を貼り付けて、アイテムをすばやくリンクできるようになりました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub Projects の階層ビューがパブリックプレビューで利用可能になりました。
 
 ## Article Content (cleaned)

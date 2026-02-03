@@ -39,7 +39,7 @@ GitHub CopilotコーディングエージェントがEclipse向けにパブリ�
 - GitHubディスカッション：GitHub Copilot in Eclipseフィードバックリポジトリで考えを共有してください
 - 今日から始めて、Eclipse IDEでCopilotコーディングエージェントによる自律的な開発を体験してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub CopilotコーディングエージェントがEclipse向けにパブリックプレビューで利用可能になりました。
 
 ## Insights (derived from article language)
@@ -49,7 +49,7 @@ GitHub CopilotコーディングエージェントがEclipse向けにパブリ�
 GitHub CopilotコーディングエージェントがEclipse向けにパブリックプレビューで利用可能になりました。このリリースにより、[Copilot](https://docs.github.com/copilot/concepts/agents/coding-agent/about-coding-agent?utm_source=changelog-docs-cca-eclipse)がネイティブのEclipseワークフローに直接統合されます。
 
 
-## [What's new](#whats-new)
+## [What’s new](#whats-new)
 
 
 * **Eclipseから委任**：Copilot Chatでタスクを説明し、Eclipseを離れることなくエージェントに引き渡します。CopilotはGitHubの管理されたクラウド環境で作業を実行し、ドラフトプルリクエストを開き、完了時にレビューをキューに入れます。

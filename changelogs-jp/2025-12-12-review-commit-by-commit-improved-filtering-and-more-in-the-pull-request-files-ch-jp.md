@@ -54,7 +54,7 @@ lang: "ja"
 - 修正：`T`キーボードショートカットが再びファイルフィルターフィールドにフォーカスし、必要に応じてファイルツリーを表示するようになりました。
 - 修正：`C`キーボードショートカットが再びコミットフィルターを開くようになりました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - また、コミットフィルターを改善し、範囲または単一のコミットを選択するために必要なクリック数が減りました！
 
 ## Caveats / Limitations
@@ -68,7 +68,7 @@ lang: "ja"
 クラシックな「Files changed」ページの主要な機能ギャップ（**コミットごとのレビュー**）が埋められ、このプルリクエスト「Files changed」エクスペリエンスの更新でコミットフィルタリングが改善されました！
 
 
-## [🔍 コミットごとのレビュー](#%f0%9f%94%8d-review-commit-by-commit)
+## [🔍 Review commit\-by\-commit](#%f0%9f%94%8d-review-commit-by-commit)
 
 
 新しい「Files changed」ページから、すべてのコミット、コミットのサブセット、または単一のコミットを直接レビューできるようになりました。以前は、単一のコミットにフィルタリングすると、**Commits**タブのクラシックビューにリダイレクトされました。この更新により、すべてのコミット、選択したコミット、または個別のコミットを表示しているかどうかに関係なく、「Files changed」ページに留まります。
@@ -83,7 +83,7 @@ lang: "ja"
 また、コミットフィルターを改善し、範囲または単一のコミットを選択するために必要なクリック数が減りました！単一キーショートカットを有効にしている場合は、ツールバーから開くか、`C`を押して開くことができます。
 
 
-## [📁 ファイルフィルターの改善](#%f0%9f%93%81-file-filter-improvements)
+## [📁 File filter improvements](#%f0%9f%93%81-file-filter-improvements)
 
 
 また、フィルターが適用されているときに理解しやすくするために、青い点のインジケーターを表示するようにファイルフィルターを改善しました。新しい**Clear filters**オプションがフィルターメニューに表示され、すべてのフィルターをデフォルト状態に簡単にリセットできます。
@@ -92,7 +92,7 @@ lang: "ja"
 ![フィルターが適用されているときに青い点を表示し、すべてのフィルターをリセットする「clear filter」ボタンを提供する改善されたファイルフィルターメニュー](https://github.com/user-attachments/assets/9e894002-0157-4dc0-ad64-e26ada7a017a)
 
 
-## [🚀 パフォーマンス](#%f0%9f%9a%80-performance)
+## [🚀 Performance](#%f0%9f%9a%80-performance)
 
 
 パフォーマンスの向上は最優先事項の1つであり、今後数週間にわたって大小の改善が続きます。最近の改善：
@@ -102,7 +102,7 @@ lang: "ja"
 * **Minimize comments**または**Split / Unified**設定の切り替え時のパフォーマンスが向上
 
 
-## [🔧 その他の修正と改善](#%f0%9f%94%a7-more-fixes-and-improvements)
+## [🔧 More fixes and improvements](#%f0%9f%94%a7-more-fixes-and-improvements)
 
 
 * **改善**：プルリクエストに新しい変更がプッシュされたときに**Refresh**ボタンをクリックしても、完全な（そしてしばしば遅い）ページ更新が行われなくなりました。
@@ -113,13 +113,13 @@ lang: "ja"
 * **修正**：`C`キーボードショートカットが再びコミットフィルターを開くようになりました。
 
 
-## [🧪 試してみる](#test_tube-try-it-out)
+## [🧪 Try it out](#test_tube-try-it-out)
 
 
 新しいコミットごとのレビューとコミットセレクターは、新しい「Files changed」エクスペリエンスで利用できます。まだクラシックエクスペリエンスを使用している場合は、クラシック「Files changed」ページの上部にある**Try the new experience**をクリックしてください。
 
 
-## [❤ フィードバック](#heart-feedback)
+## [❤ Feedback](#heart-feedback)
 
 
 あなたのフィードバックは重要です。[「Files changed」プレビューフィードバックディスカッション](https://gh.io/new-files-changed-feedback)で問題を報告したり、質問したり、既知の問題を表示したりできます。

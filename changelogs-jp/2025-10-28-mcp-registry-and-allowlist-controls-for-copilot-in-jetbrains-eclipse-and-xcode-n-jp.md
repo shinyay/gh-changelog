@@ -68,30 +68,30 @@ lang: "ja"
 - GitHub Copilot for Eclipse
 - GitHub Copilot for Xcode
 
-## Key Changes
+## Impact / Who’s Affected
 - MCP レジストリが IDE 内で直接利用可能になり、MCP サーバーの検索とインストールが効率化
 - 管理者が許可リストコントロールで利用可能な MCP サーバーを制御可能
 - すべて許可モードまたはレジストリのみモードを選択可能
 
-## Impact / Who's Affected
+## Caveats / Limitations
 - Copilot Business および Copilot Enterprise のお客様が許可リストコントロールを利用可能
 - JetBrains (nightly)、Eclipse (prerelease)、Xcode (prerelease) のユーザーが対象
 - 機能は初期のパブリックプレビューで、進化する可能性があります
 
-## Caveats / Limitations
+## Article Content (cleaned)
 - 機能は初期のパブリックプレビューで、フィードバックを収集する過程で進化する可能性があります
 - 現在の実施は MCP サーバー名のマッチングに基づいています
 - 許可リストコントロールは Copilot Business および Copilot Enterprise のお客様のみが利用可能
 
-## Insights (derived from article language)
+## [What’s new](#whats-new)
 - 追加の検証とより詳細なポリシーオプションが将来のリリースで計画されています
 - レジストリフォーマットの仕様についてはドキュメントを参照
 
-## Article Content (cleaned)
+## [Set up your MCP registry](#set-up-your-mcp-registry)
 エンタープライズおよび組織の管理者は、JetBrains、Eclipse、Xcode の nightly およびプレリリースビルドで、開発者が検索して使用できる MCP サーバーを設定できるようになりました。
 
 
-## [What's new](#whats-new)
+## [Installation](#installation)
 
 
 ### [MCP registry](#mcp-registry)
@@ -137,7 +137,7 @@ MCP レジストリは、Model Context Protocol (MCP) サーバーのディレ�
 * レジストリのみ: レジストリにないサーバーは実行時に警告付きでブロックされます。
 
 
-## [Set up your MCP registry](#set-up-your-mcp-registry)
+## [Share your feedback](#share-your-feedback)
 
 
 ### [JetBrains IDEs (nightly)](#jetbrains-ides-nightly)

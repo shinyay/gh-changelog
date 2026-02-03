@@ -27,7 +27,7 @@ GitHub Mobileで「New Agent Session」オプションの利用可能性を拡�
 - この新しいエクスペリエンスは、iOSおよびAndroid向けGitHub Mobileの最新本番ビルドで利用可能です。
 - GitHub Communityでディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 以前は、「Agents」、「Home」、またはリポジトリビューからのみ新しいエージェントセッションを開始できました。
 - この新しいエクスペリエンスは、iOSおよびAndroid向けGitHub Mobileの最新本番ビルドで利用可能です。
 

@@ -27,7 +27,7 @@ Copilot coding agent は非同期で自律的なバックグラウンドエー�
 - Copilot の進捗を追跡：タスクが開始されると、Copilot Chat にカードが表示されます。実行中および過去のタスクを確認するには、サイドバーの GitHub Coding Agent Jobs ボタンをクリックします。IDE 内で Copilot の進捗通知を受け取ります。
 - Copilot coding agent での体験についてぜひお聞かせください。JetBrains IDE または Copilot のプルリクエストのフィードバックボタン、または GitHub Copilot for JetBrains フィードバックリポジトリでフィードバックを共有できます。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 新しいパブリックプレビューにより、JetBrains IDE からタスクを Copilot に委任し、進捗を追跡できるようになりました。
 
 ## Article Content (cleaned)
@@ -37,7 +37,7 @@ Copilot coding agent は非同期で自律的なバックグラウンドエー�
 新しいパブリックプレビューにより、JetBrains IDE からタスクを Copilot に委任し、進捗を追跡できるようになりました。Copilot は GitHub のクラウド環境で独立してタスクを完了し、あなたは他の作業に集中できます。
 
 
-## [🛠 試してみる](#%f0%9f%9b%a0-try-it-out)
+## [🛠 Try it out](#%f0%9f%9b%a0-try-it-out)
 
 
 1. **アクセスを確認**：Copilot Pro、Pro+、Business、または Enterprise サブスクリプションが必要です。Copilot Business または Copilot Enterprise のサブスクライバーの場合、管理者が[「Copilot coding agent」および「Editor preview features」ポリシーを有効にする](https://docs.github.com/enterprise-cloud@latest/copilot/concepts/agents/coding-agent/coding-agent-for-business-and-enterprise?utm_source=changelog-docs-cca-jetbrains&utm_medium=changelog&utm_campaign=universe25)必要があります。

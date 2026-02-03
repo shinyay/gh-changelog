@@ -33,14 +33,14 @@ GitHub Copilot next edit suggestions（NES）がXcodeとEclipse向けにパブ�
 - GitHub Copilot for Eclipse
 - GitHub Copilot for Xcode
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub Copilot next edit suggestions（NES）がXcodeとEclipse向けにパブリックプレビューで利用可能になりました。
 
 ## Article Content (cleaned)
 GitHub Copilot next edit suggestions（NES）がXcodeとEclipse向けにパブリックプレビューで利用可能になりました。この新機能は、現在のコンテキストに基づいて次の論理的な編集を提案することで、開発者がより速く作業できるようにし、反復的な手順を減らして生産性を向上させます。
 
 
-## [What's new](#whats-new)
+## [What’s new](#whats-new)
 
 
 GitHub Copilotのnext edit suggestions（NES）機能は、最近の編集を使用して、次に変更したい内容と場所を予測します。この新機能により、Copilotはコード、コメント、テストなどの変更を提案できます。さらに、変更を即座にプレビューして適用できます。編集をすばやく進めて、コーディングフローを中断することなく維持するのは簡単です：Tabキーで提案をナビゲートし、もう一度Tabを押して受け入れます。

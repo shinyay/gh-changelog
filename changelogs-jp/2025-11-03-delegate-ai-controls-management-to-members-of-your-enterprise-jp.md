@@ -26,7 +26,7 @@ lang: "ja"
 - 詳細については、エンタープライズで AI マネージャーを確立する方法に関するドキュメントをご覧ください。
 - GitHub Community でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Universe 2025 で、エージェントコントロールプレーンのパブリックプレビューを発表しました。
 
 ## Caveats / Limitations

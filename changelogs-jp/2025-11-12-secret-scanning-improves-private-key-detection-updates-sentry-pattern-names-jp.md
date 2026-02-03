@@ -43,7 +43,7 @@ lang: "ja"
 さらに、Sentry トークン名は、Sentry のトークン命名規則の変更に合わせて更新されました。
 
 
-## [追加された新しいパターン](#new-patterns-added)
+## [New patterns added](#new-patterns-added)
 
 
 シークレットスキャニングは、以下の追加の秘密鍵フォーマットを検出するようになりました。
@@ -60,7 +60,7 @@ lang: "ja"
 汎用秘密鍵パターンは、PKCS#8 フォーマットの RSA 鍵と、標準の `BEGIN PRIVATE KEY` ヘッダーを使用する他の秘密鍵を検出します。このパターンは、重複アラートを回避するために GitHub 秘密鍵を自動的にフィルタリングします。
 
 
-## [検出器の改善](#detector-improvements)
+## [Detector improvements](#detector-improvements)
 
 
 今週から、以下の秘密鍵パターンは、構成ファイルや環境変数の一般的なフォーマットであるエスケープされた改行 (`\n`) を含む鍵も検出するようになります。
@@ -76,7 +76,7 @@ lang: "ja"
 | `rsa_private_key` |
 
 
-## [シークレットタイプの名前変更](#secret-types-renamed)
+## [Secret types renamed](#secret-types-renamed)
 
 
 Sentry は最近、トークンタイプ全体で命名規則の変更を展開しました。これらの変更に合わせて、以下のシークレットタイプの名前が変更されます。

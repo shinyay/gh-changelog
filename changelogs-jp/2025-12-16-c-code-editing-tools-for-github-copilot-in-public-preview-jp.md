@@ -33,7 +33,7 @@ GitHub CopilotのC++コード編集ツールが、最新のVisual Studio 2026 In
 ### フィードバックをお聞かせください
 - フィードバックを送信するには、Visual Studioのフィードバックアイコンから問題を報告するか、改善を提案してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub CopilotのC++コード編集ツールが、最新のVisual Studio 2026 Insidersリリースでパブリックプレビューになりました。
 
 ## Article Content (cleaned)
@@ -49,7 +49,7 @@ C\+\+コード編集ツールは、プロジェクト内のシンボルに対し
 * 関数呼び出しチェーンを追跡します。
 
 
-## [始め方](#how-to-get-started)
+## [How to get started](#how-to-get-started)
 
 
 1. Visual Studio 2026 InsidersでC\+\+プロジェクトを開きます。
@@ -71,7 +71,7 @@ GitHub Copilotは、これらのツールを呼び出して、より正確でコ
 最良の結果を得るには、ツール呼び出しに最適化されたモデルを使用し、可能な場合は明示的なシンボルを含む明確で具体的なプロンプトを提供してください。
 
 
-## [フィードバックをお聞かせください](#tell-us-your-feedback)
+## [Tell us your feedback](#tell-us-your-feedback)
 
 
 フィードバックを送信するには、Visual Studioのフィードバックアイコンから問題を報告するか、改善を提案してください。

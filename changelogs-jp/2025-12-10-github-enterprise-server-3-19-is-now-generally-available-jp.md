@@ -26,7 +26,7 @@ GitHub Enterprise Server (GHES) 3.19は、デプロイメントの効率性、�
 - GHES 3.19の詳細については、[リリースノート](https://docs.github.com/enterprise-server@3.19/admin/release-notes)をご確認いただくか、今すぐ[ダウンロード](https://enterprise.github.com/releases/3.19.0/download)してください。バージョン3.19へのアップグレードまたはこれらの新機能の使用で問題が発生した場合は、[サポートチーム](https://support.github.com/features/enterprise-administrators-server)にお問い合わせください。
 - フィードバックを共有し、質問するには、[コミュニティディスカッション](https://github.com/orgs/community/discussions/181173)にご参加ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 3.19リリースのハイライトは次のとおりです: リポジトリ作成のための改善されたより直感的なフローが利用可能になりました。
 - これらのポリシーは、承認されたアクションのみが使用され、不変のSHAによって参照されることを保証することにより、ワークフローのセキュリティを向上させるのに役立ちます。
 - 今後2〜3リリースで、OpenTelemetryメトリクスが唯一サポートされるメトリクスになります。

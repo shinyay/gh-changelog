@@ -43,7 +43,7 @@ CodeQLは、コード内のセキュリティ問題を発見して修復するGi
 - 利用可能性
 - CodeQLの各新バージョンは、github.comのGitHubコードスキャニングユーザーに自動的にデプロイされます。CodeQL 2.23.5の新機能は、GitHub Enterprise Server（GHES）リリース3.20にも含まれます。古いバージョンのGHESを使用している場合は、手動でCodeQLバージョンをアップグレードしてください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Java/Kotlin java/sensitive-cookie-not-httponlyクエリを実験的なものからメインクエリパックに昇格させました。
 - Python py/insecure-cookieクエリを複数のクエリに分割しました：py/insecure-cookieはSecureフラグが設定されていないケースをチェックします。py/client-exposed-cookieはHttpOnlyフラグが設定されていないケースをチェックします。py/samesite-noneはSameSite属性がNoneに設定されているケースをチェックします。
 - これらのクエリは、クッキーに機密データが含まれていることが検出された場合にのみアラートを出すようになりました。

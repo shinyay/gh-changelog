@@ -47,7 +47,7 @@ Copilot 使用状況メトリクスダッシュボードと対応する API が�
 - Copilot 使用状況メトリクスダッシュボードのドキュメントを表示する。Copilot 使用状況メトリクス API を探索する。ディスカッションに参加してフィードバックを共有し、質問してください。
 - 編集者注（2025年10月29日）：コミュニティディスカッションのリンクを正しいディスカッションページに更新しました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Copilot 使用状況メトリクスダッシュボードと対応する API が、GitHub Enterprise のパブリックプレビューで利用可能になりました。
 - GitHub Copilot 使用状況メトリクスダッシュボードと API は、Copilot を使用する GitHub Enterprise のお客様向けにパブリックプレビューで提供され、データでその疑問に答えるのに役立ちます。
 - パブリックプレビューに含まれる内容 Copilot 使用状況メトリクスダッシュボードは、エンタープライズ管理者と請求管理者に、Insights タブで Copilot の使用状況と採用状況を直接確認できるようにします。
@@ -72,7 +72,7 @@ GitHub Copilot 使用状況メトリクスダッシュボードと API は、Cop
 IDE での Copilot の採用とエンゲージメントがエンタープライズ全体とユーザー間でどのように異なるかを確認し、誰が、どこで、どのように使用しているかを理解できます。
 
 
-## [パブリックプレビューに含まれる内容](#whats-included-in-the-public-preview)
+## [What’s included in the public preview](#whats-included-in-the-public-preview)
 
 
 **Copilot 使用状況メトリクスダッシュボード**は、エンタープライズ管理者と請求管理者に、**Insights** タブで Copilot の使用状況と採用状況を直接確認できるようにします。ダッシュボードは集約されたエンタープライズビューを提供し、NDJSON ダウンロードまたは API はより詳細な分析のためにユーザーレベルの粒度を提供します。
@@ -98,7 +98,7 @@ IDE での Copilot の採用とエンゲージメントがエンタープライ�
 これらはまとめて、誰が Copilot を採用しているか、どの程度一貫しているか、そしてエンタープライズ全体でその使用がどのようなものかを示す基礎的なメトリクスです。
 
 
-## [エンタープライズで Copilot 使用状況メトリクスを有効にする方法](#how-to-enable-copilot-usage-metrics-in-your-enterprise)
+## [How to enable Copilot usage metrics in your enterprise](#how-to-enable-copilot-usage-metrics-in-your-enterprise)
 
 
 デフォルトでは、プライベートプレビューに参加していた場合を除き、**Copilot 使用状況メトリクス**は無効になっています。その場合は有効のままです。
@@ -116,7 +116,7 @@ IDE での Copilot の採用とエンゲージメントがエンタープライ�
 有効にすると、エンタープライズレベルの **Insights** タブから直接、または[エンタープライズおよびユーザーレベル API](https://docs.github.com/enterprise-cloud@latest/early-access/copilot-metrics/apis/about-the-copilot-metrics-apis?utm_source=changelog-docs-copilot-usage-metrics-dashboard&utm_medium=changelog&utm_campaign=universe25) を通じて Copilot 使用状況メトリクスダッシュボードにアクセスできます。
 
 
-## [詳細](#learn-more)
+## [Learn more](#learn-more)
 
 
 [使用状況メトリクスダッシュボードのドキュメント](https://docs.github.com/enterprise-cloud@latest/early-access/copilot-metrics/dashboards/about-the-copilot-metrics-dashboard?utm_source=changelog-docs-copilot-usage-metrics-dashboard&utm_medium=changelog&utm_campaign=universe25)を表示する。  

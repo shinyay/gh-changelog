@@ -27,7 +27,7 @@ GPT-5.1とGPT-5.1-CodexがCopilot Enterprise、Copilot Business、Copilot Pro、
 - Copilotで利用可能なモデルの詳細については、モデルに関するドキュメントを参照し、今すぐCopilotを開始してください。
 - フィードバックを共有するには、GitHub Communityに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GPT-5.1とGPT-5.1-CodexがCopilot Enterprise、Copilot Business、Copilot Pro、Copilot Pro+で一般提供されます。
 
 ## Insights (derived from article language)

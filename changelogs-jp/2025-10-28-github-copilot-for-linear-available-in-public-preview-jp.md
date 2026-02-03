@@ -33,16 +33,16 @@ Linear の issue を Copilot コーディングエージェント（非同期で
 - 統合と Copilot コーディングエージェントの詳細については、ドキュメントをご覧ください。
 - フィードバックをお待ちしております。コミュニティディスカッションで考えを共有してください。
 
-## Key Changes
-記事では明示されていません。
-
-## Impact / Who's Affected
-記事では明示されていません。
-
-## Caveats / Limitations
-記事では明示されていません。
-
 ## Insights (derived from article language)
+記事では明示されていません。
+
+## Article Content (cleaned)
+記事では明示されていません。
+
+## [Key benefits](#key-benefits)
+記事では明示されていません。
+
+## [Get started](#get-started)
 - 統合と Copilot コーディングエージェントの詳細については、ドキュメントをご覧ください。
 
 ## Article Content (cleaned)

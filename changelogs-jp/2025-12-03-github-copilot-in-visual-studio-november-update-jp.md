@@ -34,7 +34,7 @@ lang: "ja"
 - それまでの間、Visual Studioブログをフォローして最新のCopilot機能をキャッチアップしてください。ロードマップの更新やフィードバックを共有する機会が見つかります。
 - 最新ニュース、リリースノート、ビデオ、コミュニティの会話については、Visual Studioに関するすべての中心的なリソースであるVisual Studio Hubをご覧ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - パブリックプレビュー中のGitHubクラウドエージェント：新しいクラウドエージェントを使用して、Visual Studioから直接反復的なタスクを委任します。
 
 ## Caveats / Limitations

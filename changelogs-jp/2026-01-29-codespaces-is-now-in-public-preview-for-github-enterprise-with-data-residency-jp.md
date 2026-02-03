@@ -32,7 +32,7 @@ GitHub Codespacesが、データレジデンシーを備えたGitHub Enterprise 
 - 厳密なデータレジデンシーを維持するために、エンタープライズまたは組織所有のコードスペースが必要です。ユーザー所有のコードスペースは、データレジデンシーを備えたGitHub Enterprise Cloudアカウントではサポートされていません。Codespacesの使用に適切な所有権を設定するために、エンタープライズまたは組織のポリシーが構成されていることを確認してください。詳細については、codespace所有権に関するドキュメントをご覧ください。
 - GitHub Codespacesとデータレジデンシーを備えたGitHub Enterpriseの詳細をご覧ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GitHub Codespacesが、データレジデンシーを備えたGitHub Enterprise Cloudでパブリックプレビューとして利用可能になりました。
 - 機能は、一般的なGitHubプラットフォームのCodespacesと同一であり、利用可能なリージョンはアカウントの選択したリージョン内に制限されています。
 - ユーザー所有のコードスペースは、データレジデンシーを備えたGitHub Enterprise Cloudアカウントではサポートされていません。
@@ -50,7 +50,7 @@ GitHub Codespacesが、データレジデンシーを備えたGitHub Enterprise 
 GitHub Codespacesが、データレジデンシーを備えたGitHub Enterprise Cloudでパブリックプレビューとして利用可能になりました。データレジデンシー要件を厳密に遵守しながら、安全で設定可能な、即座に利用可能なクラウド開発環境を使用できるようになりました。機能は、一般的なGitHubプラットフォームのCodespacesと同一であり、利用可能なリージョンはアカウントの選択したリージョン内に制限されています。
 
 
-## [What's new](https://github.blog/changelog/feed/#whats-new)
+## [What’s new](https://github.blog/changelog/feed/#whats-new)
 
 
 データレジデント顧客向けのCodespacesは以下を提供します：

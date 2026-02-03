@@ -52,7 +52,7 @@ GitHub Copilot CLIは、検索機能の大幅な改善、より良い画像サ�
 ### Share your feedback
 - ターミナルで`npm install -g @github/copilot@latest`を実行して、GitHub Copilot CLIを更新してください。`/feedback`コマンドおよび公開リポジトリで問題を開くことでフィードバックを提出していただいたすべての方に感謝します。改善を続けていく上で、継続的なフィードバックは非常に貴重です。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Latest AI models now available OpenAIとGoogleの最新モデルのサポートを追加し、最先端を維持できるようにしました：GPT-5.1、GPT-5.1-Codex、GPT-5.1-Codex-Mini Gemini 3 Pro More powerful code search Copilotがコードベースをより効率的に検索できるようになりました！
 
 ## Article Content (cleaned)

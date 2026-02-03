@@ -48,7 +48,7 @@ Copilot SDK がテクニカルプレビューで利用可能になり、GitHub C
 - ツール実行 : モデルが会話中に呼び出せるカスタムツールを定義します。
 - フルライフサイクル制御 : クライアントとセッションのライフサイクルをプログラマティックに管理します。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Copilot SDK がテクニカルプレビューで利用可能になり、GitHub Copilot CLI へのプログラマティックなアクセスを提供する言語固有の SDK が提供されます。
 
 ## Insights (derived from article language)

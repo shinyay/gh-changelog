@@ -62,7 +62,7 @@ GitHub Projects のオンボーディングフローを改善し、リポジト�
 GitHub Projects のオンボーディングフローを改善し、リポジトリからアイテムを接続してインポートするオプション、新しい Issue のデフォルトリポジトリの設定、新しいデフォルトワークフローを使用したプロジェクトのセットアップなど、より迅速に開始できるようにしました。
 
 
-## [🚀 主な改善点](#%f0%9f%9a%80-key-improvements)
+## [🚀 Key improvements](#%f0%9f%9a%80-key-improvements)
 
 
 **リポジトリからアイテムをインポート**
@@ -86,7 +86,7 @@ GitHub Projects のオンボーディングフローを改善し、リポジト�
 新しいデフォルトワークフロー「**Pull request linked to issue**」は、リンクされたプルリクエストが存在するときに、Issue のステータスを自動的に「In progress」に設定します。
 
 
-## [🛠 その他のオンボーディングの改善](#%f0%9f%9b%a0-additional-onboarding-improvements)
+## [🛠 Additional onboarding improvements](#%f0%9f%9b%a0-additional-onboarding-improvements)
 
 
 * 新しいプロジェクトには、**リンクされたプルリクエストとサブ Issue** がデフォルトフィールドとして表示されるようになりました。
@@ -95,7 +95,7 @@ GitHub Projects のオンボーディングフローを改善し、リポジト�
 * オンボーディングをよりスムーズで信頼性の高いものにするための改善とマイナー修正。
 
 
-## [🤖 API の改善](#%f0%9f%a4%96-api-improvements)
+## [🤖 API improvements](#%f0%9f%a4%96-api-improvements)
 
 
 Projects GraphQL API を改善し、プロジェクトワークフローの自動化を容易にしました。
@@ -105,7 +105,7 @@ Projects GraphQL API を改善し、プロジェクトワークフローの自�
 * 任意のプロジェクトフィルターで `query` 引数を使用してプロジェクトアイテムをフィルタリングできます。詳細については、[ProjectsV2 GraphQL ドキュメント](https://docs.github.com/graphql/reference/objects#projectv2)をご覧ください。
 
 
-## [✍ ご意見をお聞かせください！](#%e2%9c%8d-tell-us-what-you-think)
+## [✍ Tell us what you think!](#%e2%9c%8d-tell-us-what-you-think)
 
 
 [GitHub Community](https://github.com/orgs/community/discussions/178930) で会話に参加するか、プロジェクトの **…** メニューから **Give feedback** を選択して、ご意見を共有してください。

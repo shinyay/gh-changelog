@@ -29,10 +29,10 @@ GitHub Copilot アプリモダナイゼーションが IntelliJ IDEA で利用�
 - セットアップ手順については、GitHub Copilot アプリモダナイゼーションプラグインページをご覧ください。
 - エンドツーエンドの紹介ビデオもご覧いただけます。
 
-## Key Changes
+## Impact / Who’s Affected
 記事では明示されていません。
 
-## Impact / Who's Affected
+## Article Content (cleaned)
 - GitHub Copilot アプリモダナイゼーションが IntelliJ IDEA で利用可能になり、AI を活用したモダナイゼーションワークフローが Java 開発者に最も人気のある IDE の 1 つにもたらされました。
 
 ## Caveats / Limitations

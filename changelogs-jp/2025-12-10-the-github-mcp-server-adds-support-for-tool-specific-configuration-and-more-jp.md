@@ -89,7 +89,7 @@ print("Hello, world!")
 - プライベートリポジトリは影響を受けず、協力者は自分のコンテンツへのフルアクセスを維持します。
 - `Lockdown`モードの詳細については、公式[GitHub MCP Serverリポジトリ](https://github.com/github/github-mcp-server)の公式ドキュメントをご覧ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - `get_file_contents`と`pull_request_read`のみを使用する場合、`repos`と`pull_request`ツールセット全体をロードする必要はありません。それらは合計27のツールを有効にすることになるためです。
 - リモートサーバー用の新しい`X-MCP-Tools`ヘッダーを使用して、必要なツールのみを有効にするようにGitHub MCP Serverを設定できるようになりました: **リモートGitHub MCP Server:** "X-MCP-Tools": "get_file_contents,pull_request_read" または、ローカルサーバー用の対応するフラグまたは環境変数: **ローカルGitHub MCP Server:** --tools=get_file_contents,pull_request_read サーバーの設定方法の詳細については、新しいサーバー設定ドキュメントをお読みください。
 - ツール固有の設定は、ツールセット固有の設定、読み取り専用モードなどの他のサーバー設定オプションとシームレスに連携します。
@@ -127,7 +127,7 @@ GitHub MCP Serverは、ツール固有の設定のサポートを提供するよ
 詳細については、[GitHub MCP Serverリポジトリ](https://github.com/github/github-mcp-server)をご覧ください。
 
 
-## [新しい`X-MCP-Tools`ヘッダーで必要なツールのみを有効化](#enable-just-the-tools-you-need-with-the-new-x-mcp-tools-header)
+## [Enable just the tools you need with the new `X-MCP-Tools` header](#enable-just-the-tools-you-need-with-the-new-x-mcp-tools-header)
 
 
 これまで、GitHub MCP Serverでは[ツールセット](https://github.com/github/github-mcp-server?tab=readme-ov-file#tool-configuration)(関連ツールのグループ)を設定できました。これは広範な機能カテゴリを有効にするのに便利ですが、どの特定のツールをロードするかを詳細に制御したい場合があります。
@@ -197,7 +197,7 @@ AIモデルを使用する際、コンテキストウィンドウの使用量は
 設定モードの組み合わせに関する詳細なガイダンスについては、[サーバー設定ドキュメント](https://github.com/github/github-mcp-server/blob/main/docs/server-configuration.md)をご覧ください。
 
 
-## [公式Go SDKへの移行](#migration-to-the-official-go-sdk)
+## [Migration to the official Go SDK](#migration-to-the-official-go-sdk)
 
 
 ローカルとリモートの両方のGitHub MCP Serverが、[mark3labs/mcp\-go](https://github.com/mark3labs/mcp-go)から公式[Go SDK](https://github.com/modelcontextprotocol/go-sdk)に完全に移行されました。
@@ -209,7 +209,7 @@ AIモデルを使用する際、コンテキストウィンドウの使用量は
 [mark3labs/mcp\-go](https://github.com/mark3labs/mcp-go)プロジェクトとそのメンテナーに特別な感謝を申し上げます。このコミュニティ主導のSDKは、初日からGitHub MCP Serverを支え、MCPサーバーを構築するための優れた選択肢でした。
 
 
-## [ロックダウンモードとセキュリティ強化](#lockdown-mode-and-security-hardening)
+## [Lockdown mode and security hardening](#lockdown-mode-and-security-hardening)
 
 
 セキュリティはGitHub MCP Serverの最優先事項です。信頼できないコンテンツと潜在的なプロンプトインジェクション攻撃からワークフローを保護するために、`Lockdown`モードと包括的なコンテンツフィルタリングを導入しました。

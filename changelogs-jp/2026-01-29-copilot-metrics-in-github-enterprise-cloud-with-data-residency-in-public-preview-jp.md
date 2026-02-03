@@ -33,7 +33,7 @@ lang: "ja"
 - APIアクセスについては、Copilot使用メトリクスAPIドキュメントをご覧ください。
 - GitHubコミュニティ内のディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - そのため、Copilotの使用、コード生成ダッシュボード、および対応するAPIが、データレジデンシーを備えたGitHub Enterprise Cloudの顧客に利用可能になりました。
 
 ## Caveats / Limitations

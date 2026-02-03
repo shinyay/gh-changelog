@@ -26,7 +26,7 @@ Claude Opus 4.5は、Copilot Enterprise、Copilot Business、Copilot Pro、お�
 ### フィードバックをお寄せください
 - フィードバックを共有するには、GitHubコミュニティにご参加ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Claude Opus 4.5は、Copilot Enterprise、Copilot Business、Copilot Pro、およびCopilot Pro+向けにパブリックプレビューとして利用可能です。
 
 ## Insights (derived from article language)
@@ -39,7 +39,7 @@ Claude Opus 4\.5は、Copilot Enterprise、Copilot Business、Copilot Pro、お�
 これで、github.com、GitHub Mobile、Visual Studio Code、Visual Studio、JetBrains IDE、Xcode、およびEclipseのGitHub Copilot Chatで、チャットモデルピッカー（エージェント、質問、編集モード）を通じてこのモデルにアクセスできるようになります。まだアクセスできない場合は、後でもう一度確認してください。
 
 
-## [アクセスの有効化](#enabling-access)
+## [Enabling access](#enabling-access)
 
 
 Copilot BusinessおよびEnterpriseの管理者は、Copilot設定でClaude Opus 4\.5ポリシーを有効にしてオプトインする必要があります。有効にすると、その組織のユーザーはモデルピッカーで**Claude Opus 4\.5**を確認できます。
@@ -48,7 +48,7 @@ Copilot BusinessおよびEnterpriseの管理者は、Copilot設定でClaude Opus
 Copilotで利用可能なモデルの詳細については、[モデルに関するドキュメント](https://docs.github.com/copilot/reference/ai-models/supported-models)をご覧いただき、今すぐCopilotを始めましょう。
 
 
-## [フィードバックをお寄せください](#share-your-feedback)
+## [Share your feedback](#share-your-feedback)
 
 
 フィードバックを共有するには、[GitHubコミュニティ](https://github.com/orgs/community/discussions/categories/copilot-conversations)にご参加ください。

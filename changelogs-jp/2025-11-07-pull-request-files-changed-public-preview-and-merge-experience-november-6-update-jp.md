@@ -53,7 +53,7 @@ lang: "ja"
 - ファイルツリーのためのより多くのスペースを確保するために、このセクションを簡単に折りたたむことができるようになりました:
 - この機能に関する質問やフィードバックがある場合は、ディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 提案された変更の一括適用、ページの一部を折りたたむための新しいオプションなど、新しいプルリクエスト「変更されたファイル」ページのパブリックプレビューのこのアップデートに含まれています。📝 一括提案変更 従来の「変更されたファイル」ページと同様に、複数の提案された変更を一度にバッチ処理して適用できるようになりました！
 - 以前は、サイドバーの「レビュアー」セクションからのみこれを行うことができました。
 
@@ -68,7 +68,7 @@ lang: "ja"
 提案された変更の一括適用、ページの一部を折りたたむための新しいオプションなど、[新しいプルリクエスト「変更されたファイル」ページ](https://github.blog/changelog/2025-06-26-improved-pull-request-files-changed-experience-now-in-public-preview/)のパブリックプレビューのこのアップデートに含まれています。
 
 
-## [📝 一括提案変更](#pencil-batch-suggested-changes)
+## [📝 Batch suggested changes](#pencil-batch-suggested-changes)
 
 
 従来の「変更されたファイル」ページと同様に、複数の提案された変更を一度にバッチ処理して適用できるようになりました！
@@ -78,7 +78,7 @@ lang: "ja"
 「**バッチに提案を追加**」をクリックしてバッチに提案された変更を追加し、「**バッチから削除**」をクリックして変更を削除します。提案のバッチをコミットする準備ができたら、「**提案をコミット**」をクリックすると、適用される提案を確認し、必要に応じてコミットメッセージを更新できるダイアログが開きます。
 
 
-## [🚀 Copilot による変更のグループ化](#rocket-grouping-changes-with-copilot)
+## [🚀 Grouping changes with Copilot](#rocket-grouping-changes-with-copilot)
 
 
 Copilot は、プルリクエストの変更を分析してグループに整理するようになりました。この機能は、現在 Copilot Enterprise および Copilot Pro+ ユーザーが新しい「変更されたファイル」ページから利用でき、リファクタリング、構成の更新、テストの改善など、関連する変更をグループ化することで、開発者が複雑なプルリクエストを理解してナビゲートするのを支援するように設計されています。[Copilot による変更のグループ化](https://github.blog/changelog/2025-10-28-grouping-changes-in-a-pull-request-with-copilot-in-public-preview/)について詳しくは、こちらをご覧ください。
@@ -91,7 +91,7 @@ Copilot は、プルリクエストの変更を分析してグループに整理
 この機能に関する質問やフィードバックがある場合は、[ディスカッション](https://gh.io/change-group-feedback)に参加してください。
 
 
-## [⛺ 注釈を折りたたみ可能に](#tent-annotations-are-now-collapsible)
+## [⛺ Annotations are now collapsible](#tent-annotations-are-now-collapsible)
 
 
 CI ツールや他のアプリによって報告された注釈（エラー、警告、その他のメッセージなど）を折りたたんで、コードを表示するためのより多くのスペースを確保できるようになりました:
@@ -101,13 +101,13 @@ CI ツールや他のアプリによって報告された注釈（エラー、�
 設定の歯車メニューで「**コメントを最小化**」オプションをチェックすることで、コメントと注釈の両方を最小化することもできます。
 
 
-## [🔧 その他の修正](#wrench-other-fixes)
+## [🔧 Other fixes](#wrench-other-fixes)
 
 
 前回のアップデート以降、削除されたファイルやマージされたプルリクエストへのコメントに関する問題の修正を含む、アクセシビリティと品質向上のための多数の修正を行いました。
 
 
-## [🚆 マージエクスペリエンスの更新](#train2-merge-experience-updates)
+## [🚆 Merge experience updates](#train2-merge-experience-updates)
 
 
 以下の改善は、新しい「変更されたファイル」ページに固有のものではありませんが、プルリクエストの作業全体のエクスペリエンスを向上させます。
@@ -126,7 +126,7 @@ CI ツールや他のアプリによって報告された注釈（エラー、�
 [マージキュー](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue)を使用してビジーなブランチに変更をマージしている場合、キューページには、キュー内のプルリクエストのオプションのステータスチェックが表示されるようになりました。オプションのチェックはマージをブロックしませんが、調査が必要な潜在的な問題を強調表示できます。
 
 
-## [フィードバック](#feedback)
+## [Feedback](#feedback)
 
 
 あなたのフィードバックは重要です。[フィードバックディスカッション](https://gh.io/new-files-changed-feedback)で問題を報告したり、質問したり、既知の問題を表示したりできます。

@@ -23,7 +23,7 @@ GitHub CLI ユーザーは、`gh copilot` を実行して GitHub Copilot CLI を
 - 詳細は GitHub CLI のリリースノートで確認できます。
 - 今日から、お好みのソースから GitHub CLI をインストールまたは更新してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 新しいエージェント GitHub Copilot CLI を優先して GitHub Copilot in the CLI 拡張機能を非推奨にしたため、`gh` を使用している開発者に、最も強力なターミナルアシスタントの使用を開始する簡単な方法を提供したいと考えています。`gh copilot` は、初めて実行したときに Copilot CLI のインストールを促します `gh copilot` は Copilot CLI を実行し、`gh` コマンドがサポートしていない引数とフラグを転送します。
 
 ## Caveats / Limitations

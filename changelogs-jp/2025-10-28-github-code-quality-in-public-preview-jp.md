@@ -44,13 +44,13 @@ GitHub Code Quality がパブリックプレビューで利用可能になりま
 ### 詳細情報
 - GitHub Code Quality のドキュメントをご確認ください。GitHub Community の Code Quality アナウンスでディスカッションに参加し、フィードバックをお寄せください。
 
-## Key Changes
+## Impact / Who’s Affected
 記事では明示されていません。
 
-## Impact / Who's Affected
+## Insights (derived from article language)
 - GitHub Code Quality がパブリックプレビューで利用可能になりました！
 
-## Caveats / Limitations
+## Article Content (cleaned)
 記事では明示されていません。
 
 ## Insights (derived from article language)

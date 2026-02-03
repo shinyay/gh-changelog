@@ -25,7 +25,7 @@ GitHub Enterprise のお客様は、コストセンター使用量を除外す�
 - このオプションは REST API を通じて利用可能で、この設定への変更は監査ログに記録されます。
 - 詳細については、「メーター制品の支出を制御するための予算の設定」を参照してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Key details このオプションは、エンタープライズスコープの予算でのみ利用可能で、新規または既存の予算に適用できます。
 
 ## Caveats / Limitations

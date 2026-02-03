@@ -33,7 +33,7 @@ GPT-5.2-CodexがCopilot Enterprise、Copilot Business、Copilot Pro、Copilot Pr
 ### フィードバックを共有する
 - GitHubコミュニティに参加してフィードバックを共有してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GPT-5.2-CodexがCopilot Enterprise、Copilot Business、Copilot Pro、Copilot Pro+で一般提供されています。
 
 ## Insights (derived from article language)

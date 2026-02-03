@@ -27,10 +27,10 @@ lang: "ja"
 - アクションメニューにより、新しいモジュールのいずれかから作業を開始できます。issue を Copilot コーディングエージェントに割り当てたり、プルリクエストと issue を Copilot Chat で参照として開くことができます。
 - issue を Copilot に割り当てると、使用するリポジトリ、ブランチ、カスタムエージェントを選択できるダイアログが表示されます。
 
-## Key Changes
+## Caveats / Limitations
 記事では明示されていません。
 
-## Impact / Who's Affected
+## Article Content (cleaned)
 記事では明示されていません。
 
 ## Caveats / Limitations

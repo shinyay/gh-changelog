@@ -21,7 +21,7 @@ lang: "ja"
 - 組織で GitHub Actions を有効にしなくても、GitHub Copilot コーディングエージェントを使用できるようになり、ワークフロー自動化と AI 駆動のコーディングアシスタンスの設定により柔軟性が提供されます。
 - これらの更新についてフィードバックを共有したり質問したりするには、GitHub Community でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - M2 macOS ランナー GitHub Actions M2 搭載の macOS ランナーが一般提供開始されました。
 - Copilot コーディングエージェントは GitHub Actions を有効にする必要がなくなりました 組織で GitHub Actions を有効にしなくても、GitHub Copilot コーディングエージェントを使用できるようになり、ワークフロー自動化と AI 駆動のコーディングアシスタンスの設定により柔軟性が提供されます。
 

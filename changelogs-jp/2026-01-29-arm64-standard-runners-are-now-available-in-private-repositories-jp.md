@@ -35,7 +35,7 @@ LinuxおよびWindows arm64標準GitHub-hostedランナーがプライベート�
 - これらのランナーは、完全にサポートされている標準のGitHub-hostedランナーであり、本番CIワークロードに適しています。
 - GitHubコミュニティ内のディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - LinuxおよびWindows arm64標準GitHub-hostedランナーがプライベートリポジトリでサポートされるようになりました。
 - 新機能 LinuxおよびWindows arm64標準hostedランナーがすべてのリポジトリでサポートされるようになりました。
 
@@ -49,7 +49,7 @@ LinuxおよびWindows arm64標準GitHub\-hostedランナーがプライベート
 これらは標準のGitHub\-hostedランナーであるため、使用量は[プランに含まれる無料分](https://docs.github.com/billing/concepts/product-billing/github-actions#free-use-of-github-actions)にカウントされます。
 
 
-## [What's new](https://github.blog/changelog/feed/#whats-new)
+## [What’s new](https://github.blog/changelog/feed/#whats-new)
 
 
 * LinuxおよびWindows arm64標準hostedランナーがすべてのリポジトリでサポートされるようになりました。

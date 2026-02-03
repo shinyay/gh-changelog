@@ -38,7 +38,7 @@ GPT-5.1-Codex-MaxがGitHub Copilotでパブリックプレビューとして展�
 ### フィードバックを共有する
 - フィードバックを共有するには、GitHub Communityにご参加ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GPT-5.1-Codex-MaxがGitHub Copilotでパブリックプレビューとして展開中です。
 
 ## Insights (derived from article language)

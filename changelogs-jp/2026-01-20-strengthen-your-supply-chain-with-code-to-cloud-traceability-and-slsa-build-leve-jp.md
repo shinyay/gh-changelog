@@ -47,14 +47,14 @@ lang: "ja"
 - Use the GitHub and JFrog integration for secure, traceable builds
 - GitHub Community でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - ローンチパートナー (デプロイメントとランタイムデータ用の Microsoft Defender for Cloud (パブリックプレビュー中) と、ストレージとプロモーションコンテキスト用の JFrog Artifactory) は、追加の設定なしで有効にできるネイティブ統合を構築しました。
 
 ## Article Content (cleaned)
 コンテナやバイナリなどのビルドアーティファクトを GitHub にリンクし、ストレージとデプロイメントのコンテキストを追加できるようになりました。アーティファクトが GitHub の外にある場合でも可能です。これにより、コードからクラウドへのトレーサビリティを取得し、本番環境で実際に実行されているものに基づいてセキュリティ作業の優先順位を付けることができます。
 
 
-## [What's new](#whats-new)
+## [What’s new](#whats-new)
 
 
 ### [Artifact metadata APIs](#artifact-metadata-apis)

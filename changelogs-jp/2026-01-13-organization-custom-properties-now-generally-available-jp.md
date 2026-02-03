@@ -40,7 +40,7 @@ lang: "ja"
 - エンタープライズ管理者は、エンタープライズ設定の組織セクションでカスタムプロパティにアクセスできます。
 - 詳細については、GitHub Docsの「Managing custom properties for organizations in your enterprise」を参照してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - 組織カスタムプロパティが一般提供開始となり、エンタープライズ管理者に組織をメタデータでタグ付けし、エンタープライズルールセットを自動的にターゲット設定する強力な方法を提供します。
 
 ## Article Content (cleaned)

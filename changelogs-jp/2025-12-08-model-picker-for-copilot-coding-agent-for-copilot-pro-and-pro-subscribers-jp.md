@@ -26,7 +26,7 @@ Copilot ProおよびPro+サブスクライバーは、非同期で自律的な�
 - モデルピッカーは現在、Copilot ProおよびPro+サブスクライバーに提供されており、Copilot BusinessおよびEnterpriseサブスクライバー、ならびにVisual Studio CodeやGitHub Mobileなどのより多くのCopilotコーディングエージェント統合への提供も近日公開予定です。
 - 詳細については、Copilotコーディングエージェントでのモデル選択に関するドキュメントをご覧ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - モデルピッカーは現在、Copilot ProおよびPro+サブスクライバーに提供されており、Copilot BusinessおよびEnterpriseサブスクライバー、ならびにVisual Studio CodeやGitHub Mobileなどのより多くのCopilotコーディングエージェント統合への提供も近日公開予定です。
 
 ## Insights (derived from article language)

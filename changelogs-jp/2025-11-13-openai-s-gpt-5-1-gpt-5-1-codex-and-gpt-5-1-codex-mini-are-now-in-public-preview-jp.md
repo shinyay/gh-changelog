@@ -48,7 +48,7 @@ GPT-5.1、GPT-5.1-Codex、GPT-5.1-Codex-Mini―OpenAIの最新5.1シリーズモ
 ### Share your feedback
 - GitHub Communityに参加して、フィードバックを共有してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - GPT-5.1、GPT-5.1-Codex、GPT-5.1-Codex-Mini―OpenAIの最新5.1シリーズモデルのフルスイートが、GitHub Copilotでパブリックプレビューとしてロールアウトされています。
 
 ## Insights (derived from article language)

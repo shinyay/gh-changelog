@@ -41,7 +41,7 @@ Copilot コードレビュー（CCR）は、LLM 検出とツール呼び出し�
 - ツール呼び出しと決定論的検出はパブリックプレビュー中で、Copilot Pro および Copilot Pro Plus ユーザーにはデフォルトで有効になっています。Copilot Business および Copilot Enterprise ユーザーは、Copilot コードレビューポリシーを使用してオプトインできます。
 - GitHub Community でディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - より価値の高いエンジニアリング作業に集中できます。[デモ動画：CCR コメントからの実装提案ボタンの使用] カスタマイズ可能なワークフローとエディターの可用性 🛠️ カスタマイズ可能なワークフローと複数エディターのサポートがすでに一般提供されており、CCR はコードの記述からレビューとマージまで、開発プロセスのあらゆる段階にシームレスに適合します。
 - Getting started 🚀 ツール呼び出しと決定論的検出はパブリックプレビュー中で、Copilot Pro および Copilot Pro Plus ユーザーにはデフォルトで有効になっています。
 

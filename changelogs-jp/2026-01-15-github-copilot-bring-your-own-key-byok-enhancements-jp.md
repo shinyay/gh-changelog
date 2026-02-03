@@ -34,7 +34,7 @@ GitHub Copilot の Bring your own key (BYOK) が、追加の API、新しい設�
 ## Key Changes
 - これらの新機能は、GitHub Enterprise および Business のお客様向けにパブリックプレビューで現在利用可能です。エンタープライズまたは組織の設定で LLM プロバイダーの API キーを接続し、Copilot Chat とサポートされている IDE でモデルの使用を開始してください。詳細については、BYOK ドキュメントをご覧ください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - Start using the new BYOK features today これらの新機能は、GitHub Enterprise および Business のお客様向けにパブリックプレビューで現在利用可能です。
 
 ## Insights (derived from article language)

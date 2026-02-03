@@ -40,7 +40,7 @@ GraphQLとREST APIの両方を使用して、Copilotに課題を割り当てる�
 GraphQLとREST APIの両方を使用して、Copilotに課題を割り当てることができるようになりました。また、ターゲットリポジトリ、ベースブランチ、カスタム命令、カスタムエージェントを構成することもできます。
 
 
-## [GraphQLサポート](#graphql-support)
+## [GraphQL support](#graphql-support)
 
 
 以下のミューテーションを使用してCopilotに課題を割り当てることができます：
@@ -61,7 +61,7 @@ GraphQL-Features: issues_copilot_assignment_api_support
 
 ```
 
-## [REST APIサポート](#rest-api-support)
+## [REST API support](#rest-api-support)
 
 
 以下のREST APIエンドポイント経由でもCopilotに課題を割り当てることができます：

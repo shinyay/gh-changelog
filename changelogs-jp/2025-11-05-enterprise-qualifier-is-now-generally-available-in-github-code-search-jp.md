@@ -24,7 +24,7 @@ GitHub コード検索に新しい enterprise: 修飾子を追加し、エンタ
 - enterprise: 修飾子は、他の既存の検索修飾子とシームレスに連携し、GitHub コード検索のすべての修飾子と同じ制限の対象となります。
 - この機能は、すべての GitHub Enterprise Cloud のお客様に対して一般提供を開始しました。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - この機能は、すべての GitHub Enterprise Cloud のお客様に対して一般提供を開始しました。
 
 ## Article Content (cleaned)

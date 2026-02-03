@@ -25,7 +25,7 @@ lang: "ja"
 - これらの各機能の詳細と有効化方法については、Copilotドキュメントをご覧ください。
 - GitHub Communityでディスカッションに参加してください。
 
-## Impact / Who's Affected
+## Impact / Who’s Affected
 - これらのエージェンティック機能はGitHub Universeでパブリックプレビューとして開始され、ユーザーに以下を提供します：コード、ディレクトリ構造、参照を含む完全なプロジェクトコンテキストを積極的に収集する豊富なエージェンティックツール呼び出しへのアクセス。
 
 ## Insights (derived from article language)

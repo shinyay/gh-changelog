@@ -42,3 +42,27 @@ Required sections:
 - Prefer actionable phrasing.
 - Avoid marketing language.
 - Avoid verbatim long excerpts of the article.
+
+## Japanese translation workflow (optional)
+
+When the user asks to translate changelog entries into Japanese:
+
+- Source: `changelogs/YYYY-MM-DD-<slug>.md` (exclude `changelogs/index.md`).
+- Output directory: `changelogs-jp/`
+- Output filename MUST be: `changelogs-jp/YYYY-MM-DD-<same-stem>-jp.md`
+	- Reuse the EN filename stem exactly (including any `-2`, `-3`, etc). Do not re-slugify.
+
+### Non-negotiable requirements (JP)
+
+- Preserve YAML front matter and add `lang: "ja"`.
+- Translate `title:` value and the `# {title}` H1 to Japanese.
+- Keep the section headings in English exactly as in the EN file:
+	- `## Overview`
+	- `## Detailed Explanation`
+	- `## Key Changes`
+	- `## Impact / Who’s Affected`
+	- `## Caveats / Limitations`
+	- `## Insights (derived from article language)`
+	- `## Article Content (cleaned)`
+- Translate all section bodies, including `## Article Content (cleaned)`.
+- Preserve links/URLs/code and do not invent facts not present in the source.

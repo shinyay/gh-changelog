@@ -55,6 +55,34 @@
         "scripts/generate_ai_sidecars_from_markdown.py"
       ],
       "problemMatcher": []
+    },
+    {
+      "label": "Changelog JP: list missing translations",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/list_missing_jp_translations.py"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Changelog JP: validate translations",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/validate_jp_translations.py",
+        "--allow-missing"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Changelog JP: generate index",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/generate_jp_index.py"
+      ],
+      "problemMatcher": []
     }
   ]
 }

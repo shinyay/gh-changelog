@@ -14,6 +14,25 @@ This repo is designed to be driven from **VS Code GitHub Copilot Chat** with hig
 - `changelogs/index.md`
 - `changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
 
+## Japanese translations (manual, Copilot Chat)
+
+This repo can also store Japanese translations of each changelog entry under `./changelogs-jp/`.
+
+- JP entries: `changelogs-jp/YYYY-MM-DD-<slug>-jp.md`
+- JP index: `changelogs-jp/index.md`
+
+Notes:
+
+- Filenames must reuse the EN stem exactly (including any `-2`, `-3`, etc). Do not re-slugify.
+- Section headings (`## Overview`, etc.) stay in English for structural consistency.
+- The YAML front matter `title:` and the top-level `# ...` heading should be translated to Japanese.
+
+Optional VS Code tasks:
+
+- "Changelog JP: list missing translations"
+- "Changelog JP: validate translations"
+- "Changelog JP: generate index"
+
 ## How to use from Copilot Chat
 
 - Repo-level instructions live in `.github/copilot-instructions.md`.

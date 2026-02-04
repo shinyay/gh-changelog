@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import glob
 import html
 import os
 import re
@@ -437,10 +438,29 @@ def write_file_if_changed(path: str, content: str) -> None:
 def generate_index(output_dir: str, entries: List[Dict[str, str]]) -> None:
     index_path = os.path.join(output_dir, "index.md")
     lines = ["# GitHub Changelog Archive", "", "## Entries", ""]
-    for entry in entries:
-        lines.append(
-            f"- {entry['date']} — [{entry['title']}]({entry['filename']})"
-        )
+    # Build the index from all existing Markdown entries on disk.
+    # When fetching a narrow date range, `entries` only contains that subset;
+    # we still want `changelogs/index.md` to represent the full local archive.
+    md_paths = glob.glob(os.path.join(output_dir, "*.md"))
+    disk_entries: List[Dict[str, str]] = []
+    for path in md_paths:
+        filename = os.path.basename(path)
+        if filename == "index.md":
+            continue
+
+        # Most files are named as YYYY-MM-DD-<slug>.md
+        date_str = filename[:10]
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", date_str):
+            continue
+
+        title = read_existing_title(path) or filename[len(date_str) + 1 : -3]
+        disk_entries.append({"date": date_str, "title": title, "filename": filename})
+
+    # Sort newest-first; keep ordering stable when dates are equal.
+    disk_entries.sort(key=lambda item: (item["date"], item["filename"]), reverse=True)
+
+    for entry in disk_entries:
+        lines.append(f"- {entry['date']} — [{entry['title']}]({entry['filename']})")
     content = "\n".join(lines).strip() + "\n"
     write_file_if_changed(index_path, content)
 

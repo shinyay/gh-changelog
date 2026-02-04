@@ -8,6 +8,22 @@ This repo generates a local Markdown archive of GitHub Changelog entries.
 - Index: `./changelogs/index.md`
 - AI sidecar JSON (validated): `./changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
 
+## Japanese translations (optional)
+
+You can also maintain Japanese translations under `./changelogs-jp/`:
+
+- JP entries: `./changelogs-jp/YYYY-MM-DD-<slug>-jp.md`
+- JP index: `./changelogs-jp/index.md`
+
+Workflow helpers:
+
+- List missing JP translations:
+  - `python3 scripts/list_missing_jp_translations.py`
+- Validate JP translation structure (allows missing by default in the VS Code task):
+  - `python3 scripts/validate_jp_translations.py --allow-missing`
+- Generate/update JP index:
+  - `python3 scripts/generate_jp_index.py`
+
 ## Required environment variables (for AI)
 
 This project calls an OpenAI-compatible chat completions endpoint (default intended for GitHub Models).

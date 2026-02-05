@@ -1,0 +1,88 @@
+{
+  "overview": "VS Code 1.100 focuses on making Copilot Chat more configurable and reusable (prompt files and instructions files), improving agent/edit performance, and expanding Model Context Protocol (MCP) capabilities. It also adds notable UX improvements such as floating window modes and strengthens extension security with mandatory signature verification on Linux (with a noted ARM32 exception).",
+  "detailed_explanation": [
+    {
+      "title": "Prompt files and instructions files",
+      "bullets": [
+        "Introduces aligned concepts for Markdown-based instructions files (.instructions.md) and standalone prompt files (.prompt.md).",
+        "Instructions files provide reusable guidance/context and can be attached manually or auto-applied via an applyTo glob in front matter.",
+        "Prompt files capture a complete request (mode, tools) and can be run via slash command in chat, the editor Play button, or a command palette action.",
+        "Adds language IDs for Prompt/Instructions files and supports a description header for friendlier summaries."
+      ]
+    },
+    {
+      "title": "Agent mode editing and responsiveness",
+      "bullets": [
+        "Agent mode edits are faster with support for apply-patch and replace-string edit formats for certain model families.",
+        "Agent mode can detect errors introduced by edits and proactively propose follow-up fixes (configurable).",
+        "Conversation history may be summarized to keep a stable prompt prefix for prompt caching and faster subsequent responses."
+      ]
+    },
+    {
+      "title": "Tools and context in chat",
+      "bullets": [
+        "Adds the #githubRepo tool to search code snippets in any accessible GitHub repo without opening it locally.",
+        "Adds an extensions tool (#extensions) for Marketplace discovery and installation directly from chat.",
+        "Improves the chat input experience with clearer attachment handling and a streamlined context picker."
+      ]
+    },
+    {
+      "title": "Fetch tool upgrades",
+      "bullets": [
+        "Fetch tool now includes the entire page as context (excluding less relevant sections if needed to fit limits).",
+        "Fetched webpages are converted into Markdown to improve model reasoning and relevancy handling."
+      ]
+    },
+    {
+      "title": "MCP: transport and output enhancements",
+      "bullets": [
+        "Adds support for MCP Streamable HTTP transport (backwards-compatible with SSE configuration).",
+        "Adds support for MCP tools returning image outputs, with a note that not all models can read images from tool output.",
+        "Improves MCP tool input/output UI and progress messages, and generates inputs for secrets when creating MCP configs."
+      ]
+    },
+    {
+      "title": "Editor and windowing UX",
+      "bullets": [
+        "Floating windows gain compact and always-on-top modes, useful for keeping chat visible while working.",
+        "Secondary Side Bar default visibility becomes configurable for new workspaces/windows.",
+        "Adds quick diff decorations for staged changes so you can see staged deltas directly in the editor."
+      ]
+    },
+    {
+      "title": "Security and platform changes",
+      "bullets": [
+        "Extension signature verification becomes mandatory on Linux (previously only Windows/macOS).",
+        "Linux ARM32 builds keep signature verification disabled due to a referenced issue, expected to be resolved in a later release."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Markdown-based prompt files and instructions files for reusable Copilot customization.",
+    "Faster and more reliable agent-mode edits with improved edit tooling support.",
+    "#githubRepo tool to search code in remote GitHub repositories.",
+    "Marketplace extension discovery via an extensions tool (#extensions).",
+    "Fetch tool now returns full-page Markdown context.",
+    "MCP Streamable HTTP transport support and improved MCP UX.",
+    "Floating window compact/always-on-top modes.",
+    "Mandatory extension signature verification on Linux (with an ARM32 exception)."
+  ],
+  "impact": [
+    "Teams standardizing Copilot usage can encode workflow rules as instructions files and reusable prompts as prompt files.",
+    "Users relying on agent mode should see faster iteration loops and better handling of errors introduced by edits.",
+    "Developers exploring code outside their workspace can query remote repos via #githubRepo.",
+    "Organizations and Linux users benefit from stronger extension integrity enforcement, reducing malicious extension risk.",
+    "Users working with MCP servers gain new transport support and improved interaction feedback."
+  ],
+  "caveats": [
+    "MCP tool image outputs are supported, but some models may not be able to read images from tool output (as noted in the release notes).",
+    "Mandatory extension signature verification remains disabled on Linux ARM32 builds due to a referenced issue.",
+    "Next Edit Suggestions (NES) enablement is described as a gradual rollout to Stable; exact rollout timing is not stated in the article."
+  ],
+  "insights": [
+    "The release puts strong emphasis on making AI assistance reproducible and shareable (prompts/instructions) rather than purely ad-hoc chat.",
+    "A recurring theme is reducing friction in agent workflows: faster edits, better error recovery, and prompt-caching optimizations.",
+    "MCP capabilities are treated as a first-class extension point, with transport and UX polish landing alongside core chat features."
+  ],
+  "confidence": 0.82
+}

@@ -1,0 +1,89 @@
+{
+  "overview": "VS Code 1.104 focuses on safer and more flexible agent workflows: auto model selection (preview), confirmation for edits to sensitive files, AGENTS.md-based instructions, and an improved changed-files experience in agent mode. It also revises terminal auto-approve UX and settings, enables math rendering by default, and adds improvements to semantic search and AI feature controls.",
+  "detailed_explanation": [
+    {
+      "title": "Auto model selection (preview)",
+      "bullets": [
+        "Introduces an Auto option in the model picker that selects between multiple models (Claude Sonnet 4, GPT-5, GPT-5 mini, GPT-4.1) depending on availability and policy.",
+        "Describes a variable model multiplier and notes a 10% request discount for paid users when using Auto.",
+        "Selected model and multiplier can be inspected by hovering over the chat response."
+      ]
+    },
+    {
+      "title": "Safety: confirm edits to sensitive files",
+      "bullets": [
+        "Agent mode now asks for confirmation before editing certain file patterns (setting(chat.tools.edits.autoApprove)).",
+        "Common system folders, dotfiles, and files outside the workspace require confirmation by default.",
+        "This is framed as an additional safety layer to reduce accidental or malicious edits to critical configuration files."
+      ]
+    },
+    {
+      "title": "AGENTS.md as chat context (experimental)",
+      "bullets": [
+        "Adds support for automatically picking up an AGENTS.md file from workspace root(s) as context for chat requests.",
+        "Support is enabled by default and can be controlled with setting(chat.useAgentsMdFile).",
+        "The notes link to agents.md for more information about the format and intended usage."
+      ]
+    },
+    {
+      "title": "Improved changed files experience",
+      "bullets": [
+        "Changed files list is collapsed by default but still shows counts and line deltas.",
+        "Files are removed from the changed list when changes are kept/accepted.",
+        "Staging or committing via Source Control automatically accepts proposed file changes."
+      ]
+    },
+    {
+      "title": "Terminal auto approve and global auto approve hardening",
+      "bullets": [
+        "Adds an explicit opt-in flow for enabling terminal auto approve and provides UI to add rules for commands.",
+        "Shows warnings when agent mode pulls content from the internet using common tools (curl/wget/Invoke-WebRequest/Invoke-RestMethod).",
+        "Renames global auto approve to setting(chat.tools.global.autoApprove) and adds a prominent warning the first time it is used."
+      ]
+    },
+    {
+      "title": "Semantic search and AI controls",
+      "bullets": [
+        "Upgrades the #codebase semantic search embeddings model, reducing storage and improving search results.",
+        "Introduces setting(chat.disableAIFeatures) to disable and hide built-in Copilot AI features (chat, completions, next edit suggestions).",
+        "Adds a skip option for tool call confirmations so users can bypass a tool call and let the agent continue."
+      ]
+    },
+    {
+      "title": "Math rendering now enabled by default",
+      "bullets": [
+        "Math rendering in chat responses is generally available and enabled by default (setting(chat.math.enabled)).",
+        "Uses KaTeX with $...$ inline and $$...$$ block equation syntax."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Auto model selection (preview) in the model picker.",
+    "Confirmation required for agent edits to sensitive files with configurable patterns.",
+    "Automatic inclusion of AGENTS.md as chat context (experimental, enabled by default).",
+    "Reworked changed-files list behavior for agent mode.",
+    "Terminal auto-approve gains explicit opt-in UX and improved rule management; internet-fetch warnings added.",
+    "Global auto-approve renamed and gated behind a more explicit warning.",
+    "New embeddings model for semantic workspace search (#codebase).",
+    "Setting to disable/hide Copilot AI features across chat/completions/NES.",
+    "Math rendering enabled by default."
+  ],
+  "impact": [
+    "Organizations can improve safety posture for agent edits by requiring confirmation for sensitive file patterns.",
+    "Teams using multiple AI agents can centralize agent guidance via AGENTS.md and have it applied automatically.",
+    "Users can reduce cognitive load during agent sessions with a more compact changed-files list and automatic acceptance when staging/committing.",
+    "Copilot users gain simpler model choice via Auto and more transparent per-response model/multiplier visibility.",
+    "Developers who prefer non-AI workflows can disable AI features via a single setting."
+  ],
+  "caveats": [
+    "Auto model selection is described as preview and is rolling out over weeks; exact rollout timing and eligibility details beyond what is stated are not provided in the article.",
+    "AGENTS.md support is described as experimental and controlled by a setting.",
+    "The set of default terminal auto-approve rules is referenced as viewable in settings.json; the full list is not enumerated in the article text."
+  ],
+  "insights": [
+    "The release prioritizes ‘safe autonomy’: enabling agents to do more while adding guardrails (sensitive file confirmation, clearer auto-approve).",
+    "There is a clear shift toward team-scale AI workflows, with AGENTS.md and prompt-mode improvements aimed at standardization.",
+    "Operational transparency is emphasized (model/multiplier visibility, warnings for internet downloads, skip tool calls)."
+  ],
+  "confidence": 0.81
+}

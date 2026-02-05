@@ -1,0 +1,86 @@
+{
+  "overview": "VS Code 1.101 significantly expands Model Context Protocol (MCP) support (prompts, resources, sampling, authentication, and dev mode), adds tool sets for grouping tools in chat, and continues improving chat UX and context handling. It also includes platform/editor changes such as EditContext being enabled by default on Stable, and extension authoring updates including MCP extension APIs and secret scanning during packaging.",
+  "detailed_explanation": [
+    {
+      "title": "MCP: prompts, resources, and sampling",
+      "bullets": [
+        "Adds MCP prompt support, exposing server-defined prompts as slash commands in the format /mcp.servername.promptname.",
+        "Adds MCP resource support, including attaching resources to chat and saving resources to disk.",
+        "Introduces experimental MCP sampling so servers can request model responses, with user confirmation and request logs."
+      ]
+    },
+    {
+      "title": "MCP authentication",
+      "bullets": [
+        "Adds support for MCP servers that require authentication, implementing the MCP authorization specification for clients.",
+        "Supports both a 2025-03-26 spec path (server as authorization server) and a draft spec path (server as resource server).",
+        "Adds UX for managing trusted MCP servers and selecting which account a server uses when applicable."
+      ]
+    },
+    {
+      "title": "MCP development mode",
+      "bullets": [
+        "Adds a dev configuration for MCP servers (watch + debug) to restart servers on file changes and attach a debugger.",
+        "Debug support is described for Node.js and Python MCP servers launched via node/python."
+      ]
+    },
+    {
+      "title": "Chat tool sets",
+      "bullets": [
+        "Introduces tool sets (collections of tools) that can be referenced like individual tools in agent mode.",
+        "Tool sets can be created via a command and configured with a description and icon.",
+        "Tool sets are referenced in chat using #-mention syntax (for example, #gh-news)."
+      ]
+    },
+    {
+      "title": "Chat UX and context improvements",
+      "bullets": [
+        "Updates chat UI to better distinguish user messages from AI responses and makes undoing requests more visible.",
+        "Improves how current-file context is offered as a suggested context item (implicit context), and adds a hint about the current editor in agent mode.",
+        "Adds awareness of task diagnostics (problem matcher results) to make responses more grounded in actual errors/warnings."
+      ]
+    },
+    {
+      "title": "Editor and settings changes",
+      "bullets": [
+        "Enables the editor EditContext API by default on Stable to improve input/IME behavior.",
+        "Introduces AI-powered settings search suggestions (preview) and improves semantic search keyword suggestions performance.",
+        "Adds Linux native window context menu support for the custom title bar and other windowing polish."
+      ]
+    },
+    {
+      "title": "Extension authoring updates",
+      "bullets": [
+        "Adds MCP extension APIs so extensions can publish collections of MCP servers.",
+        "VSCE now scans for secrets during extension packaging and can fail packaging when potential secrets are found.",
+        "Notes a breaking-change risk related to Node.js v22 extension host and the navigator global, mitigated via a disabled-by-default setting-based polyfill."
+      ]
+    }
+  ],
+  "key_changes": [
+    "MCP support for prompts, resources, sampling (experimental), authentication, and development mode.",
+    "Tool sets to group and reference related tools in chat.",
+    "Improved chat UI, undo visibility, and implicit context UX.",
+    "EditContext enabled by default on Stable.",
+    "AI settings search suggestions and improved search keyword suggestions.",
+    "MCP extension APIs for extension authors.",
+    "Secret scanning during extension packaging (VSCE)."
+  ],
+  "impact": [
+    "Developers using MCP servers can build richer workflows via prompts/resources and interact with authenticated servers.",
+    "Teams can reduce tool selection complexity by defining tool sets for common workflows (for example, GitHub notification management).",
+    "Users who rely on IMEs or complex text input should benefit from EditContext being enabled by default.",
+    "Extension authors need to be aware of packaging-time secret scanning and potential breakages related to the navigator global in the Node.js extension host update."
+  ],
+  "caveats": [
+    "MCP sampling is explicitly marked as experimental and described as preliminary.",
+    "The article describes support for both a finalized and a draft MCP auth spec; the draft spec’s finalization timing is not stated in the article.",
+    "The navigator global change is called out as a breaking change risk; mitigation relies on a specific setting remaining disabled by default."
+  ],
+  "insights": [
+    "MCP is being positioned as a core extensibility layer for chat, with features spanning UX, auth, dev tooling, and reusable prompts/resources.",
+    "VS Code continues moving from ad-hoc chat into configurable, tool-driven workflows (tool sets + better context handling).",
+    "Security and supply-chain safety are emphasized, both for extensions (secret scanning) and for authenticated tool integrations."
+  ],
+  "confidence": 0.79
+}

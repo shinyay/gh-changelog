@@ -89,6 +89,68 @@ Welcome to the April 2025 release of Visual Studio Code. There are many updates 
 - #fetch（Web ページ取得）がページ全体の Markdown 化を含む形に強化され、文脈として扱いやすく。
 - MCP（Model Context Protocol）については、Streamable HTTP と画像出力など、統合体験が拡充。
 
+ここから先は、英語版の各リリースノート項目を**「何ができるのか / どう使うのか / 何が変わったのか」**の観点で噛み砕いた解説です。
+
+- **Prompt and instructions files（プロンプト/指示ファイル）**
+  - 目的の違いが明確です。
+    - instructions（`.instructions.md`）: *そのチャット依頼の背景条件/ルール*（コーディング規約、技術スタック、禁止事項など）を Markdown に書いて、必要に応じて「コンテキスト」として適用します。
+    - prompt（`.prompt.md`）: *単体で完結する依頼テンプレ*（モード、利用ツール、依頼文）をファイルとして保存し、繰り返し実行できます。
+  - **設定キー**
+    - instructions の探索場所: `setting(chat.instructionsFilesLocations)`
+    - prompt の探索場所: `setting(chat.promptFilesLocations)`
+  - **instructions の使い方（ポイント）**
+    - 手動添付: Chat の **Add Context** → **Instructions...**、または **Chat: Attach Instructions...**。
+    - 自動添付: instructions の front matter に `applyTo`（glob）を指定すると、対象ファイルを含む依頼で自動的に添付されます。
+      - 例: `applyTo: '**/*.ts'` のように「このルールは TypeScript に適用」と明示でき、チーム運用に向きます。
+    - user data（ユーザーデータ）配下に置いた instructions は、Settings Sync で**複数マシン間同期**も可能（設定ダイアログの *Prompts and Instructions*）。
+  - **prompt の実行方法（再利用導線）**
+    - Chat 入力で `/` → prompt 名（スラッシュコマンド的に呼び出し）。
+    - ファイルを開いてエディタ右上の **Play** で実行。
+    - コマンド: **Chat: Run Prompt File...**。
+    - front matter で `mode`（ask/edit/agent）や `tools` を定義でき、*実行条件まで含めてテンプレ化*できます。
+  - **改善点（運用の“ズレ”を減らす）**
+    - instructions / prompt それぞれが専用 language ID を持ち、編集体験が整備。
+    - コマンド名の整理（例: **Chat: Use Prompt** → **Chat: Run Prompt**）。
+    - `description` メタデータが追加され、短い説明文を持たせやすく。
+
+- **Faster agent mode edits（エージェント編集の高速化）**
+  - agent mode の編集で、モデルに応じて高速な編集フォーマット（差分適用/置換）を利用するようになり、**大きいファイル編集の体感**が改善します。
+  - どのモデルでどの方式が有効かはリリースノートの記述に依存します（Insiders 先行/Stable 段階的ロールアウトなど）。
+
+- **Search code of a GitHub repository with the `#githubRepo` tool**
+  - 「今開いていないリポジトリのコード」をチャットから探索できるのが新しい価値です（例: `microsoft/vscode` など）。
+  - 使い分けの目安:
+    - いまのワークスペース → `#codebase`
+    - 別リポジトリの検索 → `#githubRepo user/repo`
+    - Issue/PR 操作 → GitHub MCP server（別物）
+  - instructions（ルール）側で「どのリポジトリに `#githubRepo` を使うか」を事前に教えられるため、*探索の一貫性*が上がります。
+
+- **Find Marketplace extensions with the extensions tool（拡張機能検索/導入）**
+  - `#extensions` を使うと Marketplace から拡張機能を検索でき、結果からインストールまで繋げられます。
+  - チーム標準の拡張（Java/言語パック/リンタ等）を会話から探して入れる、のような運用がしやすくなります。
+
+- **Improvements to the web page fetch tool（Web 取得の強化）**
+  - `#fetch` が「ページ全体を Markdown 化してコンテキスト化」できるようになり、要約・比較・抽出などの精度が上がりやすい設計です。
+  - ただしコンテキスト上限があるため、必要に応じて関連部分が優先される（除外される）動きがある点は意識しておくと良いです。
+
+- **Chat input / UX improvements（入力欄と運用 UX）**
+  - `#` で参照したコンテキストが「添付ピル」として可視化され、送信内容を把握しやすく。
+  - “Done” ボタン廃止など、セッション終了の誤解を減らす調整。
+  - ショートカット: `workbench.action.chat.openAgent` など、モード別に開ける導線。
+
+- **Autofix diagnostics / undo handling（エラー検知と手編集の扱い）**
+  - agent mode 編集で新規エラーが出た場合に追補修正案を出す設定（`setting(github.copilot.chat.agent.autoFix)`）。
+  - セッション中の手動編集・Undo を前提に、必要に応じて再読込するよう誘導。
+
+- **Conversation summary and prompt caching（繰り返し依頼の高速化）**
+  - 大きいコンテキストを使う反復作業（agent mode）で、プロンプトの安定化（キャッシュ）を狙って要約が挿入されることがあります。
+  - “何が送られているか”を意識し、重要な前提は instructions へ寄せるのが実務上安定です。
+
+- **MCP support（Streamable HTTP / 画像 / 進捗）**
+  - Streamable HTTP transport に対応し、SSE と同様の書き味で設定できます（`url` を指定）。
+  - MCP ツールの I/O 表示、進捗表示など UI 面が改善。
+  - 画像出力に対応する MCP サーバーも扱えるようになった一方、*モデル側がツール出力画像を読めるか*は別問題（モデルの能力制約に依存）です。
+
 <!-- EN_CONTENT_BEGIN -->
 
 ### Prompt and instructions files

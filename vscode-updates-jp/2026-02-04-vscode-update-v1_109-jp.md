@@ -100,9 +100,11 @@ Happy Coding!
 
 ### Agent Sessions Day
 
-Join us for [Agent Sessions Day](https://youtube.com/live/tAezuMSJuFs) on Feb 19th to see these latest updates demoed live! Discover how VS Code has evolved into a unified agent UX, while staying true to its core values of openness, extensibility, and developer choice.
+2/19 に [Agent Sessions Day](https://youtube.com/live/tAezuMSJuFs)（YouTube Live）が案内されています。最新アップデートのライブデモに加え、VS Code が **open / extensible / developer choice** という基本姿勢を保ちながら「統一された agent UX」へ進化している点を掘り下げる趣旨です。
 
-![Visual of the Agent Session Day event.](https://code.visualstudio.com/assets/updates/1_109/agent-sessions-day-2026.webp)
+運用の観点では、「複数エージェントをどう追跡し、どう介入し、どう安全に任せるか」という全体像を短時間で掴むのに役立つ回だと読み取れます。
+
+![Agent Sessions Day の告知ビジュアル。](https://code.visualstudio.com/assets/updates/1_109/agent-sessions-day-2026.webp)
 
 <!-- EN_CONTENT_END -->
 
@@ -111,50 +113,58 @@ Join us for [Agent Sessions Day](https://youtube.com/live/tAezuMSJuFs) on Feb 19
 
 <!-- EN_CONTENT_BEGIN -->
 
-Faster responses, clearer reasoning, and less friction. This release brings streaming improvements that show progress as it happens, a revamped inline chat that stays out of your way, and better visibility into what the model is thinking, so you can stay in flow while the AI works.
+この章の改善は「AI に任せる時間が増えるほど、ユーザーが *状況を見失いやすい*」という問題に対する手当てです。
+
+* ストリーミング表示が改善され、“今進んでいる”ことが分かりやすい
+* インラインチャットは邪魔になりにくい UI へ
+* thinking（思考）とツール呼び出しの流れが追いやすくなり、失敗時は原因に辿り着きやすい
 
 ### Anthropic models now show thinking tokens
 
 **Settings**: `setting(chat.thinking.style)`, `setting(chat.agent.thinking.collapsedTools)`, `setting(chat.agent.thinking.terminalTools)`, `setting(chat.tools.autoExpandFailures)`
 
-Many of you are using Anthropic's Claude models in VS Code. These models now support thinking tokens to give you more visibility into the model's reasoning process.
+Anthropic の Claude 系モデルが thinking tokens をサポートし、推論過程（思考）を UI 上で確認できるようになりました。これは「なぜその操作になったのか」「どこで判断が変わったのか」を追うのに役立つ一方、表示が冗長になるとノイズになります。
 
-In this release, we've enhanced the chat UX to surface thinking tokens more effectively. More information, less noise!
+そのため本リリースでは、単に思考を“出す”だけでなく、読みやすさと調査効率を上げるための UI/挙動がまとめて調整されています。
 
-* Choose between detailed or compact thinking styles to suit your preference (`setting(chat.thinking.style)`).
+* `setting(chat.thinking.style)` で思考表示を詳細/コンパクトに切り替えます。
+* `setting(chat.agent.thinking.terminalTools)` により、思考 → ツール呼び出し → 反応、の流れが交互に見えるため、ターミナル実行の根拠や経緯が追いやすくなります。
+* `setting(chat.tools.autoExpandFailures)` で、失敗したツール呼び出しは自動展開され、原因究明のためのクリック数を減らします。
+* 思考部分のスクロール対応や shimmer アニメーションなど、進行・活動状況を見失いにくい視覚改善が入っています。
 
-* You'll see the model's thought process interleaved with tool calls and responses (`setting(chat.agent.thinking.terminalTools)`).
-
-* Failing tool calls automatically expand to show more context (`setting(chat.tools.autoExpandFailures)`).
-
-* Various visual enhancements to make following model activity more intuitive, like scrollable thinking content and shimmer animations.
-
-<video src="https://code.visualstudio.com/assets/updates/1_109/thinking-scrolling-shimmer.mp4" title="Video showing scrollable thinking content and shimmer animations in chat." autoplay loop controls muted></video>
+<video src="https://code.visualstudio.com/assets/updates/1_109/thinking-scrolling-shimmer.mp4" title="チャット内の thinking がスクロール可能になり、shimmer で進行が分かる。" autoplay loop controls muted></video>
 
 ### Mermaid diagrams in chat responses
 
-Chat responses can now render interactive [Mermaid diagrams](https://mermaid.js.org) with the `renderMermaidDiagram` tool. This lets models use flowcharts, sequence diagrams, and other visualizations to visually break down complex concepts. The diagrams are interactive, so you can pan and zoom to explore them in detail, or open them in a full-sized editor for easier viewing.
+`renderMermaidDiagram` ツールにより、応答内で [Mermaid diagrams](https://mermaid.js.org)（フローチャート/シーケンス図など）をインタラクティブに描画できます。テキストだけでは追いづらい手順や依存関係を“図として”確認できるため、オンボーディング資料・レビュー・設計相談の効率が上がります。
 
-Interact with Mermaid diagrams using the following controls:
+操作は次のとおりです。
 
-* **Pan and zoom** - Hold `kbstyle(Alt/Option)` and use the mouse wheel to zoom, or pinch to zoom on a trackpad. Hold `kbstyle(Alt/Option)` and drag to pan around the diagram.
-* **Click to zoom** - Hold `kbstyle(Alt/Option)` and click to zoom in. Add `kbstyle(Shift)` to zoom out.
-* **Open in editor** - Use the button to open the diagram in a full-sized editor for better viewing of larger diagrams.
-* **Copy source** - Right-click on a diagram and select `Copy diagram source` copy its Mermaid source code.
+* **Pan and zoom** - `kbstyle(Alt/Option)` + ホイール/ピンチ、`kbstyle(Alt/Option)` + ドラッグ
+* **Click to zoom** - `kbstyle(Alt/Option)` + クリック（`kbstyle(Shift)` でズームアウト）
+* **Open in editor** - ボタンで専用エディタに展開（大きい図向け）
+* **Copy source** - 右クリック → `Copy diagram source` で Mermaid ソースをコピー
 
-![Screenshot showing a mermaid diagram in a chat response.](https://code.visualstudio.com/assets/updates/1_109/chat-mermaid.png)
+実装に直結する重要な図は、ソースをコピーしてレビュー/修正し、コードや設定と突き合わせるのが安全です（図は誤りでも見栄えが良くなりがちなため）。
+
+![チャット応答内の Mermaid 図の例。](https://code.visualstudio.com/assets/updates/1_109/chat-mermaid.png)
 
 ### Ask Questions tool (Experimental)
 
 **Setting**: `setting(chat.askQuestions.enabled)`
 
-Instead of making assumptions when something is unclear, the agent can now use the `askQuestions` tool to ask clarifying questions during chat conversations. It presents one or more questions directly in chat with single/multi-select options, free text input, and recommended answers highlighted for quick decisions.
+不明点があるときに推測で進めず、エージェントが `askQuestions` ツールで確認質問を提示できるようになります。単一/複数選択、自由入力、推奨回答（recommended）の提示までをチャット内で行えるため、
+
+* 重要な前提条件を“会話ログとして残す”
+* 分岐条件（OS/対象フォルダ/許可範囲など）を早めに確定させる
+
+といった運用上のメリットがあります。
 
 ![Screenshot showing the Ask Questions tool question carousel with theme type options.](https://code.visualstudio.com/assets/updates/1_109/ask-questions-ui.png)
 
-Use the keyboard to navigate between answers with `kbstyle(Up)` and `kbstyle(Down)`, or type the number that matches the corresponding answer (use `kbstyle(Escape)` to skip remaining questions).
+`kbstyle(Up)` / `kbstyle(Down)` で回答間を移動し、番号入力でも選択できます。残り質問をスキップする場合は `kbstyle(Escape)` を使います。
 
-We have revamped our Plan agent to also take advantage of the `askQuestions` tool to make sure your implementation plans align with your expectations and beyond!
+Plan agent も `askQuestions` を活用するようになり、実装計画が期待とズレたまま突き進むリスクを下げる狙いがあります。
 
 ### Plan agent
 

@@ -2,6 +2,14 @@
 
 ## Entries
 
+- 2026-02-04 — [Claude と Codex が GitHub でパブリックプレビューとして利用可能に](2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github-jp.md)
+- 2026-02-04 — [Visual Studio Code 向け GitHub Copilot v1.109（2026年1月リリース）](2026-02-04-github-copilot-in-visual-studio-code-v1-109-january-release-jp.md)
+- 2026-02-04 — [Visual Studio 向け GitHub Copilot — 2026年1月アップデート](2026-02-04-github-copilot-in-visual-studio-january-update-jp.md)
+- 2026-02-04 — [Web 版 Copilot Chat のツール呼び出し表示などの改善](2026-02-04-showing-tool-calls-and-other-improvements-to-copilot-chat-on-the-web-jp.md)
+- 2026-02-04 — [個人ユーザー向け Copilot モデル有効化体験の簡素化](2026-02-04-simplified-copilot-model-enablement-experience-for-individual-users-jp.md)
+- 2026-02-03 — [Dependabot が OIDC 認証に対応](2026-02-03-dependabot-now-supports-oidc-authentication-jp.md)
+- 2026-02-03 — [GitHub Mobile: プルリクエストのファイルで未変更行にもコメント可能に](2026-02-03-github-mobile-comment-on-unchanged-lines-in-pull-request-files-jp.md)
+- 2026-02-03 — [Dependabot Proxy が MIT ライセンスでオープンソース化](2026-02-03-the-dependabot-proxy-is-now-open-source-with-an-mit-license-jp.md)
 - 2026-01-30 — [hostedランナーでのDockerおよびDocker Composeバージョンのアップグレード](2026-01-30-docker-and-docker-compose-version-upgrades-on-hosted-runners-jp.md)
 - 2026-01-29 — [arm64標準ランナーがプライベートリポジトリで利用可能に](2026-01-29-arm64-standard-runners-are-now-available-in-private-repositories-jp.md)
 - 2026-01-29 — [レガシーCopilotメトリクスAPIの終了通知](2026-01-29-closing-down-notice-of-legacy-copilot-metrics-apis-jp.md)

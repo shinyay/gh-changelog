@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-03-dependabot-now-supports-oidc-authentication"
-fetched_at: "2026-02-04T05:34:15.616504Z"
+fetched_at: "2026-02-05T04:46:41.073305Z"
 ---
 
 # Dependabot now supports OIDC authentication

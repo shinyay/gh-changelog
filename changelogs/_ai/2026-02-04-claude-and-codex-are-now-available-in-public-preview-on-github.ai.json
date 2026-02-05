@@ -1,0 +1,72 @@
+{
+  "overview": "Claude (Anthropic) and OpenAI Codex are now available in public preview as partner coding agents for Copilot Pro+ and Copilot Enterprise, usable across GitHub web, mobile, and VS Code to run agent sessions and delegate work.",
+  "detailed_explanation": [
+    {
+      "title": "What’s in public preview",
+      "bullets": [
+        "Claude by Anthropic and OpenAI Codex can be selected as coding agents.",
+        "They are available to Copilot Pro+ and Copilot Enterprise customers during public preview.",
+        "Each coding agent session consumes one premium request during public preview."
+      ]
+    },
+    {
+      "title": "Where you can start and manage sessions",
+      "bullets": [
+        "Agent sessions can be started and assigned from github.com, GitHub Mobile, and VS Code.",
+        "Entry points include issues, pull requests, the Agents tab in enabled repositories, and the agent sessions view in VS Code.",
+        "You can follow progress in real time and review completed sessions from web and mobile session lists."
+      ]
+    },
+    {
+      "title": "Enablement for Copilot Pro+",
+      "bullets": [
+        "Go to Copilot coding agent settings.",
+        "Choose which repositories agents can access.",
+        "Enable Claude, Codex, or both using toggles."
+      ]
+    },
+    {
+      "title": "Enablement for Copilot Enterprise",
+      "bullets": [
+        "Enterprise admins must enable partner agents in Enterprise AI Controls (Agents tab → Partner Agents).",
+        "Org-level settings must also enable partner agents in the organization’s Copilot coding agent settings.",
+        "Specific role/permission requirements are Not stated in the article."
+      ]
+    },
+    {
+      "title": "How agents participate in issues and pull requests",
+      "bullets": [
+        "You can assign agents to issues via the Assignees dropdown; the agent can begin work and submit a draft pull request.",
+        "You can assign an open pull request to an agent and iterate via review feedback.",
+        "You can address agents in comments using @copilot, @claude, or @codex and use the session view for logs."
+      ]
+    },
+    {
+      "title": "VS Code session types and prerequisites",
+      "bullets": [
+        "VS Code 1.109 or later is required to use agent sessions from VS Code.",
+        "Session types include Local (fast interactive), Cloud (autonomous on GitHub), and Background (local; Copilot only)."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Claude and Codex are available as partner coding agents (public preview) for Copilot Pro+ and Copilot Enterprise.",
+    "Agents can be used across GitHub web, GitHub Mobile, and VS Code with shared session visibility.",
+    "Agent sessions consume premium requests during public preview."
+  ],
+  "impact": [
+    "Copilot customers can choose different agent providers for tasks like implementing changes, iterating on PR feedback, and drafting pull requests.",
+    "Enterprise admins gain new configuration responsibilities to enable/limit partner agents at enterprise and org levels.",
+    "Teams may need to account for premium-request consumption when using agent sessions during preview."
+  ],
+  "caveats": [
+    "The feature is in public preview.",
+    "Each coding agent session consumes one premium request during public preview.",
+    "Background sessions in VS Code are Copilot-only (not available for Claude/Codex)."
+  ],
+  "insights": [
+    "The article stresses cross-client continuity (web, mobile, IDE) as a core part of the partner-agent experience.",
+    "Enablement instructions are detailed, implying governance and controlled rollout are important, especially for enterprises."
+  ],
+  "confidence": 0.84
+}

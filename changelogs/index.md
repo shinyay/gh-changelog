@@ -2,7 +2,13 @@
 
 ## Entries
 
+- 2026-02-04 — [Simplified Copilot model enablement experience for individual users](2026-02-04-simplified-copilot-model-enablement-experience-for-individual-users.md)
+- 2026-02-04 — [Showing tool calls and other improvements to Copilot chat on the web](2026-02-04-showing-tool-calls-and-other-improvements-to-copilot-chat-on-the-web.md)
+- 2026-02-04 — [GitHub Copilot in Visual Studio — January update](2026-02-04-github-copilot-in-visual-studio-january-update.md)
+- 2026-02-04 — [GitHub Copilot in Visual Studio Code v1.109 – January Release](2026-02-04-github-copilot-in-visual-studio-code-v1-109-january-release.md)
+- 2026-02-04 — [Claude and Codex are now available in public preview on GitHub](2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github.md)
 - 2026-02-03 — [The Dependabot Proxy is now open source with an MIT license](2026-02-03-the-dependabot-proxy-is-now-open-source-with-an-mit-license.md)
+- 2026-02-03 — [GitHub Mobile: Comment on unchanged lines in pull request files](2026-02-03-github-mobile-comment-on-unchanged-lines-in-pull-request-files.md)
 - 2026-02-03 — [Dependabot now supports OIDC authentication](2026-02-03-dependabot-now-supports-oidc-authentication.md)
 - 2026-01-30 — [Docker and Docker Compose version upgrades on hosted runners](2026-01-30-docker-and-docker-compose-version-upgrades-on-hosted-runners.md)
 - 2026-01-29 — [Improved search for GitHub Issues in public preview](2026-01-29-improved-search-for-github-issues-in-public-preview.md)

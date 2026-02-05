@@ -1,0 +1,52 @@
+{
+  "overview": "GitHub Copilot Chat on github.com now shows tool call details, supports exporting chats to JSON or Markdown, and improves repository attachment search and recommendations.",
+  "detailed_explanation": [
+    {
+      "title": "Tool call visibility",
+      "bullets": [
+        "Copilot Chat responses now include clearer tool call details so you can track what’s happening in real time.",
+        "The stated benefits are understanding steps taken, course-correcting when something fails, and seeing references produced by each tool call."
+      ]
+    },
+    {
+      "title": "Export chats",
+      "bullets": [
+        "You can export a conversation for later reference.",
+        "Export flow: select a chat → open the “Manage chat” menu → choose Export → pick JSON or Markdown."
+      ]
+    },
+    {
+      "title": "Repository attachments",
+      "bullets": [
+        "Repository attachment UX has been improved so you can find the right repository faster.",
+        "Search now shows better repository recommendations."
+      ]
+    },
+    {
+      "title": "Feedback channel",
+      "bullets": [
+        "The article links to GitHub Community to discuss these Copilot Chat improvements.",
+        "Rollout timing and availability constraints are Not stated in the article."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Copilot Chat on github.com now displays tool call details during responses.",
+    "Chats can be exported to JSON or Markdown from the chat management menu.",
+    "Repository attachment search and recommendations have been improved."
+  ],
+  "impact": [
+    "Users can better understand and debug Copilot’s behavior by seeing tool call steps and references.",
+    "Teams can archive or share Copilot chats (as JSON/Markdown) for documentation or follow-up.",
+    "Attaching the correct repository to a chat should be faster due to improved recommendations."
+  ],
+  "caveats": [
+    "Any limitations on which chats can be exported, export size, or retention are Not stated in the article.",
+    "Precise rollout scope (accounts, plans, regions) is Not stated in the article."
+  ],
+  "insights": [
+    "Emphasizing tool call visibility suggests GitHub is prioritizing transparency and controllability for Copilot’s agent-like behavior on the web.",
+    "Providing exports in both JSON and Markdown indicates intent to support both machine processing and human-readable sharing."
+  ],
+  "confidence": 0.83
+}

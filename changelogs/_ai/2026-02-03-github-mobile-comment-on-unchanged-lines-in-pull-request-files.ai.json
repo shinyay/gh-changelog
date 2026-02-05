@@ -1,0 +1,52 @@
+{
+  "overview": "GitHub Mobile now lets you comment on unchanged lines within a file shown in a pull request’s Files Changed view by expanding the diff, bringing mobile commenting closer to the web experience.",
+  "detailed_explanation": [
+    {
+      "title": "What changed in Files Changed",
+      "bullets": [
+        "In GitHub Mobile, you can now comment anywhere within a changed file, not only near the modified lines.",
+        "You can expand the diff to reveal unchanged code and leave a comment or suggested change where it’s needed."
+      ]
+    },
+    {
+      "title": "Consistency with github.com",
+      "bullets": [
+        "Comments added on unchanged lines on github.com are now displayed in GitHub Mobile.",
+        "This helps you review and respond from a phone without losing context that exists outside the immediate diff hunk."
+      ]
+    },
+    {
+      "title": "Why it matters",
+      "bullets": [
+        "Makes it easier to flag changes that should have been made beyond the current diff context.",
+        "Supports adding reviewer context or suggested changes on unchanged parts of a file."
+      ]
+    },
+    {
+      "title": "Availability",
+      "bullets": [
+        "The experience is available on the latest production build of GitHub Mobile for iOS and Android.",
+        "Minimum app version requirements are Not stated in the article."
+      ]
+    }
+  ],
+  "key_changes": [
+    "GitHub Mobile now supports commenting on unchanged lines in pull request files by expanding the diff.",
+    "Comments on unchanged lines created on github.com are visible in GitHub Mobile.",
+    "Users can add comments or suggested changes outside the immediate changed-line context."
+  ],
+  "impact": [
+    "Reviewers using GitHub Mobile can leave more precise feedback without switching to the web UI.",
+    "Teams can discuss broader refactors or missing changes directly in the relevant unchanged code areas from mobile.",
+    "PR review workflows may become more consistent across web and mobile clients."
+  ],
+  "caveats": [
+    "You need the latest production build of the GitHub Mobile app to access the feature.",
+    "Any limitations on which file types or diff views support this are Not stated in the article."
+  ],
+  "insights": [
+    "The announcement emphasizes parity with the web experience (showing web comments on mobile) as a key usability goal.",
+    "The language focuses on reducing context loss in reviews, suggesting mobile PR review is being treated as a first-class workflow."
+  ],
+  "confidence": 0.78
+}

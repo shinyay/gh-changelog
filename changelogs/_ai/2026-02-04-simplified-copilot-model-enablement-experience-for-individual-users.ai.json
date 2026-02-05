@@ -1,0 +1,52 @@
+{
+  "overview": "Copilot model access for individual users has been simplified: newly released models are available directly inside Copilot features for Pro+, Pro, and Free users without needing to manage policies or visit settings pages.",
+  "detailed_explanation": [
+    {
+      "title": "What changed",
+      "bullets": [
+        "Newly released models are now available directly within Copilot features for Copilot Pro+, Pro, and Free users.",
+        "Users no longer need to manage policies or visit settings pages to access new models."
+      ]
+    },
+    {
+      "title": "How model selection works",
+      "bullets": [
+        "You can choose a model manually, or let GitHub select one when Auto mode is enabled.",
+        "Models work immediately once selected."
+      ]
+    },
+    {
+      "title": "Policy and data usage",
+      "bullets": [
+        "The article states existing data-usage policies remain unchanged and continue to apply.",
+        "Specific policy details are Not stated in the article (it links to the Trust Center)."
+      ]
+    },
+    {
+      "title": "Rollout notes",
+      "bullets": [
+        "The change is rolling out over the next day.",
+        "If you don’t see it yet, the guidance is to check back soon."
+      ]
+    }
+  ],
+  "key_changes": [
+    "New Copilot models are surfaced directly in Copilot features for Pro+, Pro, and Free users without extra settings steps.",
+    "Auto mode can select a model for you, or you can select a model yourself.",
+    "Existing data-usage policies remain unchanged."
+  ],
+  "impact": [
+    "Individual users should be able to try newly released models faster with fewer configuration steps.",
+    "Users who prefer explicit control can still pick specific models rather than relying on Auto mode.",
+    "Organizations relying on existing data-usage policy expectations should not see policy changes per the announcement."
+  ],
+  "caveats": [
+    "The rollout is gradual over the next day, so availability may lag for some users.",
+    "Any differences in model availability across specific Copilot features are Not stated in the article."
+  ],
+  "insights": [
+    "The announcement prioritizes reducing friction and ambiguity about model availability while preserving user choice.",
+    "By explicitly stating data-usage policies are unchanged, the article anticipates trust/governance concerns when models change."
+  ],
+  "confidence": 0.8
+}

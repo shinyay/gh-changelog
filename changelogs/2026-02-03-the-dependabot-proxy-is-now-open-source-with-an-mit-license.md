@@ -5,7 +5,7 @@ type: "Release"
 labels: ["ecosystem &amp; accessibility", "supply chain security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-03-the-dependabot-proxy-is-now-open-source-with-an-mit-license"
-fetched_at: "2026-02-04T05:34:15.625501Z"
+fetched_at: "2026-02-05T04:46:41.085290Z"
 ---
 
 # The Dependabot Proxy is now open source with an MIT license

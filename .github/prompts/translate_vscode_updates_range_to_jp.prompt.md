@@ -39,9 +39,20 @@ Ask for:
 
 ### Heading and section rules
 - Translate the H1 `# {title}` into Japanese and ensure it matches the translated `title:`.
-- Keep **all** `## ...` section headings exactly as in the EN file (same text, same order).
-  - Do not translate `##` headings; the JP validator requires an exact match to the EN headings list.
-- Translate all section bodies into Japanese.
+- Keep **all** headings other than the H1 exactly as in the EN file (same text, same order):
+  - `## ...`, `### ...`, `#### ...`, ...
+  - Do not translate these headings. (Many internal links use heading anchors like `(#prompt-and-instructions-files)`.)
+
+### Richness / no-omissions requirement
+The JP files must be as content-rich as the EN originals.
+
+To avoid accidental omission (and to preserve all links, code blocks, images/videos, and anchor targets), for each `## ...` section:
+- Write the Japanese translation or Japanese explanation first (short, faithful, no added facts).
+- Then include the full original English section content verbatim beneath it, wrapped in markers:
+  - `<!-- EN_CONTENT_BEGIN -->`
+  - `<!-- EN_CONTENT_END -->`
+
+This produces a bilingual file that is guaranteed to contain the full original detail, while still being readable in Japanese.
 
 ### Content guardrails
 - Preserve links/URLs/code exactly as-is.

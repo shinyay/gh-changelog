@@ -32,6 +32,8 @@ from typing import Dict, List, Optional, Tuple
 _FRONT_MATTER_FENCE = "---"
 _H1_RE = re.compile(r"^#\s+(.+?)\s*$")
 _H2_RE = re.compile(r"^##\s+(.+?)\s*$")
+_HEADING_RE = re.compile(r"^(#{2,6})\s+(.+?)\s*$")
+_FENCE_RE = re.compile(r"^(`{3,})(.*)$")
 
 
 @dataclass
@@ -39,6 +41,9 @@ class ParsedDoc:
     front_matter: Dict[str, str]
     h1: str
     h2_headings: List[str]
+    headings: List[Tuple[int, str]]
+    code_fence_count: int
+    body_char_count: int
 
 
 def find_markdown_entries(output_dir: str) -> List[str]:
@@ -99,22 +104,91 @@ def parse_doc(path: str) -> ParsedDoc:
 
     fm, body_start = _parse_front_matter(lines)
 
-    # Find first H1 after front matter.
+    # Find first H1 after front matter, and collect headings (outside fenced code blocks).
     h1: Optional[str] = None
     h2s: List[str] = []
-    for ln in lines[body_start:]:
+    headings: List[Tuple[int, str]] = []
+
+    in_fence = False
+    fence_ticks: Optional[str] = None
+    code_fence_count = 0
+
+    body_lines = lines[body_start:]
+    for ln in body_lines:
+        fence_m = _FENCE_RE.match(ln)
+        if fence_m:
+            ticks = fence_m.group(1)
+            if not in_fence:
+                in_fence = True
+                fence_ticks = ticks
+                code_fence_count += 1
+            else:
+                # Close only if fence length matches the opener length.
+                if fence_ticks is not None and ticks.startswith(fence_ticks):
+                    in_fence = False
+                    fence_ticks = None
+                    code_fence_count += 1
+            continue
+
+        if in_fence:
+            continue
+
         m1 = _H1_RE.match(ln)
         if m1 and h1 is None:
             h1 = m1.group(1).strip()
             continue
-        m2 = _H2_RE.match(ln)
-        if m2:
-            h2s.append(m2.group(1).strip())
+
+        m_heading = _HEADING_RE.match(ln)
+        if m_heading:
+            level = len(m_heading.group(1))
+            text_ = m_heading.group(2).strip()
+            headings.append((level, text_))
+            if level == 2:
+                h2s.append(text_)
 
     if not h1:
         raise ValueError("Missing H1 ('# ...') heading")
 
-    return ParsedDoc(front_matter=fm, h1=h1, h2_headings=h2s)
+    body_char_count = len("\n".join(body_lines))
+
+    return ParsedDoc(
+        front_matter=fm,
+        h1=h1,
+        h2_headings=h2s,
+        headings=headings,
+        code_fence_count=code_fence_count,
+        body_char_count=body_char_count,
+    )
+
+
+def _body_char_count_excluding_front_matter(path: str) -> int:
+    """Approximate body size (chars) excluding YAML front matter fences/lines."""
+    text = _read_text(path)
+    lines = text.splitlines(True)
+    if not lines:
+        return 0
+    if lines[0].strip() != _FRONT_MATTER_FENCE:
+        return len(text)
+
+    # Find closing fence.
+    end = None
+    for i in range(1, len(lines)):
+        if lines[i].strip() == _FRONT_MATTER_FENCE:
+            end = i + 1
+            break
+    if end is None:
+        return len(text)
+    return len("".join(lines[end:]))
+
+
+def _count_code_fence_lines(path: str) -> int:
+    """Count lines that start a fenced code block (``` or longer)."""
+    text = _read_text(path)
+    count = 0
+    for ln in text.splitlines():
+        if _FENCE_RE.match(ln):
+            count += 1
+    return count
 
 
 def main() -> int:
@@ -135,6 +209,17 @@ def main() -> int:
         "--allow-missing",
         action="store_true",
         help="Do not fail if JP translations are missing",
+    )
+    parser.add_argument(
+        "--min-body-length-ratio",
+        type=float,
+        default=0.85,
+        help="Minimum JP/EN body length ratio (chars, excluding YAML front matter).",
+    )
+    parser.add_argument(
+        "--require-code-fence-parity",
+        action="store_true",
+        help="Require JP to have at least as many fenced code block lines as EN.",
     )
     args = parser.parse_args()
 
@@ -216,6 +301,33 @@ def main() -> int:
                 f"  EN: {en_doc.h2_headings}\n"
                 f"  JP: {jp_doc.h2_headings}"
             )
+
+        # All headings (##..######) must match too, to preserve internal anchors.
+        if en_doc.headings != jp_doc.headings:
+            errors.append(
+                f"{jp_name}: headings (levels 2-6) differ from EN ({en_name}).\n"
+                f"  EN: {en_doc.headings}\n"
+                f"  JP: {jp_doc.headings}"
+            )
+
+        # Richness checks: prevent heavily abbreviated JP outputs.
+        en_body_chars = _body_char_count_excluding_front_matter(en_md)
+        jp_body_chars = _body_char_count_excluding_front_matter(jp_md)
+        if en_body_chars > 0:
+            ratio = jp_body_chars / en_body_chars
+            if ratio < args.min_body_length_ratio:
+                errors.append(
+                    f"{jp_name}: body appears too short vs EN ({ratio:.3f} < {args.min_body_length_ratio:.3f}). "
+                    "JP output likely omits significant content."
+                )
+
+        if args.require_code_fence_parity:
+            en_fences = _count_code_fence_lines(en_md)
+            jp_fences = _count_code_fence_lines(jp_md)
+            if jp_fences < en_fences:
+                errors.append(
+                    f"{jp_name}: fewer code fence lines than EN (EN={en_fences}, JP={jp_fences})."
+                )
 
     if errors:
         print(f"VS Code Updates JP validation failed. Missing: {missing_count}/{len(en_entries)}")

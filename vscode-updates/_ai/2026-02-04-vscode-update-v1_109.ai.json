@@ -1,0 +1,87 @@
+{
+  "overview": "VS Code 1.109 (January 2026) emphasizes a more operational 'agent experience' (sessions, delegation, customization, and trust controls) alongside notable workbench and terminal additions. The notes also include several Preview/Experimental features and configuration options for teams.",
+  "detailed_explanation": [
+    {
+      "title": "Chat UX and debugging model/tool behavior",
+      "bullets": [
+        "Adds controls around 'thinking' display for supported models, including a compact/detailed presentation (`setting(chat.thinking.style)`).",
+        "Tool-call failures can auto-expand for easier debugging (`setting(chat.tools.autoExpandFailures)`).",
+        "Includes UI refinements intended to make it easier to follow interleaved model reasoning and tool usage."
+      ]
+    },
+    {
+      "title": "Agent session management",
+      "bullets": [
+        "Improves starting and switching between different agent session types and surfacing agent status in the UI (for example via an indicator in the command center; `setting(chat.agentsControl.enabled)`).",
+        "Enhances the sessions list UX (resizing, multi-select bulk operations, and improved navigation in stacked views).",
+        "Adds support for handing off work between agent types (for example planning locally and implementing elsewhere)."
+      ]
+    },
+    {
+      "title": "Customization and governance",
+      "bullets": [
+        "Introduces `/init` to help generate or update workspace instructions based on repository conventions.",
+        "Agent Skills are described as generally available and enabled by default (`setting(chat.useAgentSkills)`), with tooling for creating/configuring skills.",
+        "Adds organization-wide instruction support (`setting(github.copilot.chat.organizationInstructions.enabled)`) and diagnostics for loaded customization resources.",
+        "Adds controls that affect how custom agents are invoked and whether they can be used as subagents."
+      ]
+    },
+    {
+      "title": "Extensibility: subagents and MCP Apps",
+      "bullets": [
+        "Highlights subagent patterns (context isolation, specialization, and potential parallelism).",
+        "Adds support for MCP Apps that can render interactive UI in chat responses.",
+        "Mentions additional agent-provider options (for example Claude Agent in Preview) and registry configuration options for MCP packages."
+      ]
+    },
+    {
+      "title": "Trust and safety for terminal tooling",
+      "bullets": [
+        "Introduces terminal sandboxing (Experimental) to constrain file-system and network access for agent-run commands (`setting(chat.tools.terminal.sandbox.enabled)`).",
+        "Improves terminal tool lifecycle control (backgrounding, explicit timeouts, and await/kill support for background terminals).",
+        "Expands the set of commands that can be auto-approved when auto-approve is enabled (still user-configurable)."
+      ]
+    },
+    {
+      "title": "Workbench: integrated browser (Preview)",
+      "bullets": [
+        "Adds a new integrated browser (Preview) intended for a fuller browsing experience (including sign-in), beyond iframe limitations.",
+        "Can open localhost links in the integrated browser (`setting(workbench.browser.openLocalhostLinks)`) and optionally replace Simple Browser (`setting(simpleBrowser.useIntegratedBrowser)`)."
+      ]
+    },
+    {
+      "title": "Engineering/ecosystem notes",
+      "bullets": [
+        "Deprecates the GitHub Copilot extension; AI features are delivered by GitHub Copilot Chat and the deprecated extension is uninstalled on update.",
+        "Mentions additional platform packaging improvements and extension API updates/proposals relevant to chat and model-provider configuration."
+      ]
+    }
+  ],
+  "key_changes": [
+    "More visible and controllable 'thinking' and tool failure UX in chat.",
+    "Improved agent session management (switching/delegation, bulk operations, status indicator).",
+    "Agent Skills generally available and enabled by default; `/init` for bootstrapping repo instructions.",
+    "Organization-wide instructions and better diagnostics for customization resources.",
+    "Terminal sandboxing (Experimental) and expanded terminal tool lifecycle controls.",
+    "Integrated browser (Preview) for localhost/web workflows within VS Code.",
+    "GitHub Copilot extension deprecated in favor of GitHub Copilot Chat."
+  ],
+  "impact": [
+    "Agent-heavy users: less friction managing many sessions and delegating between agent types.",
+    "Teams: more ways to enforce consistent AI behavior via org and workspace instructions and shared skills.",
+    "Security-conscious users: sandboxing and clearer terminal tool controls can reduce risk from automated command execution.",
+    "Web developers: integrated browser can consolidate local testing and inspection inside VS Code.",
+    "Extension/MCP authors: richer chat surfaces (MCP Apps) enable more interactive experiences."
+  ],
+  "caveats": [
+    "Several features are explicitly Preview/Experimental and may require enabling settings; availability may vary by channel.",
+    "Terminal sandboxing is described as affecting macOS/Linux; it does not apply universally across all platforms.",
+    "The notes include references to sample projects and external links; these are illustrative rather than official support commitments."
+  ],
+  "insights": [
+    "The release notes treat agent workflows as a first-class operating model: session lifecycle, delegation, governance, and trust are recurring themes.",
+    "The combination of skills + org instructions suggests VS Code expects AI usage to be configured like other dev tooling, not left to ad-hoc prompting.",
+    "Safety features are moving toward enforceable constraints (sandboxing) in addition to UI confirmations."
+  ],
+  "confidence": 0.76
+}

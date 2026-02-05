@@ -1,0 +1,79 @@
+{
+  "overview": "VS Code 1.107 (November 2025) introduces multi-agent orchestration, emphasizing an Agent HQ-style workflow where you can manage sessions and delegate work across local, background, and cloud agents. It also improves isolation and context handling for background agents (including Git worktrees and richer context attachments).",
+  "detailed_explanation": [
+    {
+      "title": "Integrating agent sessions into the Chat view",
+      "bullets": [
+        "Integrates agent sessions into the Chat view for a unified experience across local, background, cloud, and third-party agent providers.",
+        "Provides at-a-glance session status, progress, and file change statistics in the sessions list.",
+        "Supports compact vs side-by-side sessions list behavior depending on Chat view width and provides a manual toggle for showing sessions.",
+        "Allows disabling the sessions list via `setting(chat.viewSessions.enabled)`.",
+        "Notes that the standalone Agent Sessions view is disabled by default and can be re-enabled with `setting(chat.agentSessionsViewLocation)`; removal is planned in a future release."
+      ]
+    },
+    {
+      "title": "Local agent sessions keep running",
+      "bullets": [
+        "Local agents continue running even when the session UI is closed (closing no longer cancels the in-progress request).",
+        "Running status remains visible in the sessions list so you can switch back to see progress."
+      ]
+    },
+    {
+      "title": "Delegating across local, background, and cloud",
+      "bullets": [
+        "Adds a unified **Continue in** option to hand off a local task to background or cloud agents.",
+        "When continuing a local chat to background/cloud, the current context is passed along and the original session is archived after handoff."
+      ]
+    },
+    {
+      "title": "Isolating background agents with Git worktrees",
+      "bullets": [
+        "Adds the option to run background agents in dedicated Git worktrees to reduce conflicts when multiple background sessions modify the same workspace.",
+        "Worktree sessions isolate changes in a separate folder and provide ways to review and merge/apply changes back to the main workspace."
+      ]
+    },
+    {
+      "title": "Richer context attachments for background agents",
+      "bullets": [
+        "Background agents support multiple context attachment types such as selections, problems, symbols, search results, and Git commits.",
+        "Enables richer prompts (for example, attach a problem and request a fix without manually listing file paths/line numbers)."
+      ]
+    },
+    {
+      "title": "Custom agents across environments and organizations",
+      "bullets": [
+        "Adds experimental support for organization-level custom agents (`setting(github.copilot.chat.customAgents.showOrganizationAndEnterpriseAgents)`).",
+        "Adds experimental support for using workspace custom agents with background agents (`setting(github.copilot.chat.cli.customAgents.enabled)`).",
+        "Reorganizes agent tooling to better reuse custom agents across VS Code and GitHub environments.",
+        "Allows running custom agents as subagents (Experimental: `setting(chat.customAgentInSubagent.enabled)`).",
+        "Can reuse Claude skills (Experimental: `setting(chat.useClaudeSkills)`) from standard skill locations."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Agent sessions are integrated into the Chat view for unified session management (`setting(chat.viewSessions.enabled)`).",
+    "Local agent sessions can keep running even when the session UI is closed.",
+    "Improved handoff via **Continue in** for delegating tasks to background or cloud agents.",
+    "Background agents can run in dedicated Git worktrees for isolation.",
+    "Background agents support richer context attachments (problems, symbols, commits, search results, etc.).",
+    "Org-level custom agents (Experimental) and custom agents in background agents (Experimental).",
+    "Custom agents can run as subagents (Experimental) and Claude skills can be reused (Experimental)."
+  ],
+  "impact": [
+    "Developers using multiple agent sessions: easier to track and switch sessions from inside the Chat view.",
+    "Teams delegating longer-running work: can keep local agents running in the background and hand off tasks across environments.",
+    "Users running multiple background tasks: Git worktree isolation reduces file edit conflicts.",
+    "Organizations standardizing workflows: can distribute custom agents at the org level (Experimental)."
+  ],
+  "caveats": [
+    "Several capabilities are explicitly marked Experimental and require enabling the referenced settings (org-level agents, background custom agents, subagents, Claude skills).",
+    "The release indicates the standalone Agent Sessions view is disabled by default; a future removal is mentioned.",
+    "Some details (such as exact compatibility and rollout scope) are not stated in the article."
+  ],
+  "insights": [
+    "The release shifts the center of gravity from single chat sessions to an orchestrated workflow where tasks move between environments with preserved context.",
+    "Worktrees and rich attachments show VS Code treating agents as parallel workers that need isolation and better input packaging.",
+    "Org-level customization suggests agent workflows are becoming governed artifacts rather than purely personal configuration."
+  ],
+  "confidence": 0.84
+}

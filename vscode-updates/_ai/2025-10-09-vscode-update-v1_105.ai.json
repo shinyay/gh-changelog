@@ -1,0 +1,74 @@
+{
+  "overview": "VS Code 1.105 (September 2025) focuses on improving agent-driven workflows in chat (plan agent, handoffs, subagents) and tightening the chat experience with new settings and UX refinements. It also highlights integrations for managing and delegating agent sessions (including OpenAI Codex and Copilot CLI) and adds OS-level notifications for chat responses.",
+  "detailed_explanation": [
+    {
+      "title": "GitHub Universe announcements: planning and delegation",
+      "bullets": [
+        "Introduces a built-in Plan agent in the Chat view (Insiders only) to break tasks into steps before implementation.",
+        "Adds handoffs for guided transitions between chat modes via frontmatter metadata (Insiders only).",
+        "Adds isolated subagents with their own context windows to delegate research/analysis tasks (Insiders only).",
+        "Expands Agent Sessions integration to include OpenAI Codex and the GitHub Copilot CLI inside the Agent Sessions view (Insiders)."
+      ]
+    },
+    {
+      "title": "Chat tool naming and custom model tooling",
+      "bullets": [
+        "Supports fully qualified tool names in prompt files and custom chat modes to avoid naming conflicts across built-in tools, extensions, and MCP servers.",
+        "Improves edit tools for Bring Your Own Key (BYOK) / OpenAI-compatible custom models and adds a mechanism to select an optimal tool set for custom models.",
+        "Allows explicitly configuring the list of edit tools for custom OpenAI-compatible models via `setting(github.copilot.chat.customOAIModels)`."
+      ]
+    },
+    {
+      "title": "Workspace instructions and nested AGENTS.md",
+      "bullets": [
+        "Adds support for nested `AGENTS.md` files in subfolders for more targeted guidance across parts of a codebase (Experimental: `setting(chat.useNestedAgentsMdFiles)`).",
+        "Keeps root `AGENTS.md` support enabled by default and extends the model for layered instructions."
+      ]
+    },
+    {
+      "title": "Chat UX improvements",
+      "bullets": [
+        "Expands OS notifications for chat responses to show badges and notification toasts when responses arrive (`setting(chat.notifyWindowOnResponseReceived)`).",
+        "Adds an Experimental chain-of-thought display setting (`setting(chat.agent.thinkingStyle)`) to show thinking tokens as expandable sections for GPT-5-Codex.",
+        "Adds optional recent chat sessions in the empty state (`setting(chat.emptyState.history.enabled)`).",
+        "Allows keeping/undoing file edits during an ongoing agent loop (no longer blocked until completion).",
+        "Adds keyboard shortcuts for navigating previous/next user prompts in a chat session."
+      ]
+    },
+    {
+      "title": "Agent sessions and delegation UX",
+      "bullets": [
+        "Refines the Chat Sessions view (including location setting `setting(chat.agentSessionsViewLocation)`) for managing local conversations and remote coding agent sessions.",
+        "Shows the Delegate to coding agent button by default when Copilot coding agent is enabled; forwards chat context (with summarization when needed).",
+        "Adds chat-specific terminal profile settings for agent-run terminal commands across Windows/macOS/Linux."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Built-in Plan agent (Insiders) to create an implementation plan before coding.",
+    "Handoffs (Insiders) to transition between chat modes with suggested next steps and pre-filled prompts.",
+    "Isolated subagents (Insiders) with separate context windows for delegated research/analysis.",
+    "Agent Sessions view integration for OpenAI Codex and GitHub Copilot CLI (Insiders).",
+    "Fully qualified tool names for prompt files/custom chat modes to avoid tool-name conflicts.",
+    "Nested `AGENTS.md` support (Experimental) for subfolder-specific instructions.",
+    "OS notifications when chat responses are received (`setting(chat.notifyWindowOnResponseReceived)`)."
+  ],
+  "impact": [
+    "Developers who use Copilot/agents in VS Code: more structured planning (Plan agent) and easier delegation (handoffs, sessions view).",
+    "Teams maintaining prompt files/custom modes and MCP tooling: need to be aware of fully qualified tool names to avoid conflicts.",
+    "Org/workspace maintainers: can provide more granular instructions with nested `AGENTS.md` (Experimental).",
+    "Users working while VS Code is unfocused: can get OS badges/toasts for completed chat responses."
+  ],
+  "caveats": [
+    "Several highlighted features are explicitly marked as only available in VS Code Insiders (Plan agent, handoffs, subagents, Codex integration).",
+    "Nested `AGENTS.md` support is Experimental and requires enabling `setting(chat.useNestedAgentsMdFiles)`.",
+    "Chain-of-thought display is Experimental and controlled via `setting(chat.agent.thinkingStyle)`; availability depends on model support (example mentions GPT-5-Codex).",
+    "The release mentions a security update for the GitHub Copilot Chat extension; details of the security changes are not stated in the article."
+  ],
+  "insights": [
+    "The highlights emphasize moving from single-agent chat to orchestrated, multi-step workflows (plan → implement) with explicit handoffs.",
+    "Tooling and governance concerns are emerging: fully qualified tool names and nested instruction files suggest larger, more complex agent ecosystems.",
+    "The UX changes aim to reduce friction during long-running agent loops (keep/undo mid-loop, OS notifications, chat history surfacing)."
+  ],
+  "confidence": 0.78
+}

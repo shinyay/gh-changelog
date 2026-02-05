@@ -14,6 +14,23 @@ This repo is designed to be driven from **VS Code GitHub Copilot Chat** with hig
 - `changelogs/index.md`
 - `changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
 
+## VS Code Updates archive (monthly release notes)
+
+This repo can also archive Visual Studio Code monthly release notes (v1_XX) under `./vscode-updates/`.
+
+### What gets generated
+
+- `vscode-updates/YYYY-MM-DD-vscode-update-v1_XX.md`
+- `vscode-updates/index.md`
+- `vscode-updates/_ai/YYYY-MM-DD-vscode-update-v1_XX.ai.json`
+
+### Helpers
+
+- Fetch a date range: `python3 scripts/fetch_vscode_updates.py --start-date YYYY-MM-DD --end-date YYYY-MM-DD`
+- List missing sidecars: `python3 scripts/list_missing_vscode_updates_ai_sidecars.py`
+- Validate AI outputs: `python3 scripts/validate_vscode_updates_ai_outputs.py`
+- Optional (no LLM): `python3 scripts/generate_vscode_updates_ai_sidecars_from_markdown.py`
+
 ## Japanese translations (manual, Copilot Chat)
 
 This repo can also store Japanese translations of each changelog entry under `./changelogs-jp/`.
@@ -32,6 +49,13 @@ Optional VS Code tasks:
 - "Changelog JP: list missing translations"
 - "Changelog JP: validate translations"
 - "Changelog JP: generate index"
+
+VS Code Updates tasks:
+
+- "VS Code Updates: fetch range"
+- "VS Code Updates: validate AI outputs"
+- "VS Code Updates: list missing AI sidecars"
+- "VS Code Updates: generate AI sidecars from Markdown (no LLM)"
 
 ## How to use from Copilot Chat
 

@@ -1,0 +1,81 @@
+{
+  "overview": "VS Code 1.106 (October 2025) centers on an 'Agent HQ' experience for managing sessions, plus security/trust improvements and editor UX upgrades. It also continues the open-source AI editor effort by open-sourcing inline suggestions and consolidating Copilot extension functionality.",
+  "detailed_explanation": [
+    {
+      "title": "Agent HQ: sessions and planning",
+      "bullets": [
+        "Agent Sessions view is enabled by default and can be configured with `setting(chat.agentSessionsViewLocation)`.",
+        "Supports a consolidated single view across providers via the `single-view` option on `setting(chat.agentSessionsViewLocation)`.",
+        "Adds search in the sessions list (`kb(list.find)`) to find sessions.",
+        "Introduces a Plan agent that asks clarifying questions and generates a plan that you approve before implementation.",
+        "Plan output can be implemented either locally or via cloud agents."
+      ]
+    },
+    {
+      "title": "Cloud and CLI agent integrations",
+      "bullets": [
+        "Migrates Copilot coding agent integration into the Copilot Chat extension for a more native cloud agent experience.",
+        "Improves deep-linking between VS Code and GitHub Mission Control for cloud agent sessions.",
+        "Adds initial integration with Copilot CLI, including creating/resuming sessions in chat editors or the integrated terminal.",
+        "Adds delegation UX for choosing among available agents, including delegating from the CLI via `/delegate`."
+      ]
+    },
+    {
+      "title": "Custom agents and agent file authoring",
+      "bullets": [
+        "Renames chat modes to custom agents and moves definitions to `.github/agents`.",
+        "Adds a `target` frontmatter property for describing how an agent should run across environments (vscode vs github-copilot).",
+        "Adds new metadata such as `name`, `argument-hint`, and `handoffs` for guided transitions.",
+        "Agent file editor provides validation, completions, hovers, and code actions."
+      ]
+    },
+    {
+      "title": "Code editing and inline suggestions",
+      "bullets": [
+        "Allows selecting and copying deleted lines in the diff editor (inline diff view).",
+        "Open-sources inline suggestions by merging into the `vscode-copilot-chat` repository.",
+        "Moves toward consolidating Copilot and Copilot Chat extensions (transparent by default; can revert via `setting(chat.extensionUnification.enabled)`).",
+        "Adds the ability to snooze inline suggestions from the gutter.",
+        "Improves Go to Line with character-offset navigation using `::`, including negative offsets from file end."
+      ]
+    },
+    {
+      "title": "Editor experience and platform/enterprise features",
+      "bullets": [
+        "Refreshes codicon iconography.",
+        "Adds Linux policy support using JSON files for administrator-managed settings.",
+        "Adds navigation across files in the multi-file diff editor.",
+        "Adds a copy button to diagnostic hover text.",
+        "Command Palette filtering becomes accent-insensitive using Unicode normalization.",
+        "Introduces the concept of advanced settings (hidden by default, visible via Advanced filter or `@tag:advanced`)."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Agent Sessions view enabled by default; supports consolidated view and search.",
+    "Plan agent for clarifying questions and pre-implementation planning.",
+    "Cloud agent integration moved into Copilot Chat extension; improved Mission Control deep links.",
+    "Initial Copilot CLI integration with chat editor/terminal experiences.",
+    "Chat modes renamed to custom agents; definitions in `.github/agents` with richer metadata (`target`, `handoffs`, etc.).",
+    "Deleted code selectable in diff editor.",
+    "Inline suggestions open-sourced; extension unification path via `setting(chat.extensionUnification.enabled)`.",
+    "Go to Line supports character offsets via `::` syntax."
+  ],
+  "impact": [
+    "Anyone delegating work to agents: gets a central sessions hub and a clearer plan→implement workflow.",
+    "Extension authors and teams customizing agent behavior: need to adopt the new custom agent file conventions and metadata.",
+    "Developers reviewing diffs: can copy deleted lines and navigate multi-file diffs more efficiently.",
+    "Enterprise/Linux administrators: can enforce policies using JSON on Linux."
+  ],
+  "caveats": [
+    "Some parts of the consolidated Agent Sessions view are noted as not yet having full functionality.",
+    "The inline suggestions consolidation/unification can be reverted via `setting(chat.extensionUnification.enabled)` if issues occur.",
+    "The timeline for deprecating the GitHub Copilot extension is mentioned as early 2026; exact dates and migration steps beyond settings are not stated in the article."
+  ],
+  "insights": [
+    "The release frames AI work as session-oriented and multi-provider (Copilot, CLI agents, Codex), pushing toward a unified operational view.",
+    "Open-sourcing inline suggestions signals an intentional shift toward transparency and a single, cohesive AI extension surface.",
+    "The addition of agent metadata and editor validation suggests custom agents are moving from niche customization to a first-class workflow artifact."
+  ],
+  "confidence": 0.82
+}

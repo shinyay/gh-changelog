@@ -1,0 +1,100 @@
+{
+  "overview": "VS Code 1.108 (December 2025) is positioned as a December housekeeping-and-polish release, while still delivering targeted improvements for agents, chat session management, accessibility, source control, and the integrated terminal. It also introduces Agent Skills as an experimental customization mechanism.",
+  "detailed_explanation": [
+    {
+      "title": "Agent Skills (Experimental)",
+      "bullets": [
+        "Introduces Agent Skills as folders of instructions/scripts/resources that can be loaded on-demand by the coding agent.",
+        "Skills are discovered from `.github/skills` (and `.claude/skills/` for backwards compatibility) and loaded when relevant.",
+        "Requires enabling `setting(chat.useAgentSkills)` to use Agent Skills."
+      ]
+    },
+    {
+      "title": "Agent Sessions view improvements",
+      "bullets": [
+        "Improves the Agent Sessions view with keyboard access for actions (archive/read/open), grouping based on state/age, and bulk archiving.",
+        "Adds information on changed files and associated PRs for sessions.",
+        "Notes that `setting(chat.viewSessions.orientation)` no longer provides an `auto` option; use `sideBySide` as an alternative."
+      ]
+    },
+    {
+      "title": "Chat session navigation and restoration",
+      "bullets": [
+        "Chat sessions quick pick is now based on the same data as the Agent Sessions view and supports actions like archiving/renaming/deleting.",
+        "Chat title control is always visible to quickly switch sessions via the quick pick.",
+        "Changes restart behavior: previous sessions are not automatically restored by default; an empty Chat view is shown instead (configurable via `setting(chat.restoreLastPanelSession)`)."
+      ]
+    },
+    {
+      "title": "Terminal tool safety and hygiene",
+      "bullets": [
+        "Expands default auto-approval rules for terminal tool commands when auto approve is enabled (`setting(chat.tools.terminal.enableAutoApprove)`).",
+        "Adds UI affordances to allow commands for the current session or workspace.",
+        "Prevents terminal tool commands from being added to shell history when shell integration is working (configurable via `setting(chat.tools.terminal.preventShellHistory)`)."
+      ]
+    },
+    {
+      "title": "Accessibility improvements",
+      "bullets": [
+        "Accessible View now streams chat responses dynamically as they are generated.",
+        "Excludes MCP server output from the Accessible View by default to reduce noise.",
+        "Adds `${activeEditorLanguageId}` variable support for `setting(window.title)` to help accessibility tooling identify the active language."
+      ]
+    },
+    {
+      "title": "Editor and productivity updates",
+      "bullets": [
+        "Supports importing a settings profile by drag-and-drop of a `.code-profile` file.",
+        "Adds a Copy Breadcrumbs Path command and allows customizing the separator (`setting(breadcrumbs.symbolPathSeparator)`).",
+        "Improves Go to Symbol in Workspace to handle queries containing `#`.",
+        "Adds snippet transformations for `snakecase` and `kebabcase`."
+      ]
+    },
+    {
+      "title": "Source control enhancements",
+      "bullets": [
+        "Adds Git blame settings for ignoring whitespace and disabling hover (`setting(git.blame.ignoreWhitespace)`, `setting(git.blame.editorDecoration.disableHover)`).",
+        "Improves discoverability of commit/cancel actions when authoring commit messages in the editor.",
+        "Adds experimental Worktrees node in the Source Control Repositories view (requires enabling repository explorer settings)."
+      ]
+    },
+    {
+      "title": "Terminal IntelliSense UX and performance",
+      "bullets": [
+        "Reworks defaults for terminal IntelliSense: suggestions are still enabled by default but require explicit triggering via `kbstyle(Ctrl+Space)` rather than showing automatically on type.",
+        "Adds UI affordances to re-enable quick suggestions and improves the status bar controls.",
+        "Highlights multiple performance/stability improvements (including reduced throttling for large pastes and layout-thrashing fixes).",
+        "Extends support for custom glyphs in the GPU-accelerated renderer."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Agent Skills introduced (Experimental; `setting(chat.useAgentSkills)`).",
+    "Agent Sessions view improvements (keyboard access, grouping, PR/changed-files info).",
+    "Chat sessions quick pick aligned with Agent Sessions data; chat title control always visible.",
+    "Default restart behavior shows an empty Chat view; configurable via `setting(chat.restoreLastPanelSession)`.",
+    "Expanded terminal tool auto-approval rules (when enabled) and added allow-for-session/workspace UI.",
+    "Terminal tool commands can be excluded from shell history (`setting(chat.tools.terminal.preventShellHistory)`).",
+    "Accessible View streams responses; MCP output excluded by default.",
+    "Terminal IntelliSense defaults reworked to require explicit trigger (`kbstyle(Ctrl+Space)`)."
+  ],
+  "impact": [
+    "Agent users: can package and reuse domain workflows via Agent Skills (if enabled).",
+    "Users with many chat/agent sessions: easier session navigation and more predictable restoration behavior.",
+    "Terminal power users: default suggestion behavior changes to reduce disruption; additional performance improvements benefit heavy terminal usage.",
+    "Accessibility users and assistive tooling: improved streaming in Accessible View and clearer app context via language ID in window title.",
+    "Git users: more control over blame signal/noise and improved worktree visibility (Experimental)."
+  ],
+  "caveats": [
+    "Agent Skills are explicitly marked Experimental and require enabling `setting(chat.useAgentSkills)`.",
+    "Auto-approval rules apply only when terminal tool auto approve is enabled; the article lists example commands but does not claim universal coverage.",
+    "Worktrees node in SCM view is Experimental and requires enabling specific SCM settings.",
+    "Some terminal performance items reference upstream issues/PRs; precise performance gains are not quantified in the article."
+  ],
+  "insights": [
+    "This release reads like a consolidation step: refining session UX, safety controls, and accessibility rather than adding a single headline feature.",
+    "Agent Skills hint at a shift toward modular, reusable agent behavior packaged as artifacts (skills folders), similar to prompting/instructions becoming code-adjacent.",
+    "Terminal changes aim to balance discoverability with non-intrusiveness for experienced users (explicit trigger defaults, clearer UI affordances)."
+  ],
+  "confidence": 0.77
+}

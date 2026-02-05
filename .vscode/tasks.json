@@ -83,6 +83,46 @@
         "scripts/generate_jp_index.py"
       ],
       "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates: fetch range",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/fetch_vscode_updates.py",
+        "--start-date",
+        "${input:startDate}",
+        "--end-date",
+        "${input:endDate}"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates: validate AI outputs",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/validate_vscode_updates_ai_outputs.py"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates: list missing AI sidecars",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/list_missing_vscode_updates_ai_sidecars.py"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates: generate AI sidecars from Markdown (no LLM)",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/generate_vscode_updates_ai_sidecars_from_markdown.py"
+      ],
+      "problemMatcher": []
     }
   ]
 }

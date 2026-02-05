@@ -144,6 +144,17 @@
       "problemMatcher": []
     },
     {
+      "label": "VS Code Updates JP: validate translations (strict no EN markers)",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/validate_vscode_updates_jp_translations.py",
+        "--allow-missing",
+        "--forbid-en-content-markers"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "VS Code Updates JP: generate index",
       "type": "shell",
       "command": "python3",

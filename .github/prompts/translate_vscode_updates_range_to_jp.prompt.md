@@ -43,19 +43,24 @@ Ask for:
   - `## ...`, `### ...`, `#### ...`, ...
   - Do not translate these headings. (Many internal links use heading anchors like `(#prompt-and-instructions-files)`.)
 
-### Richness / no-omissions requirement
-The JP files must be as content-rich as the EN originals.
+### Depth / interpretation requirement (what “rich” means here)
+The JP files must be *detailed* and *useful* as Japanese documentation, based on the EN originals.
 
-To avoid accidental omission (and to preserve all links, code blocks, images/videos, and anchor targets), for each `## ...` section:
-- Write the Japanese translation or Japanese explanation first (short, faithful, no added facts).
-- Then include the full original English section content verbatim beneath it, wrapped in markers:
-  - `<!-- EN_CONTENT_BEGIN -->`
-  - `<!-- EN_CONTENT_END -->`
+- Do **not** produce a short summary.
+- Translate and explain enough detail so a reader can understand what changed, how to use it (settings/commands/UI), and any caveats.
+- Keep wording faithful: do not invent features, defaults, or timelines that are not stated.
 
-This produces a bilingual file that is guaranteed to contain the full original detail, while still being readable in Japanese.
+Practical checklist per section:
+- What is it?
+- How do I use it? (commands / settings / UI)
+- What changed compared to before?
+- Any limits / rollout notes?
+- Who benefits?
 
 ### Content guardrails
 - Preserve links/URLs/code exactly as-is.
+- Do **not** paste the original English prose into the JP file.
+- Do **not** include any embedded-English markers such as `EN_CONTENT_BEGIN` / `EN_CONTENT_END`.
 - Do not invent facts not present in the source.
 - If the English text says something is not specified, keep that meaning (e.g., translate “Not stated” faithfully).
 - Avoid marketing phrasing; keep it scannable and faithful.

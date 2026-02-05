@@ -67,6 +67,23 @@ def _read_text(path: str) -> str:
         return f.read()
 
 
+def _fail_if_embedded_en_markers(path: str, name_for_errors: str) -> Optional[str]:
+    """Return an error string if EN content markers are found, else None.
+
+    We previously embedded large English blocks between HTML comment markers to
+    inflate content length. The current workflow requires JP files to be
+    Japanese-only (no English copy/paste blocks).
+    """
+    text = _read_text(path)
+    if "EN_CONTENT_BEGIN" in text or "EN_CONTENT_END" in text:
+        return (
+            f"{name_for_errors}: contains embedded EN content markers "
+            "(EN_CONTENT_BEGIN/EN_CONTENT_END). Remove the embedded English blocks "
+            "and write Japanese explanations instead."
+        )
+    return None
+
+
 def _parse_front_matter(lines: List[str]) -> Tuple[Dict[str, str], int]:
     """Return (front_matter_dict, end_index_exclusive).
 
@@ -213,13 +230,21 @@ def main() -> int:
     parser.add_argument(
         "--min-body-length-ratio",
         type=float,
-        default=0.85,
+        default=0.35,
         help="Minimum JP/EN body length ratio (chars, excluding YAML front matter).",
     )
     parser.add_argument(
         "--require-code-fence-parity",
         action="store_true",
         help="Require JP to have at least as many fenced code block lines as EN.",
+    )
+    parser.add_argument(
+        "--forbid-en-content-markers",
+        action="store_true",
+        help=(
+            "Fail if JP files contain embedded EN content markers "
+            "(EN_CONTENT_BEGIN/EN_CONTENT_END)."
+        ),
     )
     args = parser.parse_args()
 
@@ -257,6 +282,12 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001
             errors.append(f"Failed to parse EN {en_name}: {exc}")
             continue
+
+        if args.forbid_en_content_markers:
+            marker_error = _fail_if_embedded_en_markers(jp_md, jp_name)
+            if marker_error:
+                errors.append(marker_error)
+                continue
 
         try:
             jp_doc = parse_doc(jp_md)

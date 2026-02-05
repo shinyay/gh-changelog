@@ -123,6 +123,34 @@
         "scripts/generate_vscode_updates_ai_sidecars_from_markdown.py"
       ],
       "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates JP: list missing translations",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/list_missing_vscode_updates_jp_translations.py"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates JP: validate translations",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/validate_vscode_updates_jp_translations.py",
+        "--allow-missing"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "VS Code Updates JP: generate index",
+      "type": "shell",
+      "command": "python3",
+      "args": [
+        "scripts/generate_vscode_updates_jp_index.py"
+      ],
+      "problemMatcher": []
     }
   ]
 }

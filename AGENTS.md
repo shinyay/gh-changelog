@@ -74,15 +74,13 @@ Japanese translations of changelog entries are maintained under `./changelogs-jp
 
 ---
 
-## Required environment variables (for AI)
+## Environment variables
 
-This project calls an OpenAI-compatible chat completions endpoint (default intended for GitHub Models).
+AI analysis (sidecar JSON generation) is performed by Copilot Chat directly — no external AI endpoint or API keys are needed.
 
-- `GITHUB_TOKEN`: token used as the Bearer token for the AI endpoint.
-- `AI_BASE_URL`: base URL of an OpenAI-compatible API (example: `https://models.inference.ai.azure.com/v1`).
-- `AI_MODEL`: model name (example: `gpt-4.1-mini`).
+The only optional environment variable is:
 
-See `.env.example`.
+- `GITHUB_TOKEN`: used by `scripts/fetch_vscode_updates.py` to reduce GitHub API rate-limit issues. Not required for changelog fetching.
 
 ## VS Code Copilot usage
 

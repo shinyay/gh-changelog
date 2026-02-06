@@ -35,10 +35,6 @@ Ask for:
 
 ## Step-by-step workflow
 
-### Step 0 — Environment hygiene (only if needed)
-- If a `.env` file does not exist at repo root, create it from `.env.example` with placeholder values.
-  - Do not commit `.env`.
-
 ### Step 1 — Fetch Markdown entries
 Run:
 - `python3 scripts/fetch_changelog.py --use-api --start-date {START_DATE} --end-date {END_DATE}`

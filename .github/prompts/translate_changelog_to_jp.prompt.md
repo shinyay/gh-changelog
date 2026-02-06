@@ -13,23 +13,40 @@ Translate exactly one existing changelog Markdown entry from `changelogs/` into 
   - IMPORTANT: reuse the source filename stem exactly (including any `-2`, `-3`, etc). Do NOT re-slugify.
 
 ## Hard requirements (do not violate)
-- Keep the Markdown section headings in ENGLISH exactly as-is:
+
+### Heading and section rules
+- Keep **all** `## ...` section headings exactly as in the EN file (same text, same order).
+  - This includes any linked H2 headings that appear inside `## Article Content (cleaned)` (for example: `## [What's new](...)`).
+  - Do not translate these `##` headings; the JP validator requires an exact match to the EN headings list.
+- The following are common required headings in this repo (but the authoritative source is the EN file itself):
   - `## Overview`
   - `## Detailed Explanation`
   - `## Key Changes`
-  - `## Impact / Who’s Affected`
+  - `## Impact / Who's Affected`
   - `## Caveats / Limitations`
   - `## Insights (derived from article language)`
   - `## Article Content (cleaned)`
-- Translate:
-  - YAML front matter `title:` value (Japanese)
-  - The top-level heading `# ...` (Japanese)
-  - All body text, including `## Article Content (cleaned)` content
-- Do NOT add an “original link” or backlink to the EN file.
-- Add `lang: "ja"` in YAML front matter.
-- Preserve the rest of the YAML front matter keys and values (date/type/labels/author/source_url/fetched_at) unless translation requires only `title`.
-- Keep links, URLs, code blocks, inline code, and product names accurate; do not invent facts.
+- Translate the H1 `# {title}` into Japanese and ensure it matches the translated `title:`.
+- Translate all section bodies into Japanese (including the cleaned article content).
+- If a section exists in the source, it must exist in the JP output.
+- If a section is absent in the source, do not add it.
+- If a source EN file is missing expected headings/sections, translate what exists and do not fabricate missing sections.
+
+### Front matter rules
+- Translate **only**:
+  - `title:` value (to Japanese)
+- Add:
+  - `lang: "ja"`
+- Preserve **as-is** (do not translate, do not reformat):
+  - `date`, `type`, `labels`, `author`, `source_url`, `fetched_at` and any other existing keys
+- Keep `labels` unchanged (even if English), to avoid taxonomy drift and keep cross-language aggregation consistent.
+
+### Content guardrails
+- Preserve links/URLs/code blocks/inline code exactly as-is.
+- Keep product names accurate; do not invent facts not present in the source.
 - If the source is ambiguous or does not state something, say so plainly in Japanese (do not guess).
+- Do NOT add an "original link" or backlink to the EN file.
+- Avoid overly marketing phrasing; keep it scannable and faithful.
 
 ## Structure rules
 - Keep the same overall structure as the source:
@@ -44,6 +61,13 @@ Translate exactly one existing changelog Markdown entry from `changelogs/` into 
 - Prefer concise Japanese. Use bullet lists where the source uses bullet lists.
 - Avoid marketing language.
 - Avoid long verbatim quotes from the article; summarize when the source already summarizes.
+
+## Post-translation (recommended)
+After writing the JP file, run the following to verify structure:
+- `python3 scripts/validate_jp_translations.py --allow-missing`
+
+If translating multiple files, also regenerate the JP index:
+- `python3 scripts/generate_jp_index.py`
 
 ## Completion
 When done, write the translated Markdown to the required output path.

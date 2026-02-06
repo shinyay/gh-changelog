@@ -85,7 +85,21 @@ Ask for:
 - Preserve links/URLs/code exactly as-is.
 - Do not invent facts not present in the source.
 - If the English text says something is not specified, keep that meaning (e.g., translate “Not stated in the article”).
+- Do NOT add an "original link" or backlink to the EN file.
 - Avoid overly marketing phrasing; keep it scannable and faithful.
+
+### Quality guidelines
+- Prefer concise Japanese. Use bullet lists where the source uses bullet lists.
+- Avoid long verbatim quotes from the article; summarize when the source already summarizes.
+
+### Structure rules
+- Keep the same overall structure as the source:
+  - YAML front matter fenced by `---`
+  - Blank line after front matter
+  - `# {Japanese title}`
+  - Same `##` section ordering as the source file
+- If a section exists in the source, it must exist in the JP output.
+- If a section is absent in the source, do not add it.
 
 ## Step-by-step workflow
 
@@ -114,6 +128,8 @@ For each selected EN changelog entry:
    - Keeps all required `## ...` headings in English, unchanged.
    - Translates all section bodies into Japanese.
    - Preserves links/URLs/code blocks inline.
+   - If a section exists in the EN source, it must exist in the JP output.
+   - If a section is absent in the EN source, do not add it.
 
 ### Step 3 — Validate JP translations
 Run:

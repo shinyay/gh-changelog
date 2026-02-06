@@ -1,28 +1,78 @@
 # Agents
 
-This repo generates a local Markdown archive of GitHub Changelog entries.
+This repo generates local Markdown archives and AI analysis sidecars for two sources:
 
-## What is generated
+1. **GitHub Changelog** — product announcements from `github.blog/changelog/`
+2. **VS Code Updates** — monthly Visual Studio Code release notes
+
+It also supports **Japanese translations** of GitHub Changelog entries.
+
+---
+
+## 1. GitHub Changelog
+
+### What is generated
 
 - Markdown entries: `./changelogs/YYYY-MM-DD-<slug>.md`
 - Index: `./changelogs/index.md`
 - AI sidecar JSON (validated): `./changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
 
-## Japanese translations (optional)
+### Typical run
 
-You can also maintain Japanese translations under `./changelogs-jp/`:
+```bash
+python3 scripts/fetch_changelog.py --use-api --start-date 2025-10-27 --end-date 2026-01-30
+```
+
+### Helper scripts
+
+| Task | Command |
+|---|---|
+| List entries missing AI sidecars | `python3 scripts/list_missing_ai_sidecars.py` |
+| Generate AI sidecars from Markdown (no LLM) | `python3 scripts/generate_ai_sidecars_from_markdown.py` |
+| Validate all AI sidecar files | `python3 scripts/validate_ai_outputs.py` |
+
+---
+
+## 2. VS Code Updates
+
+### What is generated
+
+- Markdown entries: `./vscode-updates/YYYY-MM-DD-<slug>.md`
+- Index: `./vscode-updates/index.md`
+- AI sidecar JSON (validated): `./vscode-updates/_ai/YYYY-MM-DD-<slug>.ai.json`
+
+### Typical run
+
+```bash
+python3 scripts/fetch_vscode_updates.py --start-date 2025-01-01 --end-date 2025-12-31
+```
+
+### Helper scripts
+
+| Task | Command |
+|---|---|
+| List entries missing AI sidecars | `python3 scripts/list_missing_vscode_updates_ai_sidecars.py` |
+| Generate AI sidecars from Markdown (no LLM) | `python3 scripts/generate_vscode_updates_ai_sidecars_from_markdown.py` |
+| Validate all AI sidecar files | `python3 scripts/validate_vscode_updates_ai_outputs.py` |
+
+---
+
+## 3. Japanese translations (Changelog)
+
+Japanese translations of changelog entries are maintained under `./changelogs-jp/`.
 
 - JP entries: `./changelogs-jp/YYYY-MM-DD-<slug>-jp.md`
 - JP index: `./changelogs-jp/index.md`
 
-Workflow helpers:
+### Helper scripts
 
-- List missing JP translations:
-  - `python3 scripts/list_missing_jp_translations.py`
-- Validate JP translation structure (allows missing by default in the VS Code task):
-  - `python3 scripts/validate_jp_translations.py --allow-missing`
-- Generate/update JP index:
-  - `python3 scripts/generate_jp_index.py`
+| Task | Command |
+|---|---|
+| List missing JP translations | `python3 scripts/list_missing_jp_translations.py` |
+| Validate JP translation structure | `python3 scripts/validate_jp_translations.py --allow-missing` |
+| Generate/update JP index | `python3 scripts/generate_jp_index.py` |
+
+---
 
 ## Required environment variables (for AI)
 
@@ -34,27 +84,19 @@ This project calls an OpenAI-compatible chat completions endpoint (default inten
 
 See `.env.example`.
 
-## Typical run
-
-- Fetch and generate for a date range (API source recommended for completeness):
-  - `python3 scripts/fetch_changelog.py --use-api --start-date 2025-10-27 --end-date 2026-01-30`
-
 ## VS Code Copilot usage
 
-- Use the prompt file `.github/prompts/fetch_changelog_range.prompt.md` to standardize the workflow in chat.
-- Optional: run the VS Code task "Changelog: fetch range (use API)" to fetch content.
-- Then (in Copilot Chat) generate AI sidecar JSON files under `changelogs/_ai/` and validate them.
+Use prompt files under `.github/prompts/` to drive each workflow:
 
-## Coverage helper
+| Workflow | Prompt file |
+|---|---|
+| Changelog full pipeline | `run_changelog_pipeline.prompt.md` |
+| VS Code Updates full pipeline | `run_vscode_updates_pipeline.prompt.md` |
+| Translate changelogs to JP (range) | `translate_changelog_range_to_jp.prompt.md` |
+| Translate one changelog to JP | `translate_changelog_to_jp.prompt.md` |
+| VS Code Updates single deep-dive JSON | `vscode_updates_deep_dive_json.prompt.md` |
 
-- List entries missing AI sidecars:
-  - `python3 scripts/list_missing_ai_sidecars.py`
-  - or run the VS Code task "Changelog: list missing AI sidecars"
-
-## Validation
-
-- Validate all AI sidecar files:
-  - `python3 scripts/validate_ai_outputs.py`
+VS Code tasks are also available (see `.vscode/tasks.json`).
 
 ## Notes
 

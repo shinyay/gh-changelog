@@ -8,7 +8,6 @@ This skill describes how to reliably archive GitHub Changelog entries and VS Cod
 | Tool | Path |
 |---|---|
 | Fetcher | `scripts/fetch_changelog.py` |
-| AI sidecar generator (no LLM) | `scripts/generate_ai_sidecars_from_markdown.py` |
 | Missing sidecar checker | `scripts/list_missing_ai_sidecars.py` |
 | Validator | `scripts/validate_ai_outputs.py` |
 | Schema | `schemas/changelog_ai_analysis.schema.json` |
@@ -17,7 +16,6 @@ This skill describes how to reliably archive GitHub Changelog entries and VS Cod
 | Tool | Path |
 |---|---|
 | Fetcher | `scripts/fetch_vscode_updates.py` |
-| AI sidecar generator (no LLM) | `scripts/generate_vscode_updates_ai_sidecars_from_markdown.py` |
 | Missing sidecar checker | `scripts/list_missing_vscode_updates_ai_sidecars.py` |
 | Validator | `scripts/validate_vscode_updates_ai_outputs.py` |
 | Schema | `schemas/vscode_updates_ai_analysis.schema.json` |

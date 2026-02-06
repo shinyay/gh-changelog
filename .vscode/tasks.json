@@ -48,15 +48,6 @@
       "problemMatcher": []
     },
     {
-      "label": "Changelog: generate AI sidecars from Markdown (no LLM)",
-      "type": "shell",
-      "command": "python3",
-      "args": [
-        "scripts/generate_ai_sidecars_from_markdown.py"
-      ],
-      "problemMatcher": []
-    },
-    {
       "label": "Changelog JP: list missing translations",
       "type": "shell",
       "command": "python3",
@@ -112,15 +103,6 @@
       "command": "python3",
       "args": [
         "scripts/list_missing_vscode_updates_ai_sidecars.py"
-      ],
-      "problemMatcher": []
-    },
-    {
-      "label": "VS Code Updates: generate AI sidecars from Markdown (no LLM)",
-      "type": "shell",
-      "command": "python3",
-      "args": [
-        "scripts/generate_vscode_updates_ai_sidecars_from_markdown.py"
       ],
       "problemMatcher": []
     }

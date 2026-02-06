@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-04-showing-tool-calls-and-other-improvements-to-copilot-chat-on-the-web"
-fetched_at: "2026-02-05T04:46:41.041121Z"
+fetched_at: "2026-02-06T15:31:38.765502Z"
 ---
 
 # Showing tool calls and other improvements to Copilot chat on the web

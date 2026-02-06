@@ -1,0 +1,73 @@
+{
+  "overview": "GitHub Actions introduces the runner scale set client for custom autoscaling without Kubernetes, extends action allowlisting to all plan types, and adds new Windows Server 2025 with VS 2026 and macOS 26 Intel runner images in public preview.",
+  "detailed_explanation": [
+    {
+      "title": "Runner scale set client (public preview)",
+      "bullets": [
+        "Standalone Go-based module for building custom autoscaling solutions without requiring Kubernetes.",
+        "Platform agnostic: works with containers, VMs, and bare metal across Windows, Linux, and macOS.",
+        "Provides full provisioning control: users define how runners are created, scaled, and destroyed.",
+        "Native multi-label support allows assigning multiple labels per scale set.",
+        "Supports agentic workflows including GitHub Copilot coding agent.",
+        "Includes real-time telemetry for monitoring job execution and runner performance."
+      ]
+    },
+    {
+      "title": "Relationship to Actions Runner Controller (ARC)",
+      "bullets": [
+        "Not a replacement for ARC, which remains the recommended Kubernetes solution.",
+        "The client interfaces with the same scale set APIs for non-Kubernetes environments.",
+        "Multi-label support for ARC is planned for version 0.14.0, expected March 2026."
+      ]
+    },
+    {
+      "title": "Action allowlisting for all plan types",
+      "bullets": [
+        "Action allowlisting is now available across Free, Team, and Enterprise plans (previously restricted).",
+        "Allows defining exactly which actions and reusable workflows can run in repositories.",
+        "Enables least privilege enforcement and protection against compromised actions."
+      ]
+    },
+    {
+      "title": "Windows Server 2025 with Visual Studio 2026 image",
+      "bullets": [
+        "New runner image available in public preview using runs-on: windows-2025-vs2026.",
+        "Runs alongside the current windows-2025 image for safe parallel validation.",
+        "VS 2026 will be integrated into the windows-2025 image at GA on May 4, 2026."
+      ]
+    },
+    {
+      "title": "macOS 26 Intel image",
+      "bullets": [
+        "macOS 26 Intel runner image available in public preview for larger runners.",
+        "Use runs-on: macos-26-large to target this image.",
+        "Provides latest macOS and Xcode tooling for Intel-based workflows."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Runner scale set client released in public preview: Go-based, platform-agnostic autoscaling without Kubernetes.",
+    "Action allowlisting expanded to all GitHub plan types (Free, Team, Enterprise).",
+    "Windows Server 2025 + Visual Studio 2026 runner image in public preview (windows-2025-vs2026).",
+    "macOS 26 Intel runner image in public preview (macos-26-large).",
+    "Multi-label support planned for ARC v0.14.0 in March 2026."
+  ],
+  "impact": [
+    "Teams running non-Kubernetes infrastructure can now build custom runner autoscaling using the scale set client.",
+    "Free and Team plan users gain access to action allowlisting for security hardening.",
+    "CI/CD pipelines targeting Visual Studio 2026 can begin testing with the new Windows runner image.",
+    "Intel-based macOS workflows can use the latest macOS 26 and Xcode tooling via larger runners."
+  ],
+  "caveats": [
+    "The scale set client requires users to manage all infrastructure setup, provisioning logic, and scaling strategies themselves.",
+    "The macOS 26 Intel image is only available for larger runners, not standard GitHub-hosted runners.",
+    "Visual Studio 2026 integration into windows-2025 is planned for May 4, 2026; until then, use the dedicated windows-2025-vs2026 label.",
+    "ARC multi-label support is not yet available; planned for v0.14.0 in March 2026."
+  ],
+  "insights": [
+    "The scale set client decouples GitHub's orchestration from Kubernetes, significantly broadening the addressable infrastructure for self-hosted runners.",
+    "Expanding allowlisting to all plans indicates a security-first direction, making supply chain controls accessible regardless of plan tier.",
+    "The parallel image strategy (dedicated VS 2026 image now, integration later) gives teams a safe migration path without disrupting existing pipelines."
+  ],
+  "confidence": 0.92
+}

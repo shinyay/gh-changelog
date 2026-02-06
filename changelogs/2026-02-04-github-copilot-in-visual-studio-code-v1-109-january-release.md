@@ -5,7 +5,7 @@ type: "Release"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-04-github-copilot-in-visual-studio-code-v1-109-january-release"
-fetched_at: "2026-02-05T04:46:41.050560Z"
+fetched_at: "2026-02-06T15:31:38.777406Z"
 ---
 
 # GitHub Copilot in Visual Studio Code v1.109 – January Release

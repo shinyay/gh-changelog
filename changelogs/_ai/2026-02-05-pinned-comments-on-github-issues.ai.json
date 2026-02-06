@@ -1,0 +1,41 @@
+{
+  "overview": "GitHub Issues now supports pinning a comment to the top of an issue and includes a nudge to discourage low-quality comments like '+1' or 'same here', encouraging reactions and subscriptions instead.",
+  "detailed_explanation": [
+    {
+      "title": "Pinned comments",
+      "bullets": [
+        "Users can now pin a comment to the top of an issue via the comment '...' menu.",
+        "Pinned comments surface key updates, decisions, or next steps for anyone viewing the issue.",
+        "Helps readers quickly understand what matters most without scrolling through the entire thread."
+      ]
+    },
+    {
+      "title": "Low-quality comment nudge",
+      "bullets": [
+        "A nudge encourages people to react or subscribe instead of leaving comments like '+1' or 'same here'.",
+        "Reduces noise, clutter, and unnecessary notifications on issues.",
+        "Still provides an easy way to show support and stay updated through reactions."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Comment pinning is now available on GitHub Issues via the '...' menu.",
+    "A UI nudge discourages low-quality comments and suggests using reactions instead."
+  ],
+  "impact": [
+    "Issue maintainers can pin important comments to improve discoverability of key decisions and updates.",
+    "All GitHub users will see the nudge when attempting to leave low-signal comments on issues.",
+    "Teams managing high-traffic issues benefit from reduced notification noise."
+  ],
+  "caveats": [
+    "The article does not specify how many comments can be pinned per issue.",
+    "The article does not state whether pinning is available for pull request comments as well.",
+    "The nudge behavior (exact trigger, dismissibility) is not described in detail."
+  ],
+  "insights": [
+    "Comment pinning addresses a long-standing request for surfacing decisions in long issue threads.",
+    "The low-quality comment nudge is a soft intervention rather than a hard block, preserving user freedom while guiding behavior.",
+    "Together, these features improve the signal-to-noise ratio in issue discussions, which is especially valuable for popular open-source projects."
+  ],
+  "confidence": 0.91
+}

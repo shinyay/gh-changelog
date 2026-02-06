@@ -1,0 +1,49 @@
+{
+  "overview": "Claude Opus 4.6, Anthropic's latest model, is now generally available in GitHub Copilot across VS Code, Visual Studio, github.com, GitHub Mobile, and GitHub CLI. The model is designed for agentic coding with emphasis on planning and tool calling.",
+  "detailed_explanation": [
+    {
+      "title": "Model availability",
+      "bullets": [
+        "Claude Opus 4.6 is available to Copilot Pro, Pro+, Business, and Enterprise users.",
+        "Selectable in the model picker across VS Code (chat, ask, edit, agent modes), Visual Studio (agent, ask modes), github.com, GitHub Mobile (iOS/Android), and GitHub CLI.",
+        "Also available for GitHub Copilot coding agent (Pro and Pro+ accounts only)."
+      ]
+    },
+    {
+      "title": "Model capabilities",
+      "bullets": [
+        "Excels in agentic coding with specialization on hard tasks requiring planning and tool calling.",
+        "Early testing results highlight strong performance in complex, multi-step coding scenarios."
+      ]
+    },
+    {
+      "title": "Enablement requirements",
+      "bullets": [
+        "Copilot Enterprise and Business plan administrators must enable the Claude Opus 4.6 policy in Copilot settings.",
+        "Rollout is gradual; the model may not be immediately visible to all users."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Claude Opus 4.6 is now generally available in GitHub Copilot.",
+    "Available across six surfaces: VS Code, Visual Studio, github.com, GitHub Mobile, GitHub CLI, and Copilot coding agent.",
+    "Enterprise and Business admins must explicitly enable the model via policy settings."
+  ],
+  "impact": [
+    "Copilot Pro, Pro+, Business, and Enterprise users can select Claude Opus 4.6 for complex agentic coding tasks.",
+    "Enterprise and Business admins need to enable the Claude Opus 4.6 policy before their users can access it.",
+    "Pro and Pro+ users can use the model with the Copilot coding agent for autonomous task execution."
+  ],
+  "caveats": [
+    "Rollout is gradual; not all users will see the model immediately.",
+    "Enterprise and Business plans require admin policy enablement.",
+    "Copilot coding agent access is limited to Pro and Pro+ accounts only.",
+    "Pricing or premium request consumption details are not stated in the article."
+  ],
+  "insights": [
+    "GA status for Claude Opus 4.6 indicates Anthropic models are now a stable part of the Copilot ecosystem, not just experimental options.",
+    "The emphasis on 'planning and tool calling' positions this model for the growing agentic workflow use case.",
+    "The admin-gated enablement for Business/Enterprise reflects GitHub's policy-first approach to model governance."
+  ],
+  "confidence": 0.93
+}

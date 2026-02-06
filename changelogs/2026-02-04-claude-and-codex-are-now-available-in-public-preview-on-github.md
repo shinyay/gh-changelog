@@ -5,7 +5,7 @@ type: "Release"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github"
-fetched_at: "2026-02-05T04:46:41.067153Z"
+fetched_at: "2026-02-06T15:31:38.813161Z"
 ---
 
 # Claude and Codex are now available in public preview on GitHub

@@ -5,7 +5,7 @@ type: "Release"
 labels: ["projects &amp; issues"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-05-pinned-comments-on-github-issues"
-fetched_at: "2026-02-07T16:09:15.528085Z"
+fetched_at: "2026-02-07T21:06:48.058821Z"
 ---
 
 # Pinned comments on GitHub Issues

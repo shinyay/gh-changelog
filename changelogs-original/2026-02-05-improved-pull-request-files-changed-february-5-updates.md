@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["collaboration tools"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-05-improved-pull-request-files-changed-february-5-updates"
-fetched_at: "2026-02-07T16:09:15.525246Z"
+fetched_at: "2026-02-07T21:06:48.055765Z"
 ---
 
 # Improved pull request Files changed – February 5 updates

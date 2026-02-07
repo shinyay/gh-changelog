@@ -2,6 +2,7 @@
 
 ## Entries
 
+- 2026-02-07 — [Fast mode for Claude Opus 4.6 is now in preview for GitHub Copilot](2026-02-07-fast-mode-for-claude-opus-4-6-is-now-in-preview-for-github-copilot.md)
 - 2026-02-07 — [CodeQL 2.24.1 improves Maven private registry support and improves query accuracy](2026-02-07-codeql-2-24-1-improves-maven-private-registry-support-and-improves-query-accurac.md)
 - 2026-02-05 — [Pinned comments on GitHub Issues](2026-02-05-pinned-comments-on-github-issues.md)
 - 2026-02-05 — [Improved pull request Files changed – February 5 updates](2026-02-05-improved-pull-request-files-changed-february-5-updates.md)

@@ -1,11 +1,11 @@
 ---
 title: "Claude and Codex are now available in public preview on GitHub"
 date: "2026-02-04"
-type: "Release"
+type: "new releases"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github"
-fetched_at: "2026-02-07T16:09:15.596022Z"
+fetched_at: "2026-02-07T21:06:48.880972Z"
 ---
 
 # Claude and Codex are now available in public preview on GitHub
@@ -81,7 +81,7 @@ Claude by Anthropic and OpenAI Codex are now available as coding agents for Copi
 - Try it now Enable Claude and Codex today Learn more Read more in our full blog post here .
 
 ## Article Content (cleaned)
-# [Claude and Codex coding agents are now in public preview](https://github.blog/changelog/feed/#claude-and-codex-coding-agents-are-now-in-public-preview)
+# [Claude and Codex coding agents are now in public preview](#claude-and-codex-coding-agents-are-now-in-public-preview)
 
 
 Claude by Anthropic and OpenAI Codex are now available as coding agents for Copilot Pro\+ and Copilot Enterprise customers.
@@ -98,10 +98,10 @@ No additional subscriptions are required. Access to Claude and Codex is included
 ---
 
 
-## [How to enable Claude and Codex](https://github.blog/changelog/feed/#how-to-enable-claude-and-codex)
+## [How to enable Claude and Codex](#how-to-enable-claude-and-codex)
 
 
-### [For Copilot Pro\+ subscribers](https://github.blog/changelog/feed/#for-copilot-pro-subscribers)
+### [For Copilot Pro\+ subscribers](#for-copilot-pro-subscribers)
 
 
 1. Go to your [Copilot coding agent settings](https://github.com/settings/copilot/coding_agent?utm_source=changelog-3p-agents-cca-settings-cta&utm_medium=changelog&utm_campaign=agent-3p-platform-feb-2026).
@@ -109,7 +109,7 @@ No additional subscriptions are required. Access to Claude and Codex is included
 3. Enable “Claude”, “Codex”, or both by toggling them **On**.
 
 
-### [For Copilot Enterprise subscribers](https://github.blog/changelog/feed/#for-copilot-enterprise-subscribers)
+### [For Copilot Enterprise subscribers](#for-copilot-enterprise-subscribers)
 
 
 The following settings must be enabled by your enterprise admin:
@@ -131,10 +131,10 @@ The following settings must be enabled by your enterprise admin:
 ---
 
 
-## [How to use agents](https://github.blog/changelog/feed/#how-to-use-agents)
+## [How to use agents](#how-to-use-agents)
 
 
-### [Create and view sessions from the Agents tab on GitHub (web and mobile app)](https://github.blog/changelog/feed/#create-and-view-sessions-from-the-agents-tab-on-github-web-and-mobile-app)
+### [Create and view sessions from the Agents tab on GitHub (web and mobile app)](#create-and-view-sessions-from-the-agents-tab-on-github-web-and-mobile-app)
 
 
 You can create new agent sessions on **GitHub.com** and the **GitHub Mobile app** in a few different ways:
@@ -147,13 +147,13 @@ You can create new agent sessions on **GitHub.com** and the **GitHub Mobile app*
 Whichever entry point you use, type your request, select the agent you want to work with by clicking the Copilot icon in the input field, and submit. The agent will begin work shortly. You can follow progress in real time or review completed sessions from the session list on both web and mobile.
 
 
-### [Assign agents to issues](https://github.blog/changelog/feed/#assign-agents-to-issues)
+### [Assign agents to issues](#assign-agents-to-issues)
 
 
 Assign an issue to Claude, Codex, Copilot, or all three using the **Assignees** dropdown. The selected agent or agents will automatically begin work and submit a draft pull request for you to review.
 
 
-### [Work with agents in pull requests](https://github.blog/changelog/feed/#work-with-agents-in-pull-requests)
+### [Work with agents in pull requests](#work-with-agents-in-pull-requests)
 
 
 * Agents can generate draft pull requests for assigned tasks (unless you choose not to), follow up on feedback, and continue iterating until the work is complete.
@@ -162,7 +162,7 @@ Assign an issue to Claude, Codex, Copilot, or all three using the **Assignees** 
 * Use the **View session** button to see a full overview and detailed activity logs.
 
 
-### [Start agent sessions in VS Code](https://github.blog/changelog/feed/#start-agent-sessions-in-vs-code)
+### [Start agent sessions in VS Code](#start-agent-sessions-in-vs-code)
 
 
 1. Ensure you are running **VS Code 1\.109 or later**.
@@ -183,7 +183,7 @@ Assign an issue to Claude, Codex, Copilot, or all three using the **Assignees** 
 ---
 
 
-## [Try it now](https://github.blog/changelog/feed/#try-it-now)
+## [Try it now](#try-it-now)
 
 
 * [Enable Claude and Codex today](https://github.com/settings/copilot/coding_agent?utm_source=changelog-3p-agents-cca-settings-cta&utm_medium=changelog&utm_campaign=agent-3p-platform-feb-2026)
@@ -194,7 +194,7 @@ Assign an issue to Claude, Codex, Copilot, or all three using the **Assignees** 
 ---
 
 
-## [Learn more](https://github.blog/changelog/feed/#learn-more)
+## [Learn more](#learn-more)
 
 
 * Read more in our [full blog post here](https://github.blog/news-insights/company-news/pick-your-agent-use-claude-and-codex-on-agent-hq/?utm_source=changelog-3p-agents-blog-cta&utm_medium=changelog&utm_campaign=agent-3p-platform-feb-2026).

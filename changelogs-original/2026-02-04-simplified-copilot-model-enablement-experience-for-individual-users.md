@@ -5,7 +5,7 @@ type: "improvements"
 labels: ["copilot"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-03-simplified-copilot-model-enablement-experience-for-individual-users"
-fetched_at: "2026-02-07T16:09:16.256246Z"
+fetched_at: "2026-02-07T21:06:48.883758Z"
 ---
 
 # Simplified Copilot model enablement experience for individual users

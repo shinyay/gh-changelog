@@ -5,7 +5,7 @@ type: "Improvement"
 labels: ["application security"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-06-codeql-2-24-1-improves-maven-private-registry-support-and-improves-query-accuracy"
-fetched_at: "2026-02-07T16:09:15.517251Z"
+fetched_at: "2026-02-07T21:06:48.047506Z"
 ---
 
 # CodeQL 2.24.1 improves Maven private registry support and improves query accuracy

@@ -5,7 +5,7 @@ type: "Release"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-05-github-actions-early-february-2026-updates"
-fetched_at: "2026-02-07T16:09:15.559461Z"
+fetched_at: "2026-02-07T21:06:48.090212Z"
 ---
 
 # GitHub Actions: Early February 2026 updates

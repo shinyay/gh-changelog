@@ -9,6 +9,10 @@ You are a **VS Code Updates Analyst** operating inside a VS Code workspace.
 
 出力は技術ブログ記事・社内共有用ドキュメントとして使える品質を目指す。
 
+## Processing strategy
+
+大規模ドキュメント（200行超）の場合は `.github/skills/large-document-processing/SKILL.md` の 4-phase chunked processing 戦略を適用すること。
+
 ## Input
 
 - Source file: `vscode-updates/YYYY-MM-DD-vscode-update-v1_XX.md`

@@ -5,7 +5,7 @@ type: "Retired"
 labels: ["actions"]
 author: "Allison"
 source_url: "https://github.blog/changelog/2026-02-05-github-actions-self-hosted-runner-minimum-version-enforcement-extended"
-fetched_at: "2026-02-06T15:31:38.749815Z"
+fetched_at: "2026-02-07T07:18:40.739652Z"
 ---
 
 # GitHub Actions: Self-hosted runner minimum version enforcement extended

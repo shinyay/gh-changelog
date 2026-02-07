@@ -1,0 +1,67 @@
+{
+  "overview": "The new Files changed experience in pull requests receives CODEOWNERS validation support, significant performance improvements (up to 67% faster interactions on large PRs), small-screen layout fixes, and several bug fixes including notification read state and sticky header issues.",
+  "detailed_explanation": [
+    {
+      "title": "CODEOWNERS validation",
+      "bullets": [
+        "CODEOWNERS validation is now integrated into the new Files changed experience, closing a gap from the classic view.",
+        "Required reviewers are correctly surfaced based on CODEOWNERS rules.",
+        "Review requirements are accurately enforced before merge."
+      ]
+    },
+    {
+      "title": "Small screen improvements",
+      "bullets": [
+        "Multiple layout, spacing, and overflow issues fixed for mobile and smaller viewports.",
+        "Diffs, comments, headers, and controls now render and behave correctly on small screens."
+      ]
+    },
+    {
+      "title": "Performance improvements",
+      "bullets": [
+        "Pull request diffs optimized for greater responsiveness — early data shows up to 67% faster click, type, and scroll interactions on large PRs.",
+        "Virtualization is now applied only to the largest pull requests for scroll and interaction performance.",
+        "Navigation between Conversations and Files tabs improved from 10+ seconds to a few seconds.",
+        "File tree resizing is smoother and more responsive for large PRs.",
+        "Safari performance and stability improved.",
+        "High memory usage when reviewing large pull requests has been fixed."
+      ]
+    },
+    {
+      "title": "Bug fixes",
+      "bullets": [
+        "Opening a notification directly into Files changed now correctly marks it as read.",
+        "File diff header stickiness issue when scrolling has been fixed.",
+        "Code snippet background color in thread replies is now visually distinct from the reply background.",
+        "Error when commenting across large index differences in diffs has been fixed."
+      ]
+    }
+  ],
+  "key_changes": [
+    "CODEOWNERS validation added to the new Files changed experience.",
+    "Up to 67% faster interactions on large pull requests in the new files changed view.",
+    "Tab navigation (Conversations to Files) reduced from 10+ seconds to a few seconds.",
+    "Virtualization limited to only the largest pull requests.",
+    "Small-screen layout and overflow issues fixed.",
+    "Four specific bug fixes: notification read state, sticky diff headers, code snippet colors, and large index commenting errors."
+  ],
+  "impact": [
+    "Teams using CODEOWNERS can now fully rely on the new Files changed experience without falling back to the classic view.",
+    "Reviewers of large pull requests will experience substantially faster page interactions.",
+    "Mobile and small-screen users gain a more usable review experience.",
+    "All pull request reviewers benefit from the notification and UI bug fixes."
+  ],
+  "caveats": [
+    "Virtualization is applied only to the largest pull requests, meaning smaller PRs use standard rendering.",
+    "The 67% improvement figure is based on early data and may vary by PR size and browser.",
+    "The new Files changed experience is still in preview — additional issues may exist.",
+    "Feedback can be reported via the Files changed preview feedback discussion."
+  ],
+  "insights": [
+    "The performance focus reflects that large-PR review was a key pain point in the new Files changed experience.",
+    "Adding CODEOWNERS support removes a major blocker for teams considering migration from the classic view.",
+    "The incremental rollout of fixes (weekly cadence implied by past week) suggests active iteration based on user feedback.",
+    "Safari-specific fixes indicate cross-browser compatibility is a priority for the new experience."
+  ],
+  "confidence": 0.93
+}

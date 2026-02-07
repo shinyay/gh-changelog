@@ -1,0 +1,83 @@
+{
+  "overview": "CodeQL 2.24.1 adds Maven private package registry support (including plugin repositories), Kotlin 2.3.0 analysis support, C23/C++26 #embed directives, C# 14 null-conditional assignments, new Python taint models for AI-related modules, and multiple query accuracy improvements across languages.",
+  "detailed_explanation": [
+    {
+      "title": "Java/Kotlin language support",
+      "bullets": [
+        "Kotlin versions up to 2.3.0 are now supported for analysis.",
+        "Struts 7.x package names are now recognized in the Struts framework library.",
+        "Maven private package registries configured for Default Setup now also serve as plugin repositories.",
+        "Support for Kotlin 1.6.x and 1.7.x series has been dropped (previously announced)."
+      ]
+    },
+    {
+      "title": "C/C++ language support",
+      "bullets": [
+        "Added support for C23 and C++26 #embed preprocessor directives."
+      ]
+    },
+    {
+      "title": "C# language support",
+      "bullets": [
+        "C# 14: support for null-conditional assignments added."
+      ]
+    },
+    {
+      "title": "Python language support",
+      "bullets": [
+        "List elements can now be referenced in the Python models-as-data language via the ListElement path.",
+        "Taint flow and type models added for the agents and openai modules.",
+        "Remote flow sources modeled for the websockets package."
+      ]
+    },
+    {
+      "title": "Query accuracy improvements",
+      "bullets": [
+        "C/C++: Fixed a bug in GuardCondition library where binary logical operators were not recognized as guard conditions.",
+        "C/C++: Improved buffer size measurement accuracy, reducing false positives in six overflow-related queries (cpp/static-buffer-overflow, cpp/overflow-buffer, cpp/badly-bounded-write, cpp/overrunning-write, cpp/overrunning-write-with-float, cpp/very-likely-overrunning-write).",
+        "Java: Improved accuracy of the java/unreleased-lock query.",
+        "Python: New experimental query py/prompt-injection for detecting prompt injection vulnerabilities in LLM-using code.",
+        "GitHub Actions: Fixed a crash when analyzing ${{ ... }} expressions over ~300 characters."
+      ]
+    },
+    {
+      "title": "Deployment and availability",
+      "bullets": [
+        "CodeQL 2.24.1 is automatically deployed to GitHub code scanning users on github.com.",
+        "The new functionality will be included in a future GitHub Enterprise Server (GHES) release.",
+        "Older GHES versions can manually upgrade their CodeQL version."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Maven private registries now double as plugin repositories when configured for Default Setup.",
+    "Kotlin analysis support extended to 2.3.0; Kotlin 1.6.x/1.7.x dropped.",
+    "C23/C++26 #embed preprocessor directive support added.",
+    "C# 14 null-conditional assignment support added.",
+    "Python taint models added for openai and agents modules; remote flow sources for websockets.",
+    "New experimental py/prompt-injection query for detecting LLM prompt injection vulnerabilities.",
+    "Six C/C++ buffer overflow queries produce fewer false positives.",
+    "GitHub Actions analysis crash on long expressions fixed."
+  ],
+  "impact": [
+    "Java teams using Maven private registries with Default Setup gain automatic plugin repository configuration.",
+    "Kotlin teams must be on 1.8.x or later as 1.6.x/1.7.x support is removed.",
+    "C/C++ codebases will see fewer false positive alerts for buffer overflow queries.",
+    "Python developers using OpenAI/agents libraries benefit from improved taint tracking for security analysis.",
+    "Teams building LLM-powered applications can detect prompt injection risks with the new experimental query.",
+    "GHES users need to manually upgrade CodeQL or wait for the next GHES release to get these improvements."
+  ],
+  "caveats": [
+    "The py/prompt-injection query is experimental and may produce false positives or miss some patterns.",
+    "Kotlin 1.6.x and 1.7.x are no longer supported — projects using these versions must upgrade.",
+    "GHES users do not receive the update automatically and must either wait for a GHES release or manually upgrade.",
+    "The exact GHES release version that will include CodeQL 2.24.1 is not stated in the article."
+  ],
+  "insights": [
+    "The addition of taint models for openai and agents modules reflects the growing importance of AI/LLM security in code scanning.",
+    "The experimental py/prompt-injection query positions CodeQL as a tool for securing AI-powered applications.",
+    "Maven plugin repository support for private registries addresses a common pain point in enterprise Java environments.",
+    "The continued expansion of language version support (Kotlin 2.3.0, C# 14, C23/C++26) keeps CodeQL aligned with modern language evolution."
+  ],
+  "confidence": 0.94
+}

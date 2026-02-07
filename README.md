@@ -66,6 +66,15 @@ A GitHub Actions workflow automatically fetches original changelog entries into 
 
 Once the original documents are in the repo, use Copilot Chat to deep-dive and generate AI analysis sidecars (`changelogs/_ai/`) and JP translations (`changelogs-jp/`).
 
+## Slide Generation (Marp)
+
+Generate presentation slides from changelog data using Copilot Chat with the prompt file `.github/prompts/generate_changelog_slides.prompt.md`.
+
+- **Output**: `slides/YYYY-MM-DD-<descriptive-name>.md` (Marp-compatible Markdown)
+- **Data sources**: AI sidecar JSON (`changelogs/_ai/`) + changelog Markdown (`changelogs/`)
+- **Use cases**: Weekly digests, single-entry deep-dives, topic-filtered decks, custom narratives
+- **Export**: Use Marp CLI to convert to HTML/PDF/PPTX — `npx @marp-team/marp-cli slides/<deck>.md`
+
 ## How to use from Copilot Chat
 
 - Repo-level instructions live in `.github/copilot-instructions.md`.

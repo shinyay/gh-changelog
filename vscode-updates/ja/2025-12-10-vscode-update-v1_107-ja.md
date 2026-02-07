@@ -1,0 +1,783 @@
+---
+title: "Visual Studio Code 2025年11月リリース (version 1.107)"
+date: "2025-12-10"
+version_ref: "v1_107"
+source_url: "https://code.visualstudio.com/updates/v1_107"
+lang: "ja"
+---
+
+# Visual Studio Code 2025年11月リリース (version 1.107)
+
+## リリース概要
+
+VS Code 1.107 はマルチエージェントオーケストレーションを中心とした大型リリースである。GitHub Copilot とカスタムエージェントの連携を軸に、Agent HQ による一元管理、バックグラウンドエージェントの Git worktree 分離、ローカル→クラウドへのタスクハンドオフなど、エージェント関連の機能が大幅に強化された。Chat 周りでは Language Models エディタの追加、インライン Chat の UX 刷新、fetch ツールの動的コンテンツ対応、MCP 仕様 `2025-11-25` のフルサポートなど多岐にわたる改善が含まれる。また TypeScript 7.0 プレビューの進展、ターミナル補完の stable 昇格、Anthropic モデルの Extended Thinking サポート、Microsoft 認証のネイティブブローカー拡大など、開発体験の基盤部分にも注力したリリースとなっている。
+
+## 注目の新機能・変更点
+
+1. **エージェントセッションと Chat の統合**: エージェントセッション一覧が Chat ビューに統合され、ローカル・バックグラウンド・クラウドすべてのエージェントを一元管理できるようになった。
+2. **バックグラウンドエージェントの Git worktree 分離**: 複数のバックグラウンドエージェントを同時実行しても、Git worktree によりファイル競合が発生しない。
+3. **ローカルエージェントのバックグラウンド継続**: Chat を閉じてもローカルエージェントのリクエストがキャンセルされなくなり、長時間タスクに対応。
+4. **Language Models エディタ**: チャットで使用可能な全言語モデルを一元管理・フィルタ・可視性制御できる新エディタが追加。
+5. **MCP 仕様 `2025-11-25` フルサポート**: URL mode elicitation、Tasks（長時間ツール呼び出し）、enum 拡張など最新仕様に対応。
+6. **GitHub MCP Server 組み込み (Preview)**: GitHub Copilot Chat 拡張機能にビルトイン MCP サーバーとして統合され、追加設定なしで GitHub リポジトリ情報にアクセス可能。
+7. **Anthropic Extended Thinking**: Anthropic モデルで拡張思考が有効化され、複雑なタスクの推論品質が向上。トークンバジェットはカスタマイズ可能。
+8. **TypeScript 7.0 プレビュー進展**: ネイティブコードによる完全書き換え版の TS 7 で、自動インポート・リネーム・参照 CodeLens が利用可能に。
+9. **ターミナル補完の stable 昇格**: Terminal Suggest が安定版ユーザー全員に展開され、シェルコマンド入力時のインライン補完が標準利用可能に。
+10. **`classic` Microsoft 認証の廃止**: `microsoft-authentication.implementation` の `classic` オプションが削除され、MSAL ベースの認証に一本化。
+
+## セクション別詳細解説
+
+### Agents
+
+#### 概要
+
+このリリースの最大の注力分野であるエージェント機能は、セッション管理の Chat 統合、バックグラウンドエージェントの分離実行、カスタムエージェントの組織共有、サブエージェント実行、Claude スキルの再利用など、10 以上の新機能・改善を含む。エージェントを中心とした開発ワークフローの基盤が大きく整備された。
+
+#### 機能詳細
+
+#### Integrating agent sessions and chat
+
+エージェントセッション一覧が Chat ビューに統合された。ローカル、バックグラウンド（CLI）、クラウド、サードパーティ拡張機能のいずれで実行されているエージェントも、統一されたインターフェースで管理できる。セッションのステータス、進捗、ファイル変更統計が一目で確認でき、不要なセッションはアーカイブ/アーカイブ解除で整理可能。
+
+- **関連設定**: `chat.viewSessions.enabled`（セッション一覧の有効/無効）、`chat.agentSessionsViewLocation`（スタンドアロンビューの再有効化）
+- **ステータス**: **[GA]**
+- **対象ユーザー**: すべての Copilot ユーザー
+- ワークスペースを開いている場合は該当ワークスペースのセッションのみ表示、空ウィンドウでは全ワークスペースのセッションが表示される
+- セッションを右クリックすると、エディタタブや新ウィンドウで開くオプションがコンテキストメニューに表示される
+- スタンドアロンの Agent Sessions ビューはデフォルトで無効化され、将来のリリースで完全に削除予定
+
+> 🎬 [動画: Chat ビューでのエージェントセッション利用デモ](https://code.visualstudio.com/assets/updates/1_107/agent-sessions.mp4)
+
+> 📷 [画像: セッション一覧のコンテキストメニュー](https://code.visualstudio.com/assets/updates/1_107/sessions-context.png)
+
+##### Compact view
+
+Chat ビューが狭い場合、新規チャットセッション開始時にセッション一覧が Chat ビュー内に表示される。デフォルトではアーカイブされていない最新 3 件が表示され、**Show All Sessions** で全件表示に切り替え可能。
+
+> 📷 [画像: Chat ビュー内の最近のセッション表示](https://code.visualstudio.com/assets/updates/1_107/recent-sessions.png)
+
+> 📷 [画像: 全セッション一覧表示](https://code.visualstudio.com/assets/updates/1_107/recent-sessions-all.png)
+
+##### Side-by-side view
+
+Chat ビューが十分な幅を持つ場合（最大化時など）、セッション一覧が Chat ビューと並列表示される。プロバイダやステータスでフィルタリングが可能で、フィルタは永続化される。
+
+> 📷 [画像: Chat ビューとセッション一覧の並列表示](https://code.visualstudio.com/assets/updates/1_107/all-sessions.png)
+
+##### Orientation setting
+
+`chat.viewSessions.orientation` でセッション一覧の表示方法をカスタマイズできる。
+
+- `auto`（デフォルト）: 幅が十分なら並列表示、そうでなければ空チャットの上に表示
+- `stacked`: 常に空チャットの上に表示
+- `sideBySide`: 幅が十分なら並列表示、そうでなければ非表示
+
+**Update 1.107.1** で並列セッション体験が大幅改善され、トグルの状態が記憶されるようになった。
+
+#### Local agent sessions remain active when closed
+
+従来はローカルチャットセッションを閉じるとエージェントリクエストがキャンセルされていたが、本リリースからセッションを閉じてもエージェントはバックグラウンドで実行を継続する。セッション一覧でステータスを確認し、いつでもセッションに戻って詳細な進捗を確認できる。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: ローカルエージェントを使用するすべてのユーザー。長時間タスクや複数タスクの同時実行が実用的になった。
+
+> 🎬 [動画: バックグラウンドで実行継続するローカルエージェント](https://code.visualstudio.com/assets/updates/1_107/local-agent-active-when-closed.mp4)
+
+#### Continue tasks in background or cloud agents
+
+ローカルチャットで対話的にプランを練った後、**Continue in** オプションを使ってバックグラウンドまたはクラウドエージェントにタスクをシームレスにハンドオフできるようになった。ハンドオフ時にチャットコンテキストが引き継がれ、元のセッションは自動的にアーカイブされる。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: ローカル→バックグラウンド/クラウドのワークフローを使いたいユーザー
+- Chat ビュー、Plan agent、Untitled prompt file のそれぞれから「Continue in」が利用可能
+
+> 📷 [画像: Chat ビューの「Continue in」ボタン](https://code.visualstudio.com/assets/updates/1_107/continue-in-chatwidget.png)
+
+> 📷 [画像: Plan agent の「Start implementation」ボタン](https://code.visualstudio.com/assets/updates/1_107/continue-in-planmode.png)
+
+> 📷 [画像: Untitled prompt file の「Continue in」ボタン](https://code.visualstudio.com/assets/updates/1_107/continue-in-promptfile.png)
+
+#### Isolate background agents with Git worktrees
+
+バックグラウンドエージェントに [Git worktree](https://code.visualstudio.com/docs/sourcecontrol/branches-worktrees#_working-with-git-worktrees) サポートが導入された。新しいバックグラウンドエージェント作成時に、現在のワークスペースで実行するか、専用の Git worktree で実行するかを選択できる。worktree 使用時はエージェントが自動的に新規 worktree を作成し、変更を分離フォルダに隔離する。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: 複数のバックグラウンドエージェントを同時実行するユーザー
+- エージェント完了後、worktree の変更をメインワークスペースにマージするアクションが用意されている
+- ワークスペースに直接変更を適用する新アクションも追加
+
+> 📷 [画像: バックグラウンドエージェント作成時の Git Worktree ドロップダウン](https://code.visualstudio.com/assets/updates/1_107/background_worktree.png)
+
+> 📷 [画像: worktree でのファイル変更表示](https://code.visualstudio.com/assets/updates/1_107/filechanges.png)
+
+#### Adding context to background agents
+
+バックグラウンドエージェントが複数のコンテキスト添付タイプをサポートするようになった。選択範囲、問題（Problems）、シンボル、検索結果、git commit などをプロンプトに添付できる。手動でファイルパスや行番号を指定せず、報告された問題を添付して修正を依頼するといったワークフローが可能になった。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: バックグラウンドエージェントのヘビーユーザー
+
+> 📷 [画像: シンボルとエラーをコンテキストとして添付したバックグラウンドエージェントセッション](https://code.visualstudio.com/assets/updates/1_107/background_attachments.png)
+
+#### Share custom agents across your GitHub organization (Experimental)
+
+GitHub アカウントの組織レベルでカスタムエージェントを定義し、組織内のメンバーと共有できるようになった。組織固有のエージェントが個人エージェントと並んで Chat の Agents ドロップダウンに表示される。
+
+- **関連設定**: `github.copilot.chat.customAgents.showOrganizationAndEnterpriseAgents`（`true` で有効化）
+- **ステータス**: **[Experimental]**
+- **対象ユーザー**: GitHub 組織でカスタムエージェントを共有したい管理者・開発者
+
+#### Use custom agents with background agents (Experimental)
+
+`.github/agents` フォルダに定義されたカスタムエージェントをバックグラウンドエージェントとして使用できるようになった。
+
+- **関連設定**: `github.copilot.chat.cli.customAgents.enabled`
+- **ステータス**: **[Experimental]**
+- **対象ユーザー**: 独自のワークフロー用エージェントをバックグラウンドで活用したいユーザー
+
+> 📷 [画像: Agents ドロップダウンにカスタム Planner エージェントが表示されたバックグラウンドエージェントセッション](https://code.visualstudio.com/assets/updates/1_107/background_agents.png)
+
+#### Agent tooling reorganization
+
+エージェントツールの構造が再編成され、GitHub カスタムエージェントとの互換性が向上した。VS Code と GitHub 環境で別々の設定を必要とせず、カスタムエージェントを再利用できるようになった。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: カスタムエージェントファイルを管理しているユーザー
+- 既存のツール参照は引き続き動作するが、最新の推奨フォーマットへのリネームを促す Code Action が表示される
+
+#### Run agents as subagents (Experimental)
+
+エージェントが複雑な問題を解決する際に、タスクを[サブエージェント](https://code.visualstudio.com/docs/copilot/chat/chat-sessions#_contextisolated-subagents)に委譲できる。サブエージェントはメインセッションとは独立したコンテキストウィンドウを持ち、メインの会話を高レベルの目標に集中させつつ、コンテキストウィンドウの制限を管理する。
+
+本リリースでは、[カスタムエージェント](https://code.visualstudio.com/docs/copilot/customization/custom-agents)をサブエージェントとして使用できるようになった。
+
+- **関連設定**: `chat.customAgentInSubagent.enabled`
+- **ステータス**: **[Experimental]**
+- **対象ユーザー**: 専門的なペルソナを持つ AI エージェントを組み合わせたいユーザー
+- **使い方**: 設定を有効化後、Chat で「what subagents can you use?」と尋ねて利用可能なサブエージェントを確認。カスタムエージェントの `*.agent.md` ファイルで `infer` を `false` に設定すると、サブエージェントとしての使用を防止可能。
+
+> 📷 [画像: カスタムエージェントをサブエージェントとして使用するチャット会話](https://code.visualstudio.com/assets/updates/1_107/use-agents-as-subagents.png)
+
+#### Reuse your Claude skills (Experimental)
+
+[Claude Code](https://code.claude.com/docs/en/skills) で導入されたスキル（エージェントがオンデマンドで読み込む能力）を VS Code で再利用できるようになった。スキルは短い説明文を持ち、エージェントが必要に応じて完全な指示を読み込む。
+
+- **関連設定**: `chat.useClaudeSkills`
+- **ステータス**: **[Experimental]**
+- **対象ユーザー**: Claude Code のスキルを既に定義しているユーザー
+- 個人スキル: `~/.claude/skills/skill-name/SKILL.md`
+- プロジェクトスキル: `${workspaceFolder}.claude/skills/skill-name/SKILL.md`
+- `SKILL.md` ファイルのヘッダーに `description` 属性が必要。`allowed-tools` 属性は VS Code では非対応。
+
+> 📷 [画像: VS Code の Chat で Claude スキルを再利用する様子](https://code.visualstudio.com/assets/updates/1_107/use-claude-skills.png)
+
+### Chat
+
+#### 概要
+
+Chat 機能全般にわたる大幅な改善が行われた。インライン Chat のコード編集特化 UX、Language Models エディタによるモデルの一元管理、fetch ツールの動的コンテンツ対応、URL/ドメインの自動承認フロー刷新、ターミナル出力のリッチ表示、Anthropic Extended Thinking サポートなど、日常的なチャット体験を向上させる多数の変更が含まれる。
+
+#### 機能詳細
+
+#### Inline chat UX
+
+インライン Chat が単一ファイル内のコード変更に最適化された。以前は一般的な質問や議論にもインライン Chat を使用できたが、本リリースからはコード変更に特化し、インライン Chat で処理できないタスクは自動的に Chat ビューにエスカレーションされる（同じモデル・同じコンテキストでプロンプトが再送される）。
+
+- **関連設定**: `inlineChat.enableV2`（`true` で有効化、Preview）
+- **ステータス**: **[Preview]**
+- **対象ユーザー**: インライン Chat を使用するすべてのユーザー
+
+> 🎬 [動画: 更新されたインライン Chat UX の動作](https://code.visualstudio.com/assets/updates/1_107/inline_chat_edit.mp4)
+
+> 🎬 [動画: インライン Chat から Chat ビューへのエスカレーション](https://code.visualstudio.com/assets/updates/1_107/inline_chat_exit.mp4)
+
+#### Language Models editor
+
+Chat で使用可能なすべての言語モデル（GitHub Copilot 提供、サードパーティ拡張機能、BYOK プロバイダ）を一元管理する新エディタが追加された。Chat のモデルピッカーまたはコマンドパレットの **Chat: Manage Language Models** から開くことができる。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: 複数の言語モデルを利用しているユーザー
+- モデルの能力、コンテキストサイズ、課金情報、可視性ステータスが一覧表示される
+- プロバイダ別またはの可視性別でグルーピングが可能
+- テキスト検索、プロバイダフィルタ（`@provider:"OpenAI"`）、能力フィルタ（`@capability:tools`、`@capability:vision`、`@capability:agent`）、可視性フィルタ（`@visible:true/false`）を利用可能
+
+> 🎬 [動画: Language Models エディタ](https://code.visualstudio.com/assets/updates/1_107/language-models-editor.mp4)
+
+##### Manage model visibility
+
+モデルピッカーに表示されるモデルをエディタ上で個別に制御できる。モデルにホバーして目のアイコンを選択することで可視性をトグル可能。
+
+##### Add models from installed providers
+
+**Add Models...** ボタンからインストール済みのモデルプロバイダを選択し、追加モデルを有効化できる。プロバイダ行のギアアイコンからプロバイダ管理にアクセス可能。
+
+#### URL and domain auto approval
+
+fetch ツールの URL 自動承認セキュリティ体験が強化された。モデルがユーザーが明示的に要求していない URL からコンテンツを取得しようとする際、2 段階の承認フローが導入された。
+
+1. **初回フェッチリクエストの承認**: ドメインの信頼性を確認。1 回限りの承認、特定 URL の自動承認、ドメイン全体の自動承認を選択可能。[Trusted Domains](https://code.visualstudio.com/docs/editing/editingevolved#_outgoing-link-protection) に登録済みのドメインは自動承認される。
+2. **フェッチコンテンツの使用承認**: 取得コンテンツを Chat やフォローアップツール呼び出しに渡す前にレビュー。プロンプトインジェクション攻撃への防御となる。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: Chat で Web コンテンツを参照するすべてのユーザー
+
+> 📷 [画像: 初回フェッチリクエストの承認確認](https://code.visualstudio.com/assets/updates/1_107/approve-fetch.png)
+
+#### More robust fetch tool
+
+`#fetch` ツールが動的 Web コンテンツに対応するよう改善された。JavaScript に依存して読み込まれるコンテンツ（SPA、モダンドキュメントサイト、Jira などの課題管理システム）でも完全な内容を取得できるようになった。ページ内の JavaScript の実行とコンテンツ読み込みを待機してからページを取得するため、ブラウザで表示される実際のコンテンツにアクセスできる。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: `#fetch` ツールを使用するすべてのユーザー
+
+#### Text Search tool can search ignored files
+
+`#textSearch` ツールが `files.exclude`、`search.exclude` 設定や `.gitignore` で無視されるファイル・フォルダ（例: `node_modules`）内の検索に対応した。検索結果がない場合、無視ファイル内の検索を有効にするヒントもエージェントに返される。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: ワークスペース内で広範な検索を行うユーザー
+
+#### Rich terminal output in chat
+
+**Run in Terminal** レスポンスで **Toggle Output** を使用すると、Chat 内にフル機能の読み取り専用 `xterm.js` ターミナルで出力がレンダリングされるようになった。バックキングターミナルが終了した後も出力が保持され、過去の実行をいつでも再確認できる。統合ターミナルのカラーテーマが適用され、ANSI カラーのコントラストが向上。スクリーンリーダーユーザーはアクセシブルビュー（`Ctrl+Shift+K`）でナビゲーション可能。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: Chat でターミナルコマンドを実行するすべてのユーザー
+
+#### Command status details in chat terminals
+
+Chat ターミナルメッセージで、コマンドデコレーションにホバーすると開始時刻、実行時間、終了コードが表示されるようになった。
+
+- **ステータス**: **[GA]**
+
+> 📷 [画像: コマンドデコレーションホバーでの実行時間とステータス表示](https://code.visualstudio.com/assets/updates/1_107/terminal-command-exit.png)
+
+#### Allow all terminal commands in this session
+
+ターミナルツールに新しい自動承認オプションが追加された。セッション中の今後のすべてのコマンドを一括承認でき、新しいセッション開始時には既存の承認設定に従う。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: エージェントにターミナルコマンドを頻繁に実行させるユーザー
+
+> 📷 [画像: 「Allow All Commands in this Session」オプション](https://code.visualstudio.com/assets/updates/1_107/terminal-allow-all.png)
+
+#### Keyboard shortcuts for chat terminal actions
+
+最近の Chat ターミナルにフォーカス（`workbench.action.terminal.chat.focusMostRecentChatTerminal`）、またはその展開状態のトグル（`workbench.action.terminal.chat.focusMostRecentChatTerminalOutput`）に専用キーボードショートカットを割り当てられるようになった。
+
+- **ステータス**: **[GA]**
+
+#### Keyboard shortcuts for custom agents
+
+各カスタムエージェントにコマンドリスト内の個別アクションが用意され、キーボードショートカットを個別にバインドできるようになった。例えば「Code Reviewer」カスタムエージェントを定義すると、コマンドパレットに **Chat: Open Chat (Code Reviewer Agent)** コマンドが表示される。
+
+- **ステータス**: **[GA]**
+
+> 📷 [画像: コマンドパレットのカスタムエージェントコマンド](https://code.visualstudio.com/assets/updates/1_107/custom-agent-commands.png)
+
+#### Azure model provider: Entra ID as the default authentication
+
+Azure モデルプロバイダが BYOK モデル接続時にデフォルトで Entra ID 認証を使用するようになった。セキュリティとサインイン体験が向上している。
+
+- **関連設定**: `github.copilot.chat.azureAuthType`（デフォルト `entraId`、`apiKey` に変更可能）
+- **ステータス**: **[GA]**
+- **対象ユーザー**: Azure 経由で BYOK モデルを使用しているユーザー
+
+#### Anthropic models: Extended thinking support
+
+Anthropic モデルで Extended Thinking が有効化された。デフォルトですべての Anthropic Extended Thinking モデルで利用可能であり、Claude が応答生成前にステップバイステップの思考プロセスに追加トークンを使うことで、より深い推論と正確な出力が得られる。
+
+- **関連設定**: `github.copilot.chat.anthropic.thinking.budgetTokens`（デフォルト 4,000 トークン、`0` で無効化）
+- **ステータス**: **[GA]**
+- **対象ユーザー**: Anthropic モデルを使用するすべてのユーザー
+- Interleaved thinking（ツール呼び出し間の推論）は BYOK 経由の Anthropic モデルでのみ利用可能
+
+#### Chat view appearance improvements
+
+Chat ビューの外観が複数点改善された。
+
+- **Chat タイトル**: チャットを開くと上部にタイトルコントロールが表示され、空のチャットに素早く戻ることが可能。`chat.viewTitle.enabled` で制御。
+- **ウェルカムバナー**: `chat.viewWelcome.enabled` でアイコンとウェルカムテキストを非表示にできる。
+- **前回セッションの復元**: 再起動時や別のワークスペース開設時に前回のセッションがデフォルトで復元される。`chat.viewRestorePreviousSession` で常に空のチャットから開始するよう変更可能。
+
+- **ステータス**: **[GA]**
+
+> 🎬 [動画: Chat タイトルとセッション一覧への復帰](https://code.visualstudio.com/assets/updates/1_107/chat-title.mp4)
+
+> 📷 [画像: ウェルカムテキストを非表示にした空の Chat ビュー](https://code.visualstudio.com/assets/updates/1_107/chat-welcome.png)
+
+#### Diffs for edits to sensitive files
+
+Chat がセンシティブファイル（`settings.json`、`package.json` 等）を編集しようとする際、変更の差分（diff）が表示されるようになった。以前はモデルが提案した生の編集内容が表示されていたが、差分表示によりレビューと承認が容易になった。
+
+- **関連設定**: `chat.tools.edits.autoApprove`（センシティブファイルの定義）
+- **ステータス**: **[GA]**
+- **対象ユーザー**: エージェントに設定ファイルの変更を依頼するユーザー
+
+> 📷 [画像: package.json への変更提案の差分表示](https://code.visualstudio.com/assets/updates/1_107/sensitive-file-diff.png)
+
+#### Collapsible reasoning and tools output (Experimental)
+
+チャット会話が長くなりがちな問題に対応するため、非推論チャット出力（ツール呼び出し等）の折りたたみ可能セクションが導入された。連続するツール呼び出しがデフォルトで折りたたまれ、AI 生成のタイトルが付与される。
+
+- **関連設定**: `chat.agent.thinkingStyle`、`chat.agent.thinking.collapsedTools`
+- **ステータス**: **[Experimental]**
+- **対象ユーザー**: エージェントモードで長い会話を行うユーザー
+
+> 📷 [画像: 折りたたまれたツール呼び出しセクション](https://code.visualstudio.com/assets/updates/1_107/collapsed-tools.png)
+
+### MCP
+
+#### 概要
+
+Model Context Protocol（MCP）の最新仕様 `2025-11-25` をフルサポートし、GitHub MCP Server が Copilot Chat 拡張機能にビルトインとして提供されるようになった。
+
+#### 機能詳細
+
+#### Support for the latest MCP specification
+
+MCP 仕様 `2025-11-25` のフルサポートが追加された。主な対応内容:
+
+- [URL mode elicitation](https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation#url-elicitation-requests)
+- [Tasks](https://modelcontextprotocol.io/specification/2025-11-25/basic/utilities/tasks): 長時間実行・耐障害性のあるツール呼び出しとクライアント作業
+- enum 選択肢の[拡張](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/1330)
+
+これは VS Code が既にサポートしていた `2025-11-25` ドラフト機能（`WWW-Authenticate` スコープ同意、Client ID Metadata Document 認証フロー、ツール・リソース・サーバーのアイコン）に加えての対応。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: MCP サーバーを利用するすべてのユーザー
+
+#### GitHub MCP Server provided by GitHub Copilot Chat (Preview)
+
+GitHub リモート MCP Server が GitHub Copilot Chat 拡張機能にビルトイン MCP サーバーとして統合された。
+
+- **関連設定**: `github.copilot.chat.githubMcpServer.enabled`（`true` で有効化）
+- **ステータス**: **[Preview]**
+- **対象ユーザー**: GitHub Issues、Pull Request 等のリポジトリ情報に Chat からアクセスしたいユーザー
+- 既存の GitHub 認証状態を再利用するため、追加認証プロンプトが不要
+- Copilot CLI や Copilot Cloud Agent と同じ GitHub MCP Server を使用
+- GHE.com の透過的サポート
+- カスタマイズ設定:
+  - `github.copilot.chat.githubMcpServer.toolsets`: 利用可能ツールの構成（デフォルト: `default`、`workflows` 等の追加が可能）
+  - `github.copilot.chat.githubMcpServer.readonly`: 読み取り専用ツールのみに制限
+  - `github.copilot.chat.githubMcpServer.lockdown`: ツール動作の追加セキュリティ制御
+
+### Accessibility
+
+#### 概要
+
+Chat の確認ダイアログにおけるキーボード操作が改善された。
+
+#### 機能詳細
+
+#### Keyboard approval for chat confirmations
+
+エージェントが確認を求める際、`workbench.action.chat.acceptTool` キーバインドでキーボードから承認できるようになった。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: キーボード操作を重視するすべてのユーザー、アクセシビリティが必要なユーザー
+
+### Editor Experience
+
+#### 概要
+
+エディタ体験に 3 つの改善が追加された。開いたプロジェクトの識別性向上、macOS でのスワイプナビゲーション、ホバーポップアップのオンデマンド表示である。
+
+#### 機能詳細
+
+#### More support to indicate opened windows in pickers
+
+**Open Recent** ピッカーで、ワークスペースが既に VS Code ウィンドウで開かれている場合にインジケーターが表示されるようになった。アクティブなウィンドウは他のウィンドウとは異なる表示で区別され、どのウィンドウでも開かれていないエントリにはアイコンが表示されない。ウィンドウピッカーにもアクティブウィンドウのインジケーターが適用された。
+
+- **ステータス**: **[GA]**
+
+> 📷 [画像: 最近開いたワークスペースのインジケーター](https://code.visualstudio.com/assets/updates/1_107/pickers.png)
+
+#### macOS: Mouse swipe to navigate
+
+macOS でトラックパッドの 3 本指スワイプジェスチャーを使ってエディタ間をナビゲーションできるようになった。左右のスワイプで任意のエディタグループ内の最近使用したエディタ間を移動できる。
+
+- **関連設定**: `workbench.editor.swipeToNavigate`
+- **ステータス**: **[GA]**
+- **対象ユーザー**: macOS ユーザー
+- トラックパッド設定で「ページ間スワイプ: 3 本指で左右にスクロール」「フルスクリーンアプリ間スワイプ: 4 本指で左右にスワイプ」の設定が必要
+
+#### On demand editor hover popups
+
+エディタのホバーポップアップを自動表示しつつ、キーボード修飾キーによるオンデマンド表示に切り替えられるようになった。
+
+- **関連設定**: `editor.hover.enabled`（`on` / `off` / `onKeyboardModifier` の 3 値に対応）
+- **ステータス**: **[GA]**
+- **対象ユーザー**: テキスト選択時のホバー表示を邪魔に感じるユーザー
+- `onKeyboardModifier` 設定時、`editor.multiCursorModifier` の反対の修飾キーを押しながらホバーすると情報が表示される（例: `ctrlCmd` 設定なら `Alt` キー）
+
+### Code Editing
+
+#### 概要
+
+コード編集体験に 3 つの改善が加わった。TypeScript のリネーム提案、Next Edit Suggestions の新モデル、ビューポート外の提案プレビューである。
+
+#### 機能詳細
+
+#### Rename suggestions for TypeScript
+
+シンボルリネームが予測され、通常のテキスト提案とともに追加インジケーターが表示されるようになった。`Shift+Tab` でリネームを適用できる。関連するシンボル（例: プロパティ名 `a` を `width` にリネームした後、`b` を `height` にリネームする提案）の連鎖リネームが予測される。
+
+- **ステータス**: **[Experimental]**（実験的ロールアウト中、現在は TypeScript のみ対応。他言語のサポートは計画中）
+
+> 🎬 [動画: エディタでの Next Rename Suggestion](https://code.visualstudio.com/assets/updates/1_107/next-rename-suggestion.mp4)
+
+#### New model for next edit suggestions
+
+Next Edit Suggestions の新モデルがリリースされた。直近の編集との整合性が向上し、承認率と却下パフォーマンスが大幅に改善。[モデルの開発と改善](https://github.blog/ai-and-ml/github-copilot/evolving-github-copilots-next-edit-suggestions-through-custom-model-training/#h-continuous-improvements-nbsp)に関する詳細は GitHub ブログを参照。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: Copilot の Next Edit Suggestions を使用するすべてのユーザー
+
+#### Preview next edit suggestions outside the viewport
+
+現在のビューポート外に Next Edit Suggestion がある場合、カーソル位置にプレビューが表示されるようになった。スクロールせずに提案内容を確認でき、フローへの影響が軽減される。
+
+- **ステータス**: **[GA]**
+
+> 🎬 [動画: Next Edit Suggestion プレビュー](https://code.visualstudio.com/assets/updates/1_107/nes-outside-viewport.mp4)
+
+### Source Control
+
+#### 概要
+
+Source Control リポジトリビューのエクスプローラーにスタッシュ（Stashes）ノードが追加された。
+
+#### 機能詳細
+
+#### Stashes in the Source Control Repositories view (Experimental)
+
+Source Control Repositories ビューに Stashes ノードが追加され、スタッシュの一覧表示、内容の確認、apply、pop、drop が可能になった。
+
+- **関連設定**: `scm.repositories.explorer`（`true`）、`scm.repositories.selectionMode`（`single`）
+- **ステータス**: **[Experimental]**
+- **対象ユーザー**: Git スタッシュを頻繁に使用するユーザー
+
+> 📷 [画像: Source Control Repositories ビューの Stashes ノードとコンテキストメニュー](https://code.visualstudio.com/assets/updates/1_107/stashes-repo-explorer.png)
+
+### Debugging
+
+#### 概要
+
+デバッグの変数とウォッチ式を Chat のコンテキストとして添付できるようになった。
+
+#### 機能詳細
+
+#### Attach variables to chat
+
+**Variables** ビューと **Watch** ビューのデータを右クリック、または Chat の **Add Context** ボタンからチャットコンテキストに添付できるようになった。デバッグ中の変数値をそのまま Chat に渡せるため、デバッグと AI の連携が強化された。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: デバッグ中に Chat を活用するすべてのユーザー
+
+### Terminal
+
+#### 概要
+
+Terminal Suggest が安定版ユーザー全員に展開された。
+
+#### 機能詳細
+
+#### Terminal suggest rolled out to stable
+
+Terminal Suggest が stable ユーザーに展開され、シェルコマンド入力時にインライン補完とコンテキストヒントが提供される。関連する引数値がグループ化され、オプションフラグとパラメータが整理された一覧で表示される。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: ターミナルを使用するすべてのユーザー
+
+### Authentication
+
+#### 概要
+
+Microsoft 認証のネイティブブローカーサポートが Intel Mac と Linux x64 に拡大され、`classic` 認証オプションが廃止された。
+
+#### 機能詳細
+
+#### Cross-platform native broker support for Microsoft Authentication
+
+最新の MSAL ライブラリが採用され、ネイティブブローカーによるサインインが以下のプラットフォームで利用可能になった:
+
+- Intel Mac
+- Linux x64（Debian ベースの特定ディストリビューション）
+
+既存の Windows x64、macOS M シリーズ（ARM）に加えてプラットフォームが拡大。macOS と Linux では Intune 登録とネイティブブローカーのオプトインが必要。シングルサインオンフローを実現し、Microsoft 認証セッションの推奨取得方法となっている。
+
+- **関連設定**: `microsoft-authentication.implementation`（ブローカーに問題がある場合は `msal-no-broker` に変更可能）
+- **ステータス**: **[GA]**
+- **対象ユーザー**: Intel Mac または Linux x64 で Microsoft アカウント認証を使用するユーザー
+
+> 📷 [画像: ネイティブブローカーダイアログウィンドウ](https://code.visualstudio.com/assets/updates/1_107/macOS-auth-broker.png)
+
+#### `classic` Microsoft authentication no longer available
+
+`microsoft-authentication.implementation` の `classic` オプションが削除された。利用率の低さと Entra ID チームによる非推奨化が理由。設定の選択肢は以下の 2 つに絞られた:
+
+- `msal`（デフォルト）: ブローカー認証が利用可能な場合に使用
+- `msal-no-broker`: ブローカー認証なしで MSAL を使用
+
+- **ステータス**: **[GA]** (Breaking Change)
+- **対象ユーザー**: 以前 `classic` を使用していたユーザーは設定の更新が必要
+
+### Languages
+
+#### 概要
+
+TypeScript 7.0 プレビューの進展が報告された。ネイティブコードによる完全書き換え版で、大幅なパフォーマンス向上が期待される。
+
+#### 機能詳細
+
+#### TypeScript 7.0 preview
+
+TypeScript チームと連携し、[TypeScript 7](https://devblogs.microsoft.com/typescript/progress-on-typescript-7-december-2025/) の VS Code サポートが改善された。TypeScript 7 はネイティブコードによる完全書き換えであり、劇的なパフォーマンス向上を提供する。
+
+- 自動インポート補完、リネームサポート、参照 CodeLens が最近追加された
+- [`TypeScript (Native Preview)` 拡張機能](https://marketplace.visualstudio.com/items?itemName=TypeScriptTeam.native-preview) をインストールし、`TypeScript (Native Preview): Enable (Experimental)` コマンドで試用可能
+- TypeScript 7 が準備完了後、VS Code の JavaScript / TypeScript IntelliSense のデフォルトエンジンとして切り替え予定
+- 古い TS バージョンや TypeScript サービスプラグインなど、TS 7 に容易に移植できない機能については既存バージョンのサポートを継続予定
+
+- **ステータス**: **[Preview]**
+- **対象ユーザー**: TypeScript / JavaScript 開発者
+
+### Remote Development
+
+#### 概要
+
+[Remote Development 拡張機能パック](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)にいくつかの改善が追加された。
+
+#### 機能詳細
+
+主なハイライトとして SSH 再接続の猶予時間制御が含まれる。詳細は [Remote Development リリースノート](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_107.md) を参照。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: SSH、Dev Container、WSL、Remote Tunnels を使用するリモート開発ユーザー
+
+### Enterprise
+
+#### 概要
+
+エージェントツールの自動承認制御、ポリシーによるエージェント無効化の UX 改善、Codespaces での GitHub Enterprise ポリシーサポートが追加された。
+
+#### 機能詳細
+
+#### Control auto approval for agent tools
+
+特定のエージェントツール（破壊的操作、機密データアクセス、バックグラウンドでの任意コード実行が可能なツール）の自動承認を制御できるようになった。
+
+- **関連設定**: `chat.tools.eligibleForAutoApproval`
+- **ステータス**: **[GA]**
+- **対象ユーザー**: エンタープライズ管理者、セキュリティを重視するチーム
+- ツールが自動承認から除外された場合、ユーザーは「常に承認」オプションを利用できず、毎回明示的な承認が必要
+- エンタープライズポリシーを通じて組織全体に適用可能
+
+#### Disable the use of agents by policy
+
+エンタープライズポリシーで Chat のエージェント使用が無効化されている場合、Agents ピッカーで理由がより明確に表示されるようになった。
+
+- **ステータス**: **[GA]**
+
+> 📷 [画像: エンタープライズポリシーによりエージェントモードが利用不可であることを示す Agent ピッカー](https://code.visualstudio.com/assets/updates/1_107/agent-mode-disabled-by-policy.png)
+
+#### Support GitHub Enterprise policies in Codespaces
+
+GitHub でエンタープライズまたは組織に対して指定したポリシー（例: [MCP レジストリ URL の設定](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-mcp-usage/configure-mcp-registry)）が、GitHub Codespaces で VS Code を使用する際にも自動的に適用されるようになった。
+
+- **ステータス**: **[GA]**
+- **対象ユーザー**: GitHub Enterprise ポリシーを使用する組織で Codespaces を利用するユーザー
+
+### Contributions to extensions
+
+#### 概要
+
+GitHub Pull Requests 拡張機能に複数の改善が追加された。
+
+#### 機能詳細
+
+#### GitHub Pull Requests
+
+[GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) 拡張機能に以下の新機能が追加された:
+
+- Pull Request および Issue の暗黙的コンテキスト: PR/Issue の webview がアクティブな際に自動的にコンテキストとして提供
+- PR と Issue を **Add Context** から明示的に Chat セッションのコンテキストとして追加可能
+- Copilot PR をレビュー準備完了にマーク、承認、自動マージの設定をワンボタンで実行
+
+詳細は [0.124.0 のチェンジログ](https://github.com/microsoft/vscode-pull-request-github/blob/main/CHANGELOG.md#01240) を参照。
+
+- **ステータス**: **[GA]**
+
+## 設定項目まとめ
+
+### Agents
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `chat.viewSessions.enabled` | Chat ビューにセッション一覧を表示するか | — | GA |
+| `chat.agentSessionsViewLocation` | スタンドアロン Agent Sessions ビューの位置 | — | GA |
+| `chat.viewSessions.orientation` | セッション一覧の表示方向（auto/stacked/sideBySide） | `auto` | GA |
+| `github.copilot.chat.customAgents.showOrganizationAndEnterpriseAgents` | 組織レベルのカスタムエージェントを表示 | `false` | Experimental |
+| `github.copilot.chat.cli.customAgents.enabled` | バックグラウンドエージェントでカスタムエージェントを使用 | — | Experimental |
+| `chat.customAgentInSubagent.enabled` | カスタムエージェントをサブエージェントとして使用 | — | Experimental |
+| `chat.useClaudeSkills` | Claude スキルの再利用を許可 | — | Experimental |
+
+### Chat
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `inlineChat.enableV2` | インライン Chat の新 UX を有効化 | `true` | Preview |
+| `github.copilot.chat.azureAuthType` | Azure モデルプロバイダの認証タイプ | `entraId` | GA |
+| `github.copilot.chat.anthropic.thinking.budgetTokens` | Anthropic Extended Thinking のトークンバジェット | `4000` | GA |
+| `chat.viewTitle.enabled` | Chat タイトルコントロールの表示 | — | GA |
+| `chat.viewWelcome.enabled` | Chat ウェルカムバナーの表示 | — | GA |
+| `chat.viewRestorePreviousSession` | 前回セッションの復元動作 | — | GA |
+| `chat.tools.edits.autoApprove` | センシティブファイルの定義 | — | GA |
+| `chat.agent.thinkingStyle` | 推論トークンの表示スタイル | — | Experimental |
+| `chat.agent.thinking.collapsedTools` | ツール呼び出しの折りたたみ動作 | — | Experimental |
+
+### MCP
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `github.copilot.chat.githubMcpServer.enabled` | GitHub MCP Server の有効化 | `false` | Preview |
+| `github.copilot.chat.githubMcpServer.toolsets` | 利用可能ツールセットの構成 | `default` | Preview |
+| `github.copilot.chat.githubMcpServer.readonly` | 読み取り専用ツールのみに制限 | — | Preview |
+| `github.copilot.chat.githubMcpServer.lockdown` | ツール動作の追加セキュリティ制御 | — | Preview |
+
+### Editor Experience
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `workbench.editor.swipeToNavigate` | macOS スワイプナビゲーション | — | GA |
+| `editor.hover.enabled` | ホバーポップアップの表示モード（on/off/onKeyboardModifier） | `on` | GA |
+
+### Source Control
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `scm.repositories.explorer` | リポジトリエクスプローラーの有効化 | `false` | Experimental |
+| `scm.repositories.selectionMode` | リポジトリ選択モード | — | Experimental |
+
+### Authentication
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `microsoft-authentication.implementation` | Microsoft 認証実装の選択 | `msal` | GA |
+
+### Enterprise
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `chat.tools.eligibleForAutoApproval` | 自動承認対象ツールの定義 | — | GA |
+
+### Engineering
+
+| 設定キー | 説明 | デフォルト | ステータス |
+|---|---|---|---|
+| `chat.extensionUnification.enabled` | Copilot 拡張機能の統合 | `true` | GA |
+
+## Breaking Changes / 非推奨化
+
+### `classic` Microsoft 認証オプションの廃止
+
+- **何が変わったか**: `microsoft-authentication.implementation` の `classic` オプションが削除された。
+- **影響を受けるユーザー**: 以前 `classic` を設定して使用していたユーザー。
+- **対処法**: `msal`（デフォルト、ブローカー認証あり）または `msal-no-broker`（ブラウザ認証）に移行する。
+
+### GitHub Copilot 拡張機能のデフォルト無効化
+
+- **何が変わったか**: インライン提案の提供が GitHub Copilot Chat 拡張機能に統合され、GitHub Copilot 拡張機能がデフォルトで無効化された。
+- **影響を受けるユーザー**: すべての Copilot ユーザー。
+- **対処法**: 問題が発生した場合は `chat.extensionUnification.enabled` を `false` に設定して一時的に以前の動作に戻せる。2026 年 1 月に GitHub Copilot 拡張機能は完全に非推奨化され、この設定も削除予定。
+
+## 開発者・拡張機能作成者向け
+
+### Contributed Chat Context
+
+拡張機能が Chat のコンテキストプロバイダを提供するための新しい API プロポーザルが追加された。これにより、拡張機能が独自のドメインからリッチなコンテキストを Chat セッションに提供できる。
+
+GitHub Pull Request 拡張機能が提供するコンテキストの例:
+- ワークスペースコンテキスト（リポジトリ、ブランチ、PR の情報）
+- PR/Issue の暗黙的コンテキスト（webview がアクティブな場合）
+- PR/Issue の明示的コンテキスト（ユーザーが Add Context で追加）
+
+> ⚠️ この API はプロポーザル段階であり、今後変更または削除される可能性があります。
+> プロポーザルファイル: `vscode.proposed.chatContextProvider.d.ts`
+
+プロポーザルの全文: [vscode.proposed.chatContextProvider.d.ts](https://github.com/microsoft/vscode/blob/615abcc4ae680ef1950fe607c3b3532d3ee0a576/src/vscode-dts/vscode.proposed.chatContextProvider.d.ts)
+
+## エンジニアリング・基盤改善
+
+### Builds rollout
+
+Insiders ビルドが 4 時間のタイムウィンドウで段階的にロールアウトされるようになった。Insiders ユーザーは通知が通常より遅れる場合があるが、**Check for Updates** で即座に更新を適用できる。November 2025 (1.107) の Stable リリースは 24 時間のタイムウィンドウで段階ロールアウトされる。
+
+### Improved website search functionality
+
+[code.visualstudio.com](https://code.visualstudio.com) に高速なクライアントサイド検索が導入され、ドキュメント全体を素早くナビゲーションできるようになった。この機能のライブラリは [docfind](https://github.com/microsoft/docfind) としてオープンソース公開されている。
+
+> 🎬 [動画: Web サイト検索機能のデモ](https://code.visualstudio.com/assets/updates/1_107/website-search.mp4)
+
+### Updated build scripts run directly as TypeScript
+
+ビルドスクリプトが整理され、Node 22.18+ の [TypeScript 直接実行機能](https://nodejs.org/en/learn/typescript/run-natively) を活用してモダン TypeScript に統一された。以前はコンパイル済み TypeScript、`ts-node` 経由の TypeScript、JavaScript が混在していたが、`node build/hygiene.ts` のように直接実行可能になった。
+
+主な tsconfig 設定:
+
+```json
+{
+  "compilerOptions": {
+     "target": "esnext",
+     "module": "nodenext",
+     "noEmit": true,
+     "erasableSyntaxOnly": true,
+     "allowImportingTsExtensions": true,
+     "verbatimModuleSyntax": true
+  }
+}
+```
+
+- 型チェックには [`ts-go`](https://devblogs.microsoft.com/typescript/progress-on-typescript-7-december-2025/) を使用し、全ビルドスクリプトを 1 秒未満でチェック
+- GitHub Copilot が commonjs→modules 変換や型アノテーション追加の多くを自動化
+- 約 15,000 行のコンパイル済み JS コードを削除
+
+### Copilot extensions unification
+
+インライン提案が GitHub Copilot Chat 拡張機能から提供される形に完全移行した。この変更により GitHub Copilot 拡張機能はデフォルトで無効化される。
+
+- **関連設定**: `chat.extensionUnification.enabled`（`false` で一時的に以前の動作に戻せる）
+- 2026 年 1 月に GitHub Copilot 拡張機能を完全非推奨化予定
+
+## Notable fixes
+
+- [vscode#233635](https://github.com/microsoft/vscode/issues/233635) — 他のウィンドウを閉じるアクションの追加
+- [vscode#262817](https://github.com/microsoft/vscode/issues/262817) — 最左グループから「Move Editor into Previous Group」を実行すると左に新グループが作成されるように修正
+- [vscode#264569](https://github.com/microsoft/vscode/issues/264569) — `window.activeBorder` カラーの設定/削除がウィンドウボーダーカラーをリセットしない問題を修正
+- [vscode#140186](https://github.com/microsoft/vscode/issues/140186) — リモートコンテナをワークスペースとして開いた際にローカルターミナルを開けない問題を修正
+- [vscode#228359](https://github.com/microsoft/vscode/issues/228359) — ターミナルの再起動がターミナルを閉じるだけになることがある問題を修正
+- [vscode#232420](https://github.com/microsoft/vscode/issues/232420) — Python 3.13 でターミナルカーソルが誤った位置に表示される問題を修正
+- [vscode#247568](https://github.com/microsoft/vscode/issues/247568) — ファイル名にコロンを含むファイルへの Ctrl+Click が動作しない問題を修正
+- [vscode#275011](https://github.com/microsoft/vscode/issues/275011) — WSL で信頼済みワークスペースを開く際の不正なターミナルメッセージを修正
+- [vscode#275417](https://github.com/microsoft/vscode/issues/275417) — WSL で `reveal:never, close:true` のタスクが動作しない問題を修正
+- [vscode#277311](https://github.com/microsoft/vscode/issues/277311) — コマンドパレットの「最近使用」リストから項目を削除する「X」ボタンの追加
+- [vscode#282222](https://github.com/microsoft/vscode/issues/282222) — SCM の git blame/timeline/graph ホバーレンダリングの改善
+- [vscode-python-environments#1000](https://github.com/microsoft/vscode-python-environments/issues/1000) — 「Command Prompt」で環境アクティベーションが安定して動作しない問題を修正
+
+## コミュニティ貢献
+
+以下は本リリースで特に影響の大きいコミュニティ貢献のピックアップ:
+
+- **[@SimonSiefke](https://github.com/SimonSiefke)**: breadcrumbs、quick diff model、ターミナルプロセス、スタートアップページ、ターミナルタブリスト、history service、composite bar など **11 件** のメモリリーク修正。VS Code の安定性向上に大きく貢献。
+- **[@tamuratak (Takashi Tamura)](https://github.com/tamuratak)**: コードブロックエディタ描画完了後の `onDidChangeHeight` 発火修正、DOM リセットでの `childNodes` 使用修正、KaTeX の数式正規表現修正。Issue トラッキングにも貢献。
+- **[@cannona (Aaron Cannon)](https://github.com/cannona)**: 「Move Editor into Previous Group」で左端グループから新グループを作成できるよう修正 ([PR #275968](https://github.com/microsoft/vscode/pull/275968))。
+- **[@JeffreyCA](https://github.com/JeffreyCA)**: ターミナル補完の永続オプション対応と提案グルーピングの改善 ([PR #276409](https://github.com/microsoft/vscode/pull/276409))。
+- **[@yavanosta (Dmitry Guketlev)](https://github.com/yavanosta)**: `UriIdentityService` のパフォーマンス改善 ([PR #273111](https://github.com/microsoft/vscode/pull/273111))。
+- **[@vicky1999 (Vignesh)](https://github.com/vicky1999)**: GitHub Pull Requests 拡張機能でコミットステータスアイコン表示、コメントリンクコピーボタン追加など複数の貢献。
+- **[@zsol (Zsolt Dollenstein)](https://github.com/zsol)**: Python 環境ツールで uv ワークスペースのサポートを追加。
+
+## まとめと所感
+
+VS Code 1.107 はエージェント中心のマルチタスク開発ワークフローを本格的に実現するリリースである。エージェントセッションの Chat 統合と Git worktree 分離により、複数の自律エージェントを並行して安全に運用できる基盤が整った。MCP 最新仕様への対応と GitHub MCP Server の組み込みは、エージェントが外部サービスと連携するためのインフラ強化として注目に値する。一方、`classic` 認証の廃止や Copilot 拡張機能の統合など、レガシー機能の整理も着実に進んでおり、2026 年 1 月の完全非推奨化に向けた移行準備が必要である。日常の開発では、Terminal Suggest の stable 昇格と Next Edit Suggestions の新モデルが即座に恩恵をもたらすだろう。
+

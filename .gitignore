@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .env
 .pytest_cache/
+
+# Marp build outputs
+slides/*.html
+slides/*.pdf
+slides/*.pptx

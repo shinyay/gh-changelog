@@ -1,0 +1,9 @@
+# Marp CLI 設定ファイル
+# marp コマンド実行時にこのファイルの設定が自動で適用されます。
+# 参照: https://github.com/marp-team/marp-cli#configuration-file
+
+# カスタムテーマCSS を登録（theme: github-dark が使えるようになる）
+themeSet: ./slides/themes/github-dark.css
+
+# ローカルファイル（画像など）の読み込みを許可
+allowLocalFiles: true

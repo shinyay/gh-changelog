@@ -55,6 +55,17 @@ VS Code Updates tasks:
 - "VS Code Updates: validate AI outputs"
 - "VS Code Updates: list missing AI sidecars"
 
+## Automated Changelog Fetch (GitHub Actions)
+
+A GitHub Actions workflow automatically fetches original changelog entries into `changelogs-original/`.
+
+- **Schedule**: Twice daily at 16:00 UTC and 21:00 UTC (covers US business hours).
+- **Lookback window**: Fetches entries from the last 3 days to catch weekends/holidays.
+- **Auto-commit**: New entries are committed directly to `main`.
+- **Manual trigger**: Run on-demand via `workflow_dispatch` with optional `start_date` and `end_date` inputs.
+
+Once the original documents are in the repo, use Copilot Chat to deep-dive and generate AI analysis sidecars (`changelogs/_ai/`) and JP translations (`changelogs-jp/`).
+
 ## How to use from Copilot Chat
 
 - Repo-level instructions live in `.github/copilot-instructions.md`.

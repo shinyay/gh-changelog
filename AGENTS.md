@@ -13,11 +13,19 @@ It also supports **Japanese translations** of GitHub Changelog entries.
 
 ### What is generated
 
+- Original entries (auto-fetched): `./changelogs-original/YYYY-MM-DD-<slug>.md`
 - Markdown entries: `./changelogs/YYYY-MM-DD-<slug>.md`
 - Index: `./changelogs/index.md`
 - AI sidecar JSON (validated): `./changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
 
-### Typical run
+### Automated fetch (GitHub Actions)
+
+A GitHub Actions workflow (`.github/workflows/fetch-changelog.yml`) fetches original
+changelog entries into `./changelogs-original/` twice daily (16:00 & 21:00 UTC) with
+a 3-day lookback window. New entries are auto-committed to `main`. It can also be
+triggered manually via `workflow_dispatch` with optional `start_date`/`end_date` inputs.
+
+### Manual fetch
 
 ```bash
 python3 scripts/fetch_changelog.py --use-api --start-date 2025-10-27 --end-date 2026-01-30

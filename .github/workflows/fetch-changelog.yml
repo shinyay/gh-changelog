@@ -1,0 +1,68 @@
+name: Fetch GitHub Changelog
+
+on:
+  schedule:
+    # Twice daily — covers US business hours when GitHub publishes changelogs
+    - cron: "0 16 * * *"  # 16:00 UTC
+    - cron: "0 21 * * *"  # 21:00 UTC
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: "Start date (YYYY-MM-DD). Defaults to 3 days ago."
+        required: false
+      end_date:
+        description: "End date (YYYY-MM-DD). Defaults to today."
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compute date range
+        id: dates
+        run: |
+          if [ -n "${{ inputs.start_date }}" ]; then
+            echo "start=${{ inputs.start_date }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "start=$(date -u -d '3 days ago' +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "${{ inputs.end_date }}" ]; then
+            echo "end=${{ inputs.end_date }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "end=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fetch changelog entries
+        run: |
+          python scripts/fetch_changelog.py \
+            --use-api \
+            --start-date "${{ steps.dates.outputs.start }}" \
+            --end-date "${{ steps.dates.outputs.end }}" \
+            --output-dir changelogs-original
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add changelogs-original/
+          if git diff --cached --quiet; then
+            echo "No new changelog entries."
+          else
+            git commit -m "chore: auto-fetch changelog entries [skip ci]"
+            git push
+          fi

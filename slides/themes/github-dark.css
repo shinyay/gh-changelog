@@ -21,9 +21,9 @@
   --color-muted: #8b949e;
   --color-code-bg: #161b22;
   --color-code-fg: #e6edf3;
-  --font-body: "Segoe UI", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+  --font-body: "Mona Sans", "Noto Sans JP", "Hiragino Kaku Gothic ProN",
     "Meiryo", sans-serif;
-  --font-mono: "Cascadia Code", "Fira Code", "Source Code Pro", monospace;
+  --font-mono: "Mona Sans Mono", "Cascadia Code", "Fira Code", "Source Code Pro", monospace;
 }
 
 /* ===== Base section (every slide) ===== */

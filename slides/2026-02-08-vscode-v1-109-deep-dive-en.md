@@ -6,6 +6,14 @@ header: "VS Code v1.109 Deep Dive"
 footer: "January 2026 Release — February 8, 2026"
 ---
 
+<!-- _header: "" -->
+<!-- _footer: "" -->
+<!-- _paginate: false -->
+
+![bg contain](images/vscode-v1-109-cover.png)
+
+---
+
 # VS Code v1.109 Deep Dive
 ## January 2026 Release — AI & Agent Edition
 

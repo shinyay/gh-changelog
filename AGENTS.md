@@ -30,6 +30,13 @@ Once entries exist in `changelogs-original/`, use the Copilot prompt
 `run_changelog_pipeline.prompt.md` to generate AI sidecar JSON files.
 The prompt reads from `changelogs-original/` and writes sidecars to `changelogs/_ai/`.
 
+**Important**: When generating AI sidecars, always ensure the corresponding
+Markdown file also exists in `./changelogs/`. If it is missing, copy it from
+`./changelogs-original/` to `./changelogs/`. Every entry must have all three files:
+- `changelogs-original/<stem>.md` (source, auto-fetched)
+- `changelogs/<stem>.md` (processed Markdown)
+- `changelogs/_ai/<stem>.ai.json` (AI sidecar)
+
 ### Manual fetch (fallback)
 
 ```bash

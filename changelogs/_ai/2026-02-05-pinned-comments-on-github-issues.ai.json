@@ -1,41 +1,44 @@
 {
-  "overview": "GitHub Issues now supports pinning a comment to the top of an issue and includes a nudge to discourage low-quality comments like '+1' or 'same here', encouraging reactions and subscriptions instead.",
+  "overview": "GitHub Issues introduces two updates: the ability to pin a comment to the top of an issue to surface key decisions and next steps, and a nudge that discourages low-quality '+1' or 'same here' comments by encouraging reactions and subscriptions instead.",
   "detailed_explanation": [
     {
       "title": "Pinned comments",
       "bullets": [
-        "Users can now pin a comment to the top of an issue via the comment '...' menu.",
-        "Pinned comments surface key updates, decisions, or next steps for anyone viewing the issue.",
-        "Helps readers quickly understand what matters most without scrolling through the entire thread."
+        "Issue maintainers can pin a comment to the top of an issue thread.",
+        "Pinning is done via the '...' menu on any comment.",
+        "Pinned comments surface key updates, decisions, and next steps prominently.",
+        "Helps readers quickly find the most important context without scrolling through the full thread."
       ]
     },
     {
       "title": "Low-quality comment nudge",
       "bullets": [
-        "A nudge encourages people to react or subscribe instead of leaving comments like '+1' or 'same here'.",
-        "Reduces noise, clutter, and unnecessary notifications on issues.",
-        "Still provides an easy way to show support and stay updated through reactions."
+        "A nudge discourages low-quality comments such as '+1', 'same here', or 'me too'.",
+        "The nudge encourages users to use reactions (emoji) instead of adding noise to the thread.",
+        "Users are also encouraged to subscribe to the issue for updates rather than commenting.",
+        "Reduces unnecessary notifications for issue participants.",
+        "Aims to improve signal-to-noise ratio on popular or high-traffic issues."
       ]
     }
   ],
   "key_changes": [
-    "Comment pinning is now available on GitHub Issues via the '...' menu.",
-    "A UI nudge discourages low-quality comments and suggests using reactions instead."
+    "New ability to pin a comment to the top of a GitHub issue via the '...' menu.",
+    "New nudge mechanism discourages low-quality '+1'/'same here' comments and promotes reactions and subscriptions."
   ],
   "impact": [
-    "Issue maintainers can pin important comments to improve discoverability of key decisions and updates.",
-    "All GitHub users will see the nudge when attempting to leave low-signal comments on issues.",
-    "Teams managing high-traffic issues benefit from reduced notification noise."
+    "Issue maintainers can highlight critical decisions and next steps, reducing time spent scanning long threads.",
+    "Contributors on popular issues will experience fewer notification floods from low-value comments.",
+    "Issue readability improves as key information is elevated and noise is reduced."
   ],
   "caveats": [
-    "The article does not specify how many comments can be pinned per issue.",
-    "The article does not state whether pinning is available for pull request comments as well.",
-    "The nudge behavior (exact trigger, dismissibility) is not described in detail."
+    "Not stated in the article whether multiple comments can be pinned simultaneously.",
+    "The nudge is a suggestion and does not prevent users from posting low-quality comments.",
+    "Not stated in the article whether pinned comments are available for Discussions or only Issues."
   ],
   "insights": [
-    "Comment pinning addresses a long-standing request for surfacing decisions in long issue threads.",
-    "The low-quality comment nudge is a soft intervention rather than a hard block, preserving user freedom while guiding behavior.",
-    "Together, these features improve the signal-to-noise ratio in issue discussions, which is especially valuable for popular open-source projects."
+    "Pinned comments address a long-standing community request and mirror similar functionality in platforms like Discord and Slack.",
+    "The nudge against '+1' comments reflects GitHub’s ongoing effort to shift issue engagement toward structured signals (reactions) rather than unstructured text.",
+    "Combined, these features target the most common pain point for maintainers of high-traffic open-source issues: important context getting buried under noise."
   ],
-  "confidence": 0.91
+  "confidence": 0.88
 }

@@ -79,6 +79,11 @@ Quality bar:
 3) Save sidecar JSON to:
 - `changelogs/_ai/{same-stem}.ai.json`
 
+4) **Ensure Markdown exists in `changelogs/`** (non-negotiable):
+- Check if `changelogs/{same-stem}.md` exists.
+- If missing, copy it from `changelogs-original/{same-stem}.md`.
+- Every entry MUST have all three files: `changelogs-original/`, `changelogs/`, and `changelogs/_ai/`.
+
 ### Step 4 — Validate all AI outputs
 Run:
 - `python3 scripts/validate_ai_outputs.py`

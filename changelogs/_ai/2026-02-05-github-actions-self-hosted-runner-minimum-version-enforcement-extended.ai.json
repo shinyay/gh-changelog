@@ -1,57 +1,60 @@
 {
-  "overview": "GitHub has extended the deadline for self-hosted runner minimum version enforcement by one week. Self-hosted runners must be upgraded to v2.329.0 or later by March 16, 2026, with a brownout period running from February 16 to March 16.",
+  "overview": "GitHub has extended the self-hosted runner minimum version enforcement deadline by one week to March 16, 2026. Runners below v2.329.0 will be permanently blocked after that date, with brownout periods starting February 16 to encourage timely upgrades.",
   "detailed_explanation": [
     {
-      "title": "Timeline extension",
+      "title": "Extended deadline",
       "bullets": [
-        "The configuration-time version enforcement deadline has been extended by one week to March 16, 2026.",
-        "This extends the timeline originally shared in the December 2025 announcement."
+        "The enforcement deadline has been extended by one week to March 16, 2026.",
+        "This extends the original December 2025 announcement timeline.",
+        "The minimum required runner version is v2.329.0, released October 15, 2025."
       ]
     },
     {
-      "title": "Enforcement details",
+      "title": "Enforcement behavior after March 16",
       "bullets": [
-        "Starting March 16, 2026, GitHub Actions will block configurations from runners older than v2.329.0 (released October 15, 2025).",
-        "After enforcement, older runners will not be able to connect or self-upgrade after running the configuration script."
+        "Runners below v2.329.0 will be permanently blocked from picking up jobs.",
+        "Blocked runners will not be able to self-upgrade; manual intervention is required.",
+        "Organizations must proactively update before the cutoff date."
       ]
     },
     {
-      "title": "Brownout schedule",
+      "title": "Brownout schedule (Feb 16 – Mar 16)",
       "bullets": [
-        "Between February 16 and March 16, scheduled configuration blocks will occur to help identify runners needing updates.",
-        "Brownout windows escalate from 1-hour blocks in week 1 to multi-hour blocks in weeks 2-3, then continuous from March 9.",
-        "Times are provided across UTC, US Pacific, US Eastern, Central Europe, India, Japan/Korea, and Australia East."
+        "Week 1 (starting Feb 16): 1-hour blocks where older runners are rejected.",
+        "Weeks 2–3: Multi-hour brownout blocks with increasing duration.",
+        "From March 9 onward: Continuous brownout until the March 16 hard cutoff."
       ]
     },
     {
       "title": "Required actions",
       "bullets": [
-        "Download the latest runner release from the Actions Runner releases page.",
-        "Update installation scripts, images, or automation to install v2.329.0 or later before running ./config.sh.",
-        "Recreate or redeploy runners built from images or templates containing older versions."
+        "Download and deploy the latest runner version (v2.329.0 or newer).",
+        "Update all scripts, images, and automation pipelines to reference v2.329.0+.",
+        "Recreate any runners built from old images that bundle older runner versions."
       ]
     }
   ],
   "key_changes": [
-    "Minimum version enforcement deadline extended by one week to March 16, 2026.",
-    "Brownout period: February 16 – March 16, with escalating configuration blocks.",
-    "Full enforcement begins March 16, 2026: runners below v2.329.0 permanently blocked.",
-    "Minimum required version is v2.329.0 (released October 15, 2025)."
+    "Enforcement deadline extended by one week to March 16, 2026.",
+    "Minimum required version is v2.329.0 (released October 15, 2025).",
+    "Brownout periods begin February 16 with escalating blocks: 1-hour (week 1), multi-hour (weeks 2–3), continuous (from March 9).",
+    "After March 16, runners below v2.329.0 are permanently blocked and cannot self-upgrade."
   ],
   "impact": [
-    "All organizations using self-hosted runners must ensure runners are at v2.329.0 or later by March 16, 2026.",
-    "CI/CD pipelines using older runner versions will experience temporary blocks during the brownout period.",
-    "Teams with runner images baked into templates or automation need to rebuild with the updated version."
+    "All organizations using self-hosted runners must upgrade to v2.329.0+ before March 16, 2026 or lose CI/CD capability on those runners.",
+    "Brownout periods starting February 16 will cause intermittent job failures for non-compliant runners, serving as early warnings.",
+    "Teams relying on custom runner images need to rebuild with the updated runner binary.",
+    "Automation and provisioning scripts referencing older runner versions must be updated."
   ],
   "caveats": [
-    "The one-week extension is the only change; the minimum version requirement (v2.329.0) remains the same.",
-    "Brownout blocks are scheduled and will affect runners below the minimum version even before full enforcement.",
-    "After March 16, older runners cannot self-upgrade via the configuration script; they must be manually updated first."
+    "Runners below v2.329.0 cannot self-upgrade once blocked; manual download and deployment is required.",
+    "The one-week extension is the final extension mentioned; no further extensions are indicated.",
+    "Brownout disruptions begin February 16, well before the hard cutoff."
   ],
   "insights": [
-    "The extension suggests that a significant number of organizations had not yet upgraded, prompting GitHub to provide additional time.",
-    "The escalating brownout schedule is designed to create urgency progressively, giving teams early warning signals.",
-    "Organizations should treat the brownout blocks as dry runs to identify all runners that still need upgrading."
+    "The escalating brownout strategy (1-hour → multi-hour → continuous) is designed to give teams progressive urgency signals rather than an abrupt cutoff.",
+    "Extending the deadline by only one week suggests GitHub considers most organizations should already be prepared from the December 2025 notice.",
+    "The inability to self-upgrade after the cutoff is a deliberate forcing function to ensure organizations maintain runner infrastructure actively."
   ],
-  "confidence": 0.95
+  "confidence": 0.92
 }

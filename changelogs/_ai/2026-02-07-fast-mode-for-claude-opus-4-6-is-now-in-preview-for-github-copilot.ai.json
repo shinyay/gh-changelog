@@ -1,0 +1,51 @@
+{
+  "overview": "Fast mode for Claude Opus 4.6 is now available as a research preview for GitHub Copilot Enterprise users, delivering up to 2.5x faster output tokens while maintaining the same intelligence level as Claude Opus 4.6.",
+  "detailed_explanation": [
+    {
+      "title": "What is Fast mode",
+      "bullets": [
+        "A research preview variant of Claude Opus 4.6 optimized for speed.",
+        "Delivers up to 2.5x faster output token generation.",
+        "Maintains the same intelligence and capability as the standard Opus 4.6 model.",
+        "Described as early and experimental."
+      ]
+    },
+    {
+      "title": "Availability",
+      "bullets": [
+        "Available to Copilot Enterprise users only during the preview.",
+        "Selectable via the model picker in VS Code (chat, ask, edit, agent modes) and Copilot CLI.",
+        "Rollout is gradual; the model may not be immediately visible to all users."
+      ]
+    },
+    {
+      "title": "Enablement requirements",
+      "bullets": [
+        "Enterprise plan administrators must enable the 'Fast mode for Claude Opus 4.6' policy in Copilot settings.",
+        "The policy is not enabled by default during the preview period."
+      ]
+    }
+  ],
+  "key_changes": [
+    "Fast mode for Claude Opus 4.6 introduced as a research preview with up to 2.5x faster output tokens.",
+    "Available in VS Code model picker (chat, ask, edit, agent) and Copilot CLI.",
+    "Enterprise admins must explicitly enable the Fast mode policy in Copilot settings."
+  ],
+  "impact": [
+    "Copilot Enterprise users can opt into significantly faster Claude Opus 4.6 responses for iterative coding tasks.",
+    "Enterprise admins gain a new policy toggle to control access to the Fast mode variant.",
+    "Developers using Copilot Pro, Pro+, Business, or Free plans do not have access during this preview."
+  ],
+  "caveats": [
+    "The feature is in research preview and described as early and experimental.",
+    "Only available to Copilot Enterprise users; other plan tiers are not included.",
+    "Rollout is gradual and may not be immediately visible.",
+    "Pricing or premium request consumption details for Fast mode are Not stated in the article."
+  ],
+  "insights": [
+    "The 'research preview' label and 'early and experimental' language suggest this is an early-stage optimization that may evolve before broader availability.",
+    "Restricting to Enterprise users only indicates a cautious rollout, likely gathering usage data before expanding to other plan tiers.",
+    "The 2.5x speed improvement targets the latency bottleneck that is particularly noticeable in agentic workflows requiring many iterative model calls."
+  ],
+  "confidence": 0.85
+}

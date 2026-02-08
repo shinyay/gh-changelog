@@ -1,73 +1,63 @@
 {
-  "overview": "GitHub Actions introduces the runner scale set client for custom autoscaling without Kubernetes, extends action allowlisting to all plan types, and adds new Windows Server 2025 with VS 2026 and macOS 26 Intel runner images in public preview.",
+  "overview": "GitHub Actions early February 2026 updates introduce the Runner Scale Set Client as a public preview — a standalone Go-based module for custom autoscaling without Kubernetes — along with action allowlisting expanded to all plan types, a new Windows Server 2025 + VS 2026 image, and macOS 26 Intel support for larger runners.",
   "detailed_explanation": [
     {
-      "title": "Runner scale set client (public preview)",
+      "title": "Runner Scale Set Client (public preview)",
       "bullets": [
-        "Standalone Go-based module for building custom autoscaling solutions without requiring Kubernetes.",
-        "Platform agnostic: works with containers, VMs, and bare metal across Windows, Linux, and macOS.",
-        "Provides full provisioning control: users define how runners are created, scaled, and destroyed.",
-        "Native multi-label support allows assigning multiple labels per scale set.",
-        "Supports agentic workflows including GitHub Copilot coding agent.",
-        "Includes real-time telemetry for monitoring job execution and runner performance."
+        "A standalone Go-based module that enables custom autoscaling without requiring Kubernetes.",
+        "Platform agnostic: supports containers, VMs, bare metal across Windows, Linux, and macOS.",
+        "Provides full provisioning control and multi-label support.",
+        "Supports agentic scenarios including Copilot coding agent workloads.",
+        "Includes real-time telemetry for monitoring runner operations.",
+        "Not intended as a replacement for ARC (Actions Runner Controller).",
+        "ARC multi-label support is planned separately in v0.14.0 (March 2026)."
       ]
     },
     {
-      "title": "Relationship to Actions Runner Controller (ARC)",
+      "title": "Action allowlisting expansion",
       "bullets": [
-        "Not a replacement for ARC, which remains the recommended Kubernetes solution.",
-        "The client interfaces with the same scale set APIs for non-Kubernetes environments.",
-        "Multi-label support for ARC is planned for version 0.14.0, expected March 2026."
+        "Action allowlisting is now available across all GitHub plan types: Free, Team, and Enterprise.",
+        "Previously restricted to higher-tier plans, this broadens security controls for all organizations."
       ]
     },
     {
-      "title": "Action allowlisting for all plan types",
+      "title": "Windows Server 2025 + VS 2026 image",
       "bullets": [
-        "Action allowlisting is now available across Free, Team, and Enterprise plans (previously restricted).",
-        "Allows defining exactly which actions and reusable workflows can run in repositories.",
-        "Enables least privilege enforcement and protection against compromised actions."
+        "New image label windows-2025-vs2026 is available in public preview.",
+        "Combines Windows Server 2025 with Visual Studio 2026.",
+        "At GA (targeted May 4, 2026), VS 2026 will be integrated into the existing windows-2025 image."
       ]
     },
     {
-      "title": "Windows Server 2025 with Visual Studio 2026 image",
+      "title": "macOS 26 Intel runner",
       "bullets": [
-        "New runner image available in public preview using runs-on: windows-2025-vs2026.",
-        "Runs alongside the current windows-2025 image for safe parallel validation.",
-        "VS 2026 will be integrated into the windows-2025 image at GA on May 4, 2026."
-      ]
-    },
-    {
-      "title": "macOS 26 Intel image",
-      "bullets": [
-        "macOS 26 Intel runner image available in public preview for larger runners.",
-        "Use runs-on: macos-26-large to target this image.",
-        "Provides latest macOS and Xcode tooling for Intel-based workflows."
+        "macOS 26 Intel image (macos-26-large) is available in public preview.",
+        "Available only for larger runners (not standard GitHub-hosted runners)."
       ]
     }
   ],
   "key_changes": [
-    "Runner scale set client released in public preview: Go-based, platform-agnostic autoscaling without Kubernetes.",
-    "Action allowlisting expanded to all GitHub plan types (Free, Team, Enterprise).",
-    "Windows Server 2025 + Visual Studio 2026 runner image in public preview (windows-2025-vs2026).",
-    "macOS 26 Intel runner image in public preview (macos-26-large).",
-    "Multi-label support planned for ARC v0.14.0 in March 2026."
+    "Runner Scale Set Client released in public preview as a standalone Go-based module for custom autoscaling without Kubernetes.",
+    "Action allowlisting expanded from Enterprise-only to all plan types (Free, Team, Enterprise).",
+    "New windows-2025-vs2026 runner image in public preview; VS 2026 will merge into windows-2025 at GA on May 4, 2026.",
+    "macOS 26 Intel image (macos-26-large) available in public preview for larger runners."
   ],
   "impact": [
-    "Teams running non-Kubernetes infrastructure can now build custom runner autoscaling using the scale set client.",
-    "Free and Team plan users gain access to action allowlisting for security hardening.",
-    "CI/CD pipelines targeting Visual Studio 2026 can begin testing with the new Windows runner image.",
-    "Intel-based macOS workflows can use the latest macOS 26 and Xcode tooling via larger runners."
+    "Teams running self-hosted infrastructure outside Kubernetes can now leverage GitHub’s autoscaling with the Runner Scale Set Client.",
+    "Organizations on Free and Team plans gain action allowlisting controls previously exclusive to Enterprise.",
+    "CI/CD pipelines targeting Visual Studio 2026 can begin testing with the new windows-2025-vs2026 image.",
+    "Larger runner users on Intel-based macOS workflows can adopt macOS 26."
   ],
   "caveats": [
-    "The scale set client requires users to manage all infrastructure setup, provisioning logic, and scaling strategies themselves.",
-    "The macOS 26 Intel image is only available for larger runners, not standard GitHub-hosted runners.",
-    "Visual Studio 2026 integration into windows-2025 is planned for May 4, 2026; until then, use the dedicated windows-2025-vs2026 label.",
-    "ARC multi-label support is not yet available; planned for v0.14.0 in March 2026."
+    "The Runner Scale Set Client is in public preview and is not a replacement for ARC.",
+    "ARC multi-label support arrives separately in v0.14.0, scheduled for March 2026.",
+    "The windows-2025-vs2026 image is in preview; VS 2026 integration into windows-2025 is planned for GA on May 4, 2026.",
+    "macOS 26 Intel is limited to larger runners and is in public preview."
   ],
   "insights": [
-    "The scale set client decouples GitHub's orchestration from Kubernetes, significantly broadening the addressable infrastructure for self-hosted runners.",
-    "Expanding allowlisting to all plans indicates a security-first direction, making supply chain controls accessible regardless of plan tier.",
-    "The parallel image strategy (dedicated VS 2026 image now, integration later) gives teams a safe migration path without disrupting existing pipelines."
+    "Offering a Go-based standalone client decouples GitHub’s autoscaling from Kubernetes, addressing a major friction point for enterprises that run non-Kubernetes infrastructure.",
+    "Expanding action allowlisting to Free and Team plans signals GitHub is democratizing security controls across all tiers.",
+    "The agentic scenario support in the Runner Scale Set Client reflects growing investment in AI-driven developer workflows like Copilot coding agent."
   ],
-  "confidence": 0.92
+  "confidence": 0.88
 }

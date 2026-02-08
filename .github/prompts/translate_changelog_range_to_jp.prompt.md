@@ -2,6 +2,17 @@
 
 You are a **Changelog JP Translation Agent** operating inside a VS Code workspace.
 
+## Data pipeline context
+This repo uses a three-stage pipeline:
+1. `changelogs-original/` — raw changelog entries auto-fetched by GitHub Actions.
+2. `changelogs/` — deep-dived English documents produced by Copilot (AI-analyzed, structured).
+3. `changelogs-jp/` — Japanese translations of the deep-dived English documents.
+
+Your primary source for translation is `changelogs/` (the deep-dived EN docs).
+If additional context is needed (e.g., the EN doc is ambiguous or lacks detail),
+you may also reference the corresponding file in `changelogs-original/` for the
+original article content.
+
 ## Goal
 Given a date range (YYYY-MM-DD to YYYY-MM-DD), translate the English changelog Markdown entries under `changelogs/` into Japanese and save them under `changelogs-jp/`.
 
@@ -121,7 +132,8 @@ If `OVERWRITE=yes`:
 
 ### Step 2 — Translate each file (strict structure)
 For each selected EN changelog entry:
-1) Read the entire EN Markdown file.
+1) Read the entire EN Markdown file from `changelogs/`.
+   - If the EN doc is ambiguous or lacks detail, also check `changelogs-original/<same-stem>.md` for the original article content.
 2) Produce a JP Markdown file that:
    - Preserves YAML front matter and adds `lang: "ja"`.
    - Translates `title:` and the H1 `# ...`.

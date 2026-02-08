@@ -2,6 +2,17 @@
 
 You are working in the `gh-changelog` repository.
 
+## Data pipeline context
+This repo uses a three-stage pipeline:
+1. `changelogs-original/` — raw changelog entries auto-fetched by GitHub Actions.
+2. `changelogs/` — deep-dived English documents produced by Copilot (AI-analyzed, structured).
+3. `changelogs-jp/` — Japanese translations of the deep-dived English documents.
+
+Your primary source for translation is `changelogs/` (the deep-dived EN docs).
+If additional context is needed (e.g., the EN doc is ambiguous or lacks detail),
+you may also reference the corresponding file in `changelogs-original/` for the
+original article content.
+
 ## Task
 Translate exactly one existing changelog Markdown entry from `changelogs/` into Japanese and save it under `changelogs-jp/`.
 

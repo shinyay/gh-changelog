@@ -1,18 +1,18 @@
 # gh-changelog
 
-Fetch GitHub Changelog entries for a date range and generate a local Markdown archive under `./changelogs/`.
+Archive GitHub Changelog entries and generate AI analysis sidecars.
 
-This repo is designed to be driven from **VS Code GitHub Copilot Chat** with high reproducibility:
+GitHub Actions automatically fetches changelog entries into `./changelogs-original/` twice daily.
+Then use **VS Code GitHub Copilot Chat** to generate AI deep-dive sidecars:
 
-- Fetch entries via the Python fetcher script.
+- Original entries are auto-fetched by GitHub Actions into `changelogs-original/`.
 - Generate an AI deep dive as **strict JSON** (sidecar files) validated against a JSON schema.
 - Keep the Markdown output consistent and scannable.
 
 ## What gets generated
 
-- `changelogs/YYYY-MM-DD-<slug>.md`
-- `changelogs/index.md`
-- `changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
+- `changelogs-original/YYYY-MM-DD-<slug>.md` (auto-fetched by GitHub Actions)
+- `changelogs/_ai/YYYY-MM-DD-<slug>.ai.json` (AI deep-dive via Copilot Chat)
 
 ## VS Code Updates archive (monthly release notes)
 
@@ -78,9 +78,7 @@ Generate presentation slides from changelog data using Copilot Chat with the pro
 ## How to use from Copilot Chat
 
 - Repo-level instructions live in `.github/copilot-instructions.md`.
-- Use the prompt `.github/prompts/fetch_changelog_range.prompt.md` and provide a date range (YYYY-MM-DD to YYYY-MM-DD).
-
-After fetching, generate AI sidecar JSON for each entry using `.github/prompts/changelog_deep_dive_json.prompt.md` and save it under `changelogs/_ai/`.
+- Use the prompt `.github/prompts/run_changelog_pipeline.prompt.md` and provide a date range to generate AI sidecars from pre-fetched entries in `changelogs-original/`.
 
 You can check which entries still need AI sidecars by running the task "Changelog: list missing AI sidecars".
 

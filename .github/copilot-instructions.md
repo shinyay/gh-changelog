@@ -25,7 +25,7 @@ When one of these prompts is attached or the user request clearly maps to a work
 
 When the user asks for a changelog date range (YYYY-MM-DD to YYYY-MM-DD):
 
-1. Fetch entries using `scripts/fetch_changelog.py` (prefer `--use-api`).
+1. Read pre-fetched entries from `changelogs-original/` (auto-fetched by GitHub Actions).
 2. For each entry, produce an AI deep-dive as strict JSON conforming to `schemas/changelog_ai_analysis.schema.json`.
 3. Save the AI result as a sidecar file under `changelogs/_ai/`.
 4. Validate outputs using `scripts/validate_ai_outputs.py`.

@@ -35,7 +35,7 @@ def expected_sidecar_path(ai_dir: str, md_path: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="List changelog Markdown files missing AI sidecars")
-    parser.add_argument("--output-dir", default="changelogs", help="Directory containing Markdown entries")
+    parser.add_argument("--output-dir", default="changelogs-original", help="Directory containing Markdown entries")
     parser.add_argument("--ai-dir", default=os.path.join("changelogs", "_ai"), help="Directory for AI JSON sidecars")
     args = parser.parse_args()
 

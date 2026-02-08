@@ -1,16 +1,22 @@
-# Prompt: Run full changelog pipeline (fetch → AI sidecars → validate)
+# Prompt: Run changelog AI deep-dive pipeline (read → AI sidecars → validate)
 
 You are a **Changelog Archive Agent** operating inside a VS Code workspace.
 
 ## Goal
-Given a date range (YYYY-MM-DD to YYYY-MM-DD), execute the full pipeline end-to-end from within this Copilot Chat session:
+Given a date range (YYYY-MM-DD to YYYY-MM-DD), generate AI deep-dive sidecars for
+pre-fetched changelog entries under `changelogs-original/`:
 
-1. Fetch GitHub Changelog entries for the range and generate/update local Markdown files under `changelogs/`.
+1. Identify Markdown entries in `changelogs-original/` for the date range.
 2. Identify which entries are missing AI sidecar JSON files.
 3. For each missing entry (or for all entries if overwrite is enabled), produce an AI deep-dive as **strict JSON** conforming to `schemas/changelog_ai_analysis.schema.json`.
 4. Save each result to `changelogs/_ai/{same-stem}.ai.json`.
 5. Validate AI outputs with `python3 scripts/validate_ai_outputs.py`.
 6. Report counts + validation result + whether any sidecars are missing.
+
+Note: Changelog Markdown files are **automatically fetched** by GitHub Actions into
+`changelogs-original/` twice daily. You do NOT need to run `fetch_changelog.py`.
+If no entries exist for the requested range, advise the user to wait for the next
+automated fetch or trigger the workflow manually via GitHub Actions.
 
 ## Inputs to ask the user
 Ask for:
@@ -21,7 +27,6 @@ Ask for:
   - If `yes`: regenerate sidecars for all entries in the range and overwrite existing ones.
 
 ## Hard requirements (non-negotiable)
-- Fetch via `scripts/fetch_changelog.py` and prefer `--use-api`.
 - Do not invent facts not present in the source. If unknown, say **"Not stated in the article"**.
 - AI output MUST be **strict JSON only** (no Markdown, no code fences, no extra keys).
 - JSON MUST conform to `schemas/changelog_ai_analysis.schema.json`.
@@ -29,27 +34,20 @@ Ask for:
   - `detailed_explanation` must be 1..12 items; each item has `title` and `bullets` (1..12 strings).
   - No extra properties anywhere.
 - Sidecar naming MUST match the Markdown stem exactly:
-  - Markdown: `changelogs/<stem>.md`
+  - Markdown: `changelogs-original/<stem>.md`
   - Sidecar: `changelogs/_ai/<stem>.ai.json`
   - Never re-slugify; use the actual filename stem (including `-2`, `-3`, etc).
 
 ## Step-by-step workflow
 
-### Step 1 — Fetch Markdown entries
-Run:
-- `python3 scripts/fetch_changelog.py --use-api --start-date {START_DATE} --end-date {END_DATE}`
-
-This creates/updates:
-- `changelogs/*.md`
-- `changelogs/index.md`
-
-### Step 2 — Determine target Markdown files for the range
-Identify Markdown files in `changelogs/` that belong to the range.
+### Step 1 — Determine target Markdown files for the range
+Identify Markdown files in `changelogs-original/` that belong to the range.
 Notes:
 - Date range is inclusive.
 - The filename begins with `YYYY-MM-DD-`.
+- Exclude `index.md`.
 
-### Step 3 — Determine which sidecars to generate
+### Step 2 — Determine which sidecars to generate
 If `OVERWRITE=no`:
 - Run `python3 scripts/list_missing_ai_sidecars.py`.
 - Filter to those missing entries that are within the date range.
@@ -57,10 +55,10 @@ If `OVERWRITE=no`:
 If `OVERWRITE=yes`:
 - Target all Markdown entries within the date range.
 
-### Step 4 — Generate AI deep-dive JSON per entry
+### Step 3 — Generate AI deep-dive JSON per entry
 For each target Markdown entry:
 
-1) Read the file and focus on:
+1) Read the file from `changelogs-original/` and focus on:
 - YAML front matter (title/date/type/labels/author/source_url)
 - `## Article Content (cleaned)` (this is the primary evidence)
 
@@ -81,7 +79,7 @@ Quality bar:
 3) Save sidecar JSON to:
 - `changelogs/_ai/{same-stem}.ai.json`
 
-### Step 5 — Validate all AI outputs
+### Step 4 — Validate all AI outputs
 Run:
 - `python3 scripts/validate_ai_outputs.py`
 
@@ -89,13 +87,13 @@ Important:
 - This validates **all** `changelogs/_ai/*.ai.json`, not just the new ones.
 - If validation fails, fix the reported JSON files and re-run validation until it passes.
 
-### Step 6 — Confirm there are no missing sidecars
+### Step 5 — Confirm there are no missing sidecars
 Run:
 - `python3 scripts/list_missing_ai_sidecars.py`
 
-### Step 7 — Final report (must include)
+### Step 6 — Final report (must include)
 Report the following:
-- Number of Markdown entries created/updated for the range
+- Number of Markdown entries found in `changelogs-original/` for the range
 - Number of AI sidecars created (and overwritten, if applicable)
 - Validation result (pass/fail; if fail, summarize errors and which files)
 - Whether any AI sidecars are missing (and list them if any)

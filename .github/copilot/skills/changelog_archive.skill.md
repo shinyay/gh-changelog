@@ -7,7 +7,8 @@ This skill describes how to reliably archive GitHub Changelog entries and VS Cod
 ### GitHub Changelog
 | Tool | Path |
 |---|---|
-| Fetcher | `scripts/fetch_changelog.py` |
+| Automated fetcher (GitHub Actions) | `.github/workflows/fetch-changelog.yml` |
+| Manual fetcher (fallback) | `scripts/fetch_changelog.py` |
 | Missing sidecar checker | `scripts/list_missing_ai_sidecars.py` |
 | Validator | `scripts/validate_ai_outputs.py` |
 | Schema | `schemas/changelog_ai_analysis.schema.json` |
@@ -29,7 +30,8 @@ This skill describes how to reliably archive GitHub Changelog entries and VS Cod
 
 ## Best practices
 
-- Prefer completeness: use `--use-api` for changelog fetching.
+- Changelog entries are auto-fetched into `changelogs-original/` by GitHub Actions; read from there for AI analysis.
+- For manual/backfill fetches, use `--use-api` for changelog fetching.
 - Keep AI outputs strict JSON and validate after every generation.
 - Do not copy large verbatim excerpts; keep cleaned article content as the reference.
 - If you regenerate, keep filenames stable and avoid duplicates.

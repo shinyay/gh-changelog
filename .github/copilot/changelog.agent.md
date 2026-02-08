@@ -18,10 +18,10 @@ When one of these prompts is attached, follow it directly.
 
 ### GitHub Changelog
 - Inputs: start date, end date.
+- Source (auto-fetched by GitHub Actions):
+  - `changelogs-original/YYYY-MM-DD-<slug>.md`
 - Outputs:
-  - `changelogs/YYYY-MM-DD-<slug>.md`
   - `changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
-  - `changelogs/index.md`
 
 ### VS Code Updates
 - Inputs: start date, end date.
@@ -45,7 +45,7 @@ When one of these prompts is attached, follow it directly.
 ## Operating procedure
 
 1. Identify which workflow the user needs.
-2. Run the appropriate fetch script.
+2. For changelog AI deep-dive: read from `changelogs-original/` (auto-fetched by GitHub Actions).
 3. Generate sidecar JSON or JP translation as needed.
 4. Validate using the appropriate validation script.
 5. Summarize what was created/updated.

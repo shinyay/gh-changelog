@@ -13,10 +13,9 @@ It also supports **Japanese translations** of GitHub Changelog entries.
 
 ### What is generated
 
-- Original entries (auto-fetched): `./changelogs-original/YYYY-MM-DD-<slug>.md`
-- Markdown entries: `./changelogs/YYYY-MM-DD-<slug>.md`
-- Index: `./changelogs/index.md`
+- Original entries (auto-fetched by GitHub Actions): `./changelogs-original/YYYY-MM-DD-<slug>.md`
 - AI sidecar JSON (validated): `./changelogs/_ai/YYYY-MM-DD-<slug>.ai.json`
+- Legacy Markdown entries: `./changelogs/YYYY-MM-DD-<slug>.md`
 
 ### Automated fetch (GitHub Actions)
 
@@ -25,7 +24,13 @@ changelog entries into `./changelogs-original/` twice daily (16:00 & 21:00 UTC) 
 a 3-day lookback window. New entries are auto-committed to `main`. It can also be
 triggered manually via `workflow_dispatch` with optional `start_date`/`end_date` inputs.
 
-### Manual fetch
+### AI deep-dive pipeline
+
+Once entries exist in `changelogs-original/`, use the Copilot prompt
+`run_changelog_pipeline.prompt.md` to generate AI sidecar JSON files.
+The prompt reads from `changelogs-original/` and writes sidecars to `changelogs/_ai/`.
+
+### Manual fetch (fallback)
 
 ```bash
 python3 scripts/fetch_changelog.py --use-api --start-date 2025-10-27 --end-date 2026-01-30

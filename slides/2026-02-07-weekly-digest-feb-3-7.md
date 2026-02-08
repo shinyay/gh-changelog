@@ -11,6 +11,8 @@ footer: "Weekly Digest — Feb 3–7, 2026"
 
 15 entries across Copilot, Pull Requests, Actions, Security, and more
 
+**Shinya Yanagihara** (Dev GBB)
+
 ---
 
 # Table of Contents
@@ -261,3 +263,5 @@ footer: "Weekly Digest — Feb 3–7, 2026"
 # Thank You
 
 Source: [GitHub Changelog](https://github.blog/changelog/) — Feb 3–7, 2026
+
+**Shinya Yanagihara** (Dev GBB)

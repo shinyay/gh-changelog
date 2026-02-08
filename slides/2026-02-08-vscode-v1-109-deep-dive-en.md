@@ -11,6 +11,8 @@ footer: "January 2026 Release — February 8, 2026"
 
 The new era of multi-agent development
 
+**Shinya Yanagihara** (Dev GBB)
+
 ---
 
 # Table of Contents
@@ -495,3 +497,5 @@ model: ['Claude Sonnet 4.5 (copilot)', 'GPT-5 (copilot)']
 # Thank You
 
 Source: [VS Code January 2026 Release Notes](https://code.visualstudio.com/updates/v1_109)
+
+**Shinya Yanagihara** (Dev GBB)

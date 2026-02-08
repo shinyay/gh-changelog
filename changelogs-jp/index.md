@@ -2,6 +2,8 @@
 
 ## Entries
 
+- 2026-02-07 — [CodeQL 2.24.1 が Maven プライベートレジストリサポートを改善し、クエリ精度を向上](2026-02-07-codeql-2-24-1-improves-maven-private-registry-support-and-improves-query-accurac-jp.md)
+- 2026-02-07 — [Claude Opus 4.6 の高速モードが GitHub Copilot でプレビュー提供開始](2026-02-07-fast-mode-for-claude-opus-4-6-is-now-in-preview-for-github-copilot-jp.md)
 - 2026-02-04 — [Claude と Codex が GitHub でパブリックプレビューとして利用可能に](2026-02-04-claude-and-codex-are-now-available-in-public-preview-on-github-jp.md)
 - 2026-02-04 — [Visual Studio Code 向け GitHub Copilot v1.109（2026年1月リリース）](2026-02-04-github-copilot-in-visual-studio-code-v1-109-january-release-jp.md)
 - 2026-02-04 — [Visual Studio 向け GitHub Copilot — 2026年1月アップデート](2026-02-04-github-copilot-in-visual-studio-january-update-jp.md)

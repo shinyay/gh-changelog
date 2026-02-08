@@ -32,6 +32,13 @@ If the user provides additional context or instructions, incorporate those as we
   - Use today's date as prefix. The descriptive name should reflect the content (e.g., `weekly-digest`, `copilot-cli-update`, `security-roundup`).
 - **Format**: Marp-compatible Markdown (see template below).
 
+## Author
+
+All slide decks MUST include the author attribution:
+
+- **Author**: **Shinya Yanagihara** (Dev GBB)
+- The author name MUST appear on the **title slide** and the **thank-you slide**.
+
 ## Marp front matter (required)
 
 Every deck MUST begin with this YAML front matter block:
@@ -39,7 +46,7 @@ Every deck MUST begin with this YAML front matter block:
 ```yaml
 ---
 marp: true
-theme: default
+theme: github-dark
 paginate: true
 header: "GitHub Changelog Update"
 footer: "{date range or topic}"
@@ -55,6 +62,10 @@ Follow this pattern. Adapt based on the user's request and number of entries.
 ```markdown
 # {Deck Title}
 ## {Date range or topic description}
+
+{Optional: subtitle or description}
+
+**Shinya Yanagihara** (Dev GBB)
 ```
 
 ### Per-entry slides
@@ -100,7 +111,10 @@ For complex entries, use up to 3 slides.
 
 ```markdown
 # Thank You
+
 {Optional: link to source or next steps}
+
+**Shinya Yanagihara** (Dev GBB)
 ```
 
 ## Slide design rules (non-negotiable)
